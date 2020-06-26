@@ -84,8 +84,8 @@ begin
 
 u0 : component blinky_comp
 port map (
-    clk_clk                        => CLOCK_50,
-    led_external_connection_export => LEDG,
+    led_external_connection_export => LED,
+    clk_clk                        => FPGA_CLK_50,
     hps_io_hps_io_sdio_inst_CMD    => HPS_SD_CMD,
     hps_io_hps_io_sdio_inst_D0     => HPS_SD_DATA(0),
     hps_io_hps_io_sdio_inst_D1     => HPS_SD_DATA(1),
@@ -112,19 +112,19 @@ port map (
 );
 
 
-p1 : process(CLOCK_50)
+p1 : process(FPGA_CLK_50)
 variable counter : integer := 0;
 variable led_num : integer := 0;
 begin
     -- init
-	LEDG(0) <= '0';
+	LED(0) <= '0';
     -- sync part
-    if rising_edge(CLOCK_50) then
+    if rising_edge(FPGA_CLK_50) then
 	    counter := counter + 1;
 		if counter < CLK_FRQ then
-			LEDG(0) <= '1';
+			LED(0) <= '1';
 	    elsif counter >= CLK_FRQ and counter < 2*CLK_FRQ then
-		    LEDG(0) <= '0';
+		    LED(0) <= '0';
 		else
 			counter := 0;
 		end if;
