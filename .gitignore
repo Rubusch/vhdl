@@ -1,5 +1,295 @@
-## backups
+## general, editor backups, logs, etc
 *~
 *#
 *.orig
 *.bak
+*.log
+
+## quartus 17.x file type definitions
+## https://www.intel.com/content/www/us/en/programmable/quartushelp/17.0/reference/glossary/def_file_types.htm
+
+## AHDL Include File
+# *.inc
+
+## ATOM Netlist File
+# *.atm
+
+## Block Design File
+# *.bdf
+
+## Block Symbol File
+# *.bsf
+
+## BSDL file
+# *.bsd
+
+## Chain Description File
+# *.cdf
+
+## Comma-Separated Value File
+# *.csv
+
+## Component Declaration File
+# *.cmp
+
+## Component Description File
+# *_hw.tcl
+
+## Compressed Vector Waveform File
+# *.cvwf
+
+## Conversion Setup File
+# *.cof
+
+## Cross-Reference File
+# *.xrf
+
+## database files
+*.cdb
+*.hdb
+*.rdb
+*.tdb
+
+## Design Protocol File
+# *.dpf
+
+## Graphic Design File
+# *.gdf
+
+## Hexadecimal (Intel-Format) File
+# *.hex
+
+## Hexadecimal (Intel-Format) Output File
+*.hexout
+
+## HSPICE Simulation Deck File
+# *.sp
+
+## HTML-Format Report File
+*.htm
+
+## I/O Pin State File
+# *.ips
+
+## IBIS Output File
+*.ibs
+
+## In System Configuration File
+# *.isc
+
+## IP Index File
+# *.ipx
+
+## Jam Byte Code File
+*.jbc
+
+## Jam File
+*.jam
+
+## JTAG Debugging Information File
+*.jdi
+
+## JTAG Indirect Configuration File
+# *.jic
+
+## Library Mapping File
+*.lmf
+
+## License File
+# *license.dat
+
+## Logic Analyzer Interface File
+# *.lai
+
+## Memory Initialization File
+*.mif
+
+## Memory Map File
+*.map
+
+## PartMiner edaXML-Format File
+*.xml
+
+## Pin-Out File
+# *.pin
+
+## Pin Planner File
+# *.ppf
+
+## Programmer Object File
+*.pof
+
+## programming files
+*.cdf
+*.cof
+
+## QMSG File
+*.qmsg
+
+## Quartus Prime IP File
+# *.qip
+
+## Quartus Prime Archive File
+# *.qar
+
+## Quartus Prime Archive Log File
+*.qarlog
+
+## Quartus User-Defined Device File
+# *.qud
+
+## Quartus Prime Default Settings File
+*.qdf
+
+## Quartus Prime Exported Partition File
+# *.qxp
+
+## Quartus Prime Message Flag Rule File
+# *.frf
+
+## Quartus Prime Message Suppression Rule File
+# *.srf
+
+## Quartus Prime Project File
+# *.qpf
+
+## Quartus Prime Settings File
+# *.qsf
+
+## Quartus Prime Workspace File
+*.qws
+
+## Raw Binary File
+*.rbf
+
+## Raw Programming Data File
+*.rpd
+
+## Routing Constraints File
+# *.rcf
+
+## Signal Activity File
+# *.saf
+
+## Signal Tap File
+# *.stp
+
+## Sources and Probes File
+*.spf
+
+## SRAM Object File
+# *.sof
+
+## State Machine File
+# *.smf
+
+## Standard Delay Format Output File
+*.sdo
+
+## Symbol File
+*.sym
+
+## Synopsys Design Constraints File
+# *.sdc
+
+## Tab-Separated Value File
+# *.txt
+
+## Tabular Text File
+# *.ttf
+
+## Tcl Script File
+# *.tcl
+
+## Text Design File
+# *.tdf
+
+## Text-Format Report File
+*.rpt
+
+## Token File
+# *ted.tok
+
+## Vector Table Output File
+# *.tbl
+
+## vector source files
+# *.tbl
+# *.vwf
+# *.vec
+
+## Vector Waveform File
+# *.vwf
+
+## Verilog Design File
+# *.v
+# *.vh
+# *.verilog
+# *.vlg
+
+## Verilog Output File
+*.vo
+
+## Verilog Quartus Mapping File
+# *.vqm
+
+## Verilog Test Bench File
+# *.vt
+
+## Value Change Dump File
+*.vcd
+
+## version-compatible database files
+*.atm
+*.hdbx
+*.rcf
+*.xml
+
+## VHDL Design File
+# *.vhd
+# *.vhdl
+
+## VHDL Output File
+*.vho
+
+## VHDL Test Bench File
+# *.vht
+
+## XML files
+*.cof
+*.stp
+*.xml
+
+## waveform files
+*.scf
+*.stp
+*.tbl
+*.vec
+*.vwf
+ 
+## Waveform Settings File
+# *.wsf
+
+## miscellaneous
+## e.g. recursively ignored folders and missing above...
+db
+incremental_db
+synthesis
+output_files
+*.sopcinfo
+*.json
+*_inst.vhd
+*_inst.v
+*_bb.v
+*_baseline.v
+
+## quartus qsys
+.qsys_edit
+
+## quartus modelsim
+testbench
+
+## quartus design space explorer
+dse
+*.dse
+gui_server_url.txt
