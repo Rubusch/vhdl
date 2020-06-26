@@ -4,9 +4,10 @@ use ieee.numeric_std.all;
 
 entity blinky is
 port(
+--- application
+    LED                            : out   std_logic_vector(7 downto 0);
 --- FPGA ---
-	CLOCK_50 : in std_logic;
-    LEDG : out std_logic_vector(7 downto 0);
+	FPGA_CLK_50                    : in    std_logic;                                        -- 
 --- HPS ---
     HPS_SD_CMD                     : inout std_logic;                                        -- hps_io_sdio_inst_CMD
     HPS_SD_DATA                    : INOUT std_logic_vector(3 downto 0);                     -- hps_io_sdio_inst_D0, hps_io_sdio_inst_D1, hps_io_sdio_inst_D2, hps_io_sdio_inst_D3
