@@ -7,6 +7,7 @@
 
 ## quartus 17.x file type definitions
 ## https://www.intel.com/content/www/us/en/programmable/quartushelp/17.0/reference/glossary/def_file_types.htm
+## https://www.intel.com/content/www/us/en/programmable/documentation/spj1513986956763.html
 
 ## AHDL Include File
 # *.inc
@@ -15,28 +16,28 @@
 # *.atm
 
 ## Block Design File
-# *.bdf
+*.bdf
 
 ## Block Symbol File
-# *.bsf
+*.bsf
 
 ## BSDL file
-# *.bsd
+*.bsd
 
 ## Chain Description File
-# *.cdf
+*.cdf
 
 ## Comma-Separated Value File
-# *.csv
+*.csv
 
 ## Component Declaration File
-# *.cmp
+*.cmp
 
 ## Component Description File
-# *_hw.tcl
+*_hw.tcl
 
 ## Compressed Vector Waveform File
-# *.cvwf
+*.cvwf
 
 ## Conversion Setup File
 # *.cof
@@ -63,10 +64,14 @@
 *.hexout
 
 ## HSPICE Simulation Deck File
-# *.sp
+*.sp
+
+## Input file that ip-make-simscript requires to generate simulation scripts
+*.spd
 
 ## HTML-Format Report File
 *.htm
+*.html
 
 ## I/O Pin State File
 # *.ips
@@ -130,7 +135,7 @@
 # *.qip
 
 ## Quartus Prime Archive File
-# *.qar
+*.qar
 
 ## Quartus Prime Archive Log File
 *.qarlog
