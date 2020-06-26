@@ -287,6 +287,7 @@ output_files
 *_inst.v
 *_bb.v
 *_baseline.v
+*.tmp
 
 ## quartus qsys
 .qsys_edit
@@ -294,7 +295,12 @@ output_files
 ## quartus modelsim
 testbench
 
-## quartus design space explorer
+## quartus design space explorer (dse)
 dse
 *.dse
 gui_server_url.txt
+## quartus dse intermediates
+_qar_content.txt
+dse1_base.qpf
+dse1_base.qsf
+
