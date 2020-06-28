@@ -280,6 +280,7 @@
 db
 incremental_db
 synthesis
+devkits
 output_files
 *.sopcinfo
 *.json
