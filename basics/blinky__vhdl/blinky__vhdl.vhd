@@ -1,50 +1,45 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity blinky_ent is
-port(
-	clock_50  : in std_logic;
-	reset_n : in std_logic := '1';
-	led    : out std_logic_vector(7 downto 0) -- no ';' at the last port entry!
+ENTITY BLINKY_ENT IS
+PORT    (BLINKY_CLK_50 : IN STD_LOGIC
+ 	;BLINKY_RST_N  : IN STD_LOGIC := '0'
+ 	;BLINKY_LED    : OUT STD_LOGIC
 );
-end entity blinky_ent;
+END ENTITY BLINKY_ENT;
 
-architecture blinky_arch of blinky_ent is
-	signal clk_blinky     : std_logic;
-	signal counter_blinky : integer range 0 to 25000000;
-	signal led_blinky     : std_logic; 
+ARCHITECTURE BLINKY_ARCH OF BLINKY_ENT IS
+	-- MACRO USING PRAGMA TRICK: FOR SETTING DIFFERENT VALUES FOR SIM AND SYNTH
+	FUNCTION CLOCK_FREQUENCY RETURN NATURAL IS
+	BEGIN
+		-- SYNTHESIS TRANSLATE_OFF
+		RETURN 50;
+		-- SYNTHESIS TRANSLATE_ON
+		RETURN 50000000;
+	END CLOCK_FREQUENCY;
 
-	-- macro using pragma trick: for setting different values for sim and synth
-	function clock_frequency return natural is
-	begin
-		-- synthesis translate_off
-		return 50;
-		-- synthesis translate_on
-		return 50000000;
-	end clock_frequency;
-	
-	constant clk_frq : integer := clock_frequency;
+	CONSTANT CLK_FRQ : INTEGER := CLOCK_FREQUENCY;
 
-begin
+BEGIN
 
-	p1 : process(clock_50, reset_n)
-	variable counter : integer := 0;
-	variable led_num : integer := 0;
-	begin
-		if reset_n = '0' then
-			clk_blinky <= '0';
-			counter := 0;
-		elsif rising_edge(clock_50) then
-			counter := counter + 1;
-			if counter < clk_frq then
-				led(0) <= '1';
-			elsif counter >= clk_frq and counter < 2*clk_frq then
-				led(0) <= '0';
-			else
-				counter := 0;
-			end if;
-		end if;
-	end process p1;
+	P1 : PROCESS(BLINKY_CLK_50, BLINKY_RST_N)
+	VARIABLE COUNTER : INTEGER := 0;
+	BEGIN
+		IF BLINKY_RST_N = '1' THEN
+			COUNTER := 0;
+		ELSIF RISING_EDGE(BLINKY_CLK_50) THEN
+			COUNTER := COUNTER + 1;
+			IF COUNTER < CLK_FRQ THEN
+				BLINKY_LED <= '1';
+			ELSIF COUNTER >= CLK_FRQ THEN
+				BLINKY_LED <= '0';
+			ELSE
+--			BLINKY_LED <= (COUNTER < CLK_FRQ);
+--			IF COUNTER > 2*CLK_FRQ THEN
+				COUNTER := 0;
+			END IF;
+		END IF;
+	END PROCESS P1;
 
-end architecture blinky_arch;
+END ARCHITECTURE BLINKY_ARCH;
