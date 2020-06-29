@@ -2,9 +2,50 @@
 
 ## RESOURCES
 
+https://github.com/CTSRD-CHERI/quartus-install.git
 
 
 ## INSTALLATION
+
+Basically for me I only install cyclone5 support, and ModelSim   
+
+```
+$ git clone https://github.com/CTSRD-CHERI/quartus-install.git && cd quartus-instal
+$ ./quartus-install.py --fix-libpng 18.1lite /opt/intelFPGA/18.1std modelsim c5 opencl eds update_1
+```
+
+## CONFIGURATIOn
+
+Finally I set up a environment file to be sourced
+```
+$ cat /opt/intelFPGA/18.1std/env.sh
+
+export QT_X11_NO_MITSHM=1
+export ALTERAPATH="/opt/intelFPGA/18.1std"
+export ALTERAOCLSDKROOT="${ALTERAPATH}/hls"
+export QUARTUS_ROOTDIR="${ALTERAPATH}/quartus"
+export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"
+export QSYS_ROOTDIR="${ALTERAPATH}/quartus/sopc_builder/bin"
+if [[ "" == "$(echo ${PATH} | grep 'quartus/bin' )" ]]; then export PATH="$PATH:${ALTERAPATH}/quartus/bin" ; fi
+if [[ "" == "$(echo ${PATH} | grep 'nios2eds/bin' )" ]] ; then export PATH="$PATH:${ALTERAPATH}/nios2eds/bin" ; fi
+if [[ "" == "$(echo ${PATH} | grep 'sopc_builder/bin' )" ]]; then export PATH="$PATH:${QSYS_ROOTDIR}" ; fi
+if [[ "" == "$(echo ${PATH} | grep 'modelsim_ase/bin' )" ]]; then export PATH="$PATH:${ALTERAPATH}/modelsim_ase/bin" ; fi
+if [[ "" == "$(echo ${LD_LIBRARY_PATH} | grep 'freetype/lib' )" ]] ; then export LD_LIBRARY_PATH=/opt/intelFPGA/18.1std/modelsim_ase/freetype-2.4.7/freetype/lib:$LD_LIBRARY_PATH ; fi
+```
+
+and my own starter script for Quartus (or the Quartus starter scripts so to speak...)  
+echo "setting up environment"
+```
+$ cat /usr/local/bin/quartus.sh
+
+source /opt/intelFPGA/18.1std/env.sh
+if [[ "" == "$(pidof quartus)" ]] ; then
+	echo "starting quartus 18.1"
+	quartus --64bit &
+else
+	echo "FAILED: another instance of quartus is already running"
+fi
+```
 
 
 
