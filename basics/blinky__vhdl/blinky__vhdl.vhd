@@ -2,12 +2,14 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
+-- port : the pinout for the modul
 ENTITY BLINKY_ENT IS
 PORT( BLINKY_CLK_50 : IN STD_LOGIC
  	; BLINKY_LED    : OUT STD_LOGIC := '0'
 );
 END ENTITY BLINKY_ENT;
 
+-- architecture: the behavior implementation
 ARCHITECTURE BLINKY_ARCH OF BLINKY_ENT IS
 	SIGNAL HPS_RESET_N : STD_LOGIC;
 
@@ -25,12 +27,14 @@ ARCHITECTURE BLINKY_ARCH OF BLINKY_ENT IS
 BEGIN
 
 	P1 : PROCESS(BLINKY_CLK_50, HPS_RESET_N)
-	VARIABLE COUNTER : INTEGER := 0;
+		VARIABLE COUNTER : INTEGER := 0;
 	BEGIN
---		IF HPS_RESET_N = '1' THEN
---			COUNTER := 0;
---		ELS
-		IF RISING_EDGE(BLINKY_CLK_50) THEN
+        -- on top level check for event in respect to the above sensivity list
+		IF HPS_RESET_N = '1' THEN
+            -- try to always handle async reset events in a serializable manner
+			COUNTER := 0;
+		ELSIF RISING_EDGE(BLINKY_CLK_50) THEN
+            -- the actual behavior driven by clock edges
 			COUNTER := COUNTER + 1;
 			IF COUNTER < CLK_FRQ THEN
 				BLINKY_LED <= '1';
