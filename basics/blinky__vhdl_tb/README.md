@@ -67,8 +67,28 @@ Initialization problem, exiting.
 ```
 
 typically, this boils down to a manual installation of an older version of the freetype font  
+(location can vary, here I install the font into a folder inside my ModelSim installation)  
 
 ```
-
+$ cd /opt/intelFPGA/18.1std/modelsim_ase
+$ wget http://download.savannah.gnu.org/releases/freetype/freetype-2.4.7.tar.bz2
+$ tar xjf freetype-2.4.7.tar.bz2
+$ cd ./freetype-2.4.7
+$ CFLAGS=-m32 ./configure --prefix=/opt/intelFPGA/18.1std/modelsim_ase/freetype-2.4.7/freetype
+$ make
+$ make install
 ```
 
+set up an ``env.sh`` or add to the env.sh  
+
+```
+if [[ "" == "$(echo ${LD_LIBRARY_PATH} | grep 'freetype/lib' )" ]] ; then export LD_LIBRARY_PATH=/opt/intelFPGA/18.1std/modelsim_ase/freetype-2.4.7/freetype/lib:$LD_LIBRARY_PATH ; fi
+```
+
+before starting Quartus and/or ModelSim, source the ``env.sh`` (in general such environment file is helpful for other env variables and extension of path anyway, alternatively precipitate quartus adjustments to profile.d, bashrc, and other linux config files  
+
+then start Quartus as follows
+```
+$ source ./env.sh
+$ quartus &
+```
