@@ -38,7 +38,6 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY quadmux
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:30:07  JUNE 30, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -51,31 +50,33 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_location_assignment PIN_AB12 -to A[0]
 set_location_assignment PIN_AC12 -to A[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[1]
 set_location_assignment PIN_AF9 -to A[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[2]
 set_location_assignment PIN_AF10 -to A[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[3]
 set_location_assignment PIN_AD11 -to B[0]
 set_location_assignment PIN_AD12 -to B[1]
 set_location_assignment PIN_AE11 -to B[2]
 set_location_assignment PIN_AC9 -to B[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[3]
 set_location_assignment PIN_AE12 -to SEL
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SEL
 set_location_assignment PIN_V16 -to C[0]
 set_location_assignment PIN_W16 -to C[1]
 set_location_assignment PIN_V17 -to C[2]
 set_location_assignment PIN_V18 -to C[3]
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE quadmux.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to B[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SEL
+set_global_assignment -name TOP_LEVEL_ENTITY QUADMUX_ENT
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
