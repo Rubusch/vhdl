@@ -143,3 +143,25 @@ then start Quartus as follows
 $ source ./env.sh
 $ quartus &
 ```
+
+
+## ISSUE: Top-level design entity "blablabla" is undefined
+
+append the following to the .qsf file  
+
+```
+$ vi ./*.qsf
+    (...)
+    set_global_assignment -name TOP_LEVEL_ENTITY <my entity>
+```
+
+
+## ISSUE: Number of processors has not been specified which may cause overloading on shared machines.
+
+...Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.  
+
+```
+$ vi ./*.qsf
+    (...)
+    set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+```
