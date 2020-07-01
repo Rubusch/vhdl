@@ -14,9 +14,10 @@ $ git clone https://github.com/CTSRD-CHERI/quartus-install.git && cd quartus-ins
 $ ./quartus-install.py --fix-libpng 18.1lite /opt/intelFPGA/18.1std modelsim c5 opencl eds update_1
 ```
 
-## CONFIGURATIOn
+## CONFIGURATION
 
-Finally I set up a environment file to be sourced
+Finally I set up a environment file to be sourced  
+
 ```
 $ cat /opt/intelFPGA/18.1std/env.sh
 
@@ -34,7 +35,7 @@ if [[ "" == "$(echo ${LD_LIBRARY_PATH} | grep 'freetype/lib' )" ]] ; then export
 ```
 
 and my own starter script for Quartus (or the Quartus starter scripts so to speak...)  
-echo "setting up environment"
+
 ```
 $ cat /usr/local/bin/quartus.sh
 
