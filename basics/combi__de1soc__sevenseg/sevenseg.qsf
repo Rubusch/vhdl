@@ -59,15 +59,13 @@ set_location_assignment PIN_AG27 -to SEG[3]
 set_location_assignment PIN_AF28 -to SEG[4]
 set_location_assignment PIN_AG28 -to SEG[5]
 set_location_assignment PIN_AH28 -to SEG[6]
-set_location_assignment PIN_AJ29 -to SEG[7]
-set_location_assignment PIN_AH29 -to SEG[8]
-set_location_assignment PIN_AH30 -to SEG[9]
-set_location_assignment PIN_AG30 -to SEG[10]
-set_location_assignment PIN_AF29 -to SEG[11]
-set_location_assignment PIN_AF30 -to SEG[12]
-set_location_assignment PIN_AD27 -to SEG[13]
 set_global_assignment -name VHDL_FILE sevenseg.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY SEVENSEG_ENT
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
