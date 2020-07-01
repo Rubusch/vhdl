@@ -1,9 +1,9 @@
 --
---  A[3..0] +----------+
---  --------| QUAD     | C[3..0]
---  B[3..0] | 2-INPUT  |-------->
---  --------| MUX      |
---          +----------+
+--  A[3..0] +-------+
+--  --------| TWO   | C[3..0]
+--  B[3..0] | INPUT |-------->
+--  --------| MUXER |
+--          +-------+
 --              A
 --              |
 --  SEL --------+
@@ -17,7 +17,7 @@ ENTITY QUADMUX_ENT IS
 PORT( A   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       B   : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       SEL : IN STD_LOGIC;
-      C   : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+      C   : OUT STD_LOGIC_VECTOR(3 DOWNTO 0) );
 END ENTITY QUADMUX_ENT;
 
 
