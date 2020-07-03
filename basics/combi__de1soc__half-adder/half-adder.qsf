@@ -54,8 +54,8 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name VHDL_FILE "half-adder.vhd"
-set_location_assignment PIN_AA14 -to A
-set_location_assignment PIN_AA15 -to B
+set_location_assignment PIN_AB12 -to A
+set_location_assignment PIN_AC12 -to B
 set_location_assignment PIN_V16 -to SUM
 set_location_assignment PIN_W16 -to CARRY
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A
