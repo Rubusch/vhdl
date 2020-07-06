@@ -10,6 +10,20 @@
 --         +------------+
 --                |   CARRY_OUT
 --                +-------------
+--
+--
+--  A | B |CARRY|| SUM |CARRY
+--    |   | IN  ||     | OUT
+-- ==============================
+--  0 | 0 | 0   ||   0 |  0
+--  0 | 0 | 1   ||   1 |  0
+--  0 | 1 | 0   ||   1 |  0
+--  0 | 1 | 1   ||   0 |  1
+--  1 | 0 | 0   ||   1 |  0
+--  1 | 0 | 1   ||   0 |  1
+--  1 | 1 | 0   ||   0 |  1
+--  1 | 1 | 1   ||   1 |  1
+
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
@@ -23,6 +37,8 @@ PORT( A : IN STD_LOGIC
 );
 END ENTITY FULLADDER_ENT;
 
+-- NB: INCLUDED ENTITIES FROM OTHER FILES DON'T NEED ANY FURTHER INSTRUCTION IN VHDL
+-- JUST ADD THE FILES TO THE PROJECT AND USE THE ENTITIES
 ARCHITECTURE FULLADDER_ARCH OF FULLADDER_ENT IS
     COMPONENT HALFADDER_ENT
     PORT( A : IN STD_LOGIC

@@ -55,9 +55,9 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name VHDL_FILE "half-adder.vhd"
 set_global_assignment -name VHDL_FILE "full-adder.vhd"
 set_global_assignment -name TOP_LEVEL_ENTITY FULLADDER_ENT
-set_location_assignment PIN_AB12 -to A
-set_location_assignment PIN_AC12 -to B
-set_location_assignment PIN_AF9 -to CARRY_IN
+set_location_assignment PIN_AC12 -to A
+set_location_assignment PIN_AF9 -to B
+set_location_assignment PIN_AB12 -to CARRY_IN
 set_location_assignment PIN_W16 -to SUM
 set_location_assignment PIN_V16 -to CARRY_OUT
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
