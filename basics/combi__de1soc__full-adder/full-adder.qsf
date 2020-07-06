@@ -38,7 +38,6 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY "full-adder"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:26:58  JULY 06, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -56,3 +55,12 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name VHDL_FILE "half-adder.vhd"
 set_global_assignment -name VHDL_FILE "full-adder.vhd"
 set_global_assignment -name TOP_LEVEL_ENTITY FULLADDER_ENT
+set_location_assignment PIN_AB12 -to A
+set_location_assignment PIN_AC12 -to B
+set_location_assignment PIN_AF9 -to CARRY_IN
+set_location_assignment PIN_W16 -to SUM
+set_location_assignment PIN_V16 -to CARRY_OUT
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
