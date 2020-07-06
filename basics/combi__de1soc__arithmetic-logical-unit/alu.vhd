@@ -25,13 +25,22 @@
 --                      +---------------------------
 --
 --
--- NB: SETUP FOR MY DE1 SHALL BE AS FOLLOWS
+-- NB: PIN ASSIGNMENT FOR MY DE1:
 -- 
--- A, B ARE KEYS
--- ENA, ENB, INVA, CARRY_IN ARE THE FIRST SWITCHES
--- F[0,1] ARE THE LAST SWITCHES
--- OUTPUT IS LED[0]
--- CARRY_OUT IS LED[1]
+-- A            - KEY[0]
+-- B            - KEY[1]
+--
+-- ENA          - SW[0]
+-- ENB          - SW[1]
+-- INVA         - SW[2]
+-- CARRY_IN     - SW[3]
+--
+-- F[0]         - SW[8]
+-- F[1]         - SW[9]
+--
+-- OUTPUT       - LED[0]
+-- CARRY_OUT    - LED[1]
+--
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
