@@ -343,6 +343,7 @@ Note that, two keyword are used for writing the data into the file i.e. ‘write
 
 ### COMBINATIONAL: CSV AS INPUT
 
+Demo of read and write results to a CSV file.  
 
 ```
 -- read_write_file_ex.vhd
@@ -467,23 +468,195 @@ begin
 end tb ; -- tb
 ```
 
-
+-  Lines 63-64 are added to skip the header row, i.e. any row which does not start with boolean-number(see line 42).  
+-  Also, error will be reported for value ‘b’ if it is not the boolean. Similarly, this functionality can be added to other values as well.  
+-  Lastly, errors are reported in CSV file at Lines 96-109.  
 
 
 ## SEQUENTIAL TESTBENCH
 
-TODO       
+In the case of sequential circuits, we need clock and reset signals; hence two additional blocks are required. Since, clock is generated for complete simulation process, therefore it is defined inside the separate process statement. Whereas, reset signal is required only at the beginning of the operations, hence it is not defined inside the process statement.  
+
+```
+-- modMCounter.vhd
+
+library ieee; 
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity modMCounter is
+    generic (
+            M : integer := 5; -- count from 0 to M-1
+            N : integer := 3   -- N bits required to count upto M i.e. 2**N >= M
+    );
+    
+    port(
+            clk, reset : in std_logic;
+            complete_tick : out std_logic;
+            count : out std_logic_vector(N-1 downto 0)
+    );
+end modMCounter;
+
+
+architecture arch of modMCounter is
+    signal count_reg, count_next : unsigned(N-1 downto 0);
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then 
+            count_reg <= (others=>'0');
+        elsif   clk'event and clk='1' then
+            count_reg <= count_next;
+        else  -- note that else block is not required
+            count_reg <= count_reg;
+        end if;
+    end process;
+    
+    -- set count_next to 0 when maximum count is reached i.e. (M-1)
+    -- otherwise increase the count
+    count_next <= (others=>'0') when count_reg=(M-1) else (count_reg+1);
+    
+    -- Generate 'tick' on each maximum count
+    complete_tick <= '1' when count_reg = (M-1) else '0';
+    
+    count <= std_logic_vector(count_reg); -- assign value to output port
+end arch;
+```
 
 
 ### SEQUENTIAL: INFINITE DURATION
 
-TODO       
+Demo of a Mod-M counter as a sequential example.  
 
+```
+-- modMCounter_tb.vhd
+
+library ieee; 
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity modMCounter_tb is
+end modMCounter_tb;
+
+
+architecture arch of modMCounter_tb is
+    constant M : integer := 10;
+    constant N : integer := 4;
+    constant T : time := 20 ns; 
+
+    signal clk, reset : std_logic;  -- input
+    signal complete_tick : std_logic; -- output
+    signal count : std_logic_vector(N-1 downto 0);  -- output
+begin
+
+    modMCounter_unit : entity work.modMCounter
+        generic map (M => M, N => N)
+        port map (clk=>clk, reset=>reset, complete_tick=>complete_tick,
+                    count=>count);
+
+    -- continuous clock
+    process 
+    begin
+        clk <= '0';
+        wait for T/2;
+        clk <= '1';
+        wait for T/2;
+    end process;
+
+
+    -- reset = 1 for first clock cycle and then 0
+    reset <= '1', '0' after T/2;
+
+end arch;
+```
+
+Here ``clk`` signal is generated in the separate process block i.e. Lines 27-33; in this way, clock signal will be available throughout the simulation process. Further, reset signal is set to ``1`` in the beginning and then set to ``0`` in next clock cycle (Line 37). If there are further, inputs signals, then those signals can be defined in separate process statement, as discussed in combination circuits’ testbenches.  
 
 ### SEQUENTIAL: FINITE DURATION
 
-TODO        
+```
+-- modMCounter_tb2.vhd
 
+library ieee; 
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+use ieee.std_logic_textio.all; -- require for std_logic etc.
+
+entity modMCounter_tb2 is
+end modMCounter_tb2;
+
+
+architecture arch of modMCounter_tb2 is
+    constant M : integer := 3;  -- count upto 2 (i.e. 0 to 2)
+    constant N : integer := 4;
+    constant T : time := 20 ns; 
+
+    signal clk, reset : std_logic;  -- input
+    signal complete_tick : std_logic; -- output
+    signal count : std_logic_vector(N-1 downto 0);  -- output
+
+    -- total samples to store in file
+    constant num_of_clocks : integer := 30; 
+    signal i : integer := 0; -- loop variable
+    file output_buf : text; -- text is keyword
+
+begin
+
+    modMCounter_unit : entity work.modMCounter
+        generic map (M => M, N => N)
+        port map (clk=>clk, reset=>reset, complete_tick=>complete_tick,
+                    count=>count);
+
+
+    -- reset = 1 for first clock cycle and then 0
+    reset <= '1', '0' after T/2;
+
+    -- continuous clock
+    process 
+    begin
+        clk <= '0';
+        wait for T/2;
+        clk <= '1';
+        wait for T/2;
+
+        -- store 30 samples in file
+        if (i = num_of_clocks) then
+            file_close(output_buf);
+            wait;
+        else
+            i <= i + 1;
+        end if;
+    end process;
+
+
+    -- save data in file : path is relative to Modelsim-project directory
+    file_open(output_buf, "input_output_files/counter_data.csv", write_mode);
+    process(clk)
+        variable write_col_to_output_buf : line; -- line is keyword
+    begin
+        if(clk'event and clk='1' and reset /= '1') then  -- avoid reset data
+            -- comment below 'if statement' to avoid header in saved file
+            if (i = 0) then 
+              write(write_col_to_output_buf, string'("clock_tick,count"));
+              writeline(output_buf, write_col_to_output_buf);
+            end if; 
+
+            write(write_col_to_output_buf, complete_tick);
+            write(write_col_to_output_buf, string'(","));
+            -- Note that unsigned/signed values can not be saved in file, 
+            -- therefore change into integer or std_logic_vector etc.
+             -- following line saves the count in integer format
+            write(write_col_to_output_buf, to_integer(unsigned(count))); 
+            writeline(output_buf, write_col_to_output_buf);
+        end if;
+    end process;
+end arch;
+```
+
+To run the simulation for the finite duration, we need to provide the ‘number of clocks’ for which we want to run the simulation, as shown in Line 23.
+
+Now, if we press the run all button, then the simulator will stop after ``num_of_clocks`` cycles. Note that, if the data is in ``signed or unsigned`` format, then it can not be saved into the file. We need to change the data into other format e.g. ``integer``, ``natural`` or ``std_logic_vector`` etc. before saving it into the file, as shown in Line 73.  
 
 
 ## MODELSIM IN QUARTUS
