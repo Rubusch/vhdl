@@ -34,7 +34,7 @@ end arch;
 
 in the testbench and provide all the input values in the file  
 
-```
+```vhdl
 -- half_adder_simple_tb.vhd
 
 library ieee;
@@ -81,7 +81,7 @@ Problem: Although, the testbench is very simple, but input patterns are not read
 
 Note that, process statement is written without the sensitivity list.  
 
-```
+```vhdl
 -- half_adder_process_tb.vhd
 
 library ieee;
@@ -141,7 +141,7 @@ end tb;
 
 ### COMBINATIONAL: USING LOOK UP TABLES (LUT)
 
-```
+```vhdl
 -- half_adder_lookup_tb.vhd
 
 library ieee;
@@ -151,7 +151,6 @@ entity half_adder_lookup_tb is
 end half_adder_lookup_tb;
 
 architecture tb of half_adder_lookup_tb is
-    
     signal a, b : std_logic; -- input
     signal sum, carry : std_logic; -- output
 
@@ -159,7 +158,7 @@ architecture tb of half_adder_lookup_tb is
     type test_vector is record
         a, b : std_logic;
         sum, carry : std_logic;
-    end record; 
+    end record;
 
     type test_vector_array is array (natural range <>) of test_vector;
     constant test_vectors : test_vector_array := (
@@ -182,19 +181,19 @@ begin
 
             wait for 20 ns;
 
-            assert ( 
-                        (sum = test_vectors(i).sum) and 
-                        (carry = test_vectors(i).carry) 
+            assert (
+                        (sum = test_vectors(i).sum) and
+                        (carry = test_vectors(i).carry)
                     )
 
             -- image is used for string-representation of integer etc.
-            report  "test_vector " & integer'image(i) & " failed " & 
-                    " for input a = " & std_logic'image(a) & 
+            report  "test_vector " & integer'image(i) & " failed " &
+                    " for input a = " & std_logic'image(a) &
                     " and b = " & std_logic'image(b)
                     severity error;
         end loop;
         wait;
-    end process; 
+    end process;
 
 end tb;
 ```
@@ -216,7 +215,7 @@ File content
 1 0 11 
 ```
 
-```
+```vhdl
 -- read_file_ex.vhd
 
 
@@ -285,7 +284,7 @@ Then, values are read and store in the variables at Lines 36-42. Lastly, these v
 
 Here, only ``write_mode`` is used for writing the data to file (not the ``append_mode``).  
 
-```
+```vhdl
 -- write_file_ex.vhd
 
 
@@ -345,7 +344,7 @@ Note that, two keyword are used for writing the data into the file i.e. ‘write
 
 Demo of read and write results to a CSV file.  
 
-```
+```vhdl
 -- read_write_file_ex.vhd
 
 -- testbench for half adder, 
@@ -477,7 +476,7 @@ end tb ; -- tb
 
 In the case of sequential circuits, we need clock and reset signals; hence two additional blocks are required. Since, clock is generated for complete simulation process, therefore it is defined inside the separate process statement. Whereas, reset signal is required only at the beginning of the operations, hence it is not defined inside the process statement.  
 
-```
+```vhdl
 -- modMCounter.vhd
 
 library ieee; 
@@ -528,7 +527,7 @@ end arch;
 
 Demo of a Mod-M counter as a sequential example.  
 
-```
+```vhdl
 -- modMCounter_tb.vhd
 
 library ieee; 
@@ -574,7 +573,7 @@ Here ``clk`` signal is generated in the separate process block i.e. Lines 27-33;
 
 ### SEQUENTIAL: FINITE DURATION
 
-```
+```vhdl
 -- modMCounter_tb2.vhd
 
 library ieee; 
