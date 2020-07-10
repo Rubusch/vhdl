@@ -13,7 +13,7 @@ https://vhdlguide.readthedocs.io/en/latest/vhdl/testbench.html
 
 example half-adder as combinational circuit  
 
-```
+```vhdl
 -- half_adder.vhd
 
 library ieee;
