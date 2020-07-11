@@ -349,9 +349,7 @@ Note that, two keyword are used for writing the data into the file i.e. ‘write
 Demo of read and write results to a CSV file.  
 
 ```vhdl
--- read_write_file_ex.vhd
-
--- testbench for half adder, 
+-- HALFADDER_TB.VHD
 
 -- Features included in this code are
     -- inputs are read from csv file, which stores the desired outputs as well
@@ -360,120 +358,137 @@ Demo of read and write results to a CSV file.
     -- Error message is displayed in the file
     -- header line is skipped while reading the csv file
 
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE STD.TEXTIO.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL; -- read/write STD_LOGIC, etc.
 
-library ieee;
-use ieee.std_logic_1164.all;
-use std.textio.all;
-use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-entity read_write_file_ex is
-end read_write_file_ex;
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A, B : STD_LOGIC;
+    SIGNAL SUM_ACTUAL, CARRY_ACTUAL : STD_LOGIC;
+    SIGNAL SUM, CARRY : STD_LOGIC; -- generated results by half-adder
 
-architecture tb of read_write_file_ex is
-    signal a, b : std_logic;
-    signal sum_actual, carry_actual : std_logic;
-    signal sum, carry : std_logic;  -- calculated sum and carry by half_adder
+    -- buffer for storing data for i/o
+    FILE INPUT_BUF : TEXT;
+    FILE OUTPUT_BUF : TEXT;
 
-    -- buffer for storing the text from input and for output files
-    file input_buf : text;  -- text is keyword
-    file output_buf : text;  -- text is keyword
+BEGIN
+    -- connecting testbench signals with half_adder.vhd
+    UUT : ENTITY WORK.HALFADDER_ENT PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
 
-begin     
-  UUT : entity work.half_adder port map (a => a, b => b, sum => sum, carry => carry);
+    TB1 : PROCESS
+    VARIABLE READ_COL_FROM_INPUT_BUF : LINE; -- read lines from INPUT_BUF
+    VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- write lines to OUTPUT_BUF
+    VARIABLE BUF_DATA_FROM_FILE : LINE; -- buffer for storing data from input read-file
+    VARIABLE VAL_A, VAL_B : STD_LOGIC;
+    VARIABLE VAL_SUM, VAL_CARRY : STD_LOGIC;
+    VARIABLE VAL_SEPARATOR : CHARACTER; -- for commas between data in file
+    VARIABLE GOOD_NUM : BOOLEAN;
+    BEGIN
+        -- READING DATA
+        -- prefer relative path
+        FILE_OPEN(INPUT_BUF, "../../data.csv", READ_MODE);
+        -- alternatively provide absolute path
+--        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/data.csv", READ_MODE);
 
-  tb1 : process
-  variable read_col_from_input_buf : line; -- read lines one by one from input_buf
-  variable write_col_to_output_buf : line; -- write lines one by one to output_buf
+        FILE_OPEN(OUTPUT_BUF, "../../result.csv", WRITE_MODE);
+--        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/data.csv", WRITE_MODE);
 
-  variable buf_data_from_file : line;  -- buffer for storind the data from input read-file
-  variable val_a, val_b : std_logic; 
-  variable val_sum, val_carry: std_logic;
-  variable val_comma : character;  -- for commas between data in file
-
-  variable good_num : boolean;
-  begin
-   
-  -- ####################################################################
-   -- Reading data
-
-      -- if modelsim-project is created, then provide the relative path of 
-      -- input-file (i.e. read_file_ex.txt) with respect to main project folder
-      file_open(input_buf, "VHDLCodes/input_output_files/half_adder_input.csv",  read_mode); 
-      -- else provide the complete path for the input file as show below 
-      -- file_open(input_buf, "E:/VHDLCodes/input_output_files/read_file_ex.txt",  read_mode); 
-
-      -- writing data
-      file_open(output_buf, "VHDLCodes/input_output_files/half_adder_output.csv",  write_mode); 
-
-      write(write_col_to_output_buf, 
-        string'("#a,b,sum_actual,sum,carry_actual,carry,sum_test_results,carry_test_results"));
-      writeline(output_buf, write_col_to_output_buf);
-
-      while not endfile(input_buf) loop
-        readline(input_buf, read_col_from_input_buf);
-        read(read_col_from_input_buf, val_a, good_num);
-        next when not good_num;  -- i.e. skip the header lines
-
-        read(read_col_from_input_buf, val_comma);           -- read in the space character
-        read(read_col_from_input_buf, val_b, good_num);  
-        assert good_num report "bad value assigned to val_b";
-
-        read(read_col_from_input_buf, val_comma);           -- read in the space character
-        read(read_col_from_input_buf, val_sum);
-        read(read_col_from_input_buf, val_comma);           -- read in the space character
-        read(read_col_from_input_buf, val_carry);
-
-        -- Pass the variable to a signal to allow the ripple-carry to use it
-        a <= val_a;
-        b <= val_b;
-        sum_actual <= val_sum;
-        carry_actual <= val_carry;
-
-        wait for 20 ns;  --  to display results for 20 ns
-
-        write(write_col_to_output_buf, a);
-        write(write_col_to_output_buf, string'(","));
-        write(write_col_to_output_buf, b);
-        write(write_col_to_output_buf, string'(","));
-        write(write_col_to_output_buf, sum_actual);
-        write(write_col_to_output_buf, string'(","));
-        write(write_col_to_output_buf, sum);
-        write(write_col_to_output_buf, string'(","));
-        write(write_col_to_output_buf, carry_actual);
-        write(write_col_to_output_buf, string'(","));
-        write(write_col_to_output_buf, carry); 
-        write(write_col_to_output_buf, string'(","));
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("#A,B,SUM_ACTUAL,SUM,CARRY_ACTUAL,CARRY,SUM_TEST_RESULTS,CARRY_TEST_RESULTS"));
+        WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
         
-        -- display Error or OK if results are wrong
-        if (sum_actual /= sum) then
-          write(write_col_to_output_buf, string'("Error,"));
-        else
-          write(write_col_to_output_buf, string'(","));  -- write nothing
-          
-        end if;
+        WHILE NOT ENDFILE(INPUT_BUF) LOOP
+            READLINE(INPUT_BUF, READ_COL_FROM_INPUT_BUF);
+            READ(READ_COL_FROM_INPUT_BUF, VAL_A, GOOD_NUM);
+            NEXT WHEN NOT GOOD_NUM; -- i.e. skip the header lines
 
-        -- display Error or OK based on comparison
-        if (carry_actual /= carry) then
-          write(write_col_to_output_buf, string'("Error,"));
-        else
-          write(write_col_to_output_buf, string'("OK,"));
-        end if;
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_B, GOOD_NUM);
+            ASSERT GOOD_NUM
+                REPORT "bad value assigned to VAL_B";
 
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SUM);
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_CARRY);
 
-        --write(write_col_to_output_buf, a, b, sum_actual, sum, carry_actual, carry);
-        writeline(output_buf, write_col_to_output_buf);
-      end loop;
+            -- PASS THE VARIABLE TO A SIGNAL TO ALLOW THE RIPPLE CARRY TO USE IT
+            A <= VAL_A;
+            B <= VAL_B;
+            SUM_ACTUAL <= VAL_SUM;
+            CARRY_ACTUAL <= VAL_CARRY;
 
-      file_close(input_buf);             
-      file_close(output_buf);             
-      wait;
-  end process;
-end tb ; -- tb
+            WAIT FOR 20 NS;
+
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, A);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, B);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, SUM_ACTUAL);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, SUM);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, CARRY_ACTUAL);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, CARRY);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+
+            -- DISPLAY ERROR OR OK DEPENDING ON SUM
+            IF (SUM_ACTUAL /= SUM) THEN
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ERROR,"));
+            ELSE
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            END IF;
+
+            -- DISPLAY ERROR OR OK DEPENDING ON CARRY
+            IF (CARRY_ACTUAL /= CARRY) THEN
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ERROR,"));
+            ELSE
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("OK,"));
+            END IF;
+
+            WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+        END LOOP;
+
+        FILE_CLOSE(INPUT_BUF);
+        FILE_CLOSE(OUTPUT_BUF);
+        WAIT;
+
+    END PROCESS;
+END TB;
 ```
 
 -  Lines 63-64 are added to skip the header row, i.e. any row which does not start with boolean-number(see line 42).  
 -  Also, error will be reported for value ‘b’ if it is not the boolean. Similarly, this functionality can be added to other values as well.  
 -  Lastly, errors are reported in CSV file at Lines 96-109.  
+
+Content of data.csv:  
+
+```
+$ cat ./testbench__combinational__06__csv-file/data.csv 
+#A,B,SUM,CARRY
+0,0,0,0
+0,1,1,0
+1,0,1,0
+1,1,0,1
+1,0,1,1
+1,1,1,1
+```
+
+Resulting result.csv
+
+```
+$ cat ./testbench__combinational__06__csv-file/result.csv 
+#A,B,SUM_ACTUAL,SUM,CARRY_ACTUAL,CARRY,SUM_TEST_RESULTS,CARRY_TEST_RESULTS
+0,0,0,0,0,0,,OK,
+0,1,1,1,0,0,,OK,
+1,0,1,1,0,0,,OK,
+1,1,0,0,1,1,,OK,
+1,0,1,1,1,0,,ERROR,
+```
 
 
 ## SEQUENTIAL
