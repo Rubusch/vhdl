@@ -212,7 +212,7 @@ END TB;
 
 ### COMBINATIONAL: READ DATA FROM FILE
 
-File content  
+File ``data.txt`` content  
 
 ```
 0 0 11
@@ -221,61 +221,59 @@ File content
 ```
 
 ```vhdl
--- read_file_ex.vhd
+-- HALFADDER_TB.VHD
+--
+-- IMPORTANT: DON'T FORGET TO ADD data.txt TO THE PROJECT!!!
 
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE STD.TEXTIO.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL; -- require for writing/reading std_logic etc.
 
-library ieee;
-use ieee.std_logic_1164.all;
-use std.textio.all;
-use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-entity read_file_ex is
-end read_file_ex;
-
-architecture tb of read_file_ex is
-    signal a, b : std_logic;
-    signal c : std_logic_vector(1 downto 0);
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A, B : STD_LOGIC;       -- inputs
+    SIGNAL C : STD_LOGIC_VECTOR(1 DOWNTO 0); -- NEW: output here as STD_LOGIC_VECTOR
 
     -- buffer for storing the text from input read-file
-    file input_buf : text;  -- text is keyword
+    FILE INPUT_BUF : TEXT; -- TEXT is a reserved word!!!
 
-begin     
+BEGIN
 
-tb1 : process
-    variable read_col_from_input_buf : line; -- read lines one by one from input_buf
+    TB1 : PROCESS
+        VARIABLE READ_COL_FROM_INPUT_BUF : LINE;           -- reads lines one by one from INPUT_BUF
+        VARIABLE VAL_COL1, VAL_COL2 : STD_LOGIC;           -- to save COL1 and COL2 values of 1 bit
+        VARIABLE VAL_COL3 : STD_LOGIC_VECTOR(1 DOWNTO 0);  -- to save COL3 value of 2 bit
+        VARIABLE VAL_SPACE : CHARACTER;                    -- for spaces between data in file
 
-    variable val_col1, val_col2 : std_logic; -- to save col1 and col2 values of 1 bit
-    variable val_col3 : std_logic_vector(1 downto 0); -- to save col3 value of 2 bit
-    variable val_SPACE : character;  -- for spaces between data in file
+    BEGIN
 
-    begin
-     
-        -- if modelsim-project is created, then provide the relative path of 
-        -- input-file (i.e. read_file_ex.txt) with respect to main project folder
-        file_open(input_buf, "VHDLCodes/input_output_files/read_file_ex.txt",  read_mode); 
-        -- else provide the complete path for the input file as show below 
-        -- file_open(input_buf, "E:/VHDLCodes/input_output_files/read_file_ex.txt", read_mode); 
+        -- if ModelSim project is created, then provide the relative path of the input file
+        -- (i.e. data.txt) with respect to main project folder
+        FILE_OPEN(INPUT_BUF, "../../data.txt", READ_MODE);
+        -- else provide the complete path for the input file as shown below
+--        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__04__read-file-data/data.txt", READ_MODE);
 
-        while not endfile(input_buf) loop
-          readline(input_buf, read_col_from_input_buf);
-          read(read_col_from_input_buf, val_col1);
-          read(read_col_from_input_buf, val_SPACE);           -- read in the space character
-          read(read_col_from_input_buf, val_col2);
-          read(read_col_from_input_buf, val_SPACE);           -- read in the space character
-          read(read_col_from_input_buf, val_col3);
+        WHILE NOT ENDFILE(INPUT_BUF) LOOP
+            READLINE(INPUT_BUF, READ_COL_FROM_INPUT_BUF);
+            READ(READ_COL_FROM_INPUT_BUF, VAL_COL1);
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SPACE);      -- read in space character
+            READ(READ_COL_FROM_INPUT_BUF, VAL_COL2);
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SPACE);      -- read in space character
+            READ(READ_COL_FROM_INPUT_BUF, VAL_COL3);
 
-          -- Pass the read values to signals
-          a <= val_col1;
-          b <= val_col2;
-          c <= val_col3;
-
-          wait for 20 ns;  --  to display results for 20 ns
-        end loop;
-
-        file_close(input_buf);             
-        wait;
-    end process;
-end tb ; -- tb
+            -- pass the read values to signals
+            A <= VAL_COL1;
+            B <= VAL_COL2;
+            C <= VAL_COL3;
+            WAIT FOR 20 NS; -- display results every 20ns
+        END LOOP;
+        FILE_CLOSE(INPUT_BUF);
+        WAIT;
+    END PROCESS;
+END TB;
 ```
 
 To read the file, first we need to define a buffer of type ‘text’, which can store the values of the file in it, as shown in Line 17; file is open in read-mode and values are stored in this buffer at Line 32.  
