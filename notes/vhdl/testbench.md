@@ -496,49 +496,45 @@ $ cat ./testbench__combinational__06__csv-file/result.csv
 In the case of sequential circuits, we need clock and reset signals; hence two additional blocks are required. Since, clock is generated for complete simulation process, therefore it is defined inside the separate process statement. Whereas, reset signal is required only at the beginning of the operations, hence it is not defined inside the process statement.  
 
 ```vhdl
--- modMCounter.vhd
+-- MODMCOUNTER.VHD
 
-library ieee; 
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity modMCounter is
-    generic (
-            M : integer := 5; -- count from 0 to M-1
-            N : integer := 3   -- N bits required to count upto M i.e. 2**N >= M
-    );
-    
-    port(
-            clk, reset : in std_logic;
-            complete_tick : out std_logic;
-            count : out std_logic_vector(N-1 downto 0)
-    );
-end modMCounter;
+ENTITY MODMCOUNTER_ENT IS
+GENERIC( M : INTEGER := 5    -- count from 0 to M-1
+       ; N : INTEGER := 3    -- N bits required to count up to M, i.e. 2^N >= M
+);
+PORT( CLK, RESET : IN STD_LOGIC
+    ; COMPLETE_TICK : OUT STD_LOGIC
+    ; COUNT : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+);
+END MODMCOUNTER_ENT;
 
+ARCHITECTURE MODMCOUNTER_ARCH OF MODMCOUNTER_ENT IS
+    SIGNAL COUNT_REG, COUNT_NEXT : UNSIGNED(N-1 DOWNTO 0);
 
-architecture arch of modMCounter is
-    signal count_reg, count_next : unsigned(N-1 downto 0);
-begin
-    process(clk, reset)
-    begin
-        if reset = '1' then 
-            count_reg <= (others=>'0');
-        elsif   clk'event and clk='1' then
-            count_reg <= count_next;
-        else  -- note that else block is not required
-            count_reg <= count_reg;
-        end if;
-    end process;
-    
-    -- set count_next to 0 when maximum count is reached i.e. (M-1)
+BEGIN
+
+    PROCESS(CLK, RESET)
+    BEGIN
+        IF RESET = '1' THEN
+            COUNT_REG <= (OTHERS => '0');
+        ELSIF RISING_EDGE(CLK) THEN
+            COUNT_REG <= COUNT_NEXT;
+        END IF;
+    END PROCESS;
+
+    -- set COUNT_NEXT to 0 when maximum count is reached i.e. M-1
     -- otherwise increase the count
-    count_next <= (others=>'0') when count_reg=(M-1) else (count_reg+1);
-    
-    -- Generate 'tick' on each maximum count
-    complete_tick <= '1' when count_reg = (M-1) else '0';
-    
-    count <= std_logic_vector(count_reg); -- assign value to output port
-end arch;
+    COUNT_NEXT <= (OTHERS => '0') WHEN COUNT_REG = (M-1) ELSE (COUNT_REG+1);
+
+    -- generate tick on each maximum count
+    COMPLETE_TICK <= '1' WHEN COUNT_REG = (M-1) ELSE '0';
+
+    COUNT <= STD_LOGIC_VECTOR(COUNT_REG); -- assign value to output port
+END ARCHITECTURE;
 ```
 
 
