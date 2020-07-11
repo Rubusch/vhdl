@@ -543,45 +543,42 @@ END ARCHITECTURE;
 Demo of a Mod-M counter as a sequential example.  
 
 ```vhdl
--- modMCounter_tb.vhd
+-- MODMCOUNTER_TB.VHD
 
-library ieee; 
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity modMCounter_tb is
-end modMCounter_tb;
+ENTITY MODMCOUNTER_ENT_TB IS
+END MODMCOUNTER_ENT_TB;
 
+ARCHITECTURE TB OF MODMCOUNTER_ENT_TB IS
+    CONSTANT M : INTEGER := 10;
+    CONSTANT N : INTEGER := 4;
+    CONSTANT T : TIME := 20 NS;
 
-architecture arch of modMCounter_tb is
-    constant M : integer := 10;
-    constant N : integer := 4;
-    constant T : time := 20 ns; 
+    SIGNAL CLK, RESET : STD_LOGIC; -- input
+    SIGNAL COMPLETE_TICK : STD_LOGIC; -- output
+    SIGNAL COUNT : STD_LOGIC_VECTOR(N-1 DOWNTO 0); -- output
 
-    signal clk, reset : std_logic;  -- input
-    signal complete_tick : std_logic; -- output
-    signal count : std_logic_vector(N-1 downto 0);  -- output
-begin
+BEGIN
 
-    modMCounter_unit : entity work.modMCounter
-        generic map (M => M, N => N)
-        port map (clk=>clk, reset=>reset, complete_tick=>complete_tick,
-                    count=>count);
+    MODMCOUNTER_UNIT : ENTITY WORK.MODMCOUNTER_ENT
+        GENERIC MAP (M => M, N => N)
+        PORT MAP (CLK => CLK, RESET => RESET, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
 
     -- continuous clock
-    process 
-    begin
-        clk <= '0';
-        wait for T/2;
-        clk <= '1';
-        wait for T/2;
-    end process;
+    PROCESS
+    BEGIN
+        CLK <= '0';
+        WAIT FOR T/2;
+        CLK <= '1';
+        WAIT FOR T/2;
+    END PROCESS;
 
-
-    -- reset = 1 for first clock cycle and then 0
-    reset <= '1', '0' after T/2;
-
-end arch;
+    -- reset = 1 for first clock cycle, then 0
+    RESET <= '1', '0' AFTER T/2;
+END TB;
 ```
 
 Here ``clk`` signal is generated in the separate process block i.e. Lines 27-33; in this way, clock signal will be available throughout the simulation process. Further, reset signal is set to ``1`` in the beginning and then set to ``0`` in next clock cycle (Line 37). If there are further, inputs signals, then those signals can be defined in separate process statement, as discussed in combination circuits’ testbenches.  
