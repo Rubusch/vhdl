@@ -288,52 +288,53 @@ Then, values are read and store in the variables at Lines 36-42. Lastly, these v
 Here, only ``write_mode`` is used for writing the data to file (not the ``append_mode``).  
 
 ```vhdl
--- write_file_ex.vhd
+-- HALFADDER_TB.VHD
 
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE STD.TEXTIO.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL; -- writing STD_LOGIC etc.
 
-library ieee;
-use ieee.std_logic_1164.all;
-use std.textio.all;
-use ieee.std_logic_textio.all; -- require for writing std_logic etc.
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-entity write_file_ex is
-end write_file_ex;
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A : STD_LOGIC;
 
-architecture tb of write_file_ex is
-    signal a : std_logic;
+    FILE OUTPUT_BUF : TEXT; -- TEXT is a reserved word
 
-    file output_buf : text;  -- text is keyword
-begin     
+BEGIN
 
-    tb1 : process
-        variable write_col_to_output_buf : line; -- line is keyword
-        variable b : integer := 40;
-        begin
-            a <= '1';  -- assign value to a
-            wait for 20 ns; 
+    TB1 : PROCESS
+    VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- LINE is a reserved word
+    VARIABLE B : INTEGER := 40;
 
-            -- if modelsim-project is created, then provide the relative path of 
-            -- input-file (i.e. read_file_ex.txt) with respect to main project folder
-            file_open(output_buf, "VHDLCodes/input_output_files/write_file_ex.txt",  write_mode); 
-            -- else provide the complete path for the input file as show below 
-            --file_open(output_buf, "E:/VHDLCodes/input_output_files/write_file_ex.txt",  write_mode); 
+    BEGIN
 
-            write(write_col_to_output_buf, string'("Printing values"));
-            writeline(output_buf, write_col_to_output_buf);  -- write in line 1
+        A <= '1'; -- assign value to A
+        WAIT FOR 20 NS;
 
-            write(write_col_to_output_buf, string'("a = "));
-            write(write_col_to_output_buf, a);
-            write(write_col_to_output_buf, string'(", b = "));
-            write(write_col_to_output_buf, b);
-            writeline(output_buf, write_col_to_output_buf);    -- write in new line 2
+        -- if ModelSim project is created, provide the relative path
+        FILE_OPEN(OUTPUT_BUF, "../../data.out", WRITE_MODE);
+        -- else provide the absolute path
+--        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__05__write-data-file/data.out", WRITE_MODE);
 
-            write(write_col_to_output_buf, string'("Thank you"));
-            writeline(output_buf, write_col_to_output_buf);   -- write in new line 3
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("printing values"));
+        WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF); -- write in line 1
 
-            file_close(output_buf);
-            wait; -- indefinitely suspend process
-        end process;
-end tb ; -- tb
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("A = "));
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, A);
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(", B = "));
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, B);
+        WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF); -- write in line 2
+
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("THANX"));
+        WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF); -- write in line 3
+
+        FILE_CLOSE(OUTPUT_BUF);
+        WAIT; -- indefinitely suspend process
+    END PROCESS;
+END TB;
 ```
 
 To write the data to the file, first we need to define a buffer, which will load the file on the simulation environment for writing the data during simulation, as shown in Line 15 (buffer-defined) and Line 27 (load the file to buffer).  
