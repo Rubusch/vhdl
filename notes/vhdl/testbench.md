@@ -72,7 +72,9 @@ Generation:
 - Open ModelSim ``Tools`` -> ``Run Simulation Tool`` -> ``RTL Simulation``
 - in ModelSim Shell execute the following:
 ```tcl
-TODO
+ModelSim> vcom -reportprogress 300 -work work /media/user/develop/github__vhdl/basics/testbench__combinational__01/halfadder_tb.vhd
+ModelSim> vsim work.halfadder_ent_tb
+ModelSim> run
 ```
 
 Problem: Although, the testbench is very simple, but input patterns are not readable. By using the process statement in the testbench, we can make input patterns more readable along with inclusion of various other features e.g. report generation etc.  
@@ -146,60 +148,59 @@ END TB;
 ### COMBINATIONAL: USING LOOK UP TABLES (LUT)
 
 ```vhdl
--- half_adder_lookup_tb.vhd
+-- HALFADDER_TB.VHD
 
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity half_adder_lookup_tb is
-end half_adder_lookup_tb;
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-architecture tb of half_adder_lookup_tb is
-    signal a, b : std_logic; -- input
-    signal sum, carry : std_logic; -- output
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A, B : STD_LOGIC;       -- inputs
+    SIGNAL SUM, CARRY : STD_LOGIC; -- outputs
 
     -- declare record type
-    type test_vector is record
-        a, b : std_logic;
-        sum, carry : std_logic;
-    end record;
+    TYPE TEST_VECTOR IS RECORD
+        A, B : STD_LOGIC;
+        SUM, CARRY : STD_LOGIC;
+    END RECORD;
 
-    type test_vector_array is array (natural range <>) of test_vector;
-    constant test_vectors : test_vector_array := (
-        -- a, b, sum , carry   -- positional method is used below
-        ('0', '0', '0', '0'), -- or (a => '0', b => '0', sum => '0', carry => '0')
+    -- declare record array based on record type
+    TYPE TEST_VECTOR_ARRAY IS ARRAY(NATURAL RANGE <>) OF TEST_VECTOR;
+
+    CONSTANT TEST_VECTORS : TEST_VECTOR_ARRAY := (
+    --    a,   b,  sum, carry (positional method is used below)
+        ('0', '0', '0', '0'), -- or: (a => '0', b => '0', sum => '0', carry => '0')
         ('0', '1', '1', '0'),
         ('1', '0', '1', '0'),
         ('1', '1', '0', '1'),
-        ('0', '1', '0', '1')  -- fail test
-        );
+        ('0', '1', '0', '1') -- FAIL TEST
+    );
 
-begin
-    UUT : entity work.half_adder port map (a => a, b => b, sum => sum, carry => carry);
+BEGIN
+    -- connecting testbench signals with half_adder.vhd
+    UUT : ENTITY WORK.HALFADDER_ENT PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
 
-    tb1 : process
-    begin
-        for i in test_vectors'range loop
-            a <= test_vectors(i).a;  -- signal a = i^th-row-value of test_vector's a
-            b <= test_vectors(i).b;
+    TB1 : PROCESS
+    BEGIN
+        FOR I IN TEST_VECTORS'RANGE LOOP
+            A <= TEST_VECTORS(I).A;     -- signal a = i^th-row-value of test_vector's a
+            B <= TEST_VECTORS(I).B;
 
-            wait for 20 ns;
+            WAIT FOR 20 NS;
 
-            assert (
-                        (sum = test_vectors(i).sum) and
-                        (carry = test_vectors(i).carry)
-                    )
+            ASSERT ((SUM = TEST_VECTORS(I).SUM) AND (CARRY = TEST_VECTORS(I).CARRY))
+                -- IMAGE() is used for string-representation of integer etc.
+                REPORT "TEST_VECTOR " & INTEGER'IMAGE(I) & " FAILED " &
+                " FOR INPUT A = " & STD_LOGIC'IMAGE(A) &
+                " AND B = " & STD_LOGIC'IMAGE(B)
+                SEVERITY ERROR;
+        END LOOP;
+        WAIT;
+    END PROCESS;
 
-            -- image is used for string-representation of integer etc.
-            report  "test_vector " & integer'image(i) & " failed " &
-                    " for input a = " & std_logic'image(a) &
-                    " and b = " & std_logic'image(b)
-                    severity error;
-        end loop;
-        wait;
-    end process;
-
-end tb;
+END TB;
 ```
 
 *  Define record : First we need to define a record which contains the all the possible columns in the look table. Here, there are four possible columns i.e. a, b, sum and carry, which are defined in record at Lines 15-18.  
