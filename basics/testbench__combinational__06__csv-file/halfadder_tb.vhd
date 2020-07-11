@@ -34,7 +34,7 @@ BEGIN
     VARIABLE BUF_DATA_FROM_FILE : LINE; -- buffer for storing data from input read-file
     VARIABLE VAL_A, VAL_B : STD_LOGIC;
     VARIABLE VAL_SUM, VAL_CARRY : STD_LOGIC;
-    VARIABLE VAL_COMMA : CHARACTER; -- for commas between data in file
+    VARIABLE VAL_SEPARATOR : CHARACTER; -- for commas between data in file
     VARIABLE GOOD_NUM : BOOLEAN;
     BEGIN
         -- READING DATA
@@ -54,14 +54,14 @@ BEGIN
             READ(READ_COL_FROM_INPUT_BUF, VAL_A, GOOD_NUM);
             NEXT WHEN NOT GOOD_NUM; -- i.e. skip the header lines
 
-            READ(READ_COL_FROM_INPUT_BUF, VAL_COMMA); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
             READ(READ_COL_FROM_INPUT_BUF, VAL_B, GOOD_NUM);
             ASSERT GOOD_NUM
                 REPORT "bad value assigned to VAL_B";
 
-            READ(READ_COL_FROM_INPUT_BUF, VAL_COMMA); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
             READ(READ_COL_FROM_INPUT_BUF, VAL_SUM);
-            READ(READ_COL_FROM_INPUT_BUF, VAL_COMMA); -- read separator
+            READ(READ_COL_FROM_INPUT_BUF, VAL_SEPARATOR); -- read separator
             READ(READ_COL_FROM_INPUT_BUF, VAL_CARRY);
 
             -- PASS THE VARIABLE TO A SIGNAL TO ALLOW THE RIPPLE CARRY TO USE IT
