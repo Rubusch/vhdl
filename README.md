@@ -167,3 +167,51 @@ $ vi ./*.qsf
     (...)
     set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
 ```
+
+## ISSUE: ModelSim, strange warnings...
+
+example
+```
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+```
+
+can be turned off or need to be ignored (the above seems to come from jtagd running in foreground  
+either
+```
+run_modelsim: $(test_info)
+   $(MAKE) -C $(root_dir)/sim build_modelsim; \
+   printf "" > $(test_results); \
+   cd $(bld_dir); \
+   vsim -c -do "run -all" +nowarn3691 \
+   +test_info=$(test_info) \
+   +test_results=$(test_results) \
+   +imem_pattern=$(imem_pattern) \
+   +dmem_pattern=$(dmem_pattern) \
+   work.$(top_module) \
+   $(MODELSIM_OPTS)
+
+where:
+    -c
+    command line mode
+
+    -do "run -all"
+    "run -all" means that it will run util the simu stops by itself
+
+    +nowarn3691
+    remove a bunch a crazy modelsim warning as "# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file."
+
+    +test_info=$(test_info) +test_results=$(test_results) +imem_pattern=$(imem_pattern) +dmem_pattern=$(dmem_pattern)
+    from the help: "Option accessible by PLI routine mc_scan_plusargs" This will be given to the PLI lib (weirdly the argument to enable the PLI is not present)
+
+    work.$(top_module)
+    the entity you are going to simulate as a top (module: $(top_module) from lib work)
+
+    $(MODELSIM_OPTS)
+    given by your makefile
+```
+
+alternatively also jtagd could be set into foreground
+```
+$ killall jtagd
+$ jtagd --foreground --debug
+```
