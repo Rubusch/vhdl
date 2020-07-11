@@ -586,83 +586,82 @@ Here ``clk`` signal is generated in the separate process block i.e. Lines 27-33;
 #### SEQUENTIAL: FINITE DURATION
 
 ```vhdl
--- modMCounter_tb2.vhd
+-- MODMCOUNTER_TB.VHD
+-- finite duration
 
-library ieee; 
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use std.textio.all;
-use ieee.std_logic_textio.all; -- require for std_logic etc.
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+USE STD.TEXTIO.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL; -- requrie for STD_LOGIC, etc.
 
-entity modMCounter_tb2 is
-end modMCounter_tb2;
+ENTITY MODMCOUNTER_ENT_TB IS
+END MODMCOUNTER_ENT_TB;
 
+ARCHITECTURE TB OF MODMCOUNTER_ENT_TB IS
+    CONSTANT M : INTEGER := 3; -- count up to 2
+    CONSTANT N : INTEGER := 4;
+    CONSTANT T : TIME := 20 NS;
 
-architecture arch of modMCounter_tb2 is
-    constant M : integer := 3;  -- count upto 2 (i.e. 0 to 2)
-    constant N : integer := 4;
-    constant T : time := 20 ns; 
+    SIGNAL CLK, RESET : STD_LOGIC; -- input
+    SIGNAL COMPLETE_TICK : STD_LOGIC; -- output
+    SIGNAL COUNT : STD_LOGIC_VECTOR(N-1 DOWNTO 0); -- output
 
-    signal clk, reset : std_logic;  -- input
-    signal complete_tick : std_logic; -- output
-    signal count : std_logic_vector(N-1 downto 0);  -- output
+    CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
+    SIGNAL I : INTEGER := 0; -- loop variable
+    FILE OUTPUT_BUF : TEXT; -- TEXT is a reserved word
 
-    -- total samples to store in file
-    constant num_of_clocks : integer := 30; 
-    signal i : integer := 0; -- loop variable
-    file output_buf : text; -- text is keyword
+BEGIN
 
-begin
+    MODMCOUNTER_UNIT : ENTITY WORK.MODMCOUNTER_ENT
+        GENERIC MAP (M => M, N => N)
+        PORT MAP (CLK => CLK, RESET => RESET, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
 
-    modMCounter_unit : entity work.modMCounter
-        generic map (M => M, N => N)
-        port map (clk=>clk, reset=>reset, complete_tick=>complete_tick,
-                    count=>count);
-
-
-    -- reset = 1 for first clock cycle and then 0
-    reset <= '1', '0' after T/2;
+    -- reset = 1 for first clock cycle, then 0
+    RESET <= '1', '0' AFTER T/2;
 
     -- continuous clock
-    process 
-    begin
-        clk <= '0';
-        wait for T/2;
-        clk <= '1';
-        wait for T/2;
+    PROCESS
+    BEGIN
+        CLK <= '0';
+        WAIT FOR T/2;
+        CLK <= '1';
+        WAIT FOR T/2;
 
         -- store 30 samples in file
-        if (i = num_of_clocks) then
-            file_close(output_buf);
-            wait;
-        else
-            i <= i + 1;
-        end if;
-    end process;
+        IF (I = NUM_OF_CLOCKS) THEN
+            FILE_CLOSE(OUTPUT_BUF);
+            WAIT;
+        ELSE
+            I <= I + 1;
+        END IF;
+    END PROCESS;
 
+    -- save data in file : path is relative
+    FILE_OPEN(OUTPUT_BUF, "../../results.csv", WRITE_MODE);
 
-    -- save data in file : path is relative to Modelsim-project directory
-    file_open(output_buf, "input_output_files/counter_data.csv", write_mode);
-    process(clk)
-        variable write_col_to_output_buf : line; -- line is keyword
-    begin
-        if(clk'event and clk='1' and reset /= '1') then  -- avoid reset data
+    PROCESS(CLK)
+        VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- LINE is reserved
+    BEGIN
+        IF(CLK'EVENT AND CLK = '1' AND RESET /= '1') THEN -- avoid reset data
             -- comment below 'if statement' to avoid header in saved file
-            if (i = 0) then 
-              write(write_col_to_output_buf, string'("clock_tick,count"));
-              writeline(output_buf, write_col_to_output_buf);
-            end if; 
+            IF (I = 0) THEN
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("CLOCK_TICK,COUNT"));
+                WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+            END IF;
 
-            write(write_col_to_output_buf, complete_tick);
-            write(write_col_to_output_buf, string'(","));
-            -- Note that unsigned/signed values can not be saved in file, 
-            -- therefore change into integer or std_logic_vector etc.
-             -- following line saves the count in integer format
-            write(write_col_to_output_buf, to_integer(unsigned(count))); 
-            writeline(output_buf, write_col_to_output_buf);
-        end if;
-    end process;
-end arch;
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, COMPLETE_TICK);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+
+            -- note that SIGNED / UNSIGNED values cannot be saved in file,
+            -- therefore convert to INTEGER or STD_LOGIC_VECTOR
+
+            -- the following line saves the COUNT in INTEGER format
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, TO_INTEGER(UNSIGNED(COUNT)));
+            WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+        END IF;
+    END PROCESS;
+END TB;
 ```
 
 To run the simulation for the finite duration, we need to provide the ‘number of clocks’ for which we want to run the simulation, as shown in Line 23.
