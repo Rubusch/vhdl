@@ -670,4 +670,6 @@ TODO
 
 ### MODELSIM: USE TESTBENCH
 
+Note: any change in the ``*_tb.vhd`` file needs to `Compile` again, then `Restart` and `Run` again  
+
 TODO      
