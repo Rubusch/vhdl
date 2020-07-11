@@ -148,6 +148,7 @@ $ quartus &
 
 ## ISSUE: Top-level design entity "blablabla" is undefined
 
+the top-level entity has to be named as the project name, if the names differ, then it must be set explicitely  
 append the following to the .qsf file  
 
 ```
