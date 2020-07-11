@@ -9,56 +9,58 @@ Please, for learning VHDL or getting an understanding, have a look into the orig
 https://vhdlguide.readthedocs.io/en/latest/vhdl/testbench.html
 
 
-## COMBINATIONAL TESTBENCH
+## COMBINATIONAL
 
 example half-adder as combinational circuit  
 
 ```vhdl
--- half_adder.vhd
+-- HALFADDER.VHD
 
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
-entity half_adder is
-  port (a, b : in std_logic;
-        sum, carry : out std_logic
+ENTITY HALFADDER_ENT IS
+PORT( A, B : IN STD_LOGIC
+    ; SUM, CARRY : OUT STD_LOGIC
     );
-end half_adder;
+END HALFADDER_ENT;
 
-architecture arch of half_adder is
-begin
-  sum <= a xor b;
-  carry <= a and b;
-end arch;
+ARCHITECTURE HALFADDER_ARCH OF HALFADDER_ENT IS
+BEGIN
+    SUM <= A XOR B;
+    CARRY <= A AND B;
+END HALFADDER_ARCH;
 ```
+
+
+### COMBINATIONAL: TESTBENCH
 
 in the testbench and provide all the input values in the file  
 
 ```vhdl
--- half_adder_simple_tb.vhd
+-- HALFADDER_TB.VHD
 
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-entity half_adder_simple_tb is
-end half_adder_simple_tb;
-
-architecture tb of half_adder_simple_tb is
-    signal a, b : std_logic;  -- inputs
-    signal sum, carry : std_logic;  -- outputs
-begin
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A, B : STD_LOGIC;       -- inputs
+    SIGNAL SUM, CARRY : STD_LOGIC; -- outputs
+BEGIN
     -- connecting testbench signals with half_adder.vhd
-    UUT : entity work.half_adder port map (a => a, b => b, sum => sum, carry => carry);
+    UUT : ENTITY WORK.HALFADDER_ENT PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
 
     -- inputs
     -- 00 at 0 ns
     -- 01 at 20 ns, as b is 0 at 20 ns and a is changed to 1 at 20 ns
     -- 10 at 40 ns
     -- 11 at 60 ns
-    a <= '0', '1' after 20 ns, '0' after 40 ns, '1' after 60 ns;
-    b <= '0', '1' after 40 ns;
-end tb ;
+    A <= '0', '1' AFTER 20 NS, '0' AFTER 40 NS, '1' AFTER 60 NS;
+    B <= '0', '1' AFTER 40 NS;
+END TB;
 ```
 
 In this listing, a testbench with name ``half_adder_simple_tb`` is defined at Lines 7-8. Note that, entity of testbench is always empty i.e. no ports are defined in the entity (see Lines 7-8). Then 4 signals are defined i.e. a, b, sum and carry (Lines 11-12) inside the architecture body; these signals are then connected to actual half adder design using structural modeling (see Line 15). Lastly, different values are assigned to input signals e.g. ‘a’ and ‘b’ at lines 16 and 17 respectively.  
@@ -68,11 +70,10 @@ In Line 22, value of ‘a’ is 0 initially (at 0 ns), then it changes to ‘1�
 Generation:  
 - Compile the project ``Processing`` -> ``Start Compilation``
 - Open ModelSim ``Tools`` -> ``Run Simulation Tool`` -> ``RTL Simulation``
-
-- Build testbench TODO                                      
-
-- In ModelSim ``Simulate`` -> ``Start Simulation`` TODO        
-- In ModelSim ``Simulate`` -> ``Run`` -> ``Run All`` TODO       
+- in ModelSim Shell execute the following:
+```tcl
+TODO
+```
 
 Problem: Although, the testbench is very simple, but input patterns are not readable. By using the process statement in the testbench, we can make input patterns more readable along with inclusion of various other features e.g. report generation etc.  
 
@@ -82,61 +83,64 @@ Problem: Although, the testbench is very simple, but input patterns are not read
 Note that, process statement is written without the sensitivity list.  
 
 ```vhdl
--- half_adder_process_tb.vhd
+-- HALFADDER_TB.VHD
 
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
+ENTITY HALFADDER_ENT_TB IS
+END HALFADDER_ENT_TB;
 
-entity half_adder_process_tb is
-end half_adder_process_tb;
-
-architecture tb of half_adder_process_tb is
-    signal a, b : std_logic;
-    signal sum, carry : std_logic;
-begin
+ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+    SIGNAL A, B : STD_LOGIC;       -- inputs
+    SIGNAL SUM, CARRY : STD_LOGIC; -- outputs
+BEGIN
     -- connecting testbench signals with half_adder.vhd
-    UUT : entity work.half_adder port map (a => a, b => b, sum => sum, carry => carry);
+    UUT : ENTITY WORK.HALFADDER_ENT PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
 
-    tb1 : process
-        constant period: time := 20 ns;
-        begin
-            a <= '0';
-            b <= '0';
-            wait for period;
-            assert ((sum = '0') and (carry = '0'))  -- expected output
-            -- error will be reported if sum or carry is not 0
-            report "test failed for input combination 00" severity error;
+    TB1 : PROCESS
+    CONSTANT PERIOD : TIME := 20 NS;
+    BEGIN
+        A <= '0';
+        B <= '0';
+        WAIT FOR PERIOD;
+        ASSERT ((SUM = '0') AND (CARRY = '0')) --EXPECTED OUTPUT
+        -- ERROR WILL BE REPORTED IF SUM OR CARRY IS NOT '0'
+            REPORT "TEST FAILED FOR INPUT COMBINATION 00"
+            SEVERITY ERROR;
 
-            a <= '0';
-            b <= '1';
-            wait for period;
-            assert ((sum = '1') and (carry = '0'))
-            report "test failed for input combination 01" severity error;
+        A <= '0';
+        B <= '1';
+        WAIT FOR PERIOD;
+        ASSERT ((SUM = '1') AND (CARRY = '0'))
+            REPORT "TEST FAILED FOR INPUT COMBINATION 01"
+            SEVERITY ERROR;
 
-            a <= '1';
-            b <= '0';
-            wait for period;
-            assert ((sum = '1') and (carry = '0'))
-            report "test failed for input combination 10" severity error;
+        A <= '1';
+        B <= '0';
+        WAIT FOR PERIOD;
+        ASSERT ((SUM = '1') AND (CARRY = '0'))
+            REPORT "TEST FAILED FOR INPUT COMBINATION 10"
+            SEVERITY ERROR;
 
-            a <= '1';
-            b <= '1';
-            wait for period;
-            assert ((sum = '0') and (carry = '1'))
-            report "test failed for input combination 11" severity error;
+        A <= '1';
+        B <= '1';
+        WAIT FOR PERIOD;
+        ASSERT ((SUM = '0') AND (CARRY = '1'))
+            REPORT "TEST FAILED FOR INPUT COMBINATION 11"
+            SEVERITY ERROR;
 
-            -- Fail test
-            a <= '0';
-            b <= '1';
-            wait for period;
-            assert ((sum = '0') and (carry = '1'))
-            report "test failed for input combination 01 (fail test)" severity error;
+        -- FAIL TEST
+        A <= '0';
+        B <= '1';
+        WAIT FOR PERIOD;
+        ASSERT ((SUM = '0') AND (CARRY = '0'))
+            REPORT "FAIL TEST (FAIL EXPECTED)"
+            SEVERITY ERROR;
 
-
-            wait; -- indefinitely suspend process
-        end process;
-end tb;
+        WAIT; -- INDEFINITELY SUSPEND PROCESS
+    END PROCESS;
+END TB;
 ```
 
 ### COMBINATIONAL: USING LOOK UP TABLES (LUT)
@@ -472,7 +476,7 @@ end tb ; -- tb
 -  Lastly, errors are reported in CSV file at Lines 96-109.  
 
 
-## SEQUENTIAL TESTBENCH
+## SEQUENTIAL
 
 In the case of sequential circuits, we need clock and reset signals; hence two additional blocks are required. Since, clock is generated for complete simulation process, therefore it is defined inside the separate process statement. Whereas, reset signal is required only at the beginning of the operations, hence it is not defined inside the process statement.  
 
@@ -523,7 +527,7 @@ end arch;
 ```
 
 
-### SEQUENTIAL: INFINITE DURATION
+### SEQUENTIAL: INFINITE DURATION TESTBENCH
 
 Demo of a Mod-M counter as a sequential example.  
 
