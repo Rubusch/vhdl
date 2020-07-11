@@ -2,9 +2,9 @@
 
 ## RESOURCES
 
-The notes are taken and copied from the following ressources, in a motivation to have them available whenever I need to look them up.  
+My ModelSim notes are taken and copied from my masters course projects, and based on the following ressources.  
 
-Please, for learning VHDL or getting an understanding, have a look into the original links rather.   
+Please, when learning VHDL or for getting a thorough understanding, have a look on the linked pages below.   
 
 https://vhdlguide.readthedocs.io/en/latest/vhdl/testbench.html
 
@@ -33,7 +33,7 @@ END HALFADDER_ARCH;
 ```
 
 
-### COMBINATIONAL: TESTBENCH
+#### COMBINATIONAL: TESTBENCH
 
 in the testbench and provide all the input values in the file  
 
@@ -80,7 +80,7 @@ ModelSim> run
 Problem: Although, the testbench is very simple, but input patterns are not readable. By using the process statement in the testbench, we can make input patterns more readable along with inclusion of various other features e.g. report generation etc.  
 
 
-### COMBINATIONAL: PROCESS STATEMENT
+#### COMBINATIONAL: PROCESS STATEMENT
 
 Note that, process statement is written without the sensitivity list.  
 
@@ -145,7 +145,7 @@ BEGIN
 END TB;
 ```
 
-### COMBINATIONAL: USING LOOK UP TABLES (LUT)
+#### COMBINATIONAL: USING LOOK UP TABLES (LUT)
 
 ```vhdl
 -- HALFADDER_TB.VHD
@@ -210,7 +210,7 @@ END TB;
 *  Assign values to signals : Then the values of the lookup table need to be assigned to half_adder entity (one by one). For this ‘for loop’ is used at line 35, which assigns the values of ‘’test-vector’s ‘a’ and ‘b’ ‘’ to signal ‘a’ and ‘b’ (see comment at Line 36 for better understanding). Similarly, expected values of sum and carry are generated at Lines 41-44. Lastly, report is generated for wrong outputs at Lines 46-50.  
 
 
-### COMBINATIONAL: READ DATA FROM FILE
+#### COMBINATIONAL: READ DATA FROM FILE
 
 File ``data.txt`` content  
 
@@ -283,7 +283,7 @@ Next, we need to define the variable to read the value from the buffer. Since th
 Then, values are read and store in the variables at Lines 36-42. Lastly, these values are assigned to appropriate signals at Lines 45-47. Finally, file is closed at Line 52.   
 
 
-### COMBINATIONAL: WRITE DATA TO FILE
+#### COMBINATIONAL: WRITE DATA TO FILE
 
 Here, only ``write_mode`` is used for writing the data to file (not the ``append_mode``).  
 
@@ -344,7 +344,7 @@ Next, we need to define a variable, which will store the values to write into th
 Note that, two keyword are used for writing the data into the file i.e. ‘write’ and ‘writeline’. ‘write’ keyword store the values in the ‘write_col_to_output_buf’ and ‘writeline’ writes the values in the file. Remember that, all the ‘write’ statements before the ‘writeline’ will be written in same line.  
 
 
-### COMBINATIONAL: CSV AS INPUT
+#### COMBINATIONAL: CSV AS INPUT AND CSV AS OUTPUT
 
 Demo of read and write results to a CSV file.  
 
@@ -542,7 +542,7 @@ end arch;
 ```
 
 
-### SEQUENTIAL: INFINITE DURATION TESTBENCH
+#### SEQUENTIAL: INFINITE DURATION TESTBENCH
 
 Demo of a Mod-M counter as a sequential example.  
 
@@ -590,7 +590,7 @@ end arch;
 
 Here ``clk`` signal is generated in the separate process block i.e. Lines 27-33; in this way, clock signal will be available throughout the simulation process. Further, reset signal is set to ``1`` in the beginning and then set to ``0`` in next clock cycle (Line 37). If there are further, inputs signals, then those signals can be defined in separate process statement, as discussed in combination circuits’ testbenches.  
 
-### SEQUENTIAL: FINITE DURATION
+#### SEQUENTIAL: FINITE DURATION
 
 ```vhdl
 -- modMCounter_tb2.vhd
@@ -679,12 +679,12 @@ Now, if we press the run all button, then the simulator will stop after ``num_of
 
 ## MODELSIM IN QUARTUS
 
-### MODELSIM: GENERATE TESTBENCH
+#### MODELSIM: GENERATE TESTBENCH
 
 TODO     
 
 
-### MODELSIM: USE TESTBENCH
+#### MODELSIM: USE TESTBENCH
 
 Note: any change in the ``*_tb.vhd`` file needs to `Compile` again, then `Restart` and `Run` again  
 
