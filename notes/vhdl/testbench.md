@@ -382,7 +382,6 @@ BEGIN
     TB1 : PROCESS
     VARIABLE READ_COL_FROM_INPUT_BUF : LINE; -- read lines from INPUT_BUF
     VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- write lines to OUTPUT_BUF
-    VARIABLE BUF_DATA_FROM_FILE : LINE; -- buffer for storing data from input read-file
     VARIABLE VAL_A, VAL_B : STD_LOGIC;
     VARIABLE VAL_SUM, VAL_CARRY : STD_LOGIC;
     VARIABLE VAL_SEPARATOR : CHARACTER; -- for commas between data in file
