@@ -50,14 +50,36 @@ fi
 
 
 
-# MODELSIM TESTBENCH
+# FURTHER NOTES
 
-## RESOURCES
+#### ModelSim
 
-https://wiki.archlinux.org/index.php/Altera_Design_Software
-http://twoerner.blogspot.com/2017/10/running-modelsim-altera-from-quartus.html
+https://github.com/Rubusch/vhdl/blob/master/notes/vhdl/testbench.md
 
 
+#### VHDL Type Conversion
+
+https://github.com/Rubusch/vhdl/blob/master/notes/vhdl/type_conversion.md
+
+
+#### VHDL General Notes or Miscellaneaous
+
+https://github.com/Rubusch/vhdl/blob/master/notes/vhdl/vhdl.md
+
+
+#### Howto: Setup a Basic Project (slideshow)
+
+https://github.com/Rubusch/vhdl/tree/master/notes/howto__quartus-blinky
+
+
+#### Howto: Basic Usage of ModelSim
+
+https://github.com/Rubusch/vhdl/tree/master/notes/howto__quartus-modelsim-testbench
+
+
+
+
+# ISSUES
 
 ## ISSUE: ModelSim is not working
 
