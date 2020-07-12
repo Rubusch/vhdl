@@ -10,8 +10,8 @@ ENTITY DFLIPFLOP_ENT IS
 PORT( CLK : IN STD_LOGIC
     ; RST : IN STD_LOGIC
 	; D : IN STD_LOGIC
-	; Q : OUT STD_LOGIC
-	; QBAR : OUT STD_LOGIC
+	; Q : OUT STD_LOGIC := '0';
+	; QBAR : OUT STD_LOGIC := '1';
 );
 END ENTITY DFLIPFLOP_ENT;
 
@@ -22,9 +22,14 @@ BEGIN
     P1 : PROCESS(CLK, RST)
     BEGIN
         IF RST = '1' THEN
-        -- TODO
+            Q <= '0';
+            QBAR <= '1';
         ELSIF RISING_EDGE(CLK) THEN
-        -- TODO
+            Q <= QBAR NOR (NOT D AND CLK);
+            QBAR <= (D AND CLK) NOR Q;
+        ELSE
+            Q <= Q;
+            QBAR <= QBAR;
         END IF;
     END PROCESS;
 

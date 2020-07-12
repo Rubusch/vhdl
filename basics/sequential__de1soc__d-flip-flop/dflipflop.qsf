@@ -53,3 +53,9 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name TOP_LEVEL_ENTITY DFLIPFLOP_ENT
+set_global_assignment -name VHDL_FILE dflipflop.vhd
+set_location_assignment PIN_AF14 -to CLK
+set_location_assignment PIN_AA14 -to RST
+set_location_assignment PIN_AB12 -to D
+set_location_assignment PIN_V16 -to Q
+set_location_assignment PIN_W16 -to QBAR
