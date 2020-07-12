@@ -3,9 +3,10 @@
 ## RESOURCES
 
 My ModelSim notes are taken and copied from my masters course projects, and based on the following ressources.  
-
 Please, when learning VHDL or for getting a thorough understanding, have a look on the linked pages below.   
 
+https://wiki.archlinux.org/index.php/Altera_Design_Software
+http://twoerner.blogspot.com/2017/10/running-modelsim-altera-from-quartus.html
 https://vhdlguide.readthedocs.io/en/latest/vhdl/testbench.html
 
 
