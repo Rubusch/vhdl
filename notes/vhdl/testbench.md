@@ -673,11 +673,16 @@ Now, if we press the run all button, then the simulator will stop after ``num_of
 
 #### MODELSIM: GENERATE TESTBENCH
 
-TODO     
+Setup a testbench in quartus / ModelSim is described by the following screenshots (download, then slideshow)
+
+https://github.com/Rubusch/vhdl/tree/master/notes/howto__quartus-modelsim-testbench
 
 
 #### MODELSIM: USE TESTBENCH
 
-Note: any change in the ``*_tb.vhd`` file needs to `Compile` again, then `Restart` and `Run` again  
+Note: any change in the ``*_tb.vhd`` file needs  
+*  `Compile` again,  
+* then `Restart` and  
+* `Run` again  
 
-TODO      
+There are several shortcuts for ModelSim, instead of selecting Objects individually, click on the gree '+' to select all objects automatically to wave.  
