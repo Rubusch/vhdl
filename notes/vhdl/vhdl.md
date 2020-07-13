@@ -29,6 +29,23 @@ In package ``std_logic_1164`` and ``numeric_std`` provided types are mainly
 * time
 * string
 
+Category          | Datatype                                                  | Package
+-------------------------------------------------------------------------------------------------------------
+Synthesizable     | ``bit``, ``bit_vector``                                   | standard library
+                  | ``boolean``, ``boolean_vector``                           | (automatically included,
+                  | ``integer``, ``natural``, ``postive``, ``integer_vector`` | no need to include explicitly)
+                  | ``character``, ``string``                                 |
+                  |                                                           |
+                  | ``std_logic``, ``std_logic_vector``                       | ``std_logic_1164``
+                  | ``signed``, ``unsigned``                                  | ``numeric_std``
+--------------------------------------------------------------------------------------------------------------
+Non-synthesizable | ``real``, ``real_vector``                                 | standard library
+                  | ``time``, ``time_vector``                                 | (automatically included,
+                  | ``delay_length``                                          | no need to include explicitly)
+                  |                                                           |
+                  | ``read``, ``write``, ``line``, ``text``                   | ``textio`` and
+                  |                                                           | ``std_logic_textio``
+
 
 ### Entity - Component - Package
 
