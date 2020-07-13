@@ -46,6 +46,9 @@ Non-synthesizable | ``real``, ``real_vector``                                 | 
                   | ``read``, ``write``, ``line``, ``text``                   | ``textio`` and
                   |                                                           | ``std_logic_textio``
 
+In general ``integer types`` are used for mathematical and range operations,
+where ``enumeration types`` are rather used for state machines  
+
 
 ### Entity - Component - Package
 
