@@ -16,6 +16,20 @@ Mixed Modeling is generally composed out of the three types of modeling used for
 3) Behavioral Modeling: the ‘process’ keyword is used and all the statements inside the process statement execute sequentially, and known as ‘sequential statements’. Various conditional and loop statements can be used inside the process block.  
 
 
+### Types
+
+In package ``std_logic_1164`` and ``numeric_std`` provided types are mainly
+
+* std_logic
+* std_logic_vector
+* unsigned
+* signed
+* integer
+* natural
+* time
+* string
+
+
 ### Entity - Component - Package
 
 Use another *ENTITY* in a different file (library is always ``WORK``), add the file to the project (in Quartus), then use it as follows  
