@@ -165,7 +165,7 @@ BEGIN
 * Mixed
 
 | Design                       | Statement                  | VHDL               |
-----------------------------------------------------------------------------------
+|------------------------------|----------------------------|--------------------|
 | Sequential                   | Sequential statements only | ``If``, ``CASE``,  |
 | (Flip-flops and logic gates) |                            | ``LOOP``, ``WAIT`` |
 |                              |                            |                    |
