@@ -49,7 +49,7 @@ In package ``std_logic_1164`` and ``numeric_std`` provided types are mainly
 In general ``integer types`` are used for mathematical and range operations, where ``enumeration types`` are rather used for state machines  
 
 In VHDL, list with same data types is defined using *Array* keyword; whereas list with different data types is defined using *Record*.  
-```
+```vhdl
 -- (...)
 ARCHITETCURE ARCH OF COMPOSITE_ENT IS
     TYPE NEW_ARRAY IS ARRAY (0 TO 1) OF STD_LOGIC; -- create array
