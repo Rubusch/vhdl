@@ -179,8 +179,21 @@ BEGIN
 
 If a system transits between a finite number of internal states, then a finite state machines (FSM) can be used to design the system.  
 
-* FSM design is known as Moore design if the output of the system depends only on the states  
-* It is known as Mealy design if the output depends on the states and external inputs  
+* FSM design is known as *Moore design* if the output of the system depends only on the states  
+* It is known as *Mealy design* if the output depends on the states and external inputs  
 
+### Moore vs Mealy State Machines
+
+* In a Moore machine, the outputs depend on states only, therefore it is *synchronous machine* and the output is available after 1 clock cycle. Whereas, in Mealy machine output depends on states along with external inputs; and the output is available as soon as the input is changed, therefore it is *asynchronous machine*.
+* Mealy machines require fewer number of states as compared to Moore machines.
+* The Moore machine should be preferred for the designs, where glitches are not the problem in the systems.
+* Mealy machines are good for synchronous systems which requires _delay-free and glitch-free_ systems, but careful design is required for asynchronous systems. Therefore, Mealy machine can be complex as compare to Moore machine.
+
+If glitch is not a problem, then we should use Moore machine, because it is synchronous in nature. But, if glitch is problem and we do not want to delay the output then Mealy machines should be used.
+
+
+### Pseudo Random Number Generator (RNG) via LFSR
+
+Long LFSR can be used as _pseudo-random number generator_. These random numbers are generated based on initial values to LFSR. The sequences of random number can be predicted if the initial value is known. However, if LFSR is quite long (i.e. large number of initial values are possible), then the generated numbers can be considered as random numbers for practical purposes.
 
 
