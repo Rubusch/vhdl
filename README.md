@@ -10,7 +10,7 @@ https://github.com/CTSRD-CHERI/quartus-install.git
 Basically for me I only install cyclone5 support, and ModelSim   
 
 ```
-$ git clone https://github.com/CTSRD-CHERI/quartus-install.git && cd quartus-instal
+$ git clone https://github.com/CTSRD-CHERI/quartus-install.git && cd quartus-install
 $ ./quartus-install.py --fix-libpng 18.1lite /opt/intelFPGA/18.1std modelsim c5 opencl eds update_1
 ```
 
