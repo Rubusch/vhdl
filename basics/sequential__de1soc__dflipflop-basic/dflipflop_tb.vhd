@@ -3,7 +3,7 @@
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.STD_NUMERIC.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 USE STD.TEXTIO.ALL;
 USE IEEE.STD_LOGIC_TEXTIO.ALL;
 
@@ -18,7 +18,7 @@ ARCHITECTURE TB OF DFLIPFLOP_TB IS
     SIGNAL Q : STD_LOGIC;
 
     CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
-    SIGNAL I : INTEGER;
+    SIGNAL I : INTEGER := 0;
     FILE OUTPUT_BUF : TEXT;
 
 BEGIN
@@ -27,6 +27,7 @@ BEGIN
         PORT MAP (CLK => CLK, RST => RST, D => D, Q => Q);
 
     RST <= '1', '0' AFTER T/2;
+    D <= '1';
 
     -- continuous clock
     PROCESS
@@ -41,6 +42,10 @@ BEGIN
         ELSE
             I <= I + 1;
         END IF;
+
+        IF (I = 15) THEN
+            D <= '0';
+        END IF;
     END PROCESS;
 
     FILE_OPEN(OUTPUT_BUF, "../../result_tb.csv", WRITE_MODE);
@@ -52,9 +57,6 @@ BEGIN
             IF (I = 0) THEN
                 WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("CLK,D,Q"));
                 WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
-            END IF;
-            IF (I = 15) THEN
-                D <= '0';
             END IF;
             WRITE(WRITE_COL_TO_OUTPUT_BUF, CLK);
             WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
