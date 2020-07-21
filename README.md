@@ -113,7 +113,7 @@ $ ldd /opt/intelFPGA/18.1std/modelsim_ase/bin/../linux_rh60/vish | grep "not fou
         libfontconfig.so.1 => not found
 ```
 
-if not, configure ``multiach`` (in my case for debian) as follows, and install the missing libraries  
+if not, configure ``multiarch`` (in my case for debian) as follows, and install the missing libraries  
 
 ```
 $ sudo dpkg --add-architecture i386
