@@ -118,9 +118,9 @@ if not, configure ``multiach`` (in my case for debian) as follows, and install t
 ```
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
-$ sudo aptitude install libxext6:i386
-$ sudo aptitude install libxtst6:i386
-$ sudo aptitude install libxft2:i386
+$ sudo aptitude install -y libxext6:i386
+$ sudo aptitude install -y libxtst6:i386
+$ sudo aptitude install -y libxft2:i386
 ```
 
 * Quartus 18.1: most likely ModelSim now will throw something like this  
