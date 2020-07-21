@@ -14,8 +14,8 @@ ARCHITECTURE TB OF DFLIPFLOP_TB IS
     CONSTANT T : TIME := 20 NS;
 
     SIGNAL CLK, RST : STD_LOGIC;
-    SIGNAL D : STD_LOGIC;
-    SIGNAL Q : STD_LOGIC;
+    SIGNAL D : STD_LOGIC := '0';
+    SIGNAL Q : STD_LOGIC := '0';
 
     CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
     SIGNAL I : INTEGER := 0;
@@ -27,7 +27,6 @@ BEGIN
         PORT MAP (CLK => CLK, RST => RST, D => D, Q => Q);
 
     RST <= '1', '0' AFTER T/2;
-    D <= '1';
 
     -- continuous clock
     PROCESS
@@ -43,8 +42,11 @@ BEGIN
             I <= I + 1;
         END IF;
 
-        IF (I = 15) THEN
+        -- testcase: now change content
+        IF (I = 7) THEN
             D <= '0';
+        ELSE
+            D <= '1';
         END IF;
     END PROCESS;
 
@@ -55,11 +57,9 @@ BEGIN
     BEGIN
         IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
             IF (I = 0) THEN
-                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("CLK,D,Q"));
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("D,Q"));
                 WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
             END IF;
-            WRITE(WRITE_COL_TO_OUTPUT_BUF, CLK);
-            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
             WRITE(WRITE_COL_TO_OUTPUT_BUF, D);
             WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
             WRITE(WRITE_COL_TO_OUTPUT_BUF, Q);
