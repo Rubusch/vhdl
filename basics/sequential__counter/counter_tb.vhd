@@ -28,6 +28,35 @@ BEGIN
         GENERIC MAP (N => '3')
         PORT MAP (CLK => CLK, RST => RST, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
 
+    RST <= '1', '0' AFTER T/2;
+
+    PROCESS
+    BEGIN
+        CLK <= '0';
+        WAIT FOR T/2;
+        CLK <= '1';
+        WAIT FOR T/2;
+        IF (I = NUM_OF_CLOCKS) THEN
+            FILE_CLOSE(OUTPUT_BUF);
+            WAIT;
+        ELSE
+            I <= I + 1;
+        END IF;
+    END PROCESS;
+
+    FILE_OPEN(OUTPUT_BUF, "../../results_tb.csv", WRITE_MODE);
+
+    PROCESS(CLK)
+        VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE;
+    BEGIN
+        IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
+            IF (I = '0') THEN
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("RST,COMPLETE_TICK,COUNT"));
+                WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+            END IF;
+            -- TODO
+        END IF;
+    END PROCESS;
 -- TODO
 
 END TB;
