@@ -1,6 +1,6 @@
 -- 
 --         +-----------+
---  CLK    |           | VAL(9..0)
+--  CLK    |           | COUNT(9..0)
 -- --------|>          |------------
 --  ENA    |  COUNTER  |
 -- --------|           |
@@ -25,8 +25,6 @@ PORT( CLK, ENA, RST : IN STD_LOGIC
 END ENTITY COUNTER;
 
 ARCHITECTURE COUNTER_ARCH OF COUNTER IS
---    SIGNAL COUNTER : UNSIGNED(31 DOWNTO 0) := X"00000000";
---    ALIAS SELECTION IS COUNTER(25 DOWNTO 16);
     SIGNAL COUNT_REG, COUNT_NEXT : UNSIGNED(NBITS-1 DOWNTO 0);
 
 BEGIN
@@ -34,15 +32,10 @@ BEGIN
     P1 : PROCESS(RST, CLK)
     BEGIN
         IF (RST = '1') THEN
---            COUNT <= (OTHERS => '0'); -- IN ORDER TO AVOID LATCHES
---            COUNT_NEXT <= (OTHERS => '0');
             COUNT_REG <= (OTHERS => '0');
---            COUNTER <= (OTHERS => '0');
         ELSIF (CLK'EVENT) AND (CLK = '1') THEN
             IF (ENA = '1') THEN
                 COUNT_REG <= COUNT_NEXT;
---                COUNTER <= COUNTER_NEXT;
---                COUNT <= STD_LOGIC_VECTOR(SELECTION);
             ELSE
                 COUNT_REG <= COUNT_REG;
             END IF;
