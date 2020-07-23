@@ -20,32 +20,39 @@ USE IEEE.NUMERIC_STD.ALL;
 ENTITY COUNTER IS
 GENERIC( NBITS : INTEGER := 10 );
 PORT( CLK, ENA, RST : IN STD_LOGIC
-    ; VAL           : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := (OTHERS => '0')
+    ; COUNT : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := (OTHERS => '0')
 );
 END ENTITY COUNTER;
 
 ARCHITECTURE COUNTER_ARCH OF COUNTER IS
 --    SIGNAL COUNTER : UNSIGNED(31 DOWNTO 0) := X"00000000";
 --    ALIAS SELECTION IS COUNTER(25 DOWNTO 16);
-    SIGNAL VAL_NEXT : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0);
+    SIGNAL COUNT_REG, COUNT_NEXT : UNSIGNED(NBITS-1 DOWNTO 0);
 
 BEGIN
 
     P1 : PROCESS(RST, CLK)
     BEGIN
         IF (RST = '1') THEN
-            VAL <= (OTHERS => '0'); -- IN ORDER TO AVOID LATCHES
-            VAL_NEXT <= 0;
+--            COUNT <= (OTHERS => '0'); -- IN ORDER TO AVOID LATCHES
+--            COUNT_NEXT <= (OTHERS => '0');
+            COUNT_REG <= (OTHERS => '0');
 --            COUNTER <= (OTHERS => '0');
         ELSIF (CLK'EVENT) AND (CLK = '1') THEN
             IF (ENA = '1') THEN
-                VAL <= VAL_NEXT;
+                COUNT_REG <= COUNT_NEXT;
 --                COUNTER <= COUNTER_NEXT;
---                VAL <= STD_LOGIC_VECTOR(SELECTION);                
+--                COUNT <= STD_LOGIC_VECTOR(SELECTION);
+            ELSE
+                COUNT_REG <= COUNT_REG;
             END IF;
+        ELSE
+            NULL;
         END IF;
     END PROCESS;
 
-    VAL_NEXT <= VAL + 1;
+    COUNT_NEXT <= COUNT_REG + 1;
+    
+    COUNT <= STD_LOGIC_VECTOR(COUNT_REG);
 
 END ARCHITECTURE COUNTER_ARCH;
