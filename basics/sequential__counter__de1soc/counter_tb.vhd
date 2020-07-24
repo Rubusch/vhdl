@@ -36,6 +36,31 @@ BEGIN
         WAIT FOR T/2;
         CLK <= '1';
         WAIT FOR T/2;
-        
+        IF (I = NCLKS) THEN
+            FILE_CLOSE(OUTPUT_BUF);
+            WAIT;
+        ELSE
+            I <= I + 1;
+        END IF;
+    END PROCESS;
+
+    RST <= '1', '0' AFTER T/2;
+
+    FILE_OPEN(OUTPUT_BUF, "../../results_tb.csv", WRITE_MODE);
+
+    PROCESS(CLK)
+        VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE;
+    BEGIN
+        IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("RST,ENA,COUNT"));
+            WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+        END IF;
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, RST);
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, ENA);
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, COUNT);
+        WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+        WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
     END PROCESS;
 END TB;
