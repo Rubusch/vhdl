@@ -1,0 +1,18 @@
+-- hw adaptation for DE1SoC Board: d-flipflop
+-- (visual verification)
+--
+-- Author: Lothar Rubusch
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY DE1SOC_DFLIPFLOP IS
+    -- TODO
+END DE1SOC_DFLIPFLOP;
+
+ARCHITECTURE HW OF DE1SOC_DFLIPFLOP IS
+
+BEGIN
+
+END HW;
