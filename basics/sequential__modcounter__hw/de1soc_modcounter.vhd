@@ -1,4 +1,4 @@
--- counter adaptation for DE1SoC Board
+-- hw adaptation for DE1SoC Board: mod-n-counter
 -- (visual verification)
 --
 -- Author: Lothar Rubusch
@@ -14,11 +14,12 @@ GENERIC( NBITS : INTEGER := 2
 PORT( CLK50 : IN STD_LOGIC
     ; KEY : IN STD_LOGIC
     ; LED : OUT STD_LOGIC
-    ; LEDR : OUT STD_LOGIC_VECTOR()
+    ; LEDR : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0)
 );
 END DE1SOC_MODCOUNTER;
 
 ARCHITECTURE HW OF DE1SOC_MODCOUNTER IS
+    
 -- TODO
 BEGIN
 -- TODO
