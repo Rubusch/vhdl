@@ -28,7 +28,7 @@ BEGIN
     CLK <= CLK50;
     RST <= NOT KEY;
     ENA <= SW_ENA;
-    SW_D <= SW_D;
+    D <= SW_D;
 
     -- OUT
     LED <= Q;
