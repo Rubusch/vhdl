@@ -26,7 +26,8 @@ BEGIN
     BEGIN
         IF (RST = '0') THEN
 -- SYNC ASYNC RESET EVENTS
-            Q <= X"00";
+--            Q <= X"00";
+            Q <= (OTHERS => '0');
         ELSIF (CLK'EVENT) AND (CLK = '1') THEN
 -- ALTERNATIVELY (ALTERA):
 --  ELSIF RISING_EDGE(CLK) THEN
