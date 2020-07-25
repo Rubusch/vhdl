@@ -51,7 +51,7 @@ BEGIN
         END IF;
     END PROCESS;
 
-    FILE_OPEN(OUTPUT_BUF, "../../result_tb.csv", WRITE_MODE);
+    FILE_OPEN(OUTPUT_BUF, "../../tb_result.csv", WRITE_MODE);
 
     PROCESS(CLK)
         VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE;
