@@ -65,7 +65,7 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
-set_global_assignment -name TOP_LEVEL_ENTITY counter_de1soc
+set_global_assignment -name TOP_LEVEL_ENTITY de1soc_counter
 
 set_location_assignment PIN_AF14 -to CLK_50
 set_location_assignment PIN_AB12 -to SW
@@ -80,8 +80,9 @@ set_location_assignment PIN_V18 -to LEDR[3]
 set_location_assignment PIN_V17 -to LEDR[2]
 set_location_assignment PIN_W16 -to LEDR[1]
 set_location_assignment PIN_V16 -to LEDR[0]
-set_global_assignment -name VHDL_FILE counter_de1soc.vhd
-set_global_assignment -name SOURCE_FILE "pin-assignment__de1soc.csv"
+set_global_assignment -name SOURCE_FILE "de1soc_pin-assignment.csv"
+set_global_assignment -name VHDL_FILE tb_counter.vhd
+set_global_assignment -name VHDL_FILE de1soc_counter.vhd
 set_global_assignment -name VHDL_FILE counter.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
