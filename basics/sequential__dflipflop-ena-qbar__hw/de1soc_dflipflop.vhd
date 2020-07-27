@@ -1,0 +1,37 @@
+-- hw adaptation for DE1SoC Board: d-flipflop
+-- (visual verification)
+--
+-- Author: Lothar Rubusch
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY DE1SOC_DFLIPFLOP IS
+PORT( CLK50 : IN STD_LOGIC
+    ; KEY : IN STD_LOGIC
+    ; SW_ENA : IN STD_LOGIC
+    ; SW_D : IN STD_LOGIC
+    ; LED_Q : OUT STD_LOGIC
+    ; LED_QBAR : OUT STD_LOGIC
+);
+END DE1SOC_DFLIPFLOP;
+
+ARCHITECTURE DE1SOC OF DE1SOC_DFLIPFLOP IS
+    SIGNAL CLK, RST, ENA, D, Q, QBAR : STD_LOGIC;
+
+BEGIN
+
+    DFLIPFLOP_UNIT : ENTITY WORK.DFLIPFLOP
+        PORT MAP (CLK => CLK, RST => RST, ENA => ENA, D => D, Q => Q, QBAR => QBAR);
+
+    -- IN
+    CLK <= CLK50;
+    RST <= NOT KEY;
+    ENA <= SW_ENA;
+    D <= SW_D;
+
+    -- OUT
+    LED_Q <= Q;
+    LED_QBAR <= QBAR;
+END DE1SOC;
