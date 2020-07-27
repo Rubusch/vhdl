@@ -1,6 +1,6 @@
+-- d-flipflop demo with Q and QBAR
 --
--- A SIMPLE D-FLIPFLOP DEMO
---
+-- author: Lothar Rubusch
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;

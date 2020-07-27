@@ -1,6 +1,6 @@
 -- basic d-flip-flop
 --
--- Lothar Rubusch
+-- author: Lothar Rubusch
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
