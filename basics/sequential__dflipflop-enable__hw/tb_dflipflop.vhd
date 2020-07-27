@@ -1,5 +1,6 @@
+-- testbench for d-flipflop demo with ENA
 --
---
+-- author: Lothar Rubusch
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
