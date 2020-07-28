@@ -34,6 +34,8 @@ BEGIN
             IF (ENA = '1') THEN
                 Q <= D;
             END IF;
+        ELSE
+            NULL;
         END IF;
     END PROCESS;
 END ARCHITECTURE DREGISTER_ARCH;
