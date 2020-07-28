@@ -24,7 +24,7 @@ ARCHITECTURE TB OF TB_DREGISTER IS
     SIGNAL RST : STD_LOGIC := '0';
     SIGNAL D : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := (OTHERS => '0');
     SIGNAL Q : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := (OTHERS => '0');
---    SIGNAL Q_EXPECT : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := "1110000000"; -- TODO needs to be 2D?
+    SIGNAL Q_EXPECT : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0) := (others => '0');
 
 BEGIN
 
@@ -61,6 +61,9 @@ BEGIN
         ELSE
             D <= "11111111";
         END IF;
+        IF (I > 7) THEN -- NB: for verification (I>7) is the opposite of (I<7), i.e. the equals case (I=7) is consumed by the delayed init
+            Q_EXPECT <= "11111111";
+        END IF;
     END PROCESS;
 
     FILE_OPEN(OUTPUT_BUF, "../../tb_result.csv", WRITE_MODE);
@@ -71,7 +74,7 @@ BEGIN
         IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
             IF (I = 0) THEN
 --                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ENA,D,Q,Q_EXPECT"));
-                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ENA,RST,D,Q"));
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ENA,RST,D,Q,Q_EXPECT"));
                 WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
             END IF;
             WRITE(WRITE_COL_TO_OUTPUT_BUF, ENA);
@@ -81,6 +84,8 @@ BEGIN
             WRITE(WRITE_COL_TO_OUTPUT_BUF, D);
             WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
             WRITE(WRITE_COL_TO_OUTPUT_BUF, Q);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, Q_EXPECT);
             WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
             WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
         END IF;
