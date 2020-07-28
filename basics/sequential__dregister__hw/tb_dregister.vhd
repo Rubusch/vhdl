@@ -73,7 +73,6 @@ BEGIN
     BEGIN
         IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
             IF (I = 0) THEN
---                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ENA,D,Q,Q_EXPECT"));
                 WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("ENA,RST,D,Q,Q_EXPECT"));
                 WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
             END IF;
