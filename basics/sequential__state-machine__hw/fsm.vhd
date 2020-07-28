@@ -45,13 +45,13 @@ BEGIN
             WHEN IDLE_STATE =>
                 LED <= "000";
                 CASE KEY IS
-                    WHEN "111" =>
+                    WHEN "000" =>
                         NEXTSTATE <= IDLE_STATE;
-                    WHEN "110" =>
+                    WHEN "001" =>
                         NEXTSTATE <= OPTION1_STATE;
-                    WHEN "101" =>
+                    WHEN "010" =>
                         NEXTSTATE <= OPTION2_STATE;
-                    WHEN "011" =>
+                    WHEN "100" =>
                         NEXTSTATE <= OPTION3_STATE;
                     WHEN OTHERS =>
                         NEXTSTATE <= ERROR_STATE;
@@ -59,28 +59,28 @@ BEGIN
 
             WHEN OPTION1_STATE =>
                 LED <= "001";
-                IF KEY /= "110" THEN
+                IF KEY /= "001" THEN
                     -- THIS MEANS ALSO, KEY RELEASE GOES BACK TO IDLE
                     NEXTSTATE <= IDLE_STATE;
                 END IF;
 
             WHEN OPTION2_STATE =>
                 LED <= "010";
-                IF KEY /= "101" THEN
+                IF KEY /= "010" THEN
                     -- THIS MEANS ALSO, KEY RELEASE GOES BACK TO IDLE
                     NEXTSTATE <= IDLE_STATE;
                 END IF;
 
             WHEN OPTION3_STATE =>
                 LED <= "100";
-                IF KEY /= "011" THEN
+                IF KEY /= "100" THEN
                     -- THIS MEANS ALSO, KEY RELEASE GOES BACK TO IDLE
                     NEXTSTATE <= IDLE_STATE;
                 END IF;
 
             WHEN ERROR_STATE =>
                 LED <= "111";
-                IF KEY = "000" THEN
+                IF KEY = "111" THEN
                     NEXTSTATE <= IDLE_STATE;
                 END IF;
         END CASE;

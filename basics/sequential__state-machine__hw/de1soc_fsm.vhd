@@ -24,10 +24,15 @@ ARCHITECTURE DE1SOC OF DE1SOC_FSM IS
 BEGIN
 
     FSM_UNIT : ENTITY WORK.FSM
-        PORT MAP(CLK => CLK, RST => RST, KEY => KEYS, LED => LED);
+        PORT MAP(CLK => CLK, RST => RST, KEY => KEYS, LED => LEDS);
 
     -- IN
-    KEY_INV <= NOT KEY;
+    CLK <= CLK50;
+    RST <= NOT KEY;
+    KEYS <= SW;
+
+    -- OUT
+    LED <= LEDS;
 
 END DE1SOC;
 
