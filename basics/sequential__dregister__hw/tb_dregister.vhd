@@ -57,9 +57,9 @@ BEGIN
 
         -- test: input, D
         IF (I < 7) THEN
-            D <= '0';
+            D <= "00000000";
         ELSE
-            D <= '1';
+            D <= "11111111";
         END IF;
     END PROCESS;
 

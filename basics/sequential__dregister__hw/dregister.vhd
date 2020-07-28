@@ -26,11 +26,8 @@ BEGIN
     P1 : PROCESS(RST, CLK)
     BEGIN
         IF (RST = '1') THEN
--- SYNC ASYNC RESET EVENTS
             Q <= (OTHERS => '0');
         ELSIF (CLK'EVENT) AND (CLK = '1') THEN
--- ALTERNATIVELY (ALTERA):
---  ELSIF RISING_EDGE(CLK) THEN
             IF (ENA = '1') THEN
                 Q <= D;
             END IF;
