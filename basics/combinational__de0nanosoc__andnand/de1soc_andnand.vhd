@@ -1,0 +1,36 @@
+-- hw adapter: and-nand
+--
+-- author: Lothar Rubusch
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY DE1SOC_ANDNAND IS
+PORT( SW_A : IN STD_LOGIC
+    ; SW_B : IN STD_LOGIC
+    ; LED_Q : OUT STD_LOGIC
+    ; LED_QBAR : OUT STD_LOGIC
+);
+END DE1SOC_ANDNAND;
+
+ARCHITECTURE DE1SOC OF DE1SOC_ANDNAND IS
+    SIGNAL A : STD_LOGIC := '0';
+    SIGNAL B : STD_LOGIC := '0';
+    SIGNAL Q : STD_LOGIC := '0';
+    SIGNAL QBAR : STD_LOGIC := '0';
+
+BEGIN
+
+    ANDNAND_UNIT : ENTITY WORK.ANDNAND
+        PORT MAP (A => A, B => B, Q => Q, QBAR => QBAR);
+
+    -- IN
+    A <= SW_A;
+    B <= SW_B;
+
+    -- OUT
+    LED_Q <= Q;
+    LED_QBAR <= QBAR;
+
+END DE1SOC;
