@@ -28,7 +28,7 @@
 *.cdf
 
 ## Comma-Separated Value File
-*.csv
+#*.csv
 
 ## Component Declaration File
 *.cmp
