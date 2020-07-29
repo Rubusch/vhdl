@@ -29,6 +29,7 @@
 
 ## Comma-Separated Value File
 #*.csv
+*results.csv
 
 ## Component Declaration File
 *.cmp
