@@ -1,4 +1,4 @@
---tb: half-adder_tb.vhd
+-- tb: half-adder
 --
 -- author: Lothar Rubusch
 
