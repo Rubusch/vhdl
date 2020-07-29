@@ -1,4 +1,4 @@
--- hw frontend: half-adder
+-- hw adapter: half-adder
 --
 -- author: Lothar Rubusch
 
