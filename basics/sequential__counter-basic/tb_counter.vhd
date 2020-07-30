@@ -1,4 +1,4 @@
--- testbench: counter
+-- tb: counter
 --
 -- Author: Lothar Rubusch
 
@@ -20,7 +20,7 @@ ARCHITECTURE TB OF TB_COUNTER IS
 
     CONSTANT N : INTEGER := 3;
 
-    CONSTANT NUM_OF_CLOCKS : INTEGER := 30; -- TODO test
+    CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
     SIGNAL I : INTEGER := 0;
     FILE OUTPUT_BUF : TEXT;
 
@@ -46,7 +46,7 @@ BEGIN
         END IF;
     END PROCESS;
 
-    FILE_OPEN(OUTPUT_BUF, "../../results_tb.csv", WRITE_MODE);
+    FILE_OPEN(OUTPUT_BUF, "../../tb_results.csv", WRITE_MODE);
 
     PROCESS(CLK)
         VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE;
