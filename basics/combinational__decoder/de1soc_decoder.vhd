@@ -1,0 +1,31 @@
+-- hw adapter for decoder
+--
+-- author: Lothar Rubusch
+
+ENTITY DE1SOC_DECODER IS
+PORT( SW_A : IN STD_LOGIC
+    ; SW_B : IN STD_LOGIC
+    ; SW_C : IN STD_LOGIC
+    ; LED_D : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+);
+END DE1SOC_DECODER;
+
+ARCHITECTURE DE1SOC OF DE1SOC_DECODER IS
+    SIGNAL A : STD_LOGIC := '0';
+    SIGNAL B : STD_LOGIC := '0';
+    SIGNAL C : STD_LOGIC := '0';
+    SIGNAL D : STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');
+
+BEGIN
+
+    DECODER_UNIT : ENTITY WORK.DECODER
+        PORT MAP (A => A, B => B, C => C, D => D);
+
+    -- IN
+    A <= SW_A;
+    B <= SW_B;
+    C <= SW_C;
+
+    -- OUT
+    LED_D <= D;
+END DE1SOC;
