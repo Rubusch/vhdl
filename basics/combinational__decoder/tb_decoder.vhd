@@ -22,7 +22,7 @@ ARCHITECTURE TB OF TB_DECODER IS
 
 BEGIN
 
-    DECORATOR_UNIT : ENTITY WORK.DECORATOR
+    DECODER_UNIT : ENTITY WORK.DECODER
         PORT MAP (A => A, B => B, C => C, D => D);
 
     PROCESS
@@ -50,17 +50,17 @@ BEGIN
             READ(READ_COL_FROM_INPUT_BUF, INPUT_B, GOOD_NUM);
             ASSERT GOOD_NUM
                 REPORT("FAILURE! assignment of INPUT_B failed");
-            READ(READ_FROM_INPUT_BUF, SEPARATOR);
-            READ(READ_FROM_INPUT_BUF, INPUT_B);
-            READ(READ_FROM_INPUT_BUF, SEPARATOR);
-            READ(READ_FROM_INPUT_BUF, INPUT C);
-            READ(READ_FROM_INPUT_BUF, SEPARATOR;
-            READ(READ_FROM_INPUT_BUF, INPUT_D);
+            READ(READ_COL_FROM_INPUT_BUF, SEPARATOR);
+            READ(READ_COL_FROM_INPUT_BUF, INPUT_B);
+            READ(READ_COL_FROM_INPUT_BUF, SEPARATOR);
+            READ(READ_COL_FROM_INPUT_BUF, INPUT_C);
+            READ(READ_COL_FROM_INPUT_BUF, SEPARATOR);
+            READ(READ_COL_FROM_INPUT_BUF, INPUT_D);
 
             A <= INPUT_A;
             B <= INPUT_B;
             C <= INPUT_C;
-            D_EXPEC <= INPUT_D;
+            D_EXPECT <= INPUT_D;
 
             WAIT FOR 20 NS;
 
@@ -75,9 +75,9 @@ BEGIN
             WRITE(WRITE_COL_TO_OUTPUT_BUF, D_EXPECT);
             WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
             IF (D = D_EXPECT) THEN
-                WRITE(COL_TO_OUTPUT_BUF, STRING'("OK"));
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("OK"));
             ELSE
-                WRITE(COL_TO_OUTPUT_BUF, STRING'("FAIL"));
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("FAIL"));
             END IF;
             WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
 
