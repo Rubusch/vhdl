@@ -30,7 +30,7 @@ BEGIN
         GENERIC MAP (NBITS => NBITS)
         PORT MAP (CLK => CLK, ENA => ENA, RST => RST, COUNT => COUNT);
 
-    CLK <= CLK_40
+    CLK <= CLK_50;
     ENA <= SW_ENA;
     -- on the de1soc the key pressed is '0', default is '1'
     RST <= NOT KEY_RST;
