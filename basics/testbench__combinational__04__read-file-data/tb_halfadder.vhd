@@ -1,16 +1,16 @@
 -- HALFADDER_TB.VHD
 --
--- IMPORTANT: DON'T FORGET TO ADD data.txt TO THE PROJECT!!!
+-- IMPORTANT: DON'T FORGET TO ADD tb_input.txt TO THE PROJECT!!!
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE STD.TEXTIO.ALL;
 USE IEEE.STD_LOGIC_TEXTIO.ALL; -- require for writing/reading std_logic etc.
 
-ENTITY HALFADDER_ENT_TB IS
-END HALFADDER_ENT_TB;
+ENTITY TB_HALFADDER IS
+END TB_HALFADDER;
 
-ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+ARCHITECTURE TB OF TB_HALFADDER IS
     SIGNAL A, B : STD_LOGIC;       -- inputs
     SIGNAL C : STD_LOGIC_VECTOR(1 DOWNTO 0); -- NEW: output here as STD_LOGIC_VECTOR
 
@@ -28,10 +28,10 @@ BEGIN
     BEGIN
 
         -- if ModelSim project is created, then provide the relative path of the input file
-        -- (i.e. data.txt) with respect to main project folder
-        FILE_OPEN(INPUT_BUF, "../../data.txt", READ_MODE);
+        -- (i.e. tb_input.txt) with respect to main project folder
+        FILE_OPEN(INPUT_BUF, "../../tb_input.txt", READ_MODE);
         -- else provide the complete path for the input file as shown below
---        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__04__read-file-data/data.txt", READ_MODE);
+--        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__04__read-file-data/tb_input.txt", READ_MODE);
 
         WHILE NOT ENDFILE(INPUT_BUF) LOOP
             READLINE(INPUT_BUF, READ_COL_FROM_INPUT_BUF);
