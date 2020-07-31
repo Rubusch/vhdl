@@ -12,10 +12,10 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE STD.TEXTIO.ALL;
 USE IEEE.STD_LOGIC_TEXTIO.ALL; -- read/write STD_LOGIC, etc.
 
-ENTITY HALFADDER_ENT_TB IS
-END HALFADDER_ENT_TB;
+ENTITY TB_HALFADDER IS
+END TB_HALFADDER;
 
-ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+ARCHITECTURE TB OF TB_HALFADDER IS
     SIGNAL A, B : STD_LOGIC;
     SIGNAL SUM_ACTUAL, CARRY_ACTUAL : STD_LOGIC;
     SIGNAL SUM, CARRY : STD_LOGIC; -- generated results by half-adder
@@ -26,24 +26,25 @@ ARCHITECTURE TB OF HALFADDER_ENT_TB IS
 
 BEGIN
     -- connecting testbench signals with half_adder.vhd
-    UUT : ENTITY WORK.HALFADDER_ENT PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
+    UUT : ENTITY WORK.HALFADDER
+        PORT MAP (A => A, B=> B, SUM => SUM, CARRY => CARRY);
 
     TB1 : PROCESS
-    VARIABLE READ_COL_FROM_INPUT_BUF : LINE; -- read lines from INPUT_BUF
-    VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- write lines to OUTPUT_BUF
-    VARIABLE VAL_A, VAL_B : STD_LOGIC;
-    VARIABLE VAL_SUM, VAL_CARRY : STD_LOGIC;
-    VARIABLE VAL_SEPARATOR : CHARACTER; -- for commas between data in file
-    VARIABLE GOOD_NUM : BOOLEAN;
+        VARIABLE READ_COL_FROM_INPUT_BUF : LINE; -- read lines from INPUT_BUF
+        VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE; -- write lines to OUTPUT_BUF
+        VARIABLE VAL_A, VAL_B : STD_LOGIC;
+        VARIABLE VAL_SUM, VAL_CARRY : STD_LOGIC;
+        VARIABLE VAL_SEPARATOR : CHARACTER; -- for commas between data in file
+        VARIABLE GOOD_NUM : BOOLEAN;
     BEGIN
         -- READING DATA
         -- prefer relative path
-        FILE_OPEN(INPUT_BUF, "../../data.csv", READ_MODE);
+        FILE_OPEN(INPUT_BUF, "../../tb_input.csv", READ_MODE);
         -- alternatively provide absolute path
---        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/data.csv", READ_MODE);
+--        FILE_OPEN(INPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/tb_input.csv", READ_MODE);
 
         FILE_OPEN(OUTPUT_BUF, "../../result.csv", WRITE_MODE);
---        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/data.csv", WRITE_MODE);
+--        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__06__csv-file/tb_input.csv", WRITE_MODE);
 
         WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("#A,B,SUM_ACTUAL,SUM,CARRY_ACTUAL,CARRY,SUM_TEST_RESULTS,CARRY_TEST_RESULTS"));
         WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
