@@ -1,14 +1,14 @@
--- HALFADDER_TB.VHD
+-- TB_HALFADDER.VHD
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE STD.TEXTIO.ALL;
 USE IEEE.STD_LOGIC_TEXTIO.ALL; -- writing STD_LOGIC etc.
 
-ENTITY HALFADDER_ENT_TB IS
-END HALFADDER_ENT_TB;
+ENTITY TB_HALFADDER IS
+END TB_HALFADDER;
 
-ARCHITECTURE TB OF HALFADDER_ENT_TB IS
+ARCHITECTURE TB OF TB_HALFADDER IS
     SIGNAL A : STD_LOGIC;
 
     FILE OUTPUT_BUF : TEXT; -- TEXT is a reserved word
@@ -25,9 +25,9 @@ BEGIN
         WAIT FOR 20 NS;
 
         -- if ModelSim project is created, provide the relative path
-        FILE_OPEN(OUTPUT_BUF, "../../data.out", WRITE_MODE);
+        FILE_OPEN(OUTPUT_BUF, "../../tb_results.out", WRITE_MODE);
         -- else provide the absolute path
---        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__05__write-data-file/data.out", WRITE_MODE);
+--        FILE_OPEN(OUTPUT_BUF, "/media/user/develop/github__vhdl/basics/testbench__combinational__05__write-data-file/tb_results.out", WRITE_MODE);
 
         WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("printing values"));
         WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF); -- write in line 1
