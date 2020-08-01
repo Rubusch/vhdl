@@ -26,25 +26,10 @@
 --
 --
 -- NB: PIN ASSIGNMENT FOR MY DE1:
---
---                            CARRY_OUT | OUTPUT
--- ----------------------------------------------------------------
---                                | LED1| LED0|
---  | SW9 | SW8 | ... | SW3 | SW2 | SW1 | SW0 | ... | KEY1 | KEY0 |
--- ----------------------------------------------------------------
---   F[1]  F[0]    CARRY_IN  INVA   ENB   ENA          B      A
---
+-- please, have a look into the <BOARD>_pin-assignment.csv
 --
 -- LOGIC
---
---  A | B |ENA|ENB|INV|CRY|F0 |F1 ||CRY|OUT
---    |   |   |   | A |IN |   |   ||OUT|   
--- K0 |K1 |SW0|SW1|SW2|
--- ========================================
---  0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 || 0 | 0
---  0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 || 0 | 0
---  0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 ||   |
--- (...)
+-- please, find a testbench with corresponding tb_input.csv
 --
 -- NOTE: THIS DEMO IS NOT SUFFICIENTLY TESTED!
 
@@ -104,10 +89,13 @@ BEGIN
     A_TMP <= INVA XOR (ENA AND (NOT A)); -- REMEMBER: A IS A KEY, AND KEYS FOLLOW NEGATIVE LOGIC ON DE1
     B_TMP <= ENB AND (NOT B); -- REMEMBER: B IS A KEY, AND KEYS FOLLOW NEGATIVE LOGIC ON DE1
 
-    D1 : DECODER_ENT PORT MAP(F, SEL_TMP);
+    D1 : DECODER_ENT
+        PORT MAP(F, SEL_TMP);
 
-    LU : LOGICAL_ENT PORT MAP(A_TMP, B_TMP, SEL_TMP(3), SEL_TMP(2), SEL_TMP(1), LOGICAL_OUT_TMP);
-    FA : FULLADDER_ENT PORT MAP(A_TMP, B_TMP, CARRY_IN, CARRY_OUT, ADDER_OUT_TMP, SEL_TMP(0));
+    LU : LOGICAL_ENT
+        PORT MAP(A_TMP, B_TMP, SEL_TMP(3), SEL_TMP(2), SEL_TMP(1), LOGICAL_OUT_TMP);
+    FA : FULLADDER_ENT
+        PORT MAP(A_TMP, B_TMP, CARRY_IN, CARRY_OUT, ADDER_OUT_TMP, SEL_TMP(0));
 
     OUTPUT <= LOGICAL_OUT_TMP(0) OR LOGICAL_OUT_TMP(1) OR LOGICAL_OUT_TMP(2) OR ADDER_OUT_TMP;    
 
