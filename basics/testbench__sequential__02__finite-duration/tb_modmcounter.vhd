@@ -27,7 +27,7 @@ BEGIN
 
     MODMCOUNTER_UNIT : ENTITY WORK.MODMCOUNTER
         GENERIC MAP (M => M, N => N)
-            PORT MAP (CLK => CLK, RESET => RESET, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
+        PORT MAP (CLK => CLK, RESET => RESET, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
 
     -- reset = 1 for first clock cycle, then 0
     RESET <= '1', '0' AFTER T/2;
