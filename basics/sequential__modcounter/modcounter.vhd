@@ -1,4 +1,4 @@
--- mod m counter
+-- modulo counter
 --
 -- author: Lothar Rubusch
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
@@ -8,8 +8,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY MODCOUNTER IS
-GENERIC( NBITS : INTEGER := 2    -- N bits for counter
-    ; MAX_NUM : INTEGER := 4      -- count up to M-1
+GENERIC( NBITS : INTEGER := 2    -- number of bits for counter
+    ; MODULO : INTEGER := 4      -- count up to MODULO-1 for signal
 );
 PORT( CLK : IN STD_LOGIC
     ; RST : IN STD_LOGIC
@@ -19,7 +19,8 @@ PORT( CLK : IN STD_LOGIC
 END MODCOUNTER;
 
 ARCHITECTURE ARCH OF MODCOUNTER IS
-    SIGNAL COUNT_REG, COUNT_NEXT : UNSIGNED(NBITS-1 DOWNTO 0);
+    SIGNAL COUNT_REG : UNSIGNED(NBITS-1 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL COUNT_NEXT : UNSIGNED(NBITS-1 DOWNTO 0) := (OTHERS => '0');
 
 BEGIN
 
@@ -34,11 +35,11 @@ BEGIN
         END IF;
     END PROCESS;
 
-    -- implement modulo: increment, but zero COUNT_NEXT when maximum is reached
-    COUNT_NEXT <= (OTHERS => '0') WHEN COUNT_REG = (MAX_NUM - 1) ELSE (COUNT_REG + 1);
+    -- implement modulo
+    COUNT_NEXT <= (OTHERS => '0') WHEN COUNT_REG = (MODULO - 1) ELSE (COUNT_REG + 1);
 
-    -- generate tick when maximum is reached
-    COMPLETE_TICK <= '1' WHEN COUNT_REG = (MAX_NUM-1) ELSE '0';
+    -- generate tick when MODULO is reached
+    COMPLETE_TICK <= '1' WHEN COUNT_REG = (MODULO - 1) ELSE '0';
 
     -- display value on OUT port
     COUNT <= STD_LOGIC_VECTOR(COUNT_REG);
