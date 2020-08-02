@@ -52,20 +52,21 @@ set_location_assignment PIN_AB12 -to DATA[0]
 set_location_assignment PIN_AC12 -to DATA[1]
 set_location_assignment PIN_AF9 -to DATA[2]
 set_location_assignment PIN_AF10 -to DATA[3]
-set_location_assignment PIN_AE26 -to SEG[0]
-set_location_assignment PIN_AE27 -to SEG[1]
-set_location_assignment PIN_AE28 -to SEG[2]
-set_location_assignment PIN_AG27 -to SEG[3]
-set_location_assignment PIN_AF28 -to SEG[4]
-set_location_assignment PIN_AG28 -to SEG[5]
-set_location_assignment PIN_AH28 -to SEG[6]
-set_global_assignment -name VHDL_FILE sevenseg.vhd
+set_location_assignment PIN_V16 -to SEG[0]
+set_location_assignment PIN_W16 -to SEG[1]
+set_location_assignment PIN_V17 -to SEG[2]
+set_location_assignment PIN_V18 -to SEG[3]
+set_location_assignment PIN_W17 -to SEG[4]
+set_location_assignment PIN_W19 -to SEG[5]
+set_location_assignment PIN_Y19 -to SEG[6]
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name TOP_LEVEL_ENTITY de1soc_sevenseg
+set_global_assignment -name SOURCE_FILE "de1soc_pin-assignment.csv"
+set_global_assignment -name VHDL_FILE de1soc_sevenseg.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name TOP_LEVEL_ENTITY SEVENSEG_ENT
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
