@@ -11,26 +11,23 @@ ENTITY TB_MODMCOUNTER IS
 END TB_MODMCOUNTER;
 
 ARCHITECTURE TB OF TB_MODMCOUNTER IS
+    CONSTANT T : TIME := 20 NS;
+    CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
+    SIGNAL I : INTEGER := 0; -- loop variable
+    FILE OUTPUT_BUF : TEXT; -- TEXT is a reserved word
+
     CONSTANT M : INTEGER := 3; -- count up to 2
     CONSTANT N : INTEGER := 4;
-    CONSTANT T : TIME := 20 NS;
 
     SIGNAL CLK, RESET : STD_LOGIC; -- input
     SIGNAL COMPLETE_TICK : STD_LOGIC; -- output
     SIGNAL COUNT : STD_LOGIC_VECTOR(N-1 DOWNTO 0); -- output
-
-    CONSTANT NUM_OF_CLOCKS : INTEGER := 30;
-    SIGNAL I : INTEGER := 0; -- loop variable
-    FILE OUTPUT_BUF : TEXT; -- TEXT is a reserved word
 
 BEGIN
 
     MODMCOUNTER_UNIT : ENTITY WORK.MODMCOUNTER
         GENERIC MAP (M => M, N => N)
         PORT MAP (CLK => CLK, RESET => RESET, COMPLETE_TICK => COMPLETE_TICK, COUNT => COUNT);
-
-    -- reset = 1 for first clock cycle, then 0
-    RESET <= '1', '0' AFTER T/2;
 
     -- continuous clock
     PROCESS
@@ -48,6 +45,9 @@ BEGIN
             I <= I + 1;
         END IF;
     END PROCESS;
+
+    -- reset = 1 for first clock cycle, then 0
+    RESET <= '1', '0' AFTER T/2;
 
     -- save data in file : path is relative
     FILE_OPEN(OUTPUT_BUF, "../../tb_results.csv", WRITE_MODE);

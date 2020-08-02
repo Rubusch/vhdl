@@ -12,10 +12,54 @@ ENTITY TB_CLOCKSCALER IS
 END TB_CLOCKSCALER;
 
 ARCHITECTURE TB OF TB_CLOCKSCALER IS
-    
+    CONSTANT T : TIME := 20 NS;
+    CONSTANT NTICKS : INTEGER := 30;
+    SIGNAL I : INTEGER := 0;
+    FILE OUTPUT_BUF : TEXT;
+
+    SIGNAL CLK : STD_LOGIC := '0';
+    SIGNAL RST : STD_LOGIC := '0';
+    SIGNAL PULSE : STD_LOGIC := '0';
 
 BEGIN
 
     CLOCKSCALER_UNIT : ENTITY WORK.CLOCKSCALER 
-        PORT MAP
+        PORT MAP (CLK => CLK, RST => RST, PULSE => PULSE);
+
+    PROCESS
+    BEGIN
+        CLK <= '0';
+        WAIT FOR T/2;
+        CLK <= '1';
+        WAIT FOR T/2;
+        IF (I = NTICKS) THEN
+            FILE_CLOSE(OUTPUT_BUF);
+            WAIT
+        ELSE
+            I <= I + 1;
+        END IF;
+    END PROCESS;
+
+    RST <= '1', '0' AFTER T/2;
+
+    FILE_OPEN(OUTPUT_BUF, "../../tb_results.csv", WRITE_MODE);
+
+    PROCESS(CLK)
+        VARIABLE WRITE_COL_TO_OUTPUT_BUF : LINE;
+    BEGIN
+        IF (CLK'EVENT AND CLK = '1' AND RST /= '1') THEN
+            IF (I = 0) THEN
+                WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'("CLK,RST,PULSE"));
+                WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+            END IF;
+
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, CLK);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, RST);
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, STRING'(","));
+            WRITE(WRITE_COL_TO_OUTPUT_BUF, PULSE);
+            WRITELINE(OUTPUT_BUF, WRITE_COL_TO_OUTPUT_BUF);
+        END IF;
+    END PROCESS;
+
 END TB;
