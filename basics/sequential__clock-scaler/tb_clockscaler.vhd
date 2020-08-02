@@ -34,7 +34,7 @@ BEGIN
         WAIT FOR T/2;
         IF (I = NTICKS) THEN
             FILE_CLOSE(OUTPUT_BUF);
-            WAIT
+            WAIT;
         ELSE
             I <= I + 1;
         END IF;
