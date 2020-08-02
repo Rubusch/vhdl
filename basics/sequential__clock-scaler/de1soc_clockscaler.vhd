@@ -20,7 +20,7 @@ ARCHITECTURE DE1SOC OF DE1SOC_CLOCKSCALER IS
 BEGIN
 
     CLOCKSCALER_UNIT : ENTITY WORK.CLOCKSCALER
-        GENERIC MAP (NBITS => 4, MODULO => 16)
+--        GENERIC MAP (NBITS => 4, MODULO => 16) -- this will show a glimming led, while the 'orig setting', 1 pulse in 0.1 s shows a dark led (too short)
         PORT MAP (CLK => CLK, RST => RST, PULSE => PULSE);
 
     -- IN
