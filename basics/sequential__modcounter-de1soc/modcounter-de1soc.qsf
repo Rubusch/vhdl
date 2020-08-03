@@ -71,4 +71,11 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AE26 -to HEX0_SEG[0]
+set_location_assignment PIN_AE27 -to HEX0_SEG[1]
+set_location_assignment PIN_AE28 -to HEX0_SEG[2]
+set_location_assignment PIN_AG27 -to HEX0_SEG[3]
+set_location_assignment PIN_AF28 -to HEX0_SEG[4]
+set_location_assignment PIN_AG28 -to HEX0_SEG[5]
+set_location_assignment PIN_AH28 -to HEX0_SEG[6]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
