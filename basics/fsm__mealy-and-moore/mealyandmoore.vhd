@@ -52,7 +52,65 @@ PORT( CLK : IN STD_LOGIC
 END MEALYANDMOORE;
 
 ARCHITECTURE MEALYANDMORE_ARCH OF MEALYANDMOORE IS
-    -- TODO
+    TYPE STATEMEALY_TYPE IS (ZERO, ONE);  -- the 2 states as above
+    SIGNAL STATEMEALY_REG, STATEMEALY_NEXT : STATEMEALY_TYPE;
+
+    TYPE STATEMOORE_TYPE IS (ZERO, EDGE, ONE); -- the states as above
+    SIGNAL STATEMOORE_REG, STATEMOORE_NEXT : STATEMOORE_TYPE;
+
 BEGIN
-    -- TODO
+
+    PROCESS(CLK, RST)
+    BEGIN
+        IF (RST = '1') THEN
+            STATEMEALY_REG <= ZERO;
+            STATEMOORRE_REG <= ZERO;
+        ELSIF (CLK'EVENT AND CLK = '1') THEN
+            STATEMEALY_REG <= STATEMEALY_NEXT;
+            STATEMOORE_REG <= STATEMOORE_NEXT;
+        ELSE
+            NULL;
+        END IF;
+    END PROCESS;
+
+    -- MEALY
+    PROCESS(STATEMEALY_REG, LEVEL)
+    BEGIN
+        STATEMEALY_NEXT <= STATEMEALY_REG;
+        MEALY_TICK <= '0';
+        CASE STATEMEALY_REG IS
+            WHEN ZERO =>
+                IF (LEVEL = '1') THEN
+                    STATEMEALY_NEXT <= ONE;
+                    MEALY_TICK <= '1';
+                END IF;
+            WHEN ONE =>
+                IF (LEVEL = '0') THEN
+                    STATEMEALY_NEXT <= ZERO;
+                END IF;
+        END CASE;
+    END PROCESS;
+
+    -- MOORE
+    PROCESS(STATEMOORE_REG, LEVEL)
+    BEGIN
+        STATEMOORE_NEXT <= STATEMOORE_REG;
+        MOORE_TICK <= '0';
+        CASE STATEMOORE_REG IS
+            WHEN ZERO =>
+                IF (LEVEL = '1') THEN
+                    STATEMOORE_NEXT <= EDGE;
+                END IF;
+            WHEN EDGE =>
+                IF (LEVEL = '1') THEN
+                    STATEMOORE_NEXT <= ONE;
+                ELSE
+                    STATEMOORE_NEXT <= ZERO;
+                END IF;
+            WHEN ONE =>
+                IF (LEVEL = '0') THEN
+                    STATEMOORE_NEXT <= ZERO;
+                END IF;
+        END CASE;
+    END PROCESS;
 END MEALYANDMOORE;
