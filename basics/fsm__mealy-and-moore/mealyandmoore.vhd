@@ -12,14 +12,19 @@
 --
 -- the example generates a tick of the duration of one clock cycle, whenever the input signal changes from 0 to 1.
 --
---      +--+                         +--+
---      |  |                         |  |
---      V  |                         V  |
---    ,------.                     ,------.
---    | zero |                     | zero |
---    '------'                     '------'
---       |                            |
+--            LEVEL = 0                     LEVEL = 0
+--             TICK = 0                    +---+
+--           +---+                         |   |
+--           |   |                         V   |
+--           V   |                      ,----------.
+--         ,-------.                    |  zero    |<-----------+
+--         | zero  |                    | TICK = 0 |            |
+--         '-------'                    '----------'            | LEVEL = 0
+--           |   A                        A  |                  |
+-- LEVEL = 1 |   | LEVEL = 0    LEVEL = 0 |  | LEVEL = 1  ,---------.
+--  TICK = 1 |   |  TICK = 0              |  +------------|  edge   |
 --
+-- Mealy Design                  Moore Design
 --
 -- author: Lothar Rubusch (pls, find original in Meher Krishna Patel's Edge Detector Example)
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
