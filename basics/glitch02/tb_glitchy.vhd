@@ -40,7 +40,7 @@ BEGIN
             I <= I + 1;
         END IF;
 
-        IF (I > 3 AND i < 6) THEN
+        IF (I >= 3 AND i < 6) THEN
             DIN <= '1';
         ELSE
             DIN <= '0';
