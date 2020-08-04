@@ -14,26 +14,26 @@
 --
 -- Mealy Design
 --
---                                                                      LEVEL = 1
---                  +------+                                             TICK = 1  +------+
---            ,---->|      |------------------------------------------------------>|      |-----.
--- LEVEL = 0  |     | zero |                                                       | one  |     | LEVEL = 1
---  TICK = 0  '-----|      |<------------------------------------------------------|      |<----'  TICK = 0
---                  +------+  LEVEL = 0                                            +------+
+--                                                                       LEVEL = 1
+--                  +------+                                              TICK = 1  +------+
+--            ,---->|      |------------------------------------------------------->|      |-----.
+-- LEVEL = 0  |     | zero |                                                        | one  |     | LEVEL = 1
+--  TICK = 0  '-----|      |<-------------------------------------------------------|      |<----'  TICK = 0
+--                  +------+  LEVEL = 0                                             +------+
 --                             TICK = 0
 --
 --
 --
 -- Moore Design
 --
---                  +----------+           LEVEL = 1 +----------+          LEVEL = 1 +----------+
---            ,---->|   zero   |-------------------->|   edge   |------------------->|   one    |-----.
--- LEVEL = 0  |     |          |                     |          |                    |          |     | LEVEL = 1
---            '-----| TICK = 0 |<--------------------| TICK = 1 |                    | TICK = 0 |<----'
---                  +----------+  LEVEL = 0          +----------+                    +----------+
---                       A                                                                |
---                       |                                                                |
---                       '----------------------------------------------------------------'
+--                  +----------+          LEVEL = 1 +----------+          LEVEL = 1 +----------+
+--            ,---->|   zero   |------------------->|   edge   |------------------->|   one    |-----.
+-- LEVEL = 0  |     |          |                    |          |                    |          |     | LEVEL = 1
+--            '-----| TICK = 0 |<-------------------| TICK = 1 |                    | TICK = 0 |<----'
+--                  +----------+  LEVEL = 0         +----------+                    +----------+
+--                       A                                                               |
+--                       |                                                               |
+--                       '---------------------------------------------------------------'
 --                    LEVEL = 0
 --
 -- author: Lothar Rubusch (pls, find original in Meher Krishna Patel's Edge Detector Example)
@@ -51,7 +51,7 @@ PORT( CLK : IN STD_LOGIC
 );
 END MEALYANDMOORE;
 
-ARCHITECTURE MEALYANDMORE_ARCH OF MEALYANDMOORE IS
+ARCHITECTURE MEALYANDMOORE_ARCH OF MEALYANDMOORE IS
     TYPE STATEMEALY_TYPE IS (ZERO, ONE);  -- the 2 states as above
     SIGNAL STATEMEALY_REG, STATEMEALY_NEXT : STATEMEALY_TYPE;
 
@@ -64,7 +64,7 @@ BEGIN
     BEGIN
         IF (RST = '1') THEN
             STATEMEALY_REG <= ZERO;
-            STATEMOORRE_REG <= ZERO;
+            STATEMOORE_REG <= ZERO;
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             STATEMEALY_REG <= STATEMEALY_NEXT;
             STATEMOORE_REG <= STATEMOORE_NEXT;
@@ -113,4 +113,4 @@ BEGIN
                 END IF;
         END CASE;
     END PROCESS;
-END MEALYANDMOORE;
+END MEALYANDMOORE_ARCH;

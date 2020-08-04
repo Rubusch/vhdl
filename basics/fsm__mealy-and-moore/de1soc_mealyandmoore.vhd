@@ -1,4 +1,4 @@
--- tb: mealy and more state machines, edge detector example
+-- de1soc hardware: mealy and more state machines, edge detector example
 --
 -- author: Lothar Rubusch (pls, find original in Meher Krishna Patel's Edge Detector Example)
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
