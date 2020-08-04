@@ -65,7 +65,7 @@ BEGIN
         IF (RST = '1') THEN
             STATEMEALY_REG <= ZERO;
             STATEMOORE_REG <= ZERO;
-        ELSIF (CLK'EVENT AND CLK = '1') THEN
+        ELSIF (RISING_EDGE(CLK)) THEN
             STATEMEALY_REG <= STATEMEALY_NEXT;
             STATEMOORE_REG <= STATEMOORE_NEXT;
         ELSE
