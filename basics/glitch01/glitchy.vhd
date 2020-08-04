@@ -24,7 +24,7 @@ BEGIN
     AND_OUT1 <= NOT_SEL AND IN0;
     AND_OUT2 <= SEL AND IN1;
 
-    Z <= AND_OUT1 OR AND_OUT2; -- glitch in signal Z
+--    Z <= AND_OUT1 OR AND_OUT2; -- glitch in signal Z
     -- fix to the glitch: comment out above line and enable the line below to fix the glitch
---    Z <= AND_OUT1 OR AND_OUT2 OR (IN0 AND IN1);
-END GLITCHYARCH;
+    Z <= AND_OUT1 OR AND_OUT2 OR (IN0 AND IN1);
+END GLITCHY_ARCH;
