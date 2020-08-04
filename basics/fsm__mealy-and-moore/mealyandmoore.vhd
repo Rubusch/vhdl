@@ -102,6 +102,7 @@ BEGIN
                     STATEMOORE_NEXT <= EDGE;
                 END IF;
             WHEN EDGE =>
+                MOORE_TICK <= '1';
                 IF (LEVEL = '1') THEN
                     STATEMOORE_NEXT <= ONE;
                 ELSE
