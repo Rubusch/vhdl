@@ -115,9 +115,9 @@ BEGIN
                 OUTPUT1 <= <VALUE>;
                 OUTPUT2 <= <VALUE>;
                 ...;
-                IF <CONDITION> THEN
+                IF (<CONDITION> AND T >= T1-1) THEN
                     STATE_NEXT <= S1;
-                ELSIF <CONDITION> THEN
+                ELSIF (<CONDITION> AND T >= T2-1) THEN
                     STATE_NEXT <= ...;
                 ELSE -- remain
                     STATE_NEXT <= S0;
@@ -126,9 +126,9 @@ BEGIN
                 OUTPUT1 <= <VALUE>;
                 OUTPUT2 <= <VALUE>;
                 ...;
-                IF <CONDITION> THEN
+                IF (<CONDITION> AND T >= T3-1) THEN
                     STATE_NEXT <= S2;
-                ELSIF <CONDITION> THEN
+                ELSIF (<CONDITION> AND T >= T2-1) THEN
                     STATE_NEXT <= ...;
                 ELSE -- remain
                     STATE_NEXT <= S1;
