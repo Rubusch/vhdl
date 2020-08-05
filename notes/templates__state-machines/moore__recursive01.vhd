@@ -56,12 +56,13 @@ PORT( CLK : IN STD_LOGIC
     ; RST : IN STD_LOGIC
     ; INPUT1 : IN STD_LOGIC_VECTOR(...)
     ; INPUT2 : IN STD_LOGIC_VECTOR(...)
-    ...
-    ; NEW_OUTPUT1 : INOUT SIGNED(...)
-    ; NEW_OUTPUT2 : INOUT SIGNED(...)
-    ...
+    ; ...
     ; OUTPUT1 : INOUT SIGNED(...)
     ; OUTPUT2 : INOUT SIGNED(...)
+    ; ...
+    ; NEW_OUTPUT1 : INOUT SIGNED(...)
+    ; NEW_OUTPUT2 : INOUT SIGNED(...)
+    ; ...
 );
 END MOORE_RECURSIVE;
 
@@ -77,30 +78,31 @@ ARCHITECTURE ARCH OF MOORE_RECURSIVE IS
     CONSTANT TMAX : NATURAL := <VALUE>; -- TMAX >= MAX(T1, T2,...)-1
     SIGNAL T : NATURAL;
 
-    -- recursive: feedback register
-    SIGNAL S1_REG : STD_LOGIC_VECTOR(...) := <VALUE>;
-    SIGNAL S1_NEXT : STD_LOGIC_VECTOR(...) := <VALUE>;
-    SIGNAL S2_REG : SIGNED(...) := <VALUE>;
-    SIGNAL S2_NEXT : SIGNED(...) := <VALUE>;
+    -- recursive feedback
+    SIGNAL R1_REG, R1_NEXT : STD_LOGIC_VECTOR(...) := <VALUE>;
+    SIGNAL R2_REG, R2_NEXT : SIGNED(...) := <VALUE>;
     ...;
+
 BEGIN
 
+    -- state register: STATE_REG
+    -- the sequential part of the design
     PROCESS(CLK, RST)
     BEGIN
-        IF RST = '1' THEN
+        IF (RST = '1') THEN
             STATE_REG <= S1;
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             STATE_REG <= STATE_NEXT;
         END IF;
     END PROCESS;
 
-    -- timer
+    -- timer (optional)
     PROCESS(CLK, RST)
     BEGIN
-        IF RST = '1' THEN
-            T <= '0';
-        ELSIF (RISING_EDGE(CLK)) THEN
-            IF (STATE_REG /= STATE_NEXT) THEN -- state is changing
+        IF (RST = '1') THEN
+            T <= 0;
+        ELSIF (CLK'EVENT AND CLK = '1') THEN
+            IF (STATE_REG /= STATE_NEXT) THEN -- state transition
                 T <= 0;
             ELSIF (T /= TMAX) THEN
                 T <= T + 1;
@@ -130,9 +132,11 @@ BEGIN
     BEGIN
         STATE_NEXT <= STATE_REG;
 
+        --  default outputs
         OUTPUT1 <= <VALUE>;
         OUTPUT2 <= <VALUE>;
         ...;
+
         CASE STATE_REG IS
             WHEN S0 =>
                 OUTPUT1 <= <VALUE>;
@@ -156,15 +160,17 @@ BEGIN
         END CASE;
     END PROCESS;
 
-    -- optional: DFF (d-flipflop) to remove glitches
+    -- D-FF (D-Flipflop): to remove the glitches
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
             NEW_OUTPUT1 <= ...;
             NEW_OUTPUT2 <= ...;
-        ELSIF (RISING_EDGE(CLK)) THEN
+            ...;
+        ELSIF (CLK'EVENT AND CLK = '1') THEN
             NEW_OUTPUT1 <= OUTPUT1;
             NEW_OUTPUT2 <= OUTPUT2;
+            ...;
         END IF;
     END PROCESS;
 END ARCH;

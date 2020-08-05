@@ -37,15 +37,16 @@ BEGIN
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
-            STATE_REG <= '1';
+            STATE_REG <= S1;
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             STATE_REG <= STATE_NEXT;
         END IF;
     END PROCESS;
 
-    -- next state logic: combinational and sequential design
-    -- which contains the logic for STATE_NEXT and outputs
-    -- include all signals and input in sensitivity list except STATE_NEXT
+    -- next state logic: STATE_NEXT
+    -- this is combination of the sequential design which contains the logic
+    -- for the NEXT_STATE include all signals and input in sensitive list
+    -- except STATE_NEXT
     PROCESS(INPUT1, INPUT2, ..., STATE_REG)
     BEGIN
         STATE_NEXT <= STATE_REG;
@@ -92,3 +93,4 @@ BEGIN
         END IF;
     END PROCESS;
 END ARCH;
+

@@ -53,9 +53,10 @@ PORT( CLK : IN STD_LOGIC
     ; RST : IN STD_LOGIC
     ; INPUT1 : IN STD_LOGIC_VECTOR(...)
     ; INPUT2 : IN STD_LOGIC_VECTOR(...)
-    ...
+    ; ...
     ; OUTPUT1 : OUT SIGNED(...)
     ; OUTPUT2 : OUT SIGNED(...)
+    ; ...
 );
 END MOORE_REGULAR;
 
@@ -65,9 +66,11 @@ ARCHITECTURE ARCH OF MOORE_REGULAR IS
 
 BEGIN
 
+    -- state register: STATE_REG
+    -- the sequential part of the design
     PROCESS(CLK, RST)
     BEGIN
-        IF RST = '1' THEN
+        IF (RST = '1') THEN
             STATE_REG <= S1;
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             STATE_REG <= STATE_NEXT;
@@ -82,9 +85,11 @@ BEGIN
     BEGIN
         STATE_NEXT <= STATE_REG;
 
+        --  default outputs
         OUTPUT1 <= <VALUE>;
         OUTPUT2 <= <VALUE>;
         ...;
+
         CASE STATE_REG IS
             WHEN S0 =>
                 OUTPUT1 <= <VALUE>;
@@ -113,15 +118,17 @@ BEGIN
         END CASE;
     END PROCESS;
 
-    -- optional: DFF (d-flipflop) to remove glitches
+    -- D-FF (D-Flipflop): to remove the glitches
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
             NEW_OUTPUT1 <= ...;
             NEW_OUTPUT2 <= ...;
-        ELSIF (RISING_EDGE(CLK)) THEN
+            ...;
+        ELSIF (CLK'EVENT AND CLK = '1') THEN
             NEW_OUTPUT1 <= OUTPUT1;
             NEW_OUTPUT2 <= OUTPUT2;
+            ...;
         END IF;
     END PROCESS;
 END ARCH;
