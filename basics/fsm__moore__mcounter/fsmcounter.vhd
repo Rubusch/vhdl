@@ -35,5 +35,21 @@ BEGIN
         END IF;
     END PROCESS;
 
--- TODO
+    PROCESS(COUNT_MOORE_REG, STATE_MOORE_REG)
+    BEGIN
+        CASE STATE_MOORE_REG IS
+            WHEN START_MOORE =>
+                COUNT_MOORE_NEXT <= (OTHERS => '0');
+                STATE_MOORE_NEXT <= COUNT_MOORE;
+            WHEN COUNT_MODE =>
+                COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
+                IF ((COUNT_MOORE_REG + 1) = MODULO -1) THEN
+                    STATE_MOORE_NEXT <= START_MOORE;
+                ELSE
+                    STATE_MOORE_NEXT <= COUNT_MOORE;
+                END IF;
+        END CASE;
+    END PROCESS;
+
+    OUT_MOORE <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
 END FSM
