@@ -39,7 +39,6 @@
 -- * Output depends only on the states, therefore no ‘if statement’ is required in the process-statement.
 -- * Next-state depends on current-state and and current external inputs.
 --
--- author: Lothar Rubusch
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
 LIBRARY IEEE;
