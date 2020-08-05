@@ -79,34 +79,10 @@ BEGIN
     -- this is combination of the sequential design which contains the logic
     -- for the NEXT_STATE include all signals and input in sensitive list
     -- except STATE_NEXT
-    PROCESS(INPUT1, INPUT2, STATE_REG)
-    BEGIN
-        STATE_NEXT <= STATE_REG;
-        CASE STATE_REG IS
-            WHEN S0 =>
-                IF <CONDITION> THEN
-                    STATE_NEXT <= S1;
-                ELSIF <CONDITION> THEN
-                    STATE_NEXT <= ...;
-                ELSE -- remain
-                    STATE_NEXT <= S0;
-                END IF;
-            WHEN S1 =>
-                IF <CONDITION> THEN
-                    STATE_NEXT <= S2;
-                ELSIF <CONDITION> THEN
-                    STATE_NEXT <= ...;
-                ELSE -- remain
-                    STATE_NEXT <= S1;
-                END IF;
-            WHEN S2 =>
-                ...;
-        END CASE;
-    END PROCESS;
-
-    -- combination output logic:
     PROCESS(INPUT1, INPUT2, ..., STATE_REG)
     BEGIN
+        STATE_NEXT <= STATE_REG;
+
         OUTPUT1 <= <VALUE>;
         OUTPUT2 <= <VALUE>;
         ...;
@@ -115,10 +91,24 @@ BEGIN
                 OUTPUT1 <= <VALUE>;
                 OUTPUT2 <= <VALUE>;
                 ...;
+                IF <CONDITION> THEN
+                    STATE_NEXT <= S1;
+                ELSIF <CONDITION> THEN
+                    STATE_NEXT <= ...;
+                ELSE -- remain
+                    STATE_NEXT <= S0;
+                END IF;
             WHEN S1 =>
                 OUTPUT1 <= <VALUE>;
                 OUTPUT2 <= <VALUE>;
                 ...;
+                IF <CONDITION> THEN
+                    STATE_NEXT <= S2;
+                ELSIF <CONDITION> THEN
+                    STATE_NEXT <= ...;
+                ELSE -- remain
+                    STATE_NEXT <= S1;
+                END IF;
             WHEN S2 =>
                 ...;
         END CASE;
