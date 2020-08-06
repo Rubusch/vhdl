@@ -13,7 +13,8 @@ GENERIC( MODULO : NATURAL := 6
 );
 PORT( CLK : IN STD_LOGIC
     ; RST : IN STD_LOGIC
-    ; OUT_MOORE : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0)
+    ; COMPLETE_TICK : OUT STD_LOGIC
+    ; COUNT : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0)
 );
 END FSMCOUNTER;
 
@@ -41,15 +42,18 @@ BEGIN
             WHEN START_MOORE =>
                 COUNT_MOORE_NEXT <= (OTHERS => '0');
                 STATE_MOORE_NEXT <= COUNT_MOORE;
+                COMPLETE_TICK <= '0';
             WHEN COUNT_MODE =>
                 COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
                 IF ((COUNT_MOORE_REG + 1) = MODULO -1) THEN
+                    COMPLETE_TICK <= '1';
                     STATE_MOORE_NEXT <= START_MOORE;
                 ELSE
+                    COMPLETE_TICK <= '0';
                     STATE_MOORE_NEXT <= COUNT_MOORE;
                 END IF;
         END CASE;
     END PROCESS;
 
-    OUT_MOORE <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
-END FSM
+    COUNT <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
+END FSM;
