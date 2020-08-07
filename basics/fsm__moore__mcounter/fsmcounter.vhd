@@ -25,6 +25,8 @@ ARCHITECTURE FSM OF FSMCOUNTER IS
 
 BEGIN
 
+    COUNT <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
+
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
@@ -34,7 +36,6 @@ BEGIN
             COUNT_MOORE_REG <= COUNT_MOORE_NEXT;
             STATE_MOORE_REG <= STATE_MOORE_NEXT;
         END IF;
-        COUNT <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
     END PROCESS;
 
     PROCESS(COUNT_MOORE_REG, STATE_MOORE_REG)
@@ -45,7 +46,7 @@ BEGIN
                 STATE_MOORE_NEXT <= COUNT_MOORE;
                 COMPLETE_TICK <= '0';
             WHEN COUNT_MOORE =>
-                COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
+--                COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
                 IF ((COUNT_MOORE_REG + 1) = MODULO - 1) THEN
                     COMPLETE_TICK <= '1';
                     STATE_MOORE_NEXT <= START_MOORE;
