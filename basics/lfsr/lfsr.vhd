@@ -1,5 +1,7 @@
 -- lfsr (linear feedback shift register)
 --
+-- P = x^3 + x^2 + 1
+--
 -- author: Lothar Rubusch
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
