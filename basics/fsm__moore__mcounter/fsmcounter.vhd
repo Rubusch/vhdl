@@ -1,7 +1,6 @@
 -- mod counter as state machine
 --
 -- author: Lothar Rubusch
--- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
@@ -19,18 +18,18 @@ PORT( CLK : IN STD_LOGIC
 END FSMCOUNTER;
 
 ARCHITECTURE FSM OF FSMCOUNTER IS
-    SIGNAL COUNT_MOORE_REG, COUNT_MOORE_NEXT : UNSIGNED(NBITS-1 DOWNTO 0);
+    SIGNAL COUNT_MOORE_REG, COUNT_MOORE_NEXT : INTEGER;
     TYPE STATETYPE_MOORE IS (START_MOORE, COUNT_MOORE);
     SIGNAL STATE_MOORE_REG, STATE_MOORE_NEXT : STATETYPE_MOORE;
 
 BEGIN
 
-    COUNT <= STD_LOGIC_VECTOR(COUNT_MOORE_REG);
+    COUNT <= STD_LOGIC_VECTOR(TO_UNSIGNED(COUNT_MOORE_REG, COUNT'LENGTH));
 
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
-            COUNT_MOORE_REG <= (OTHERS => '0');
+            COUNT_MOORE_REG <= 0;
             STATE_MOORE_REG <= START_MOORE;
         ELSIF (RISING_EDGE(CLK)) THEN
             COUNT_MOORE_REG <= COUNT_MOORE_NEXT;
@@ -42,12 +41,12 @@ BEGIN
     BEGIN
         CASE STATE_MOORE_REG IS
             WHEN START_MOORE =>
-                COUNT_MOORE_NEXT <= (OTHERS => '0');
+                COUNT_MOORE_NEXT <= 0;
                 STATE_MOORE_NEXT <= COUNT_MOORE;
                 COMPLETE_TICK <= '0';
             WHEN COUNT_MOORE =>
---                COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
-                IF ((COUNT_MOORE_REG + 1) = MODULO - 1) THEN
+                COUNT_MOORE_NEXT <= COUNT_MOORE_REG + 1;
+                IF (COUNT_MOORE_REG = MODULO - 1) THEN
                     COMPLETE_TICK <= '1';
                     STATE_MOORE_NEXT <= START_MOORE;
                 ELSE
