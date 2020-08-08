@@ -7,7 +7,7 @@
 -- 2^3 - 1 = 7
 --
 -- author: Lothar Rubusch
--- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel (22-Dec-16)
+-- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
