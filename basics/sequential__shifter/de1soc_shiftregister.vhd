@@ -3,6 +3,9 @@
 -- author: Lothar Rubusch
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
 ENTITY DE1SOC_SHIFTREGISTER IS
 GENERIC( NBITS : INTEGER := 8);
 PORT( CLK50 : IN STD_LOGIC
@@ -28,6 +31,6 @@ BEGIN
         PORT MAP (CLK => CLK50, RST => RST, PULSE => PULSE);
 
     SHIFTREGISTER_UNIT : ENTITY WORK.SHIFTREGISTER
-        GENERIC MAP ()
+        GENERIC MAP (NBITS => NBITS)
         PORT MAP (CLK => CLK, RST => RST, DATA => SW_DATA, CTRL => SW_CTRL, Q_REG => LED_Q_REG);
 END DE1SOC;

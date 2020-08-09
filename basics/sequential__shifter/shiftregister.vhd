@@ -3,6 +3,9 @@
 -- author: Lothar Rubusch
 -- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
 ENTITY SHIFTREGISTER IS
 GENERIC(NBITS : INTEGER := 8);
 PORT( CLK : IN STD_LOGIC
