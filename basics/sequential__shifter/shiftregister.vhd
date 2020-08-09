@@ -31,11 +31,11 @@ BEGIN
     PROCESS(CTRL, S_REG)
     BEGIN
         CASE CTRL IS
-            WHEN '00' =>
+            WHEN "00" =>
                 S_NEXT <= S_REG;
-            WHEN '01' =>
+            WHEN "01" =>
                 S_NEXT <= DATA(NBITS-1) & S_REG(NBITS-1 DOWNTO 1); -- right shift
-            WHEN '10' =>
+            WHEN "10" =>
                 S_NEXT <= S_REG(NBITS-2 DOWNTO 0) & DATA(0); -- left shift
             WHEN OTHERS =>
                 S_NEXT <= DATA;
