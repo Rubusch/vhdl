@@ -42,6 +42,7 @@ BEGIN
         END IF;
     END PROCESS;
 
+    -- update states
     PROCESS(CLK, RST)
     BEGIN
         IF (RST = '1') THEN
