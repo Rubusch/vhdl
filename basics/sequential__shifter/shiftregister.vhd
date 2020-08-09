@@ -31,7 +31,8 @@ BEGIN
         END IF;
     END PROCESS;
 
-    PROCESS(CTRL, S_REG)
+    -- DATA might be left out here (with a warning), since CLK signals will actually upate
+    PROCESS(CTRL, S_REG, DATA)
     BEGIN
         CASE CTRL IS
             WHEN "00" =>
