@@ -15,12 +15,12 @@ PORT( CLK : IN STD_LOGIC
     ; DIN : IN STD_LOGIC
     ; LOAD : OUT STD_LOGIC -- use it as tick, to load data immediately, e.g. from FIFO
     ; DONE : OUT STD_LOGIC -- use it as tick, if data is obtained after one clock cycle e.g. from generators
-    ; DOUT : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0);
+    ; DOUT : OUT STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0)
 );
 END SERIAL2PARALLEL;
 
 ARCHITECTURE SERIAL2PARALLEL_ARCH OF SERIAL2PARALLEL IS
-    TYPE STATE OF (STATE_IDLE, STATE_STORE1, STATE_STORE1);
+    TYPE STATE IS (STATE_IDLE, STATE_STORE0, STATE_STORE1);
     SIGNAL STATE_REG, STATE_NEXT : STATE;
     SIGNAL Y_REG, Y_NEXT : STD_LOGIC_VECTOR(NBITS-1 DOWNTO 0);
     SIGNAL I_REG, I_NEXT : NATURAL RANGE 0 TO NBITS;
@@ -39,6 +39,8 @@ BEGIN
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             I_REG <= I_NEXT;
             Y_REG <= Y_NEXT;
+        ELSE
+            NULL;
         END IF;
     END PROCESS;
 
@@ -49,6 +51,8 @@ BEGIN
             STATE_REG <= STATE_IDLE;
         ELSIF (CLK'EVENT AND CLK = '1') THEN
             STATE_REG <= STATE_NEXT;
+        ELSE
+            NULL;
         END IF;
     END PROCESS;
 

@@ -29,7 +29,7 @@ BEGIN
     -- parallel and serial conversion
     CONVERTER_UNIT : ENTITY WORK.CONVERTER
         GENERIC MAP (MODULO => 7, NBITS => NBITS)
-        P0RT MAP (CLK => CLK, RST => RST, DATA_IN => LED_DATA_IN, DATA_OUT => LED_DATA_OUT);
+        PORT MAP (CLK => CLK, RST => RST, DATA_IN => LED_DATA_IN, DATA_OUT => LED_DATA_OUT);
 
     -- clock tick to see outputs on LEDs
     CLOCKSCALER_UNIT : ENTITY WORK.CLOCKSCALER
