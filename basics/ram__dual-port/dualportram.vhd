@@ -1,7 +1,7 @@
 -- dual port ram
 --
 -- author: Lothar Rubusch
--- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
+-- original from: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
