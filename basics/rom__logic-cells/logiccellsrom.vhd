@@ -1,4 +1,5 @@
--- ROM - block ROM demo (active high)
+-- ROM - logic cells rom implemented from block ROM demo, using CONSTANT instead of SIGNAL,
+-- as a result the design will then be implemented using logic cells, i.e. with MUX instead of RAM block
 --
 -- author: Lothar Rubusch
 -- original from: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
