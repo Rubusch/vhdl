@@ -1,7 +1,7 @@
 -- de1soc: hw adapter for single port ram
 --
 -- author: Lothar Rubusch
--- original from: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
+-- based on: https://vhdlguide.readthedocs.io/en/latest by Meher Krishna Patel
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
@@ -13,7 +13,7 @@ GENERIC( ADDR_WIDTH : INTEGER := 2
 );
 PORT( CLK50 : IN STD_LOGIC
     ; SW_WE : IN STD_LOGIC
-    ; SW_ADDR : IN STD_LOGIC_VECTOR(1 DOWNTO 0)
+    ; SW_ADDR : IN STD_LOGIC_VECTOR(ADDR_WIDTH-1 DOWNTO 0)
     ; SW_DIN : IN STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0)
     ; LED_DOUT : OUT STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0)
 );
