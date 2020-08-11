@@ -63,5 +63,59 @@ BEGIN
         END IF;
     END PROCESS;
 
-    -- TODO
+    -- video on/off
+    PROCESS(CLK, H_PIXEL, V_PIXEL)
+    BEGIN
+        IF (H_PIXEL < HD AND V_PIXEL < VD) THEN
+            VIDEO_ON <= '1';
+        ELSE
+            VIDEO_ON <= '0';
+        END IF;
+    END PROCESS;
+
+    -- end points for retrace
+    H_END <= '1' WHEN H_PIXEL = (HD + HR - 1) ELSE '0';
+    V_END <= '1' WHEN V_PIXEL = (VD + VR - 1) ELSE '0';
+
+    -- set H_PIXEL_NEXT to zero when end of horizontal screen reached,
+    -- otherwise increment on VGA_TICK
+    PROCESS(VGA_TICK, H_PIXEL, H_END)
+    BEGIN
+        IF (VGA_TICK = '1') THEN
+            IF (H_END = '1') THEN
+                H_PIXEL_NEXT <= (OTHERS => '0');
+            ELSE
+                H_PIXEL_NEXT <= H_PIXEL + 1;
+            END IF;
+        ELSE
+            H_PIXEL_NEXT <= H_PIXEL;
+        END IF;
+    END PROCESS;
+
+    -- set V_PIXEL_NEXT to zero when end of horizontal and vertical screen
+    -- reached otherwise increment on VGA_TICK
+    PROCESS(VGA_TICK, V_PIXEL, H_END, V_END)
+    BEGIN
+        IF (VGA_TICK = '1' AND H_END = '1') THEN
+            IF (V_END = '1') THEN
+                V_PIXEL_NEXT <= (OTHERS => '0');
+            ELSE
+                V_PIXEL_NEXT <= V_PIXEL + 1;
+            END IF;
+        ELSE
+            V_PIXEL_NEXT <= V_PIXEL;
+        END IF;
+    END PROCESS;
+
+    -- horizontal and vertical sync signals
+    HSYNC <= '1' WHEN (H_PIXEL >= (HD)) AND (H_PIXEL >= (HD + HR - 1) ELSE '0';
+    VSYNC <= '1' WHEN (V_PIXEL >= (VD)) AND (V_PIXEL >= (VD + VR - 1) ELSE '0';
+
+    -- convert unsigned pixel location to STD_LOGIC_VECTOR
+    PIXEL_X <= STD_LOGIC_VECTOR(H_PIXEL);
+    PIXEL_Y <= STD_LOGIC_VECTOR(V_PIXEL);
+
+    -- send clock to output port
+    VGA_CLK <= VGA_TICK;
+
 END VGASYNC_ARCH;
