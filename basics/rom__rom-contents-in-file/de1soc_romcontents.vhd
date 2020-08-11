@@ -23,12 +23,14 @@ ARCHITECTURE DE1SOC OF DE1SOC_ROMCONTENTS IS
     -- signal to store and receive data, so that it can be displayed on
     -- two devices i.e. seven segdisplays or LEDs
     SIGNAL DATA : STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL ADDR : STD_LOGIC_VECTOR(ADDR_BITS-1 DOWNTO 0) := (OTHERS => '0');
 
 BEGIN
 
     ROMCONTENTS_UNIT : ENTITY WORK.ROMCONTENTS
-        PORT MAP (ADDR => SW_ADDR, DATA => DATA);
+        PORT MAP (ADDR => ADDR, DATA => DATA);
 
+    ADDR <= SW_ADDR;
     HEX_DATA <= DATA;
     LED_DATA <= DATA;
 END DE1SOC;
