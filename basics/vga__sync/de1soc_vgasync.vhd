@@ -7,7 +7,7 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY DE1SOC_VGASYNC IS
-GENERIC( PIXEL_WIDTH : INTEGER := 10 );
+GENERIC( PIXEL_WIDTH : INTEGER := 8 );
 PORT( CLK50 : IN STD_LOGIC
     ; KEY_RST : IN STD_LOGIC
     ; SW : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
@@ -35,10 +35,17 @@ BEGIN
 
     -- instantiate SYNC_VGA for synchronization
     VGASYNC_UNIT : ENTITY WORK.VGASYNC
-        PORT MAP (CLK => CLK50, RST => RST, HSYNC => VGA_HS, VSYNC => VGA_VS, VIDEO_ON => VIDEO_ON, VGA_CLK => VGA_CLK, PIXEL_X => OPEN);
+        GENERIC MAP (PIXEL_WIDTH => PIXEL_WIDTH)
+        PORT MAP (CLK => CLK50
+            , RST => RST
+            , HSYNC => VGA_HS
+            , VSYNC => VGA_VS
+            , VIDEO_ON => VIDEO_ON
+            , VGA_CLK => VGA_CLK
+            , PIXEL_X => OPEN);
 
     -- read, switch and store in RGB_REG
-    PROCESS(CLK50, RST)
+    PROCESS(CLK50, RST, SW)
     BEGIN
         IF (RST = '1') THEN
             RGB_REG <= (OTHERS => '0');
