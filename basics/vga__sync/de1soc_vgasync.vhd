@@ -12,7 +12,7 @@ PORT( CLK50 : IN STD_LOGIC
     ; KEY_RST : IN STD_LOGIC
     ; SW : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
     ; VGA_CLK : OUT STD_LOGIC
-    ; VGA_BLANK : OUT STD_LOGIC
+    ; VGA_BLANK_N : OUT STD_LOGIC
     ; VGA_HS : OUT STD_LOGIC
     ; VGA_VS : OUT STD_LOGIC
     ; VGA_R : OUT STD_LOGIC_VECTOR(PIXEL_WIDTH-1 DOWNTO 0)
@@ -30,8 +30,8 @@ BEGIN
 
     RST <= NOT KEY_RST;
 
-    -- set VGA_BLANK to 1
-    VGA_BLANK <= '1';
+    -- set VGA_BLANK_N to 1
+    VGA_BLANK_N <= '1';
 
     -- instantiate SYNC_VGA for synchronization
     VGASYNC_UNIT : ENTITY WORK.VGASYNC
