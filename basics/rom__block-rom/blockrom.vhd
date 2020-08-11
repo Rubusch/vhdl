@@ -8,7 +8,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY BLOCKROM IS
-GENERIC( ADDR_WIDTH : INTEGER := 16  -- store 16 elements
+GENERIC( ADDR_WIDTH : INTEGER := 17  -- store 17 elements
     ; ADDR_BITS : INTEGER := 4       -- required bits to store 16 elements
     ; DATA_WIDTH : INTEGER := 7      -- each element has 7 bits
 );
