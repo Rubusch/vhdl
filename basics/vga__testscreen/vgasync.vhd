@@ -108,8 +108,8 @@ BEGIN
     END PROCESS;
 
     -- horizontal and vertical sync signals
-    HSYNC <= '1' WHEN (H_PIXEL >= (HD)) AND (H_PIXEL >= (HD + HR - 1) ELSE '0';
-    VSYNC <= '1' WHEN (V_PIXEL >= (VD)) AND (V_PIXEL >= (VD + VR - 1) ELSE '0';
+    HSYNC <= '1' WHEN (H_PIXEL >= (HD)) AND (H_PIXEL >= (HD + HR - 1)) ELSE '0';
+    VSYNC <= '1' WHEN (V_PIXEL >= (VD)) AND (V_PIXEL >= (VD + VR - 1)) ELSE '0';
 
     -- convert unsigned pixel location to STD_LOGIC_VECTOR
     PIXEL_X <= STD_LOGIC_VECTOR(H_PIXEL);

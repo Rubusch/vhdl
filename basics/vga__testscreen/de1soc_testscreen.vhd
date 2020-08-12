@@ -8,7 +8,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY DE1SOC_TESTSCREEN IS
-GENERIC( PIXEL_WIDTH : INTEGER := 10 );
+GENERIC( PIXEL_WIDTH : INTEGER := 8 );
 PORT( CLK50 : IN STD_LOGIC
     ; KEY_RST : IN STD_LOGIC
     ; VGA_CLK : OUT STD_LOGIC
@@ -36,11 +36,12 @@ BEGIN
     CLK <= CLK50;
     RST <= NOT KEY_RST;
 
-    -- set VGA_BLANK to 1
-    VGA_BLANK <= '1';
+    -- set VGA_BLANK_N to 1
+    VGA_BLANK_N <= '1';
 
     -- VGASYNC for synchronization
     VGASYNC_UNIT : ENTITY WORK.VGASYNC
+        GENERIC MAP (PIXEL_WIDTH => PIXEL_WIDTH)
         PORT MAP (CLK => CLK
         , RST => RST
         , HSYNC => VGA_HS
@@ -53,7 +54,7 @@ BEGIN
     PIX_X <= TO_INTEGER(UNSIGNED(PIXEL_X));
     PIX_Y <= TO_INTEGER(UNSIGNED(PIXEL_Y));
 
-    PROCESS(CLK)
+    PROCESS(CLK, PIX_X, PIX_Y, VIDEO_ON)
     BEGIN
         IF (VIDEO_ON = '1') THEN
             -- divide VGA screen i.e. 640x480 in four equal parts, and display different colors in each
