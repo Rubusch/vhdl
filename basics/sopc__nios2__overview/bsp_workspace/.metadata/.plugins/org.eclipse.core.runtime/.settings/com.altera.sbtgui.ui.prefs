@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newApplicationWizardPage.defaultLocation=/opt/github__vhdl/basics/sopc__nios2__overview/software/app_nios2_blinky
+newBspWizardPage.defaultLocation=/opt/github__vhdl/basics/sopc__nios2__overview/software/bsp_nios2_blinky
+newBspWizardPage.sopcinfoFile=/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky.sopcinfo

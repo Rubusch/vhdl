@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/opt/github__vhdl/basics/sopc__nios2__overview/software/app_nios2_blinky/obj/default/runtime/sim/mentor
+vnios2_blinky_jtag_uart
+Z1 !s110 1597333361
+!i10b 1
+!s100 7<Q?;M:jOfimYXBMh8]DU1
+IL@j2EH5@AinB^;OTbU68z0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1597318602
+Z4 8/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_jtag_uart.v
+Z5 F/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_jtag_uart.v
+L0 331
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1597333361.000000
+Z8 !s107 /opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_jtag_uart.v|
+Z9 !s90 -reportprogress|300|/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_jtag_uart.v|-work|jtag_uart|
+!i113 1
+Z10 o-work jtag_uart
+Z11 tCvgOpt 0
+vnios2_blinky_jtag_uart_scfifo_r
+R1
+!i10b 1
+!s100 R:eXX6zzB10mP8aNkMgg]0
+IW3Xg>MMTMAlfi1Y<GWYLQ2
+R2
+R0
+R3
+R4
+R5
+L0 243
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vnios2_blinky_jtag_uart_scfifo_w
+R1
+!i10b 1
+!s100 RAMoC2?JMN68c<>0JY<<_0
+IK_35Bn>2QJ>gHW_i7LC3b0
+R2
+R0
+R3
+R4
+R5
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vnios2_blinky_jtag_uart_sim_scfifo_r
+R1
+!i10b 1
+!s100 ]iG[YBR2R1G[g]iLB0Jj42
+IzNQkD>AkI<fMMiU;li5A:3
+R2
+R0
+R3
+R4
+R5
+L0 164
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vnios2_blinky_jtag_uart_sim_scfifo_w
+R1
+!i10b 1
+!s100 XU=CPYD5RQe64:UVC?@XZ0
+I]LdMU<1P8ARAjc3l_Imoz3
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

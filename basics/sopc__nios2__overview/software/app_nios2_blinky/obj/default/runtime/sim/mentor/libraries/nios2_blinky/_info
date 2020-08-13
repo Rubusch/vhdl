@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/opt/github__vhdl/basics/sopc__nios2__overview/software/app_nios2_blinky/obj/default/runtime/sim/mentor
+vnios2_blinky_nios2_blinky
+!s110 1597333361
+!i10b 1
+!s100 PXiY8SX_V6dVfEL^c8U=P1
+ILL2b9OF7K];649SF=PHmd2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1597318602
+8/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_nios2_blinky.v
+F/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_nios2_blinky.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1597333361.000000
+!s107 /opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_nios2_blinky.v|
+!s90 -reportprogress|300|/opt/github__vhdl/basics/sopc__nios2__overview/nios2_blinky/simulation/submodules/nios2_blinky_nios2_blinky.v|-work|nios2_blinky|
+!i113 1
+o-work nios2_blinky
+tCvgOpt 0
