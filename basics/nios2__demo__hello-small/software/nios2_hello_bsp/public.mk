@@ -82,7 +82,7 @@ ACDS_VERSION := 18.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 646
+# BUILD_NUMBER: 625
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
