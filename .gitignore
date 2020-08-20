@@ -308,6 +308,16 @@ _qar_content.txt
 dse1_base.qpf
 dse1_base.qsf
 
-## eclipse
+## NIOS2: eclipse
 .metadata
 RemoteSystemsTempFiles
+
+## NIOS2: bsp - settings (timestamped)
+settings.bsp
+
+## NIOS2: bsp - compound lib
+libhal_bsp.a
+
+## NIOS2: bsp - bulk and intermediate objects
+obj
+
