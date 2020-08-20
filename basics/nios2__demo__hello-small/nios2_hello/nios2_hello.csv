@@ -1,12 +1,12 @@
-# system info nios2_hello on 2020.08.20.09:08:50
+# system info nios2_hello on 2020.08.20.17:01:40
 system_info:
 name,value
 DEVICE,5CSEMA4U23C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1597907326
+GENERATION_ID,1597935695
 #
 #
-# Files generated for nios2_hello on 2020.08.20.09:08:50
+# Files generated for nios2_hello on 2020.08.20.17:01:40
 files:
 filepath,kind,attributes,module,is_top
 simulation/nios2_hello.v,VERILOG,,nios2_hello,true
