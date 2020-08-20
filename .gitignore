@@ -308,3 +308,6 @@ _qar_content.txt
 dse1_base.qpf
 dse1_base.qsf
 
+## eclipse
+.metadata
+RemoteSystemsTempFiles
