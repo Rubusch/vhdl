@@ -321,3 +321,6 @@ libhal_bsp.a
 ## NIOS2: bsp - bulk and intermediate objects
 obj
 
+## NIOS2: app - binaries, symbols and debugging 
+*.elf
+*.objdump
