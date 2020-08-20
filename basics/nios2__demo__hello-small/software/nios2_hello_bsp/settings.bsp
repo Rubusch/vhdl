@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Aug 20, 2020 4:55:53 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1597935353375</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Aug 20, 2020 8:12:27 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1597947147473</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/opt/github__vhdl/basics/nios2__demo__hello-small/software/nios2_hello_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../nios2_hello.sopcinfo</SopcDesignFile>
@@ -900,19 +900,13 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>ram</slaveDescriptor>
-                <addressRange>0x00010000 - 0x00014FFF</addressRange>
+                <addressRange>0x00008000 - 0x0000CFFF</addressRange>
                 <addressSpan>20480</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>led</slaveDescriptor>
-                <addressRange>0x00021020 - 0x0002103F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x00021040 - 0x00021047</addressRange>
+                <addressRange>0x00011000 - 0x00011007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

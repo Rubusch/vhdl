@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2_hello'
  * SOPC Builder design path: ../../nios2_hello.sopcinfo
  *
- * Generated: Thu Aug 20 16:55:53 CEST 2020
+ * Generated: Thu Aug 20 20:11:02 CEST 2020
  */
 
 /*
@@ -62,17 +62,17 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_gen2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00020820
+#define ALT_CPU_BREAK_ADDR 0x00010820
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
 #define ALT_CPU_CPU_IMPLEMENTATION "tiny"
-#define ALT_CPU_DATA_ADDR_WIDTH 0x12
+#define ALT_CPU_DATA_ADDR_WIDTH 0x11
 #define ALT_CPU_DCACHE_LINE_SIZE 0
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_DCACHE_SIZE 0
-#define ALT_CPU_EXCEPTION_ADDR 0x00010020
+#define ALT_CPU_EXCEPTION_ADDR 0x00008020
 #define ALT_CPU_FLASH_ACCELERATOR_LINES 0
 #define ALT_CPU_FLASH_ACCELERATOR_LINE_SIZE 0
 #define ALT_CPU_FLUSHDA_SUPPORTED
@@ -87,10 +87,10 @@
 #define ALT_CPU_ICACHE_LINE_SIZE 0
 #define ALT_CPU_ICACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_ICACHE_SIZE 0
-#define ALT_CPU_INST_ADDR_WIDTH 0x12
+#define ALT_CPU_INST_ADDR_WIDTH 0x11
 #define ALT_CPU_NAME "nios2"
 #define ALT_CPU_OCI_VERSION 1
-#define ALT_CPU_RESET_ADDR 0x00010000
+#define ALT_CPU_RESET_ADDR 0x00008000
 
 
 /*
@@ -99,17 +99,17 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00020820
+#define NIOS2_BREAK_ADDR 0x00010820
 #define NIOS2_CPU_ARCH_NIOS2_R1
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
 #define NIOS2_CPU_IMPLEMENTATION "tiny"
-#define NIOS2_DATA_ADDR_WIDTH 0x12
+#define NIOS2_DATA_ADDR_WIDTH 0x11
 #define NIOS2_DCACHE_LINE_SIZE 0
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 0
 #define NIOS2_DCACHE_SIZE 0
-#define NIOS2_EXCEPTION_ADDR 0x00010020
+#define NIOS2_EXCEPTION_ADDR 0x00008020
 #define NIOS2_FLASH_ACCELERATOR_LINES 0
 #define NIOS2_FLASH_ACCELERATOR_LINE_SIZE 0
 #define NIOS2_FLUSHDA_SUPPORTED
@@ -123,9 +123,9 @@
 #define NIOS2_ICACHE_LINE_SIZE 0
 #define NIOS2_ICACHE_LINE_SIZE_LOG2 0
 #define NIOS2_ICACHE_SIZE 0
-#define NIOS2_INST_ADDR_WIDTH 0x12
+#define NIOS2_INST_ADDR_WIDTH 0x11
 #define NIOS2_OCI_VERSION 1
-#define NIOS2_RESET_ADDR 0x00010000
+#define NIOS2_RESET_ADDR 0x00008000
 
 
 /*
@@ -135,7 +135,6 @@
 
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
-#define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
 
 
@@ -155,19 +154,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x21040
+#define ALT_STDERR_BASE 0x11000
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x21040
+#define ALT_STDIN_BASE 0x11000
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x21040
+#define ALT_STDOUT_BASE 0x11000
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -192,7 +191,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x21040
+#define JTAG_UART_BASE 0x11000
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -205,33 +204,6 @@
 
 
 /*
- * led configuration
- *
- */
-
-#define ALT_MODULE_CLASS_led altera_avalon_pio
-#define LED_BASE 0x21020
-#define LED_BIT_CLEARING_EDGE_REGISTER 0
-#define LED_BIT_MODIFYING_OUTPUT_REGISTER 1
-#define LED_CAPTURE 0
-#define LED_DATA_WIDTH 1
-#define LED_DO_TEST_BENCH_WIRING 0
-#define LED_DRIVEN_SIM_VALUE 0
-#define LED_EDGE_TYPE "NONE"
-#define LED_FREQ 50000000
-#define LED_HAS_IN 0
-#define LED_HAS_OUT 1
-#define LED_HAS_TRI 0
-#define LED_IRQ -1
-#define LED_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define LED_IRQ_TYPE "NONE"
-#define LED_NAME "/dev/led"
-#define LED_RESET_VALUE 0
-#define LED_SPAN 32
-#define LED_TYPE "altera_avalon_pio"
-
-
-/*
  * ram configuration
  *
  */
@@ -239,7 +211,7 @@
 #define ALT_MODULE_CLASS_ram altera_avalon_onchip_memory2
 #define RAM_ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR 0
 #define RAM_ALLOW_MRAM_SIM_CONTENTS_ONLY_FILE 0
-#define RAM_BASE 0x10000
+#define RAM_BASE 0x8000
 #define RAM_CONTENTS_INFO ""
 #define RAM_DUAL_PORT 0
 #define RAM_GUI_RAM_BLOCK_TYPE "AUTO"

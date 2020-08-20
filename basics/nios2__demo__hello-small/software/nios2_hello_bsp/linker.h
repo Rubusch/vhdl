@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2_hello'
  * SOPC Builder design path: ../../nios2_hello.sopcinfo
  *
- * Generated: Thu Aug 20 16:55:53 CEST 2020
+ * Generated: Thu Aug 20 20:11:02 CEST 2020
  */
 
 /*
@@ -65,9 +65,9 @@
  *
  */
 
-#define RAM_REGION_BASE 0x10020
+#define RAM_REGION_BASE 0x8020
 #define RAM_REGION_SPAN 20448
-#define RESET_REGION_BASE 0x10000
+#define RESET_REGION_BASE 0x8000
 #define RESET_REGION_SPAN 32
 
 
