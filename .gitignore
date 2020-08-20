@@ -324,3 +324,6 @@ obj
 ## NIOS2: app - binaries, symbols and debugging 
 *.elf
 *.objdump
+
+## NIOS2: app+bsp - firmware stuff
+mem_init
