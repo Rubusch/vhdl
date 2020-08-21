@@ -1,12 +1,12 @@
-# system info demo on 2020.08.20.23:18:32
+# system info demo on 2020.08.21.16:27:45
 system_info:
 name,value
-DEVICE,5CSEMA5F31C6
+DEVICE,5CSEMA4U23C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1597958308
+GENERATION_ID,1598020059
 #
 #
-# Files generated for demo on 2020.08.20.23:18:32
+# Files generated for demo on 2020.08.21.16:27:45
 files:
 filepath,kind,attributes,module,is_top
 simulation/demo.v,VERILOG,,demo,true
@@ -20,22 +20,22 @@ simulation/submodules/demo_irq_mapper.sv,SYSTEM_VERILOG,,demo_irq_mapper,false
 simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
+simulation/submodules/demo_nios2_cpu_test_bench.v,VERILOG,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu.v,VERILOG,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_ociram_default_contents.mif,MIF,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu.sdc,SDC,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_debug_slave_wrapper.v,VERILOG,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_rf_ram_a.hex,HEX,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_nios2_waves.do,OTHER,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_debug_slave_sysclk.v,VERILOG,,demo_nios2_cpu,false
 simulation/submodules/demo_nios2_cpu_ociram_default_contents.hex,HEX,,demo_nios2_cpu,false
 simulation/submodules/demo_nios2_cpu_rf_ram_b.mif,MIF,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_debug_slave_sysclk.v,VERILOG,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_ociram_default_contents.mif,MIF,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu.v,VERILOG,,demo_nios2_cpu,false
 simulation/submodules/demo_nios2_cpu_debug_slave_tck.v,VERILOG,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu.sdc,SDC,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_rf_ram_a.mif,MIF,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_ociram_default_contents.dat,DAT,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_rf_ram_b.dat,DAT,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_debug_slave_wrapper.v,VERILOG,,demo_nios2_cpu,false
 simulation/submodules/demo_nios2_cpu_rf_ram_a.dat,DAT,,demo_nios2_cpu,false
 simulation/submodules/demo_nios2_cpu_rf_ram_b.hex,HEX,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_rf_ram_a.hex,HEX,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_test_bench.v,VERILOG,,demo_nios2_cpu,false
-simulation/submodules/demo_nios2_cpu_nios2_waves.do,OTHER,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_ociram_default_contents.dat,DAT,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_rf_ram_b.dat,DAT,,demo_nios2_cpu,false
+simulation/submodules/demo_nios2_cpu_rf_ram_a.mif,MIF,,demo_nios2_cpu,false
 simulation/submodules/altera_merlin_master_translator.sv,SYSTEM_VERILOG,,altera_merlin_master_translator,false
 simulation/submodules/altera_merlin_slave_translator.sv,SYSTEM_VERILOG,,altera_merlin_slave_translator,false
 simulation/submodules/altera_merlin_master_agent.sv,SYSTEM_VERILOG,,altera_merlin_master_agent,false
