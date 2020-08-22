@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'demo_diagnostic'
 # SOPC Builder design path: ../../demo_diagnostic.sopcinfo
 #
-# Generated: Sat Aug 22 18:16:03 CEST 2020
+# Generated: Sat Aug 22 18:47:15 CEST 2020
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # ram
-memory 0x10000 0x1a000 cache
+memory 0x40000 0x72000 cache
