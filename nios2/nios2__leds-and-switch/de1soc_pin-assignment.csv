@@ -1,0 +1,4 @@
+TO,LOCATION
+clk_clk,PIN_AF14
+led_export,PIN_V16
+sw_export,PIN_AB12
