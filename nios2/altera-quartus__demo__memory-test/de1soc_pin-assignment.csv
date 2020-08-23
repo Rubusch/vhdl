@@ -1,0 +1,10 @@
+TO,LOCATION
+clk_clk,PIN_AF14
+led_pio_export[0],PIN_V16
+led_pio_export[1],PIN_W16
+led_pio_export[2],PIN_V17
+led_pio_export[3],PIN_V18
+led_pio_export[4],PIN_W17
+led_pio_export[5],PIN_W19
+led_pio_export[6],PIN_Y19
+led_pio_export[7],PIN_W20
