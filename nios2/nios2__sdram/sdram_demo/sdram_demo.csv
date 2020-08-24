@@ -1,15 +1,16 @@
-# system info sdram_demo on 2020.08.24.18:58:52
+# system info sdram_demo on 2020.08.24.19:32:52
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598288325
+GENERATION_ID,1598290354
 #
 #
-# Files generated for sdram_demo on 2020.08.24.18:58:52
+# Files generated for sdram_demo on 2020.08.24.19:32:52
 files:
 filepath,kind,attributes,module,is_top
 simulation/sdram_demo.v,VERILOG,,sdram_demo,true
+simulation/submodules/sdram_demo_clocks.v,VERILOG,,sdram_demo_clocks,false
 simulation/submodules/sdram_demo_jtag_uart.v,VERILOG,,sdram_demo_jtag_uart,false
 simulation/submodules/sdram_demo_led.v,VERILOG,,sdram_demo_led,false
 simulation/submodules/sdram_demo_nios2.v,VERILOG,,sdram_demo_nios2,false
@@ -22,6 +23,8 @@ simulation/submodules/sdram_demo_irq_mapper.sv,SYSTEM_VERILOG,,sdram_demo_irq_ma
 simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
+simulation/submodules/sdram_demo_clocks_sys_pll.vo,VERILOG,,sdram_demo_clocks_sys_pll,false
+simulation/submodules/altera_up_avalon_reset_from_locked_signal.v,VERILOG,,altera_up_avalon_reset_from_locked_signal,false
 simulation/submodules/sdram_demo_nios2_cpu.v,VERILOG,,sdram_demo_nios2_cpu,false
 simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.dat,DAT,,sdram_demo_nios2_cpu,false
 simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.mif,MIF,,sdram_demo_nios2_cpu,false
@@ -66,6 +69,9 @@ simulation/submodules/sdram_demo_mm_interconnect_0_avalon_st_adapter_error_adapt
 # Map from instance-path to kind of module
 instances:
 instancePath,module
+sdram_demo.clocks,sdram_demo_clocks
+sdram_demo.clocks.sys_pll,sdram_demo_clocks_sys_pll
+sdram_demo.clocks.reset_from_locked,altera_up_avalon_reset_from_locked_signal
 sdram_demo.jtag_uart,sdram_demo_jtag_uart
 sdram_demo.led,sdram_demo_led
 sdram_demo.nios2,sdram_demo_nios2

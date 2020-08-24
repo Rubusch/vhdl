@@ -6,14 +6,14 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element clk_0
+   element clocks
    {
       datum _sortIndex
       {
-         value = "0";
+         value = "6";
          type = "int";
       }
    }
@@ -21,7 +21,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "2";
          type = "int";
       }
    }
@@ -37,7 +37,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "4";
          type = "int";
       }
    }
@@ -53,7 +53,7 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "0";
          type = "int";
       }
    }
@@ -69,7 +69,7 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "1";
          type = "int";
       }
    }
@@ -85,7 +85,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "5";
          type = "int";
       }
    }
@@ -101,7 +101,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "3";
          type = "int";
       }
    }
@@ -127,26 +127,37 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="sdram.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="clk" internal="clocks.ref_clk" type="clock" dir="end" />
  <interface
    name="led"
    internal="led.external_connection"
    type="conduit"
    dir="end" />
+ <interface name="sdram_clk" internal="clocks.sdram_clk" type="clock" dir="start" />
  <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
  <interface name="sw" internal="sw.external_connection" type="conduit" dir="end" />
- <module name="clk_0" kind="clock_source" version="18.1" enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
+ <module
+   name="clocks"
+   kind="altera_up_avalon_sys_sdram_pll"
+   version="18.0"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <parameter name="CIII_boards" value="DE0" />
+  <parameter name="CIV_boards" value="DE2-115" />
+  <parameter name="CV_boards" value="DE1-SoC" />
+  <parameter name="MAX10_boards" value="DE10-Lite" />
+  <parameter name="device_family" value="Cyclone V" />
+  <parameter name="gui_outclk" value="50.0" />
+  <parameter name="gui_refclk" value="50.0" />
+  <parameter name="other_boards" value="None" />
  </module>
  <module
    name="jtag_uart"
@@ -182,8 +193,8 @@
   <parameter name="width" value="8" />
  </module>
  <module name="nios2" kind="altera_nios2_gen2" version="18.1" enabled="1">
-  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
-  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="4" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="4" />
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
   <parameter name="bht_ramBlockType" value="Automatic" />
@@ -499,30 +510,84 @@
   <parameter name="baseAddress" value="0x08000000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="clock" version="18.1" start="clk_0.clk" end="nios2.clk" />
- <connection kind="clock" version="18.1" start="clk_0.clk" end="jtag_uart.clk" />
- <connection kind="clock" version="18.1" start="clk_0.clk" end="sw.clk" />
- <connection kind="clock" version="18.1" start="clk_0.clk" end="led.clk" />
- <connection kind="clock" version="18.1" start="clk_0.clk" end="sdram.clk" />
- <connection kind="clock" version="18.1" start="clk_0.clk" end="ram.clk1" />
+ <connection kind="clock" version="18.1" start="clocks.sys_clk" end="nios2.clk" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clocks.sys_clk"
+   end="jtag_uart.clk" />
+ <connection kind="clock" version="18.1" start="clocks.sys_clk" end="sw.clk" />
+ <connection kind="clock" version="18.1" start="clocks.sys_clk" end="led.clk" />
+ <connection kind="clock" version="18.1" start="clocks.sys_clk" end="sdram.clk" />
+ <connection kind="clock" version="18.1" start="clocks.sys_clk" end="ram.clk1" />
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
  </connection>
- <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="led.reset" />
- <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="sw.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
-   end="jtag_uart.reset" />
- <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="nios2.reset" />
- <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="sdram.reset" />
- <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="ram.reset1" />
  <connection
    kind="reset"
    version="18.1"
    start="nios2.debug_reset_request"
-   end="clk_0.clk_in_reset" />
+   end="clocks.ref_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="jtag_uart.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sw.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="led.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sdram.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="nios2.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="ram.reset1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="sdram.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="led.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="sw.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="jtag_uart.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="nios2.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clocks.reset_source"
+   end="ram.reset1" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
