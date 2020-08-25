@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY sdram_demo
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:39:11  AUGUST 24, 2020"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -56,8 +56,71 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name SOURCE_FILE "de1soc_sdram_pin-assignment.csv"
 set_global_assignment -name VERILOG_FILE sdram_top.v
 set_global_assignment -name QIP_FILE sdram_demo/synthesis/sdram_demo.qip
 set_global_assignment -name SIP_FILE sdram_demo/simulation/sdram_demo.sip
-set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
-set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_location_assignment PIN_AB12 -to SW[0]
+set_location_assignment PIN_AC12 -to SW[1]
+set_location_assignment PIN_AF9 -to SW[2]
+set_location_assignment PIN_AF10 -to SW[3]
+set_location_assignment PIN_AD11 -to SW[4]
+set_location_assignment PIN_AD12 -to SW[5]
+set_location_assignment PIN_AE11 -to SW[6]
+set_location_assignment PIN_AC9 -to SW[7]
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AA14 -to KEY_N
+set_location_assignment PIN_V16 -to LED[0]
+set_location_assignment PIN_W16 -to LED[1]
+set_location_assignment PIN_V17 -to LED[2]
+set_location_assignment PIN_V18 -to LED[3]
+set_location_assignment PIN_W17 -to LED[4]
+set_location_assignment PIN_W19 -to LED[5]
+set_location_assignment PIN_Y19 -to LED[6]
+set_location_assignment PIN_W20 -to LED[7]
+set_location_assignment PIN_AK14 -to DRAM_ADDR[0]
+set_location_assignment PIN_AH14 -to DRAM_ADDR[1]
+set_location_assignment PIN_AG15 -to DRAM_ADDR[2]
+set_location_assignment PIN_AE14 -to DRAM_ADDR[3]
+set_location_assignment PIN_AB15 -to DRAM_ADDR[4]
+set_location_assignment PIN_AC14 -to DRAM_ADDR[5]
+set_location_assignment PIN_AD14 -to DRAM_ADDR[6]
+set_location_assignment PIN_AF15 -to DRAM_ADDR[7]
+set_location_assignment PIN_AH15 -to DRAM_ADDR[8]
+set_location_assignment PIN_AG13 -to DRAM_ADDR[9]
+set_location_assignment PIN_AG12 -to DRAM_ADDR[10]
+set_location_assignment PIN_AH13 -to DRAM_ADDR[11]
+set_location_assignment PIN_AJ14 -to DRAM_ADDR[12]
+set_location_assignment PIN_AK6 -to DRAM_DQ[0]
+set_location_assignment PIN_AJ7 -to DRAM_DQ[1]
+set_location_assignment PIN_AK7 -to DRAM_DQ[2]
+set_location_assignment PIN_AK8 -to DRAM_DQ[3]
+set_location_assignment PIN_AK9 -to DRAM_DQ[4]
+set_location_assignment PIN_AG10 -to DRAM_DQ[5]
+set_location_assignment PIN_AK11 -to DRAM_DQ[6]
+set_location_assignment PIN_AJ11 -to DRAM_DQ[7]
+set_location_assignment PIN_AH10 -to DRAM_DQ[8]
+set_location_assignment PIN_AJ10 -to DRAM_DQ[9]
+set_location_assignment PIN_AJ9 -to DRAM_DQ[10]
+set_location_assignment PIN_AH9 -to DRAM_DQ[11]
+set_location_assignment PIN_AH8 -to DRAM_DQ[12]
+set_location_assignment PIN_AH7 -to DRAM_DQ[13]
+set_location_assignment PIN_AJ6 -to DRAM_DQ[14]
+set_location_assignment PIN_AJ5 -to DRAM_DQ[15]
+set_location_assignment PIN_ -to DRAM_BA[0]
+set_location_assignment PIN_ -to DRAM_BA[1]
+set_location_assignment PIN_AB13 -to DRAM_LDQM
+set_location_assignment PIN_AK12 -to DRAM_UDQM
+set_location_assignment PIN_AE13 -to DRAM_RAS_N
+set_location_assignment PIN_AF11 -to DRAM_CAS_N
+set_location_assignment PIN_AK13 -to DRAM_CKE
+set_location_assignment PIN_AH12 -to DRAM_CLK
+set_location_assignment PIN_AA13 -to DRAM_WE_N
+set_location_assignment PIN_AG11 -to DRAM_CS_N
+set_location_assignment PIN_ -to DRAM_DQM
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

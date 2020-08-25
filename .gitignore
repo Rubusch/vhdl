@@ -300,9 +300,13 @@ output_files
 .qsys_edit
 
 ## qsys output folders
-#synthesis
-#simulation
-#testbench
+## qip / sip /... generation may lead to bloatied repos, quickfix solution is to exclude all generated stuff
+synthesis
+simulation
+testbench
+
+## qsys output, generated folders
+submodules
 
 ## quartus design space explorer (dse)
 dse

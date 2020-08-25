@@ -134,7 +134,7 @@ module sdram_demo_mm_interconnect_0_router_001
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h10000000 - 64'h8000000); 
+    localparam PAD0 = log2ceil(64'hc000000 - 64'h8000000); 
     localparam PAD1 = log2ceil(64'h10020000 - 64'h10010000); 
     localparam PAD2 = log2ceil(64'h10021000 - 64'h10020800); 
     // -------------------------------------------------------
@@ -190,7 +190,7 @@ module sdram_demo_mm_interconnect_0_router_001
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x8000000 .. 0x10000000 )
+    // ( 0x8000000 .. 0xc000000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 29'h8000000   ) begin
             src_channel = 6'b100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;

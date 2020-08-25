@@ -13,8 +13,8 @@ module sdram_demo (
 		output wire        sdram_wire_cas_n, //           .cas_n
 		output wire        sdram_wire_cke,   //           .cke
 		output wire        sdram_wire_cs_n,  //           .cs_n
-		inout  wire [31:0] sdram_wire_dq,    //           .dq
-		output wire [3:0]  sdram_wire_dqm,   //           .dqm
+		inout  wire [15:0] sdram_wire_dq,    //           .dq
+		output wire [1:0]  sdram_wire_dqm,   //           .dqm
 		output wire        sdram_wire_ras_n, //           .ras_n
 		output wire        sdram_wire_we_n,  //           .we_n
 		input  wire [7:0]  sw_export         //         sw.export
@@ -63,14 +63,14 @@ module sdram_demo (
 	wire  [31:0] mm_interconnect_0_ram_s1_writedata;                        // mm_interconnect_0:ram_s1_writedata -> ram:writedata
 	wire         mm_interconnect_0_ram_s1_clken;                            // mm_interconnect_0:ram_s1_clken -> ram:clken
 	wire         mm_interconnect_0_sdram_s1_chipselect;                     // mm_interconnect_0:sdram_s1_chipselect -> sdram:az_cs
-	wire  [31:0] mm_interconnect_0_sdram_s1_readdata;                       // sdram:za_data -> mm_interconnect_0:sdram_s1_readdata
+	wire  [15:0] mm_interconnect_0_sdram_s1_readdata;                       // sdram:za_data -> mm_interconnect_0:sdram_s1_readdata
 	wire         mm_interconnect_0_sdram_s1_waitrequest;                    // sdram:za_waitrequest -> mm_interconnect_0:sdram_s1_waitrequest
 	wire  [24:0] mm_interconnect_0_sdram_s1_address;                        // mm_interconnect_0:sdram_s1_address -> sdram:az_addr
 	wire         mm_interconnect_0_sdram_s1_read;                           // mm_interconnect_0:sdram_s1_read -> sdram:az_rd_n
-	wire   [3:0] mm_interconnect_0_sdram_s1_byteenable;                     // mm_interconnect_0:sdram_s1_byteenable -> sdram:az_be_n
+	wire   [1:0] mm_interconnect_0_sdram_s1_byteenable;                     // mm_interconnect_0:sdram_s1_byteenable -> sdram:az_be_n
 	wire         mm_interconnect_0_sdram_s1_readdatavalid;                  // sdram:za_valid -> mm_interconnect_0:sdram_s1_readdatavalid
 	wire         mm_interconnect_0_sdram_s1_write;                          // mm_interconnect_0:sdram_s1_write -> sdram:az_wr_n
-	wire  [31:0] mm_interconnect_0_sdram_s1_writedata;                      // mm_interconnect_0:sdram_s1_writedata -> sdram:az_data
+	wire  [15:0] mm_interconnect_0_sdram_s1_writedata;                      // mm_interconnect_0:sdram_s1_writedata -> sdram:az_data
 	wire         irq_mapper_receiver0_irq;                                  // jtag_uart:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_irq_irq;                                             // irq_mapper:sender_irq -> nios2:irq
 	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart:rst_n, led:reset_n, mm_interconnect_0:nios2_reset_reset_bridge_in_reset_reset, nios2:reset_n, ram:reset, rst_translator:in_reset, sdram:reset_n, sw:reset_n]
