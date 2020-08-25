@@ -1,12 +1,12 @@
-# system info sdram_demo on 2020.08.24.19:32:52
+# system info sdram_demo on 2020.08.25.10:17:19
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598290354
+GENERATION_ID,1598343416
 #
 #
-# Files generated for sdram_demo on 2020.08.24.19:32:52
+# Files generated for sdram_demo on 2020.08.25.10:17:19
 files:
 filepath,kind,attributes,module,is_top
 simulation/sdram_demo.v,VERILOG,,sdram_demo,true
@@ -25,22 +25,22 @@ simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controll
 simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
 simulation/submodules/sdram_demo_clocks_sys_pll.vo,VERILOG,,sdram_demo_clocks_sys_pll,false
 simulation/submodules/altera_up_avalon_reset_from_locked_signal.v,VERILOG,,altera_up_avalon_reset_from_locked_signal,false
-simulation/submodules/sdram_demo_nios2_cpu.v,VERILOG,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.dat,DAT,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.mif,MIF,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.hex,HEX,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_nios2_waves.do,OTHER,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_debug_slave_tck.v,VERILOG,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_test_bench.v,VERILOG,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu.sdc,SDC,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.hex,HEX,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.hex,HEX,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.mif,MIF,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_debug_slave_wrapper.v,VERILOG,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.dat,DAT,,sdram_demo_nios2_cpu,false
 simulation/submodules/sdram_demo_nios2_cpu_debug_slave_sysclk.v,VERILOG,,sdram_demo_nios2_cpu,false
-simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.mif,MIF,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu.v,VERILOG,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu.sdc,SDC,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.mif,MIF,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_nios2_waves.do,OTHER,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_test_bench.v,VERILOG,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.hex,HEX,,sdram_demo_nios2_cpu,false
 simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.dat,DAT,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.hex,HEX,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_ociram_default_contents.mif,MIF,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_b.dat,DAT,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_debug_slave_wrapper.v,VERILOG,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.dat,DAT,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.hex,HEX,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_debug_slave_tck.v,VERILOG,,sdram_demo_nios2_cpu,false
+simulation/submodules/sdram_demo_nios2_cpu_rf_ram_a.mif,MIF,,sdram_demo_nios2_cpu,false
 simulation/submodules/altera_merlin_master_translator.sv,SYSTEM_VERILOG,,altera_merlin_master_translator,false
 simulation/submodules/altera_merlin_slave_translator.sv,SYSTEM_VERILOG,,altera_merlin_slave_translator,false
 simulation/submodules/altera_merlin_master_agent.sv,SYSTEM_VERILOG,,altera_merlin_master_agent,false
