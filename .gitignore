@@ -16,10 +16,10 @@
 # *.atm
 
 ## Block Design File
-*.bdf
+#*.bdf
 
 ## Block Symbol File
-*.bsf
+#*.bsf
 
 ## BSDL file
 *.bsd
@@ -29,6 +29,8 @@
 
 ## Comma-Separated Value File
 #*.csv
+
+## generated Comma Separated Value File
 *results.csv
 
 ## Component Declaration File
@@ -93,7 +95,7 @@
 *.jam
 
 ## JTAG Debugging Information File
-*.jdi
+# *.jdi
 
 ## JTAG Indirect Configuration File
 # *.jic
@@ -134,6 +136,9 @@
 
 ## Quartus Prime IP File
 # *.qip
+
+## Quartus Prime Simulation IP File
+# *.sip
 
 ## Quartus Prime Archive File
 *.qar
