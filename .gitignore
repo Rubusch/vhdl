@@ -285,7 +285,6 @@
 ## e.g. recursively ignored folders and missing above...
 db
 incremental_db
-synthesis
 devkits
 output_files
 *.sopcinfo
@@ -300,9 +299,10 @@ output_files
 ## quartus qsys
 .qsys_edit
 
-## quartus modelsim
-simulation
-testbench
+## qsys output folders
+#synthesis
+#simulation
+#testbench
 
 ## quartus design space explorer (dse)
 dse
