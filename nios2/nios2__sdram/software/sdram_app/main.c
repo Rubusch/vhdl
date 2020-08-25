@@ -17,7 +17,7 @@
 
 #define writeio(addr, val) \
     (    {  unsigned char dummy; \
-          asm volatile( "stbio %0, 0(%1)" :"=r"(dummy) : "r" (addr)); } \
+          asm volatile( "stbio %0, 0(%1)" :"=r"(dummy) :  "r"(val), "r" (addr) : "memory"); } \
     )
 
 // TODO
@@ -73,13 +73,17 @@ int main()
 //	writeio(led, content);
 
 	printf("AAA\n");
-	//while (1) {
-		workio( sw, led);
-//		content = readio(sw);
+	while (1) {
+//		workio( sw, led);
+
+		content = readio(sw);
+
 		printf("XXX '%x'\n", content);
 
+		writeio( led, content);
+
 		for (i=0; i<500000; i ++){}
-//	}
+	}
 
 	return 0;
 }
