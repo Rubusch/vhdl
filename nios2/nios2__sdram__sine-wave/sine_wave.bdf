@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 320 416 496 432)
+	(rect -168 416 8 432)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "sw_export[7..0]" (rect 5 0 80 11)(font "Arial" ))
 	(pt 176 8)
@@ -35,22 +35,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -160 248 8 264)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "rst" (rect 5 0 17 11)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
@@ -385,11 +369,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (connector
-	(pt 496 424)
-	(pt 600 424)
-	(bus)
-)
-(connector
 	(pt 496 256)
 	(pt 600 256)
 	(bus)
@@ -430,14 +409,15 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 96 256)
-	(pt 8 256)
-)
-(connector
 	(pt 96 216)
 	(pt 8 216)
 )
 (connector
 	(pt 256 216)
 	(pt 600 216)
+)
+(connector
+	(pt 8 424)
+	(pt 600 424)
+	(bus)
 )
