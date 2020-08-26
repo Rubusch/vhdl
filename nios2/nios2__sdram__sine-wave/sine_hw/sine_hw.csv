@@ -1,12 +1,12 @@
-# system info sine_hw on 2020.08.26.09:47:34
+# system info sine_hw on 2020.08.26.18:42:31
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598428049
+GENERATION_ID,1598460145
 #
 #
-# Files generated for sine_hw on 2020.08.26.09:47:34
+# Files generated for sine_hw on 2020.08.26.18:42:31
 files:
 filepath,kind,attributes,module,is_top
 simulation/sine_hw.v,VERILOG,,sine_hw,true
