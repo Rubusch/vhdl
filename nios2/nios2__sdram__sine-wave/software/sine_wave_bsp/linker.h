@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
  * SOPC Builder design path: ../../sine_hw.sopcinfo
  *
- * Generated: Wed Aug 26 18:52:50 CEST 2020
+ * Generated: Wed Aug 26 23:22:40 CEST 2020
  */
 
 /*
@@ -65,12 +65,12 @@
  *
  */
 
-#define RAM_REGION_BASE 0x2010000
+#define RAM_REGION_BASE 0x8010000
 #define RAM_REGION_SPAN 65536
-#define RESET_REGION_BASE 0x1000000
+#define RESET_REGION_BASE 0x4000000
 #define RESET_REGION_SPAN 32
-#define SDRAM_REGION_BASE 0x1000020
-#define SDRAM_REGION_SPAN 16777184
+#define SDRAM_REGION_BASE 0x4000020
+#define SDRAM_REGION_SPAN 67108832
 
 
 /*

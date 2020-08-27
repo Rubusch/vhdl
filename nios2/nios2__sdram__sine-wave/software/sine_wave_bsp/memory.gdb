@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
 # SOPC Builder design path: ../../sine_hw.sopcinfo
 #
-# Generated: Wed Aug 26 18:52:50 CEST 2020
+# Generated: Wed Aug 26 23:22:40 CEST 2020
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,7 +47,7 @@
 # by allowing GDB to cache memory contents on the host.
 
 # sdram
-memory 0x1000000 0x2000000 cache
+memory 0x4000000 0x8000000 cache
 
 # ram
-memory 0x2010000 0x2020000 cache
+memory 0x8010000 0x8020000 cache

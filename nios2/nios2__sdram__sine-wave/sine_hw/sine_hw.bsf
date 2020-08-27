@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,8 +16,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
@@ -41,8 +40,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 112)
 		(output)
-		(text "sdram_wire_addr[11..0]" (rect 0 0 93 12)(font "Arial" (font_size 8)))
-		(text "sdram_wire_addr[11..0]" (rect 4 101 136 112)(font "Arial" (font_size 8)))
+		(text "sdram_wire_addr[12..0]" (rect 0 0 94 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_addr[12..0]" (rect 4 101 136 112)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 128 112)(line_width 3))
 	)
 	(port
@@ -76,8 +75,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 208)
 		(output)
-		(text "sdram_wire_dqm[3..0]" (rect 0 0 90 12)(font "Arial" (font_size 8)))
-		(text "sdram_wire_dqm[3..0]" (rect 4 197 124 208)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dqm[1..0]" (rect 0 0 89 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dqm[1..0]" (rect 4 197 124 208)(font "Arial" (font_size 8)))
 		(line (pt 0 208)(pt 128 208)(line_width 3))
 	)
 	(port
@@ -97,8 +96,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 192)
 		(bidir)
-		(text "sdram_wire_dq[31..0]" (rect 0 0 86 12)(font "Arial" (font_size 8)))
-		(text "sdram_wire_dq[31..0]" (rect 4 181 124 192)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dq[15..0]" (rect 0 0 86 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dq[15..0]" (rect 4 181 124 192)(font "Arial" (font_size 8)))
 		(line (pt 0 192)(pt 128 192)(line_width 3))
 	)
 	(drawing

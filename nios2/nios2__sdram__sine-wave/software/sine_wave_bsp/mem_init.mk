@@ -155,13 +155,13 @@ ACDS_VERSION := 18.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 646
+# BUILD_NUMBER: 625
 
 # Optimize for simulation
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x01000000
+RESET_ADDRESS ?= 0x04000000
 
 # The specific Nios II ELF file format to use.
 NIOS2_ELF_FORMAT ?= elf32-littlenios2
@@ -180,8 +180,8 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
-$(MEM_0)_START := 0x02010000
-$(MEM_0)_END := 0x0201ffff
+$(MEM_0)_START := 0x08010000
+$(MEM_0)_END := 0x0801ffff
 $(MEM_0)_SPAN := 0x00010000
 $(MEM_0)_HIERARCHICAL_PATH := ram
 $(MEM_0)_WIDTH := 32
@@ -199,12 +199,12 @@ DAT_FILES += $(HDL_SIM_DIR)/$(MEM_1).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_1).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).sym
-$(MEM_1)_START := 0x01000000
-$(MEM_1)_END := 0x01ffffff
-$(MEM_1)_SPAN := 0x01000000
+$(MEM_1)_START := 0x04000000
+$(MEM_1)_END := 0x07ffffff
+$(MEM_1)_SPAN := 0x04000000
 $(MEM_1)_HIERARCHICAL_PATH := sdram
-$(MEM_1)_WIDTH := 32
-$(MEM_1)_HEX_DATA_WIDTH := 32
+$(MEM_1)_WIDTH := 16
+$(MEM_1)_HEX_DATA_WIDTH := 16
 $(MEM_1)_ENDIANNESS := --little-endian-mem
 $(MEM_1)_CREATE_LANES := 0
 

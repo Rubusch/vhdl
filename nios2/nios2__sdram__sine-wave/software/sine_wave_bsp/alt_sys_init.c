@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
  * SOPC Builder design path: ../../sine_hw.sopcinfo
  *
- * Generated: Wed Aug 26 18:52:50 CEST 2020
+ * Generated: Wed Aug 26 23:22:40 CEST 2020
  */
 
 /*
