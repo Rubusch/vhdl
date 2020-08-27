@@ -100,7 +100,7 @@
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
- <parameter name="device" value="5CSEMA6F31C6" />
+ <parameter name="device" value="5CSEMA5F31C6" />
  <parameter name="deviceFamily" value="Cyclone V" />
  <parameter name="deviceSpeedGrade" value="6" />
  <parameter name="fabricMode" value="QSYS" />
@@ -119,6 +119,12 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
+ <interface
+   name="nios2_debug_reset"
+   internal="nios2.debug_reset_request"
+   type="reset"
+   dir="start" />
+ <interface name="reset" internal="clk.clk_in_reset" type="reset" dir="end" />
  <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
  <interface name="sw" internal="sw.external_connection" type="conduit" dir="end" />
  <module name="clk" kind="clock_source" version="18.1" enabled="1">
@@ -149,7 +155,7 @@
  <module name="nios2" kind="altera_nios2_gen2" version="18.1" enabled="1">
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
-  <parameter name="AUTO_DEVICE" value="5CSEMA6F31C6" />
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
   <parameter name="bht_ramBlockType" value="Automatic" />
   <parameter name="breakOffset" value="32" />
@@ -476,11 +482,6 @@
  <connection kind="reset" version="18.1" start="clk.clk_reset" end="sdram.reset" />
  <connection kind="reset" version="18.1" start="clk.clk_reset" end="sw.reset" />
  <connection kind="reset" version="18.1" start="clk.clk_reset" end="ram.reset1" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="nios2.debug_reset_request"
-   end="clk.clk_in_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

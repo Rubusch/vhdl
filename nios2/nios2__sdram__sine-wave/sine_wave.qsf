@@ -39,20 +39,15 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY SDRAM_CLK_ALTPLL
+set_global_assignment -name TOP_LEVEL_ENTITY sine_wave
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:29:05  AUGUST 26, 2020"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name SIP_FILE sine_hw/simulation/sine_hw.sip
-set_global_assignment -name QIP_FILE sine_hw/synthesis/sine_hw.qip
-set_global_assignment -name SOURCE_FILE "de1soc_sdram_pin-assignment.csv"
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
-set_global_assignment -name QIP_FILE SDRAM_CLK_ALTPLL.qip
-set_global_assignment -name SIP_FILE SDRAM_CLK_ALTPLL.sip
 set_location_assignment PIN_AB12 -to sw_export[0]
 set_location_assignment PIN_AC12 -to sw_export[1]
 set_location_assignment PIN_AF9 -to sw_export[2]
@@ -100,7 +95,15 @@ set_location_assignment PIN_AF11 -to sdram_wire_cas_n
 set_location_assignment PIN_AK13 -to sdram_wire_cke
 set_location_assignment PIN_AA13 -to sdram_wire_we_n
 set_location_assignment PIN_AG11 -to sdram_wire_cs_n
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE sine_wave.bdf
+set_global_assignment -name SIP_FILE sine_hw/simulation/sine_hw.sip
+set_global_assignment -name QIP_FILE sine_hw/synthesis/sine_hw.qip
+set_global_assignment -name SOURCE_FILE "de1soc_sdram_pin-assignment.csv"
+set_global_assignment -name QIP_FILE SDRAM_CLK_ALTPLL.qip
+set_global_assignment -name SIP_FILE SDRAM_CLK_ALTPLL.sip
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

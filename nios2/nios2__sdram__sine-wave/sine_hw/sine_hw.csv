@@ -1,12 +1,12 @@
-# system info sine_hw on 2020.08.26.23:04:22
+# system info sine_hw on 2020.08.27.11:52:52
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598475854
+GENERATION_ID,1598521965
 #
 #
-# Files generated for sine_hw on 2020.08.26.23:04:22
+# Files generated for sine_hw on 2020.08.27.11:52:52
 files:
 filepath,kind,attributes,module,is_top
 simulation/sine_hw.v,VERILOG,,sine_hw,true
@@ -21,22 +21,22 @@ simulation/submodules/sine_hw_irq_mapper.sv,SYSTEM_VERILOG,,sine_hw_irq_mapper,f
 simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
 simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
-simulation/submodules/sine_hw_nios2_cpu_nios2_waves.do,OTHER,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu.v,VERILOG,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_debug_slave_tck.v,VERILOG,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu.sdc,SDC,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.hex,HEX,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_ociram_default_contents.dat,DAT,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_rf_ram_a.dat,DAT,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_debug_slave_wrapper.v,VERILOG,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.dat,DAT,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_ociram_default_contents.mif,MIF,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_rf_ram_a.hex,HEX,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.mif,MIF,,sine_hw_nios2_cpu,false
 simulation/submodules/sine_hw_nios2_cpu_rf_ram_a.mif,MIF,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_nios2_waves.do,OTHER,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_ociram_default_contents.dat,DAT,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_rf_ram_a.hex,HEX,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_debug_slave_tck.v,VERILOG,,sine_hw_nios2_cpu,false
 simulation/submodules/sine_hw_nios2_cpu_ociram_default_contents.hex,HEX,,sine_hw_nios2_cpu,false
-simulation/submodules/sine_hw_nios2_cpu_debug_slave_sysclk.v,VERILOG,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_rf_ram_a.dat,DAT,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.dat,DAT,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu.v,VERILOG,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_ociram_default_contents.mif,MIF,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.hex,HEX,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_debug_slave_wrapper.v,VERILOG,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_rf_ram_b.mif,MIF,,sine_hw_nios2_cpu,false
 simulation/submodules/sine_hw_nios2_cpu_test_bench.v,VERILOG,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu_debug_slave_sysclk.v,VERILOG,,sine_hw_nios2_cpu,false
+simulation/submodules/sine_hw_nios2_cpu.sdc,SDC,,sine_hw_nios2_cpu,false
 simulation/submodules/altera_merlin_master_translator.sv,SYSTEM_VERILOG,,altera_merlin_master_translator,false
 simulation/submodules/altera_merlin_slave_translator.sv,SYSTEM_VERILOG,,altera_merlin_slave_translator,false
 simulation/submodules/altera_merlin_master_agent.sv,SYSTEM_VERILOG,,altera_merlin_master_agent,false
