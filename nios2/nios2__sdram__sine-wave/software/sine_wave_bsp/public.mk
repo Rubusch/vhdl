@@ -82,11 +82,11 @@ ACDS_VERSION := 18.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 646
+# BUILD_NUMBER: 625
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := $(ABS_BSP_ROOT_DIR)/../../sine_wave_hw.sopcinfo
+SOPCINFO_FILE := $(ABS_BSP_ROOT_DIR)/../../sine_hw.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -139,8 +139,8 @@ QSYS := 1
 ELF_PATCH_FLAG += --qsys true
 
 # Design Name 
-# setting SOPC_NAME is sine_wave_hw
-SOPC_NAME := sine_wave_hw
+# setting SOPC_NAME is sine_hw
+SOPC_NAME := sine_hw
 
 # SopcBuilder Simulation Enabled 
 # setting SOPC_SIMULATION_ENABLED is false

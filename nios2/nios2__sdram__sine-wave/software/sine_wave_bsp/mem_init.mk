@@ -155,7 +155,7 @@ ACDS_VERSION := 18.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 646
+# BUILD_NUMBER: 625
 
 # Optimize for simulation
 SIM_OPTIMIZE ?= 0
@@ -171,7 +171,7 @@ NIOS2_ELF_FORMAT ?= elf32-littlenios2
 #-------------------------------------
 
 # Memory: ram
-MEM_0 := sine_wave_hw_ram
+MEM_0 := sine_hw_ram
 $(MEM_0)_NAME := ram
 $(MEM_0)_MEM_INIT_FILE_PARAM_NAME := INIT_FILE
 HEX_FILES += $(MEM_INIT_DIR)/$(MEM_0).hex

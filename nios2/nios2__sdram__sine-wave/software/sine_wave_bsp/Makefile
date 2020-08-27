@@ -98,10 +98,10 @@ ACDS_VERSION := 18.1
 
 # This following BUILD_NUMBER comment indicates the build number of the tool 
 # used to generate this makefile. 
-# BUILD_NUMBER: 646
+# BUILD_NUMBER: 625
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := ../../sine_wave_hw.sopcinfo
+SOPC_FILE := ../../sine_hw.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

@@ -1,10 +1,10 @@
 /*
  * alt_sys_init.c - HAL initialization source
  *
- * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_wave_hw'
- * SOPC Builder design path: ../../sine_wave_hw.sopcinfo
+ * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
+ * SOPC Builder design path: ../../sine_hw.sopcinfo
  *
- * Generated: Thu Aug 27 20:14:31 CEST 2020
+ * Generated: Thu Aug 27 22:33:00 CEST 2020
  */
 
 /*
