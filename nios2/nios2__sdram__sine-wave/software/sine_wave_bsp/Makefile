@@ -101,7 +101,7 @@ ACDS_VERSION := 18.1
 # BUILD_NUMBER: 646
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := ../../sine_hw.sopcinfo
+SOPC_FILE := ../../sine_wave_hw.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

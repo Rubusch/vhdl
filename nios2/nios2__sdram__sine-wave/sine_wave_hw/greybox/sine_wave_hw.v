@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition"
 
-// DATE "08/27/2020 11:53:34"
+// DATE "08/27/2020 19:03:26"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -29,7 +29,7 @@
 // 
 
 
-module sine_hw (
+module sine_wave_hw (
 	altera_reserved_tms,
 	altera_reserved_tck,
 	altera_reserved_tdi,
@@ -221,11 +221,11 @@ wire \ram|the_altsyncram|auto_generated|ram_block1a39~portadataout ;
 wire \ram|the_altsyncram|auto_generated|ram_block1a7~portadataout ;
 wire \ram|the_altsyncram|auto_generated|ram_block1a51~portadataout ;
 wire \ram|the_altsyncram|auto_generated|ram_block1a19~portadataout ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[4]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[0]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[1]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[2]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[3]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[4]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[0]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[1]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[2]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[3]~q ;
 wire \nios2|cpu|d_writedata[16]~q ;
 wire \nios2|cpu|d_writedata[17]~q ;
 wire \nios2|cpu|d_writedata[18]~q ;
@@ -234,40 +234,40 @@ wire \nios2|cpu|d_writedata[20]~q ;
 wire \nios2|cpu|d_writedata[21]~q ;
 wire \nios2|cpu|d_writedata[22]~q ;
 wire \nios2|cpu|d_writedata[23]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[11]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[12]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[13]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[14]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[15]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[16]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[5]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[20]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[18]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[17]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[22]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[11]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[12]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[13]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[14]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[15]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[16]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[5]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[20]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[18]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[17]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[22]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[18]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[21]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[8]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[31]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[30]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[29]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[28]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[27]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[21]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[8]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[31]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[30]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[29]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[28]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[27]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[22]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[26]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[9]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[26]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[9]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[19]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[23]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[10]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[23]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[10]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[20]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[24]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[24]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[21]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[25]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[25]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[16]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[6]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[6]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[17]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[7]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[19]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[7]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[19]~q ;
 wire \jtag_uart|Add1~1_sumout ;
 wire \jtag_uart|Add1~5_sumout ;
 wire \jtag_uart|Add1~9_sumout ;
@@ -275,25 +275,25 @@ wire \jtag_uart|Add1~13_sumout ;
 wire \jtag_uart|Add1~17_sumout ;
 wire \jtag_uart|Add1~21_sumout ;
 wire \jtag_uart|Add1~25_sumout ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ;
-wire \mm_interconnect_0|rsp_mux|src_data[0]~12_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[1]~16_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[2]~20_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[3]~24_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[4]~28_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[7]~32_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[6]~36_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[5]~40_combout ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ;
+wire \mm_interconnect_0|rsp_mux|src_data[0]~28_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[1]~32_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[2]~36_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[3]~40_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[4]~44_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[7]~48_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[6]~52_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[5]~56_combout ;
 wire \mm_interconnect_0|nios2_data_master_translator|av_waitrequest~2_combout ;
 wire \mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ;
 wire \sdram|m_addr[4]~q ;
 wire \sdram|m_addr[5]~q ;
 wire \sdram|m_addr[10]~q ;
@@ -307,26 +307,26 @@ wire \sdram|m_dqm[0]~q ;
 wire \sdram|m_dqm[1]~q ;
 wire \sdram|m_cmd[2]~q ;
 wire \sdram|m_cmd[0]~q ;
-wire \jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|sr[0]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ;
+wire \jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[0]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ;
 wire \rst_controller|r_sync_rst~q ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ;
-wire \mm_interconnect_0|cmd_mux_003|saved_grant[0]~q ;
-wire \mm_interconnect_0|cmd_mux_003|saved_grant[1]~q ;
+wire \mm_interconnect_0|cmd_mux_004|saved_grant[0]~q ;
+wire \mm_interconnect_0|cmd_mux_004|saved_grant[1]~q ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~0_combout ;
-wire \sdram|the_sine_hw_sdram_input_efifo_module|Equal0~0_combout ;
+wire \sdram|the_sine_wave_hw_sdram_input_efifo_module|Equal0~0_combout ;
 wire \nios2|cpu|d_read~q ;
 wire \mm_interconnect_0|nios2_data_master_translator|read_accepted~q ;
-wire \jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|rst1~q ;
+wire \jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|rst1~q ;
 wire \nios2|cpu|d_write~q ;
 wire \mm_interconnect_0|nios2_data_master_translator|write_accepted~q ;
 wire \mm_interconnect_0|router|Equal4~4_combout ;
-wire \mm_interconnect_0|cmd_demux|src3_valid~0_combout ;
+wire \mm_interconnect_0|cmd_demux|src4_valid~0_combout ;
 wire \nios2|cpu|i_read~q ;
 wire \nios2|cpu|F_pc[24]~q ;
-wire \mm_interconnect_0|cmd_mux_003|src_valid~0_combout ;
+wire \mm_interconnect_0|cmd_mux_004|src_valid~0_combout ;
 wire \mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem~0_combout ;
 wire \nios2|cpu|d_byteenable[1]~q ;
 wire \nios2|cpu|d_byteenable[0]~q ;
@@ -375,7 +375,7 @@ wire \sdram|m_data[15]~q ;
 wire \mm_interconnect_0|sdram_s1_agent|rp_valid~combout ;
 wire \mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ;
 wire \mm_interconnect_0|sdram_s1_rsp_width_adapter|always10~0_combout ;
-wire \mm_interconnect_0|rsp_demux_003|src1_valid~0_combout ;
+wire \mm_interconnect_0|rsp_demux_004|src1_valid~0_combout ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|read_latency_shift_reg[0]~q ;
 wire \mm_interconnect_0|rsp_demux_001|src0_valid~0_combout ;
 wire \mm_interconnect_0|rsp_demux_002|src0_valid~0_combout ;
@@ -388,14 +388,14 @@ wire \mm_interconnect_0|cmd_mux_002|saved_grant[0]~q ;
 wire \mm_interconnect_0|ram_s1_agent_rsp_fifo|mem_used[1]~q ;
 wire \jtag_uart|av_waitrequest~q ;
 wire \mm_interconnect_0|cmd_mux_001|saved_grant[0]~q ;
-wire \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_ocimem|waitrequest~q ;
+wire \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_ocimem|waitrequest~q ;
 wire \mm_interconnect_0|nios2_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ;
 wire \mm_interconnect_0|cmd_demux|WideOr0~5_combout ;
 wire \mm_interconnect_0|nios2_data_master_translator|av_waitrequest~0_combout ;
-wire \mm_interconnect_0|rsp_demux_003|src0_valid~0_combout ;
+wire \mm_interconnect_0|rsp_demux_004|src0_valid~0_combout ;
 wire \mm_interconnect_0|rsp_mux_001|WideOr1~0_combout ;
 wire \mm_interconnect_0|rsp_mux_001|WideOr1~1_combout ;
-wire \sdram|the_sine_hw_sdram_input_efifo_module|always2~1_combout ;
+wire \sdram|the_sine_wave_hw_sdram_input_efifo_module|always2~1_combout ;
 wire \nios2|cpu|d_byteenable[2]~q ;
 wire \nios2|cpu|d_byteenable[3]~q ;
 wire \nios2|cpu|hbreak_enabled~q ;
@@ -407,7 +407,7 @@ wire \mm_interconnect_0|nios2_debug_mem_slave_agent_rsp_fifo|mem~0_combout ;
 wire \mm_interconnect_0|cmd_demux|src2_valid~0_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_valid~0_combout ;
 wire \mm_interconnect_0|rsp_demux_001|src1_valid~0_combout ;
-wire \mm_interconnect_0|rsp_demux_003|src1_valid~1_combout ;
+wire \mm_interconnect_0|rsp_demux_004|src1_valid~1_combout ;
 wire \mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[4]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ;
 wire \mm_interconnect_0|rsp_mux|src_data[4]~0_combout ;
@@ -425,7 +425,7 @@ wire \mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[2]~q ;
 wire \mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[3]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ;
 wire \mm_interconnect_0|rsp_mux|src_data[3]~2_combout ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ;
 wire \rst_controller|r_early_rst~q ;
 wire \nios2|cpu|d_writedata[0]~q ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~25_combout ;
@@ -528,13 +528,13 @@ wire \mm_interconnect_0|cmd_mux_002|src_payload~1_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~2_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~3_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~4_combout ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ;
 wire \mm_interconnect_0|cmd_mux_001|src_payload~2_combout ;
 wire \mm_interconnect_0|cmd_mux_001|src_data[32]~combout ;
 wire \nios2|cpu|d_writedata[24]~q ;
@@ -568,12 +568,12 @@ wire \mm_interconnect_0|cmd_mux_002|src_payload~16_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~17_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~18_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_data[35]~combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~1_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~2_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[27]~4_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[26]~5_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~19_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~3_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[25]~6_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~20_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~4_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[24]~7_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~21_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~22_combout ;
 wire \mm_interconnect_0|cmd_mux_002|src_payload~23_combout ;
@@ -590,7 +590,7 @@ wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[1
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[8]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[10]~q ;
 wire \mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[9]~q ;
-wire \jtag_uart|the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ;
+wire \jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ;
 wire \jtag_uart|read_0~q ;
 wire \sdram|za_data[4]~q ;
 wire \sdram|za_data[0]~q ;
@@ -605,10 +605,10 @@ wire \sdram|za_data[14]~q ;
 wire \sdram|za_data[15]~q ;
 wire \sdram|za_data[5]~q ;
 wire \jtag_uart|woverflow~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~5_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~6_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~7_combout ;
-wire \mm_interconnect_0|rsp_mux|src_payload~8_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[30]~8_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[29]~9_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[28]~10_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[31]~11_combout ;
 wire \sdram|za_data[6]~q ;
 wire \sdram|za_data[8]~q ;
 wire \sdram|za_data[10]~q ;
@@ -806,18 +806,19 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_dr_scan_reg~q ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_proc~0_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~1_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~0_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8_combout ;
@@ -838,7 +839,6 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~q ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg[0]~q ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0]~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~q ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|tdo_mux_out~0_combout ;
@@ -887,14 +887,14 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \altera_internal_jtag~TDO ;
 
 
-sine_hw_altera_reset_controller rst_controller(
+sine_wave_hw_altera_reset_controller rst_controller(
 	.r_sync_rst1(\rst_controller|r_sync_rst~q ),
 	.r_early_rst1(\rst_controller|r_early_rst~q ),
 	.altera_reset_synchronizer_int_chain_1(\rst_controller|alt_rst_req_sync_uq1|altera_reset_synchronizer_int_chain[1]~0_combout ),
 	.clk_clk(\clk_clk~input_o ),
 	.reset_reset_n(\reset_reset_n~input_o ));
 
-sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0 mm_interconnect_0(
 	.W_alu_result_14(\nios2|cpu|W_alu_result[14]~q ),
 	.F_pc_12(\nios2|cpu|F_pc[12]~q ),
 	.W_alu_result_12(\nios2|cpu|W_alu_result[12]~q ),
@@ -1001,11 +1001,11 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.data_reg_7(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[7]~q ),
 	.ram_block1a39(\ram|the_altsyncram|auto_generated|ram_block1a39~portadataout ),
 	.ram_block1a7(\ram|the_altsyncram|auto_generated|ram_block1a7~portadataout ),
-	.readdata_4(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[4]~q ),
-	.readdata_0(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[0]~q ),
-	.readdata_1(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[1]~q ),
-	.readdata_2(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[2]~q ),
-	.readdata_3(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[3]~q ),
+	.readdata_4(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[4]~q ),
+	.readdata_0(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[0]~q ),
+	.readdata_1(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[1]~q ),
+	.readdata_2(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[2]~q ),
+	.readdata_3(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[3]~q ),
 	.d_writedata_16(\nios2|cpu|d_writedata[16]~q ),
 	.d_writedata_17(\nios2|cpu|d_writedata[17]~q ),
 	.d_writedata_18(\nios2|cpu|d_writedata[18]~q ),
@@ -1014,40 +1014,40 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.d_writedata_21(\nios2|cpu|d_writedata[21]~q ),
 	.d_writedata_22(\nios2|cpu|d_writedata[22]~q ),
 	.d_writedata_23(\nios2|cpu|d_writedata[23]~q ),
-	.readdata_11(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[11]~q ),
-	.readdata_12(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[12]~q ),
-	.readdata_13(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[13]~q ),
-	.readdata_14(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[14]~q ),
-	.readdata_15(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[15]~q ),
-	.readdata_16(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[16]~q ),
-	.readdata_5(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[5]~q ),
-	.readdata_20(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[20]~q ),
-	.readdata_18(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[18]~q ),
-	.readdata_17(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[17]~q ),
-	.readdata_22(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[22]~q ),
+	.readdata_11(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[11]~q ),
+	.readdata_12(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[12]~q ),
+	.readdata_13(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[13]~q ),
+	.readdata_14(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[14]~q ),
+	.readdata_15(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[15]~q ),
+	.readdata_16(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[16]~q ),
+	.readdata_5(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[5]~q ),
+	.readdata_20(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[20]~q ),
+	.readdata_18(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[18]~q ),
+	.readdata_17(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[17]~q ),
+	.readdata_22(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[22]~q ),
 	.av_readdata_pre_18(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[18]~q ),
-	.readdata_21(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[21]~q ),
-	.readdata_8(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[8]~q ),
-	.readdata_31(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[31]~q ),
-	.readdata_30(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[30]~q ),
-	.readdata_29(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[29]~q ),
-	.readdata_28(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[28]~q ),
-	.readdata_27(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[27]~q ),
+	.readdata_21(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[21]~q ),
+	.readdata_8(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[8]~q ),
+	.readdata_31(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[31]~q ),
+	.readdata_30(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[30]~q ),
+	.readdata_29(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[29]~q ),
+	.readdata_28(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[28]~q ),
+	.readdata_27(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[27]~q ),
 	.av_readdata_pre_22(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[22]~q ),
-	.readdata_26(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[26]~q ),
-	.readdata_9(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[9]~q ),
+	.readdata_26(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[26]~q ),
+	.readdata_9(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[9]~q ),
 	.av_readdata_pre_19(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[19]~q ),
-	.readdata_23(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[23]~q ),
-	.readdata_10(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[10]~q ),
+	.readdata_23(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[23]~q ),
+	.readdata_10(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[10]~q ),
 	.av_readdata_pre_20(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[20]~q ),
-	.readdata_24(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[24]~q ),
+	.readdata_24(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[24]~q ),
 	.av_readdata_pre_21(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[21]~q ),
-	.readdata_25(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[25]~q ),
+	.readdata_25(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[25]~q ),
 	.av_readdata_pre_16(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[16]~q ),
-	.readdata_6(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[6]~q ),
+	.readdata_6(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[6]~q ),
 	.av_readdata_pre_17(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[17]~q ),
-	.readdata_7(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[7]~q ),
-	.readdata_19(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[19]~q ),
+	.readdata_7(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[7]~q ),
+	.readdata_19(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[19]~q ),
 	.Add1(\jtag_uart|Add1~1_sumout ),
 	.Add11(\jtag_uart|Add1~5_sumout ),
 	.Add12(\jtag_uart|Add1~9_sumout ),
@@ -1055,40 +1055,40 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.Add14(\jtag_uart|Add1~17_sumout ),
 	.Add15(\jtag_uart|Add1~21_sumout ),
 	.Add16(\jtag_uart|Add1~25_sumout ),
-	.q_b_5(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
-	.q_b_6(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
-	.q_b_7(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
-	.q_b_4(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
-	.q_b_3(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
-	.q_b_2(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
-	.q_b_1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
-	.q_b_0(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
-	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~12_combout ),
-	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~16_combout ),
-	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~20_combout ),
-	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~24_combout ),
-	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~28_combout ),
-	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~32_combout ),
-	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~36_combout ),
-	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~40_combout ),
+	.q_b_5(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
+	.q_b_6(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
+	.q_b_7(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
+	.q_b_4(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
+	.q_b_3(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
+	.q_b_2(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
+	.q_b_1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
+	.q_b_0(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
+	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~28_combout ),
+	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~32_combout ),
+	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~36_combout ),
+	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~40_combout ),
+	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~44_combout ),
+	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~48_combout ),
+	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~52_combout ),
+	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~56_combout ),
 	.nios2_data_master_waitrequest(\mm_interconnect_0|nios2_data_master_translator|av_waitrequest~2_combout ),
 	.WideOr0(\mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
 	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
-	.saved_grant_0(\mm_interconnect_0|cmd_mux_003|saved_grant[0]~q ),
-	.saved_grant_1(\mm_interconnect_0|cmd_mux_003|saved_grant[1]~q ),
+	.saved_grant_0(\mm_interconnect_0|cmd_mux_004|saved_grant[0]~q ),
+	.saved_grant_1(\mm_interconnect_0|cmd_mux_004|saved_grant[1]~q ),
 	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~0_combout ),
-	.Equal0(\sdram|the_sine_hw_sdram_input_efifo_module|Equal0~0_combout ),
+	.Equal0(\sdram|the_sine_wave_hw_sdram_input_efifo_module|Equal0~0_combout ),
 	.d_read(\nios2|cpu|d_read~q ),
 	.read_accepted(\mm_interconnect_0|nios2_data_master_translator|read_accepted~q ),
-	.rst1(\jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|rst1~q ),
+	.rst1(\jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|rst1~q ),
 	.d_write(\nios2|cpu|d_write~q ),
 	.write_accepted(\mm_interconnect_0|nios2_data_master_translator|write_accepted~q ),
 	.Equal4(\mm_interconnect_0|router|Equal4~4_combout ),
-	.src3_valid(\mm_interconnect_0|cmd_demux|src3_valid~0_combout ),
+	.src4_valid(\mm_interconnect_0|cmd_demux|src4_valid~0_combout ),
 	.i_read(\nios2|cpu|i_read~q ),
 	.F_pc_24(\nios2|cpu|F_pc[24]~q ),
-	.src_valid(\mm_interconnect_0|cmd_mux_003|src_valid~0_combout ),
+	.src_valid(\mm_interconnect_0|cmd_mux_004|src_valid~0_combout ),
 	.mem(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem~0_combout ),
 	.d_byteenable_1(\nios2|cpu|d_byteenable[1]~q ),
 	.d_byteenable_0(\nios2|cpu|d_byteenable[0]~q ),
@@ -1121,7 +1121,7 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.rp_valid(\mm_interconnect_0|sdram_s1_agent|rp_valid~combout ),
 	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
 	.always10(\mm_interconnect_0|sdram_s1_rsp_width_adapter|always10~0_combout ),
-	.src1_valid(\mm_interconnect_0|rsp_demux_003|src1_valid~0_combout ),
+	.src1_valid(\mm_interconnect_0|rsp_demux_004|src1_valid~0_combout ),
 	.read_latency_shift_reg_0(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|read_latency_shift_reg[0]~q ),
 	.src0_valid(\mm_interconnect_0|rsp_demux_001|src0_valid~0_combout ),
 	.src0_valid1(\mm_interconnect_0|rsp_demux_002|src0_valid~0_combout ),
@@ -1134,14 +1134,14 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.mem_used_1(\mm_interconnect_0|ram_s1_agent_rsp_fifo|mem_used[1]~q ),
 	.av_waitrequest(\jtag_uart|av_waitrequest~q ),
 	.saved_grant_02(\mm_interconnect_0|cmd_mux_001|saved_grant[0]~q ),
-	.waitrequest(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_ocimem|waitrequest~q ),
+	.waitrequest(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_ocimem|waitrequest~q ),
 	.mem_used_11(\mm_interconnect_0|nios2_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ),
 	.WideOr01(\mm_interconnect_0|cmd_demux|WideOr0~5_combout ),
 	.av_waitrequest1(\mm_interconnect_0|nios2_data_master_translator|av_waitrequest~0_combout ),
-	.src0_valid2(\mm_interconnect_0|rsp_demux_003|src0_valid~0_combout ),
+	.src0_valid2(\mm_interconnect_0|rsp_demux_004|src0_valid~0_combout ),
 	.WideOr12(\mm_interconnect_0|rsp_mux_001|WideOr1~0_combout ),
 	.WideOr13(\mm_interconnect_0|rsp_mux_001|WideOr1~1_combout ),
-	.always21(\sdram|the_sine_hw_sdram_input_efifo_module|always2~1_combout ),
+	.always21(\sdram|the_sine_wave_hw_sdram_input_efifo_module|always2~1_combout ),
 	.d_byteenable_2(\nios2|cpu|d_byteenable[2]~q ),
 	.d_byteenable_3(\nios2|cpu|d_byteenable[3]~q ),
 	.hbreak_enabled(\nios2|cpu|hbreak_enabled~q ),
@@ -1153,7 +1153,7 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.src2_valid(\mm_interconnect_0|cmd_demux|src2_valid~0_combout ),
 	.src_valid2(\mm_interconnect_0|cmd_mux_002|src_valid~0_combout ),
 	.src1_valid2(\mm_interconnect_0|rsp_demux_001|src1_valid~0_combout ),
-	.src1_valid3(\mm_interconnect_0|rsp_demux_003|src1_valid~1_combout ),
+	.src1_valid3(\mm_interconnect_0|rsp_demux_004|src1_valid~1_combout ),
 	.av_readdata_pre_4(\mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[4]~q ),
 	.out_payload_4(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ),
 	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~0_combout ),
@@ -1171,7 +1171,7 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.av_readdata_pre_3(\mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[3]~q ),
 	.out_payload_3(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ),
 	.src_data_31(\mm_interconnect_0|rsp_mux|src_data[3]~2_combout ),
-	.b_full(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.b_full(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
 	.d_writedata_0(\nios2|cpu|d_writedata[0]~q ),
 	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~25_combout ),
 	.d_writedata_1(\nios2|cpu|d_writedata[1]~q ),
@@ -1273,13 +1273,13 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.src_payload5(\mm_interconnect_0|cmd_mux_002|src_payload~2_combout ),
 	.src_payload6(\mm_interconnect_0|cmd_mux_002|src_payload~3_combout ),
 	.src_payload7(\mm_interconnect_0|cmd_mux_002|src_payload~4_combout ),
-	.b_non_empty(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
-	.counter_reg_bit_1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
-	.counter_reg_bit_0(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.counter_reg_bit_5(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.counter_reg_bit_4(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
-	.counter_reg_bit_3(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.counter_reg_bit_2(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.b_non_empty(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
+	.counter_reg_bit_1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.counter_reg_bit_0(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.counter_reg_bit_5(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.counter_reg_bit_4(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.counter_reg_bit_3(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.counter_reg_bit_2(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
 	.src_payload8(\mm_interconnect_0|cmd_mux_001|src_payload~2_combout ),
 	.src_data_321(\mm_interconnect_0|cmd_mux_001|src_data[32]~combout ),
 	.d_writedata_24(\nios2|cpu|d_writedata[24]~q ),
@@ -1313,36 +1313,36 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.src_payload23(\mm_interconnect_0|cmd_mux_002|src_payload~17_combout ),
 	.src_payload24(\mm_interconnect_0|cmd_mux_002|src_payload~18_combout ),
 	.src_data_35(\mm_interconnect_0|cmd_mux_002|src_data[35]~combout ),
-	.src_payload25(\mm_interconnect_0|rsp_mux|src_payload~1_combout ),
-	.src_payload26(\mm_interconnect_0|rsp_mux|src_payload~2_combout ),
-	.src_payload27(\mm_interconnect_0|cmd_mux_002|src_payload~19_combout ),
-	.src_payload28(\mm_interconnect_0|rsp_mux|src_payload~3_combout ),
-	.src_payload29(\mm_interconnect_0|cmd_mux_002|src_payload~20_combout ),
-	.src_payload30(\mm_interconnect_0|rsp_mux|src_payload~4_combout ),
-	.src_payload31(\mm_interconnect_0|cmd_mux_002|src_payload~21_combout ),
-	.src_payload32(\mm_interconnect_0|cmd_mux_002|src_payload~22_combout ),
-	.src_payload33(\mm_interconnect_0|cmd_mux_002|src_payload~23_combout ),
-	.src_payload34(\mm_interconnect_0|cmd_mux_002|src_payload~24_combout ),
-	.src_payload35(\mm_interconnect_0|cmd_mux_002|src_payload~25_combout ),
-	.src_payload36(\mm_interconnect_0|cmd_mux_002|src_payload~26_combout ),
-	.src_payload37(\mm_interconnect_0|cmd_mux_002|src_payload~27_combout ),
-	.src_payload38(\mm_interconnect_0|cmd_mux_002|src_payload~28_combout ),
-	.src_payload39(\mm_interconnect_0|cmd_mux_002|src_payload~29_combout ),
-	.src_payload40(\mm_interconnect_0|cmd_mux_002|src_payload~30_combout ),
-	.src_payload41(\mm_interconnect_0|cmd_mux_002|src_payload~31_combout ),
+	.src_data_27(\mm_interconnect_0|rsp_mux|src_data[27]~4_combout ),
+	.src_data_26(\mm_interconnect_0|rsp_mux|src_data[26]~5_combout ),
+	.src_payload25(\mm_interconnect_0|cmd_mux_002|src_payload~19_combout ),
+	.src_data_25(\mm_interconnect_0|rsp_mux|src_data[25]~6_combout ),
+	.src_payload26(\mm_interconnect_0|cmd_mux_002|src_payload~20_combout ),
+	.src_data_24(\mm_interconnect_0|rsp_mux|src_data[24]~7_combout ),
+	.src_payload27(\mm_interconnect_0|cmd_mux_002|src_payload~21_combout ),
+	.src_payload28(\mm_interconnect_0|cmd_mux_002|src_payload~22_combout ),
+	.src_payload29(\mm_interconnect_0|cmd_mux_002|src_payload~23_combout ),
+	.src_payload30(\mm_interconnect_0|cmd_mux_002|src_payload~24_combout ),
+	.src_payload31(\mm_interconnect_0|cmd_mux_002|src_payload~25_combout ),
+	.src_payload32(\mm_interconnect_0|cmd_mux_002|src_payload~26_combout ),
+	.src_payload33(\mm_interconnect_0|cmd_mux_002|src_payload~27_combout ),
+	.src_payload34(\mm_interconnect_0|cmd_mux_002|src_payload~28_combout ),
+	.src_payload35(\mm_interconnect_0|cmd_mux_002|src_payload~29_combout ),
+	.src_payload36(\mm_interconnect_0|cmd_mux_002|src_payload~30_combout ),
+	.src_payload37(\mm_interconnect_0|cmd_mux_002|src_payload~31_combout ),
 	.av_readdata_pre_131(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[13]~q ),
 	.av_readdata_pre_151(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[15]~q ),
 	.av_readdata_pre_81(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[8]~q ),
 	.av_readdata_pre_101(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[10]~q ),
 	.av_readdata_pre_91(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[9]~q ),
-	.b_full1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.b_full1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
 	.read_0(\jtag_uart|read_0~q ),
 	.za_data_4(\sdram|za_data[4]~q ),
 	.za_data_0(\sdram|za_data[0]~q ),
 	.za_data_1(\sdram|za_data[1]~q ),
 	.za_data_2(\sdram|za_data[2]~q ),
 	.za_data_3(\sdram|za_data[3]~q ),
-	.src_payload42(\mm_interconnect_0|cmd_mux_001|src_payload~4_combout ),
+	.src_payload38(\mm_interconnect_0|cmd_mux_001|src_payload~4_combout ),
 	.za_data_11(\sdram|za_data[11]~q ),
 	.za_data_12(\sdram|za_data[12]~q ),
 	.za_data_13(\sdram|za_data[13]~q ),
@@ -1350,10 +1350,10 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.za_data_15(\sdram|za_data[15]~q ),
 	.za_data_5(\sdram|za_data[5]~q ),
 	.woverflow(\jtag_uart|woverflow~q ),
-	.src_payload43(\mm_interconnect_0|rsp_mux|src_payload~5_combout ),
-	.src_payload44(\mm_interconnect_0|rsp_mux|src_payload~6_combout ),
-	.src_payload45(\mm_interconnect_0|rsp_mux|src_payload~7_combout ),
-	.src_payload46(\mm_interconnect_0|rsp_mux|src_payload~8_combout ),
+	.src_data_30(\mm_interconnect_0|rsp_mux|src_data[30]~8_combout ),
+	.src_data_29(\mm_interconnect_0|rsp_mux|src_data[29]~9_combout ),
+	.src_data_28(\mm_interconnect_0|rsp_mux|src_data[28]~10_combout ),
+	.src_data_311(\mm_interconnect_0|rsp_mux|src_data[31]~11_combout ),
 	.za_data_6(\sdram|za_data[6]~q ),
 	.za_data_8(\sdram|za_data[8]~q ),
 	.za_data_10(\sdram|za_data[10]~q ),
@@ -1366,44 +1366,44 @@ sine_hw_sine_hw_mm_interconnect_0 mm_interconnect_0(
 	.ac(\jtag_uart|ac~q ),
 	.readdata_41(\sw|readdata[4]~q ),
 	.readdata_32(\sw|readdata[3]~q ),
-	.src_payload47(\mm_interconnect_0|cmd_mux_001|src_payload~5_combout ),
+	.src_payload39(\mm_interconnect_0|cmd_mux_001|src_payload~5_combout ),
 	.readdata_210(\sw|readdata[2]~q ),
-	.src_payload48(\mm_interconnect_0|cmd_mux_001|src_payload~6_combout ),
-	.src_payload49(\mm_interconnect_0|cmd_mux_001|src_payload~7_combout ),
+	.src_payload40(\mm_interconnect_0|cmd_mux_001|src_payload~6_combout ),
+	.src_payload41(\mm_interconnect_0|cmd_mux_001|src_payload~7_combout ),
 	.read_latency_shift_reg1(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|read_latency_shift_reg~2_combout ),
 	.readdata_110(\sw|readdata[1]~q ),
 	.readdata_01(\sw|readdata[0]~q ),
-	.src_payload50(\mm_interconnect_0|cmd_mux_001|src_payload~8_combout ),
-	.src_payload51(\mm_interconnect_0|cmd_mux_001|src_payload~9_combout ),
+	.src_payload42(\mm_interconnect_0|cmd_mux_001|src_payload~8_combout ),
+	.src_payload43(\mm_interconnect_0|cmd_mux_001|src_payload~9_combout ),
 	.src_data_351(\mm_interconnect_0|cmd_mux_001|src_data[35]~combout ),
-	.src_payload52(\mm_interconnect_0|cmd_mux_001|src_payload~10_combout ),
-	.src_payload53(\mm_interconnect_0|cmd_mux_001|src_payload~11_combout ),
+	.src_payload44(\mm_interconnect_0|cmd_mux_001|src_payload~10_combout ),
+	.src_payload45(\mm_interconnect_0|cmd_mux_001|src_payload~11_combout ),
 	.src_data_331(\mm_interconnect_0|cmd_mux_001|src_data[33]~combout ),
-	.src_payload54(\mm_interconnect_0|cmd_mux_001|src_payload~12_combout ),
-	.src_payload55(\mm_interconnect_0|cmd_mux_001|src_payload~13_combout ),
-	.src_payload56(\mm_interconnect_0|cmd_mux_001|src_payload~14_combout ),
-	.src_payload57(\mm_interconnect_0|cmd_mux_001|src_payload~15_combout ),
-	.src_payload58(\mm_interconnect_0|cmd_mux_001|src_payload~16_combout ),
-	.src_payload59(\mm_interconnect_0|cmd_mux_001|src_payload~17_combout ),
-	.src_payload60(\mm_interconnect_0|cmd_mux_001|src_payload~18_combout ),
-	.src_payload61(\mm_interconnect_0|cmd_mux_001|src_payload~19_combout ),
-	.src_payload62(\mm_interconnect_0|cmd_mux_001|src_payload~20_combout ),
-	.src_payload63(\mm_interconnect_0|cmd_mux_001|src_payload~21_combout ),
-	.src_payload64(\mm_interconnect_0|cmd_mux_001|src_payload~22_combout ),
-	.src_payload65(\mm_interconnect_0|cmd_mux_001|src_payload~23_combout ),
-	.src_payload66(\mm_interconnect_0|cmd_mux_001|src_payload~24_combout ),
-	.src_payload67(\mm_interconnect_0|cmd_mux_001|src_payload~25_combout ),
-	.src_payload68(\mm_interconnect_0|cmd_mux_001|src_payload~26_combout ),
-	.src_payload69(\mm_interconnect_0|cmd_mux_001|src_payload~27_combout ),
-	.src_payload70(\mm_interconnect_0|cmd_mux_001|src_payload~28_combout ),
-	.src_payload71(\mm_interconnect_0|cmd_mux_001|src_payload~29_combout ),
-	.src_payload72(\mm_interconnect_0|cmd_mux_001|src_payload~30_combout ),
-	.src_payload73(\mm_interconnect_0|cmd_mux_001|src_payload~31_combout ),
-	.src_payload74(\mm_interconnect_0|cmd_mux_001|src_payload~32_combout ),
+	.src_payload46(\mm_interconnect_0|cmd_mux_001|src_payload~12_combout ),
+	.src_payload47(\mm_interconnect_0|cmd_mux_001|src_payload~13_combout ),
+	.src_payload48(\mm_interconnect_0|cmd_mux_001|src_payload~14_combout ),
+	.src_payload49(\mm_interconnect_0|cmd_mux_001|src_payload~15_combout ),
+	.src_payload50(\mm_interconnect_0|cmd_mux_001|src_payload~16_combout ),
+	.src_payload51(\mm_interconnect_0|cmd_mux_001|src_payload~17_combout ),
+	.src_payload52(\mm_interconnect_0|cmd_mux_001|src_payload~18_combout ),
+	.src_payload53(\mm_interconnect_0|cmd_mux_001|src_payload~19_combout ),
+	.src_payload54(\mm_interconnect_0|cmd_mux_001|src_payload~20_combout ),
+	.src_payload55(\mm_interconnect_0|cmd_mux_001|src_payload~21_combout ),
+	.src_payload56(\mm_interconnect_0|cmd_mux_001|src_payload~22_combout ),
+	.src_payload57(\mm_interconnect_0|cmd_mux_001|src_payload~23_combout ),
+	.src_payload58(\mm_interconnect_0|cmd_mux_001|src_payload~24_combout ),
+	.src_payload59(\mm_interconnect_0|cmd_mux_001|src_payload~25_combout ),
+	.src_payload60(\mm_interconnect_0|cmd_mux_001|src_payload~26_combout ),
+	.src_payload61(\mm_interconnect_0|cmd_mux_001|src_payload~27_combout ),
+	.src_payload62(\mm_interconnect_0|cmd_mux_001|src_payload~28_combout ),
+	.src_payload63(\mm_interconnect_0|cmd_mux_001|src_payload~29_combout ),
+	.src_payload64(\mm_interconnect_0|cmd_mux_001|src_payload~30_combout ),
+	.src_payload65(\mm_interconnect_0|cmd_mux_001|src_payload~31_combout ),
+	.src_payload66(\mm_interconnect_0|cmd_mux_001|src_payload~32_combout ),
 	.GND_port(\~GND~combout ),
 	.clk_clk(\clk_clk~input_o ));
 
-sine_hw_sine_hw_sw sw(
+sine_wave_hw_sine_wave_hw_sw sw(
 	.W_alu_result_3(\nios2|cpu|W_alu_result[3]~q ),
 	.W_alu_result_2(\nios2|cpu|W_alu_result[2]~q ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
@@ -1425,7 +1425,7 @@ sine_hw_sine_hw_sw sw(
 	.sw_export_1(\sw_export[1]~input_o ),
 	.sw_export_0(\sw_export[0]~input_o ));
 
-sine_hw_sine_hw_sdram sdram(
+sine_wave_hw_sine_wave_hw_sdram sdram(
 	.m_addr_0(\sdram|m_addr[0]~q ),
 	.m_addr_1(\sdram|m_addr[1]~q ),
 	.m_addr_2(\sdram|m_addr[2]~q ),
@@ -1453,12 +1453,12 @@ sine_hw_sine_hw_sdram sdram(
 	.m_cmd_0(\sdram|m_cmd[0]~q ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
 	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
-	.saved_grant_0(\mm_interconnect_0|cmd_mux_003|saved_grant[0]~q ),
-	.saved_grant_1(\mm_interconnect_0|cmd_mux_003|saved_grant[1]~q ),
+	.saved_grant_0(\mm_interconnect_0|cmd_mux_004|saved_grant[0]~q ),
+	.saved_grant_1(\mm_interconnect_0|cmd_mux_004|saved_grant[1]~q ),
 	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~0_combout ),
-	.Equal0(\sdram|the_sine_hw_sdram_input_efifo_module|Equal0~0_combout ),
-	.src3_valid(\mm_interconnect_0|cmd_demux|src3_valid~0_combout ),
-	.src_valid(\mm_interconnect_0|cmd_mux_003|src_valid~0_combout ),
+	.Equal0(\sdram|the_sine_wave_hw_sdram_input_efifo_module|Equal0~0_combout ),
+	.src4_valid(\mm_interconnect_0|cmd_demux|src4_valid~0_combout ),
+	.src_valid(\mm_interconnect_0|cmd_mux_004|src_valid~0_combout ),
 	.mem(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem~0_combout ),
 	.d_byteenable_1(\nios2|cpu|d_byteenable[1]~q ),
 	.d_byteenable_0(\nios2|cpu|d_byteenable[0]~q ),
@@ -1504,7 +1504,7 @@ sine_hw_sine_hw_sdram sdram(
 	.m_data_13(\sdram|m_data[13]~q ),
 	.m_data_14(\sdram|m_data[14]~q ),
 	.m_data_15(\sdram|m_data[15]~q ),
-	.always2(\sdram|the_sine_hw_sdram_input_efifo_module|always2~1_combout ),
+	.always2(\sdram|the_sine_wave_hw_sdram_input_efifo_module|always2~1_combout ),
 	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~25_combout ),
 	.out_data_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[1]~26_combout ),
 	.out_data_2(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[2]~27_combout ),
@@ -1556,7 +1556,7 @@ sine_hw_sine_hw_sdram sdram(
 	.sdram_wire_dq_15(\sdram_wire_dq[15]~input_o ),
 	.clk_clk(\clk_clk~input_o ));
 
-sine_hw_sine_hw_ram ram(
+sine_wave_hw_sine_wave_hw_ram ram(
 	.ram_block1a36(\ram|the_altsyncram|auto_generated|ram_block1a36~portadataout ),
 	.ram_block1a4(\ram|the_altsyncram|auto_generated|ram_block1a4~portadataout ),
 	.ram_block1a32(\ram|the_altsyncram|auto_generated|ram_block1a32~portadataout ),
@@ -1681,7 +1681,7 @@ sine_hw_sine_hw_ram ram(
 	.src_payload31(\mm_interconnect_0|cmd_mux_002|src_payload~31_combout ),
 	.clk_clk(\clk_clk~input_o ));
 
-sine_hw_sine_hw_nios2 nios2(
+sine_wave_hw_sine_wave_hw_nios2 nios2(
 	.W_alu_result_14(\nios2|cpu|W_alu_result[14]~q ),
 	.F_pc_12(\nios2|cpu|F_pc[12]~q ),
 	.W_alu_result_12(\nios2|cpu|W_alu_result[12]~q ),
@@ -1818,11 +1818,11 @@ sine_hw_sine_hw_nios2 nios2(
 	.ram_block1a7(\ram|the_altsyncram|auto_generated|ram_block1a7~portadataout ),
 	.ram_block1a51(\ram|the_altsyncram|auto_generated|ram_block1a51~portadataout ),
 	.ram_block1a19(\ram|the_altsyncram|auto_generated|ram_block1a19~portadataout ),
-	.readdata_4(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[4]~q ),
-	.readdata_0(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[0]~q ),
-	.readdata_1(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[1]~q ),
-	.readdata_2(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[2]~q ),
-	.readdata_3(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[3]~q ),
+	.readdata_4(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[4]~q ),
+	.readdata_0(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[0]~q ),
+	.readdata_1(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[1]~q ),
+	.readdata_2(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[2]~q ),
+	.readdata_3(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[3]~q ),
 	.d_writedata_16(\nios2|cpu|d_writedata[16]~q ),
 	.d_writedata_17(\nios2|cpu|d_writedata[17]~q ),
 	.d_writedata_18(\nios2|cpu|d_writedata[18]~q ),
@@ -1831,53 +1831,53 @@ sine_hw_sine_hw_nios2 nios2(
 	.d_writedata_21(\nios2|cpu|d_writedata[21]~q ),
 	.d_writedata_22(\nios2|cpu|d_writedata[22]~q ),
 	.d_writedata_23(\nios2|cpu|d_writedata[23]~q ),
-	.readdata_11(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[11]~q ),
-	.readdata_12(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[12]~q ),
-	.readdata_13(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[13]~q ),
-	.readdata_14(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[14]~q ),
-	.readdata_15(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[15]~q ),
-	.readdata_16(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[16]~q ),
-	.readdata_5(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[5]~q ),
-	.readdata_20(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[20]~q ),
-	.readdata_18(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[18]~q ),
-	.readdata_17(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[17]~q ),
-	.readdata_22(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[22]~q ),
+	.readdata_11(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[11]~q ),
+	.readdata_12(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[12]~q ),
+	.readdata_13(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[13]~q ),
+	.readdata_14(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[14]~q ),
+	.readdata_15(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[15]~q ),
+	.readdata_16(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[16]~q ),
+	.readdata_5(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[5]~q ),
+	.readdata_20(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[20]~q ),
+	.readdata_18(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[18]~q ),
+	.readdata_17(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[17]~q ),
+	.readdata_22(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[22]~q ),
 	.av_readdata_pre_18(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[18]~q ),
-	.readdata_21(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[21]~q ),
-	.readdata_8(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[8]~q ),
-	.readdata_31(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[31]~q ),
-	.readdata_30(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[30]~q ),
-	.readdata_29(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[29]~q ),
-	.readdata_28(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[28]~q ),
-	.readdata_27(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[27]~q ),
+	.readdata_21(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[21]~q ),
+	.readdata_8(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[8]~q ),
+	.readdata_31(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[31]~q ),
+	.readdata_30(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[30]~q ),
+	.readdata_29(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[29]~q ),
+	.readdata_28(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[28]~q ),
+	.readdata_27(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[27]~q ),
 	.av_readdata_pre_22(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[22]~q ),
-	.readdata_26(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[26]~q ),
-	.readdata_9(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[9]~q ),
+	.readdata_26(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[26]~q ),
+	.readdata_9(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[9]~q ),
 	.av_readdata_pre_19(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[19]~q ),
-	.readdata_23(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[23]~q ),
-	.readdata_10(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[10]~q ),
+	.readdata_23(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[23]~q ),
+	.readdata_10(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[10]~q ),
 	.av_readdata_pre_20(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[20]~q ),
-	.readdata_24(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[24]~q ),
+	.readdata_24(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[24]~q ),
 	.av_readdata_pre_21(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[21]~q ),
-	.readdata_25(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[25]~q ),
+	.readdata_25(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[25]~q ),
 	.av_readdata_pre_16(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[16]~q ),
-	.readdata_6(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[6]~q ),
+	.readdata_6(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[6]~q ),
 	.av_readdata_pre_17(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[17]~q ),
-	.readdata_7(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[7]~q ),
-	.readdata_19(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|readdata[19]~q ),
-	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~12_combout ),
-	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~16_combout ),
-	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~20_combout ),
-	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~24_combout ),
-	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~28_combout ),
-	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~32_combout ),
-	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~36_combout ),
-	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~40_combout ),
+	.readdata_7(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[7]~q ),
+	.readdata_19(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|readdata[19]~q ),
+	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~28_combout ),
+	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~32_combout ),
+	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~36_combout ),
+	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~40_combout ),
+	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~44_combout ),
+	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~48_combout ),
+	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~52_combout ),
+	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~56_combout ),
 	.av_waitrequest(\mm_interconnect_0|nios2_data_master_translator|av_waitrequest~2_combout ),
-	.debug_reset_request(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ),
-	.sr_0(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|sr[0]~q ),
-	.ir_out_0(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ),
-	.ir_out_1(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ),
+	.debug_reset_request(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ),
+	.sr_0(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[0]~q ),
+	.ir_out_0(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ),
+	.ir_out_1(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
 	.d_read(\nios2|cpu|d_read~q ),
 	.d_write(\nios2|cpu|d_write~q ),
@@ -1888,7 +1888,7 @@ sine_hw_sine_hw_nios2 nios2(
 	.rp_valid(\mm_interconnect_0|sdram_s1_agent|rp_valid~combout ),
 	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
 	.always10(\mm_interconnect_0|sdram_s1_rsp_width_adapter|always10~0_combout ),
-	.src1_valid(\mm_interconnect_0|rsp_demux_003|src1_valid~0_combout ),
+	.src1_valid(\mm_interconnect_0|rsp_demux_004|src1_valid~0_combout ),
 	.read_latency_shift_reg_0(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|read_latency_shift_reg[0]~q ),
 	.src0_valid(\mm_interconnect_0|rsp_demux_001|src0_valid~0_combout ),
 	.src0_valid1(\mm_interconnect_0|rsp_demux_002|src0_valid~0_combout ),
@@ -1897,11 +1897,11 @@ sine_hw_sine_hw_nios2 nios2(
 	.always2(\jtag_uart|always2~0_combout ),
 	.sink_ready(\mm_interconnect_0|cmd_demux|sink_ready~1_combout ),
 	.saved_grant_0(\mm_interconnect_0|cmd_mux_001|saved_grant[0]~q ),
-	.debug_mem_slave_waitrequest(\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_ocimem|waitrequest~q ),
+	.debug_mem_slave_waitrequest(\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_ocimem|waitrequest~q ),
 	.mem_used_1(\mm_interconnect_0|nios2_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ),
 	.WideOr0(\mm_interconnect_0|cmd_demux|WideOr0~5_combout ),
 	.av_waitrequest1(\mm_interconnect_0|nios2_data_master_translator|av_waitrequest~0_combout ),
-	.src0_valid2(\mm_interconnect_0|rsp_demux_003|src0_valid~0_combout ),
+	.src0_valid2(\mm_interconnect_0|rsp_demux_004|src0_valid~0_combout ),
 	.WideOr12(\mm_interconnect_0|rsp_mux_001|WideOr1~0_combout ),
 	.WideOr13(\mm_interconnect_0|rsp_mux_001|WideOr1~1_combout ),
 	.d_byteenable_2(\nios2|cpu|d_byteenable[2]~q ),
@@ -1912,7 +1912,7 @@ sine_hw_sine_hw_nios2 nios2(
 	.src_valid(\mm_interconnect_0|cmd_mux_001|src_valid~0_combout ),
 	.mem(\mm_interconnect_0|nios2_debug_mem_slave_agent_rsp_fifo|mem~0_combout ),
 	.src1_valid2(\mm_interconnect_0|rsp_demux_001|src1_valid~0_combout ),
-	.src1_valid3(\mm_interconnect_0|rsp_demux_003|src1_valid~1_combout ),
+	.src1_valid3(\mm_interconnect_0|rsp_demux_004|src1_valid~1_combout ),
 	.av_readdata_pre_4(\mm_interconnect_0|nios2_debug_mem_slave_translator|av_readdata_pre[4]~q ),
 	.out_payload_4(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ),
 	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~0_combout ),
@@ -2009,50 +2009,50 @@ sine_hw_sine_hw_nios2 nios2(
 	.av_readdata_pre_141(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[14]~q ),
 	.av_readdata_pre_121(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[12]~q ),
 	.src_payload5(\mm_interconnect_0|rsp_mux|src_payload~0_combout ),
-	.src_payload6(\mm_interconnect_0|rsp_mux|src_payload~1_combout ),
-	.src_payload7(\mm_interconnect_0|rsp_mux|src_payload~2_combout ),
-	.src_payload8(\mm_interconnect_0|rsp_mux|src_payload~3_combout ),
-	.src_payload9(\mm_interconnect_0|rsp_mux|src_payload~4_combout ),
+	.src_data_27(\mm_interconnect_0|rsp_mux|src_data[27]~4_combout ),
+	.src_data_26(\mm_interconnect_0|rsp_mux|src_data[26]~5_combout ),
+	.src_data_25(\mm_interconnect_0|rsp_mux|src_data[25]~6_combout ),
+	.src_data_24(\mm_interconnect_0|rsp_mux|src_data[24]~7_combout ),
 	.av_readdata_pre_131(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[13]~q ),
 	.av_readdata_pre_151(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[15]~q ),
 	.av_readdata_pre_81(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[8]~q ),
 	.av_readdata_pre_101(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[10]~q ),
 	.av_readdata_pre_91(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[9]~q ),
-	.src_payload10(\mm_interconnect_0|cmd_mux_001|src_payload~4_combout ),
-	.src_payload11(\mm_interconnect_0|rsp_mux|src_payload~5_combout ),
-	.src_payload12(\mm_interconnect_0|rsp_mux|src_payload~6_combout ),
-	.src_payload13(\mm_interconnect_0|rsp_mux|src_payload~7_combout ),
-	.src_payload14(\mm_interconnect_0|rsp_mux|src_payload~8_combout ),
-	.src_payload15(\mm_interconnect_0|cmd_mux_001|src_payload~5_combout ),
-	.src_payload16(\mm_interconnect_0|cmd_mux_001|src_payload~6_combout ),
-	.src_payload17(\mm_interconnect_0|cmd_mux_001|src_payload~7_combout ),
-	.src_payload18(\mm_interconnect_0|cmd_mux_001|src_payload~8_combout ),
-	.src_payload19(\mm_interconnect_0|cmd_mux_001|src_payload~9_combout ),
+	.src_payload6(\mm_interconnect_0|cmd_mux_001|src_payload~4_combout ),
+	.src_data_30(\mm_interconnect_0|rsp_mux|src_data[30]~8_combout ),
+	.src_data_29(\mm_interconnect_0|rsp_mux|src_data[29]~9_combout ),
+	.src_data_28(\mm_interconnect_0|rsp_mux|src_data[28]~10_combout ),
+	.src_data_311(\mm_interconnect_0|rsp_mux|src_data[31]~11_combout ),
+	.src_payload7(\mm_interconnect_0|cmd_mux_001|src_payload~5_combout ),
+	.src_payload8(\mm_interconnect_0|cmd_mux_001|src_payload~6_combout ),
+	.src_payload9(\mm_interconnect_0|cmd_mux_001|src_payload~7_combout ),
+	.src_payload10(\mm_interconnect_0|cmd_mux_001|src_payload~8_combout ),
+	.src_payload11(\mm_interconnect_0|cmd_mux_001|src_payload~9_combout ),
 	.src_data_35(\mm_interconnect_0|cmd_mux_001|src_data[35]~combout ),
-	.src_payload20(\mm_interconnect_0|cmd_mux_001|src_payload~10_combout ),
-	.src_payload21(\mm_interconnect_0|cmd_mux_001|src_payload~11_combout ),
+	.src_payload12(\mm_interconnect_0|cmd_mux_001|src_payload~10_combout ),
+	.src_payload13(\mm_interconnect_0|cmd_mux_001|src_payload~11_combout ),
 	.src_data_33(\mm_interconnect_0|cmd_mux_001|src_data[33]~combout ),
-	.src_payload22(\mm_interconnect_0|cmd_mux_001|src_payload~12_combout ),
-	.src_payload23(\mm_interconnect_0|cmd_mux_001|src_payload~13_combout ),
-	.src_payload24(\mm_interconnect_0|cmd_mux_001|src_payload~14_combout ),
-	.src_payload25(\mm_interconnect_0|cmd_mux_001|src_payload~15_combout ),
-	.src_payload26(\mm_interconnect_0|cmd_mux_001|src_payload~16_combout ),
-	.src_payload27(\mm_interconnect_0|cmd_mux_001|src_payload~17_combout ),
-	.src_payload28(\mm_interconnect_0|cmd_mux_001|src_payload~18_combout ),
-	.src_payload29(\mm_interconnect_0|cmd_mux_001|src_payload~19_combout ),
-	.src_payload30(\mm_interconnect_0|cmd_mux_001|src_payload~20_combout ),
-	.src_payload31(\mm_interconnect_0|cmd_mux_001|src_payload~21_combout ),
-	.src_payload32(\mm_interconnect_0|cmd_mux_001|src_payload~22_combout ),
-	.src_payload33(\mm_interconnect_0|cmd_mux_001|src_payload~23_combout ),
-	.src_payload34(\mm_interconnect_0|cmd_mux_001|src_payload~24_combout ),
-	.src_payload35(\mm_interconnect_0|cmd_mux_001|src_payload~25_combout ),
-	.src_payload36(\mm_interconnect_0|cmd_mux_001|src_payload~26_combout ),
-	.src_payload37(\mm_interconnect_0|cmd_mux_001|src_payload~27_combout ),
-	.src_payload38(\mm_interconnect_0|cmd_mux_001|src_payload~28_combout ),
-	.src_payload39(\mm_interconnect_0|cmd_mux_001|src_payload~29_combout ),
-	.src_payload40(\mm_interconnect_0|cmd_mux_001|src_payload~30_combout ),
-	.src_payload41(\mm_interconnect_0|cmd_mux_001|src_payload~31_combout ),
-	.src_payload42(\mm_interconnect_0|cmd_mux_001|src_payload~32_combout ),
+	.src_payload14(\mm_interconnect_0|cmd_mux_001|src_payload~12_combout ),
+	.src_payload15(\mm_interconnect_0|cmd_mux_001|src_payload~13_combout ),
+	.src_payload16(\mm_interconnect_0|cmd_mux_001|src_payload~14_combout ),
+	.src_payload17(\mm_interconnect_0|cmd_mux_001|src_payload~15_combout ),
+	.src_payload18(\mm_interconnect_0|cmd_mux_001|src_payload~16_combout ),
+	.src_payload19(\mm_interconnect_0|cmd_mux_001|src_payload~17_combout ),
+	.src_payload20(\mm_interconnect_0|cmd_mux_001|src_payload~18_combout ),
+	.src_payload21(\mm_interconnect_0|cmd_mux_001|src_payload~19_combout ),
+	.src_payload22(\mm_interconnect_0|cmd_mux_001|src_payload~20_combout ),
+	.src_payload23(\mm_interconnect_0|cmd_mux_001|src_payload~21_combout ),
+	.src_payload24(\mm_interconnect_0|cmd_mux_001|src_payload~22_combout ),
+	.src_payload25(\mm_interconnect_0|cmd_mux_001|src_payload~23_combout ),
+	.src_payload26(\mm_interconnect_0|cmd_mux_001|src_payload~24_combout ),
+	.src_payload27(\mm_interconnect_0|cmd_mux_001|src_payload~25_combout ),
+	.src_payload28(\mm_interconnect_0|cmd_mux_001|src_payload~26_combout ),
+	.src_payload29(\mm_interconnect_0|cmd_mux_001|src_payload~27_combout ),
+	.src_payload30(\mm_interconnect_0|cmd_mux_001|src_payload~28_combout ),
+	.src_payload31(\mm_interconnect_0|cmd_mux_001|src_payload~29_combout ),
+	.src_payload32(\mm_interconnect_0|cmd_mux_001|src_payload~30_combout ),
+	.src_payload33(\mm_interconnect_0|cmd_mux_001|src_payload~31_combout ),
+	.src_payload34(\mm_interconnect_0|cmd_mux_001|src_payload~32_combout ),
 	.altera_internal_jtag(\altera_internal_jtag~TCKUTAP ),
 	.altera_internal_jtag1(\altera_internal_jtag~TDIUTAP ),
 	.state_1(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[1]~q ),
@@ -2065,7 +2065,7 @@ sine_hw_sine_hw_nios2 nios2(
 	.irf_reg_1_2(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][1]~q ),
 	.clk_clk(\clk_clk~input_o ));
 
-sine_hw_sine_hw_jtag_uart jtag_uart(
+sine_wave_hw_sine_wave_hw_jtag_uart jtag_uart(
 	.W_alu_result_2(\nios2|cpu|W_alu_result[2]~q ),
 	.d_writedata_10(\nios2|cpu|d_writedata[10]~q ),
 	.Add1(\jtag_uart|Add1~1_sumout ),
@@ -2075,19 +2075,19 @@ sine_hw_sine_hw_jtag_uart jtag_uart(
 	.Add14(\jtag_uart|Add1~17_sumout ),
 	.Add15(\jtag_uart|Add1~21_sumout ),
 	.Add16(\jtag_uart|Add1~25_sumout ),
-	.q_b_5(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
-	.q_b_6(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
-	.q_b_7(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
-	.q_b_4(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
-	.q_b_3(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
-	.q_b_2(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
-	.q_b_1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
-	.q_b_0(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
-	.adapted_tdo(\jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ),
+	.q_b_5(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
+	.q_b_6(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
+	.q_b_7(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
+	.q_b_4(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
+	.q_b_3(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
+	.q_b_2(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
+	.q_b_1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
+	.q_b_0(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
+	.adapted_tdo(\jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
 	.d_read(\nios2|cpu|d_read~q ),
 	.read_accepted(\mm_interconnect_0|nios2_data_master_translator|read_accepted~q ),
-	.rst1(\jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|rst1~q ),
+	.rst1(\jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|rst1~q ),
 	.d_write(\nios2|cpu|d_write~q ),
 	.write_accepted(\mm_interconnect_0|nios2_data_master_translator|write_accepted~q ),
 	.Equal4(\mm_interconnect_0|router|Equal4~4_combout ),
@@ -2095,7 +2095,7 @@ sine_hw_sine_hw_jtag_uart jtag_uart(
 	.always2(\jtag_uart|always2~0_combout ),
 	.av_waitrequest1(\jtag_uart|av_waitrequest~q ),
 	.read_latency_shift_reg(\mm_interconnect_0|jtag_uart_avalon_jtag_slave_translator|read_latency_shift_reg~0_combout ),
-	.b_full(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.b_full(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
 	.d_writedata_0(\nios2|cpu|d_writedata[0]~q ),
 	.d_writedata_1(\nios2|cpu|d_writedata[1]~q ),
 	.d_writedata_2(\nios2|cpu|d_writedata[2]~q ),
@@ -2108,14 +2108,14 @@ sine_hw_sine_hw_jtag_uart jtag_uart(
 	.av_readdata_9(\jtag_uart|av_readdata[9]~combout ),
 	.ien_AF1(\jtag_uart|ien_AF~q ),
 	.av_readdata_8(\jtag_uart|av_readdata[8]~0_combout ),
-	.b_non_empty(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
-	.counter_reg_bit_1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
-	.counter_reg_bit_0(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.counter_reg_bit_5(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.counter_reg_bit_4(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
-	.counter_reg_bit_3(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.counter_reg_bit_2(\jtag_uart|the_sine_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
-	.b_full1(\jtag_uart|the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.b_non_empty(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
+	.counter_reg_bit_1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.counter_reg_bit_0(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.counter_reg_bit_5(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.counter_reg_bit_4(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.counter_reg_bit_3(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.counter_reg_bit_2(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.b_full1(\jtag_uart|the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
 	.read_01(\jtag_uart|read_0~q ),
 	.woverflow1(\jtag_uart|woverflow~q ),
 	.rvalid1(\jtag_uart|rvalid~q ),
@@ -2502,7 +2502,7 @@ assign \sw_export[1]~input_o  = sw_export[1];
 
 assign \sw_export[0]~input_o  = sw_export[0];
 
-assign nios2_debug_reset_reset = \nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ;
+assign nios2_debug_reset_reset = \nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetrequest~q ;
 
 assign sdram_wire_addr[0] = \sdram|m_addr[0]~q ;
 
@@ -3706,7 +3706,7 @@ cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_ne
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[6]~q ),
 	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_mode_reg[0]~q ),
 	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[4]~q ),
-	.datad(!\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ),
+	.datad(!\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[1]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -4214,7 +4214,7 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg~0 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[6]~q ),
-	.datab(!\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ),
+	.datab(!\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|ir_out[0]~q ),
 	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_mode_reg[0]~q ),
 	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[4]~q ),
 	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][0]~q ),
@@ -4312,23 +4312,23 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal .lut_mask = 64'h7777777777777777;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal .shared_arith = "off";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 (
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(gnd),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .lut_mask = 64'hFFFF5555FFFF5555;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .shared_arith = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .lut_mask = 64'hFF55FF55FF55FF55;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .shared_arith = "off";
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~1 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
@@ -4350,7 +4350,7 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ),
+	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -4362,27 +4362,27 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0] .is_wysiwyg = "true";
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0] .power_up = "low";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 (
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(gnd),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .lut_mask = 64'h5555FFFFFFFF5555;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .shared_arith = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .lut_mask = 64'h55FFFF5555FFFF55;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4 .shared_arith = "off";
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ),
+	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -4394,27 +4394,27 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1] .is_wysiwyg = "true";
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1] .power_up = "low";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 (
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
+	.datab(gnd),
 	.datac(gnd),
-	.datad(gnd),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .lut_mask = 64'hDDDD77777777DDDD;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .shared_arith = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .lut_mask = 64'hFF5555FF55FFFF55;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5 .shared_arith = "off";
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ),
+	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~5_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -4426,27 +4426,27 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2] .is_wysiwyg = "true";
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2] .power_up = "low";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 (
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datad(gnd),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datac(gnd),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .lut_mask = 64'h7D7DD7D7D7D77D7D;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .shared_arith = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .lut_mask = 64'h77DDDD77DD7777DD;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0 .shared_arith = "off";
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ),
+	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -4458,27 +4458,27 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3] .is_wysiwyg = "true";
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3] .power_up = "low";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 (
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataf(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .lut_mask = 64'hD77D7DD77DD7D77D;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3 .shared_arith = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .lut_mask = 64'hD77D7DD77DD7D77D;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2 .shared_arith = "off";
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
-	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~3_combout ),
+	.d(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal~2_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -4491,11 +4491,11 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4] .power_up = "low";
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~0 (
-	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -4508,12 +4508,30 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~0 .lut_mask = 64'h7FFFFFFF7FFFFFFF;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~0 .shared_arith = "off";
 
+cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 (
+	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .extended_lut = "off";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .lut_mask = 64'h9669699696696996;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .shared_arith = "off";
+
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4 (
-	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -4523,15 +4541,15 @@ cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_ne
 	.cout(),
 	.shareout());
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4 .lut_mask = 64'hF6F9F9F6F6F9F9F6;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4 .lut_mask = 64'h9669699696696996;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~4 .shared_arith = "off";
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6 (
-	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -4541,15 +4559,15 @@ cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_ne
 	.cout(),
 	.shareout());
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6 .lut_mask = 64'h9669699696696996;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6 .lut_mask = 64'hBEEBEBBEBEEBEBBE;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~6 .shared_arith = "off";
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8 (
-	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
+	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -4559,7 +4577,7 @@ cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_ne
 	.cout(),
 	.shareout());
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8 .lut_mask = 64'h9669699696696996;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8 .lut_mask = 64'hDEEDEDDEDEEDEDDE;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8 .shared_arith = "off";
 
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg[0]~0 (
@@ -4824,30 +4842,12 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0] .is_wysiwyg = "true";
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0] .power_up = "low";
 
-cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 (
-	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]~q ),
-	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~q ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~q ),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .lut_mask = 64'h69FF96FF69FF96FF;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1 .shared_arith = "off";
-
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_proc~0_combout ),
 	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~0_combout ),
-	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~q ),
-	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0]~q ),
-	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ),
+	.datac(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~1_combout ),
+	.datad(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~q ),
+	.datae(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0]~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -4857,7 +4857,7 @@ cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_ne
 	.cout(),
 	.shareout());
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2 .extended_lut = "off";
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2 .lut_mask = 64'h27FFFFFF27FFFFFF;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2 .lut_mask = 64'h6FFFFFFF6FFFFFFF;
 defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~2 .shared_arith = "off";
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0] (
@@ -4981,8 +4981,8 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 cyclonev_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|tdo_mux_out~3 (
 	.dataa(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[6]~q ),
 	.datab(!\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg[5]~q ),
-	.datac(!\nios2|cpu|the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_tck|sr[0]~q ),
-	.datad(!\jtag_uart|sine_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ),
+	.datac(!\nios2|cpu|the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[0]~q ),
+	.datad(!\jtag_uart|sine_wave_hw_jtag_uart_alt_jtag_atlantic|adapted_tdo~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -5644,7 +5644,7 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 
 endmodule
 
-module sine_hw_altera_reset_controller (
+module sine_wave_hw_altera_reset_controller (
 	r_sync_rst1,
 	r_early_rst1,
 	altera_reset_synchronizer_int_chain_1,
@@ -5682,12 +5682,12 @@ wire \WideOr0~0_combout ;
 wire \always2~0_combout ;
 
 
-sine_hw_altera_reset_synchronizer alt_rst_req_sync_uq1(
+sine_wave_hw_altera_reset_synchronizer alt_rst_req_sync_uq1(
 	.altera_reset_synchronizer_int_chain_out1(\alt_rst_req_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
 	.altera_reset_synchronizer_int_chain_1(altera_reset_synchronizer_int_chain_1),
 	.clk(clk_clk));
 
-sine_hw_altera_reset_synchronizer_1 alt_rst_sync_uq1(
+sine_wave_hw_altera_reset_synchronizer_1 alt_rst_sync_uq1(
 	.altera_reset_synchronizer_int_chain_out1(\alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
 	.clk(clk_clk),
 	.reset_reset_n(reset_reset_n));
@@ -5924,7 +5924,7 @@ defparam \always2~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_reset_synchronizer (
+module sine_wave_hw_altera_reset_synchronizer (
 	altera_reset_synchronizer_int_chain_out1,
 	altera_reset_synchronizer_int_chain_1,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -6007,7 +6007,7 @@ defparam \altera_reset_synchronizer_int_chain[0] .power_up = "low";
 
 endmodule
 
-module sine_hw_altera_reset_synchronizer_1 (
+module sine_wave_hw_altera_reset_synchronizer_1 (
 	altera_reset_synchronizer_int_chain_out1,
 	clk,
 	reset_reset_n)/* synthesis synthesis_greybox=1 */;
@@ -6072,7 +6072,7 @@ defparam \altera_reset_synchronizer_int_chain[0] .power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_jtag_uart (
+module sine_wave_hw_sine_wave_hw_jtag_uart (
 	W_alu_result_2,
 	d_writedata_10,
 	Add1,
@@ -6213,40 +6213,40 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ;
 wire \t_dav~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ;
 wire \r_val~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ;
 wire \fifo_wr~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ;
 wire \r_val~0_combout ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ;
-wire \the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ;
+wire \the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ;
 wire \fifo_wr~0_combout ;
 wire \rvalid~0_combout ;
 wire \wr_rfifo~combout ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ;
-wire \sine_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ;
+wire \sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ;
 wire \Add1~2 ;
 wire \Add1~10 ;
 wire \Add1~14 ;
@@ -6284,27 +6284,27 @@ wire \rvalid~1_combout ;
 wire \ac~0_combout ;
 
 
-sine_hw_alt_jtag_atlantic sine_hw_jtag_uart_alt_jtag_atlantic(
-	.r_dat({\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ,\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ,\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ,
-\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ,\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ,\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ,
-\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ,\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] }),
+sine_wave_hw_alt_jtag_atlantic sine_wave_hw_jtag_uart_alt_jtag_atlantic(
+	.r_dat({\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ,\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ,\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ,
+\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ,\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ,\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ,
+\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ,\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] }),
 	.adapted_tdo1(adapted_tdo),
 	.rst_n(r_sync_rst),
 	.rst11(rst1),
 	.t_dav(\t_dav~q ),
-	.rvalid01(\sine_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ),
+	.rvalid01(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ),
 	.r_val(\r_val~q ),
-	.r_ena11(\sine_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ),
-	.t_ena(\sine_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
-	.t_pause(\sine_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
-	.wdata_5(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ),
-	.wdata_6(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ),
-	.wdata_7(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ),
-	.wdata_4(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ),
-	.wdata_3(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ),
-	.wdata_2(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ),
-	.wdata_1(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ),
-	.wdata_0(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ),
+	.r_ena11(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ),
+	.t_ena(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
+	.t_pause(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
+	.wdata_5(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ),
+	.wdata_6(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ),
+	.wdata_7(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ),
+	.wdata_4(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ),
+	.wdata_3(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ),
+	.wdata_2(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ),
+	.wdata_1(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ),
+	.wdata_0(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
 	.state_4(state_4),
@@ -6316,7 +6316,7 @@ sine_hw_alt_jtag_atlantic sine_hw_jtag_uart_alt_jtag_atlantic(
 	.irf_reg_0_1(irf_reg_0_1),
 	.clk(clk_clk));
 
-sine_hw_sine_hw_jtag_uart_scfifo_r the_sine_hw_jtag_uart_scfifo_r(
+sine_wave_hw_sine_wave_hw_jtag_uart_scfifo_r the_sine_wave_hw_jtag_uart_scfifo_r(
 	.q_b_5(q_b_5),
 	.q_b_6(q_b_6),
 	.q_b_7(q_b_7),
@@ -6334,32 +6334,32 @@ sine_hw_sine_hw_jtag_uart_scfifo_r the_sine_hw_jtag_uart_scfifo_r(
 	.fifo_rd(\fifo_rd~0_combout ),
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
-	.t_ena(\sine_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
+	.t_ena(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
 	.counter_reg_bit_5(counter_reg_bit_5),
 	.counter_reg_bit_4(counter_reg_bit_4),
 	.counter_reg_bit_3(counter_reg_bit_3),
 	.counter_reg_bit_2(counter_reg_bit_2),
 	.rvalid(\rvalid~0_combout ),
 	.wr_rfifo(\wr_rfifo~combout ),
-	.wdata_5(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ),
-	.wdata_6(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ),
-	.wdata_7(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ),
-	.wdata_4(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ),
-	.wdata_3(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ),
-	.wdata_2(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ),
-	.wdata_1(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ),
-	.wdata_0(\sine_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ),
+	.wdata_5(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[5]~q ),
+	.wdata_6(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[6]~q ),
+	.wdata_7(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[7]~q ),
+	.wdata_4(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[4]~q ),
+	.wdata_3(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[3]~q ),
+	.wdata_2(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[2]~q ),
+	.wdata_1(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[1]~q ),
+	.wdata_0(\sine_wave_hw_jtag_uart_alt_jtag_atlantic|wdata[0]~q ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_jtag_uart_scfifo_w the_sine_hw_jtag_uart_scfifo_w(
-	.q_b_7(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
-	.q_b_0(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
-	.q_b_1(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
-	.q_b_2(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
-	.q_b_3(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
-	.q_b_4(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
-	.q_b_5(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
-	.q_b_6(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
+sine_wave_hw_sine_wave_hw_jtag_uart_scfifo_w the_sine_wave_hw_jtag_uart_scfifo_w(
+	.q_b_7(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[7] ),
+	.q_b_0(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[0] ),
+	.q_b_1(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[1] ),
+	.q_b_2(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[2] ),
+	.q_b_3(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[3] ),
+	.q_b_4(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[4] ),
+	.q_b_5(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[5] ),
+	.q_b_6(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|FIFOram|q_b[6] ),
 	.r_sync_rst(r_sync_rst),
 	.d_writedata_0(d_writedata_0),
 	.d_writedata_1(d_writedata_1),
@@ -6370,15 +6370,15 @@ sine_hw_sine_hw_jtag_uart_scfifo_w the_sine_hw_jtag_uart_scfifo_w(
 	.d_writedata_6(d_writedata_6),
 	.d_writedata_7(d_writedata_7),
 	.fifo_wr(\fifo_wr~q ),
-	.b_non_empty(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
+	.b_non_empty(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
 	.r_val(\r_val~0_combout ),
 	.b_full(b_full1),
-	.counter_reg_bit_3(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.counter_reg_bit_0(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.counter_reg_bit_2(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
-	.counter_reg_bit_1(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
-	.counter_reg_bit_5(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.counter_reg_bit_4(\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.counter_reg_bit_3(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.counter_reg_bit_0(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.counter_reg_bit_2(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.counter_reg_bit_1(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.counter_reg_bit_5(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.counter_reg_bit_4(\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
 	.clk_clk(clk_clk));
 
 dffeas t_dav(
@@ -6424,10 +6424,10 @@ defparam fifo_wr.is_wysiwyg = "true";
 defparam fifo_wr.power_up = "low";
 
 cyclonev_lcell_comb \r_val~0 (
-	.dataa(!\sine_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ),
+	.dataa(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|rvalid0~q ),
 	.datab(!\r_val~q ),
-	.datac(!\sine_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
+	.datac(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|r_ena1~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6479,7 +6479,7 @@ defparam \rvalid~0 .shared_arith = "off";
 
 cyclonev_lcell_comb wr_rfifo(
 	.dataa(!b_full),
-	.datab(!\sine_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
+	.datab(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -6499,7 +6499,7 @@ cyclonev_lcell_comb \Add1~1 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6535,7 +6535,7 @@ cyclonev_lcell_comb \Add1~9 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6553,7 +6553,7 @@ cyclonev_lcell_comb \Add1~13 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6571,7 +6571,7 @@ cyclonev_lcell_comb \Add1~17 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6589,7 +6589,7 @@ cyclonev_lcell_comb \Add1~21 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6607,7 +6607,7 @@ cyclonev_lcell_comb \Add1~25 (
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6828,10 +6828,10 @@ defparam \ien_AE~0 .lut_mask = 64'h7FFFFFFF7FFFFFFF;
 defparam \ien_AE~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \LessThan0~0 (
-	.dataa(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.datab(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.datac(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.dataa(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.datab(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.datac(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6848,8 +6848,8 @@ defparam \LessThan0~0 .shared_arith = "off";
 cyclonev_lcell_comb \LessThan0~1 (
 	.dataa(!b_full1),
 	.datab(!\LessThan0~0_combout ),
-	.datac(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.datad(!\the_sine_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.datac(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.datad(!\the_sine_wave_hw_jtag_uart_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -6880,7 +6880,7 @@ defparam fifo_AE.power_up = "low";
 cyclonev_lcell_comb \pause_irq~0 (
 	.dataa(!\pause_irq~q ),
 	.datab(!b_non_empty),
-	.datac(!\sine_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
+	.datac(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
 	.datad(!read_01),
 	.datae(gnd),
 	.dataf(gnd),
@@ -7159,9 +7159,9 @@ defparam \rvalid~1 .shared_arith = "off";
 
 cyclonev_lcell_comb \ac~0 (
 	.dataa(!d_writedata_10),
-	.datab(!\sine_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
+	.datab(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_ena~reg0_q ),
 	.datac(!\ien_AE~0_combout ),
-	.datad(!\sine_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
+	.datad(!\sine_wave_hw_jtag_uart_alt_jtag_atlantic|t_pause~reg0_q ),
 	.datae(!ac1),
 	.dataf(gnd),
 	.datag(gnd),
@@ -7177,7 +7177,7 @@ defparam \ac~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_alt_jtag_atlantic (
+module sine_wave_hw_alt_jtag_atlantic (
 	r_dat,
 	adapted_tdo1,
 	rst_n,
@@ -8742,7 +8742,7 @@ defparam \t_pause~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_jtag_uart_scfifo_r (
+module sine_wave_hw_sine_wave_hw_jtag_uart_scfifo_r (
 	q_b_5,
 	q_b_6,
 	q_b_7,
@@ -8821,7 +8821,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_scfifo_1 rfifo(
+sine_wave_hw_scfifo_1 rfifo(
 	.q({q_b_7,q_b_6,q_b_5,q_b_4,q_b_3,q_b_2,q_b_1,q_b_0}),
 	.r_sync_rst(r_sync_rst),
 	.Equal4(Equal4),
@@ -8844,7 +8844,7 @@ sine_hw_scfifo_1 rfifo(
 
 endmodule
 
-module sine_hw_scfifo_1 (
+module sine_wave_hw_scfifo_1 (
 	q,
 	r_sync_rst,
 	Equal4,
@@ -8895,7 +8895,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_scfifo_3291 auto_generated(
+sine_wave_hw_scfifo_3291 auto_generated(
 	.q({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.r_sync_rst(r_sync_rst),
 	.Equal4(Equal4),
@@ -8918,7 +8918,7 @@ sine_hw_scfifo_3291 auto_generated(
 
 endmodule
 
-module sine_hw_scfifo_3291 (
+module sine_wave_hw_scfifo_3291 (
 	q,
 	r_sync_rst,
 	Equal4,
@@ -8969,7 +8969,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_a_dpfifo_5771 dpfifo(
+sine_wave_hw_a_dpfifo_5771 dpfifo(
 	.q({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.r_sync_rst(r_sync_rst),
 	.Equal4(Equal4),
@@ -8992,7 +8992,7 @@ sine_hw_a_dpfifo_5771 dpfifo(
 
 endmodule
 
-module sine_hw_a_dpfifo_5771 (
+module sine_wave_hw_a_dpfifo_5771 (
 	q,
 	r_sync_rst,
 	Equal4,
@@ -9055,7 +9055,7 @@ wire \rd_ptr_count|counter_reg_bit[4]~q ;
 wire \rd_ptr_count|counter_reg_bit[5]~q ;
 
 
-sine_hw_cntr_jgb_1 wr_ptr(
+sine_wave_hw_cntr_jgb_1 wr_ptr(
 	.r_sync_rst(r_sync_rst),
 	.wr_rfifo(wreq),
 	.counter_reg_bit_0(\wr_ptr|counter_reg_bit[0]~q ),
@@ -9066,7 +9066,7 @@ sine_hw_cntr_jgb_1 wr_ptr(
 	.counter_reg_bit_5(\wr_ptr|counter_reg_bit[5]~q ),
 	.clock(clock));
 
-sine_hw_cntr_jgb rd_ptr_count(
+sine_wave_hw_cntr_jgb rd_ptr_count(
 	.r_sync_rst(r_sync_rst),
 	.rvalid(rvalid),
 	.counter_reg_bit_0(\rd_ptr_count|counter_reg_bit[0]~q ),
@@ -9077,7 +9077,7 @@ sine_hw_cntr_jgb rd_ptr_count(
 	.counter_reg_bit_5(\rd_ptr_count|counter_reg_bit[5]~q ),
 	.clock(clock));
 
-sine_hw_altsyncram_7pu1 FIFOram(
+sine_wave_hw_altsyncram_7pu1 FIFOram(
 	.q_b({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.clocken1(rvalid),
 	.wren_a(wreq),
@@ -9087,7 +9087,7 @@ sine_hw_altsyncram_7pu1 FIFOram(
 	.clock0(clock),
 	.clock1(clock));
 
-sine_hw_a_fefifo_7cf fifo_state(
+sine_wave_hw_a_fefifo_7cf fifo_state(
 	.r_sync_rst(r_sync_rst),
 	.Equal4(Equal4),
 	.uav_read(uav_read),
@@ -9108,7 +9108,7 @@ sine_hw_a_fefifo_7cf fifo_state(
 
 endmodule
 
-module sine_hw_a_fefifo_7cf (
+module sine_wave_hw_a_fefifo_7cf (
 	r_sync_rst,
 	Equal4,
 	uav_read,
@@ -9161,7 +9161,7 @@ wire \_~0_combout ;
 wire \b_non_empty~0_combout ;
 
 
-sine_hw_cntr_vg7 count_usedw(
+sine_wave_hw_cntr_vg7 count_usedw(
 	.r_sync_rst(r_sync_rst),
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
@@ -9311,7 +9311,7 @@ defparam \b_non_empty~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_cntr_vg7 (
+module sine_wave_hw_cntr_vg7 (
 	r_sync_rst,
 	counter_reg_bit_1,
 	counter_reg_bit_0,
@@ -9549,7 +9549,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_altsyncram_7pu1 (
+module sine_wave_hw_altsyncram_7pu1 (
 	q_b,
 	clocken1,
 	wren_a,
@@ -9634,7 +9634,7 @@ defparam ram_block1a5.clk1_core_clock_enable = "ena1";
 defparam ram_block1a5.clk1_input_clock_enable = "ena1";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a5.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a5.operation_mode = "dual_port";
 defparam ram_block1a5.port_a_address_clear = "none";
@@ -9695,7 +9695,7 @@ defparam ram_block1a6.clk1_core_clock_enable = "ena1";
 defparam ram_block1a6.clk1_input_clock_enable = "ena1";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a6.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a6.operation_mode = "dual_port";
 defparam ram_block1a6.port_a_address_clear = "none";
@@ -9756,7 +9756,7 @@ defparam ram_block1a7.clk1_core_clock_enable = "ena1";
 defparam ram_block1a7.clk1_input_clock_enable = "ena1";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a7.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a7.operation_mode = "dual_port";
 defparam ram_block1a7.port_a_address_clear = "none";
@@ -9817,7 +9817,7 @@ defparam ram_block1a4.clk1_core_clock_enable = "ena1";
 defparam ram_block1a4.clk1_input_clock_enable = "ena1";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a4.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a4.operation_mode = "dual_port";
 defparam ram_block1a4.port_a_address_clear = "none";
@@ -9878,7 +9878,7 @@ defparam ram_block1a3.clk1_core_clock_enable = "ena1";
 defparam ram_block1a3.clk1_input_clock_enable = "ena1";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a3.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a3.operation_mode = "dual_port";
 defparam ram_block1a3.port_a_address_clear = "none";
@@ -9939,7 +9939,7 @@ defparam ram_block1a2.clk1_core_clock_enable = "ena1";
 defparam ram_block1a2.clk1_input_clock_enable = "ena1";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a2.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a2.operation_mode = "dual_port";
 defparam ram_block1a2.port_a_address_clear = "none";
@@ -10000,7 +10000,7 @@ defparam ram_block1a1.clk1_core_clock_enable = "ena1";
 defparam ram_block1a1.clk1_input_clock_enable = "ena1";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a1.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a1.operation_mode = "dual_port";
 defparam ram_block1a1.port_a_address_clear = "none";
@@ -10061,7 +10061,7 @@ defparam ram_block1a0.clk1_core_clock_enable = "ena1";
 defparam ram_block1a0.clk1_input_clock_enable = "ena1";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_r:the_sine_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_r:the_sine_wave_hw_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a0.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a0.operation_mode = "dual_port";
 defparam ram_block1a0.port_a_address_clear = "none";
@@ -10092,7 +10092,7 @@ defparam ram_block1a0.ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_cntr_jgb (
+module sine_wave_hw_cntr_jgb (
 	r_sync_rst,
 	rvalid,
 	counter_reg_bit_0,
@@ -10328,7 +10328,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_cntr_jgb_1 (
+module sine_wave_hw_cntr_jgb_1 (
 	r_sync_rst,
 	wr_rfifo,
 	counter_reg_bit_0,
@@ -10564,7 +10564,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_jtag_uart_scfifo_w (
+module sine_wave_hw_sine_wave_hw_jtag_uart_scfifo_w (
 	q_b_7,
 	q_b_0,
 	q_b_1,
@@ -10633,7 +10633,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_scfifo_2 wfifo(
+sine_wave_hw_scfifo_2 wfifo(
 	.q({q_b_7,q_b_6,q_b_5,q_b_4,q_b_3,q_b_2,q_b_1,q_b_0}),
 	.r_sync_rst(r_sync_rst),
 	.data({d_writedata_7,d_writedata_6,d_writedata_5,d_writedata_4,d_writedata_3,d_writedata_2,d_writedata_1,d_writedata_0}),
@@ -10651,7 +10651,7 @@ sine_hw_scfifo_2 wfifo(
 
 endmodule
 
-module sine_hw_scfifo_2 (
+module sine_wave_hw_scfifo_2 (
 	q,
 	r_sync_rst,
 	data,
@@ -10692,7 +10692,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_scfifo_3291_1 auto_generated(
+sine_wave_hw_scfifo_3291_1 auto_generated(
 	.q({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.r_sync_rst(r_sync_rst),
 	.data({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
@@ -10710,7 +10710,7 @@ sine_hw_scfifo_3291_1 auto_generated(
 
 endmodule
 
-module sine_hw_scfifo_3291_1 (
+module sine_wave_hw_scfifo_3291_1 (
 	q,
 	r_sync_rst,
 	data,
@@ -10751,7 +10751,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_a_dpfifo_5771_1 dpfifo(
+sine_wave_hw_a_dpfifo_5771_1 dpfifo(
 	.q({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.r_sync_rst(r_sync_rst),
 	.data({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
@@ -10769,7 +10769,7 @@ sine_hw_a_dpfifo_5771_1 dpfifo(
 
 endmodule
 
-module sine_hw_a_dpfifo_5771_1 (
+module sine_wave_hw_a_dpfifo_5771_1 (
 	q,
 	r_sync_rst,
 	data,
@@ -10822,7 +10822,7 @@ wire \rd_ptr_count|counter_reg_bit[4]~q ;
 wire \rd_ptr_count|counter_reg_bit[5]~q ;
 
 
-sine_hw_cntr_jgb_3 wr_ptr(
+sine_wave_hw_cntr_jgb_3 wr_ptr(
 	.r_sync_rst(r_sync_rst),
 	.fifo_wr(wreq),
 	.counter_reg_bit_0(\wr_ptr|counter_reg_bit[0]~q ),
@@ -10833,7 +10833,7 @@ sine_hw_cntr_jgb_3 wr_ptr(
 	.counter_reg_bit_5(\wr_ptr|counter_reg_bit[5]~q ),
 	.clock(clock));
 
-sine_hw_cntr_jgb_2 rd_ptr_count(
+sine_wave_hw_cntr_jgb_2 rd_ptr_count(
 	.r_sync_rst(r_sync_rst),
 	.r_val(r_val),
 	.counter_reg_bit_0(\rd_ptr_count|counter_reg_bit[0]~q ),
@@ -10844,7 +10844,7 @@ sine_hw_cntr_jgb_2 rd_ptr_count(
 	.counter_reg_bit_5(\rd_ptr_count|counter_reg_bit[5]~q ),
 	.clock(clock));
 
-sine_hw_altsyncram_7pu1_1 FIFOram(
+sine_wave_hw_altsyncram_7pu1_1 FIFOram(
 	.q_b({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
 	.data_a({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
 	.wren_a(wreq),
@@ -10854,7 +10854,7 @@ sine_hw_altsyncram_7pu1_1 FIFOram(
 	.clock0(clock),
 	.clock1(clock));
 
-sine_hw_a_fefifo_7cf_1 fifo_state(
+sine_wave_hw_a_fefifo_7cf_1 fifo_state(
 	.r_sync_rst(r_sync_rst),
 	.fifo_wr(wreq),
 	.b_non_empty1(b_non_empty),
@@ -10870,7 +10870,7 @@ sine_hw_a_fefifo_7cf_1 fifo_state(
 
 endmodule
 
-module sine_hw_a_fefifo_7cf_1 (
+module sine_wave_hw_a_fefifo_7cf_1 (
 	r_sync_rst,
 	fifo_wr,
 	b_non_empty1,
@@ -10913,7 +10913,7 @@ wire \b_full~0_combout ;
 wire \b_full~1_combout ;
 
 
-sine_hw_cntr_vg7_1 count_usedw(
+sine_wave_hw_cntr_vg7_1 count_usedw(
 	.r_sync_rst(r_sync_rst),
 	.fifo_wr(fifo_wr),
 	.counter_reg_bit_3(counter_reg_bit_3),
@@ -11063,7 +11063,7 @@ defparam \b_full~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_cntr_vg7_1 (
+module sine_wave_hw_cntr_vg7_1 (
 	r_sync_rst,
 	fifo_wr,
 	counter_reg_bit_3,
@@ -11301,7 +11301,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_altsyncram_7pu1_1 (
+module sine_wave_hw_altsyncram_7pu1_1 (
 	q_b,
 	data_a,
 	wren_a,
@@ -11386,7 +11386,7 @@ defparam ram_block1a7.clk1_core_clock_enable = "ena1";
 defparam ram_block1a7.clk1_input_clock_enable = "ena1";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a7.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a7.operation_mode = "dual_port";
 defparam ram_block1a7.port_a_address_clear = "none";
@@ -11447,7 +11447,7 @@ defparam ram_block1a0.clk1_core_clock_enable = "ena1";
 defparam ram_block1a0.clk1_input_clock_enable = "ena1";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a0.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a0.operation_mode = "dual_port";
 defparam ram_block1a0.port_a_address_clear = "none";
@@ -11508,7 +11508,7 @@ defparam ram_block1a1.clk1_core_clock_enable = "ena1";
 defparam ram_block1a1.clk1_input_clock_enable = "ena1";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a1.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a1.operation_mode = "dual_port";
 defparam ram_block1a1.port_a_address_clear = "none";
@@ -11569,7 +11569,7 @@ defparam ram_block1a2.clk1_core_clock_enable = "ena1";
 defparam ram_block1a2.clk1_input_clock_enable = "ena1";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a2.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a2.operation_mode = "dual_port";
 defparam ram_block1a2.port_a_address_clear = "none";
@@ -11630,7 +11630,7 @@ defparam ram_block1a3.clk1_core_clock_enable = "ena1";
 defparam ram_block1a3.clk1_input_clock_enable = "ena1";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a3.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a3.operation_mode = "dual_port";
 defparam ram_block1a3.port_a_address_clear = "none";
@@ -11691,7 +11691,7 @@ defparam ram_block1a4.clk1_core_clock_enable = "ena1";
 defparam ram_block1a4.clk1_input_clock_enable = "ena1";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a4.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a4.operation_mode = "dual_port";
 defparam ram_block1a4.port_a_address_clear = "none";
@@ -11752,7 +11752,7 @@ defparam ram_block1a5.clk1_core_clock_enable = "ena1";
 defparam ram_block1a5.clk1_input_clock_enable = "ena1";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a5.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a5.operation_mode = "dual_port";
 defparam ram_block1a5.port_a_address_clear = "none";
@@ -11813,7 +11813,7 @@ defparam ram_block1a6.clk1_core_clock_enable = "ena1";
 defparam ram_block1a6.clk1_input_clock_enable = "ena1";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.logical_ram_name = "sine_hw_jtag_uart:jtag_uart|sine_hw_jtag_uart_scfifo_w:the_sine_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_jtag_uart:jtag_uart|sine_wave_hw_jtag_uart_scfifo_w:the_sine_wave_hw_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM";
 defparam ram_block1a6.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a6.operation_mode = "dual_port";
 defparam ram_block1a6.port_a_address_clear = "none";
@@ -11844,7 +11844,7 @@ defparam ram_block1a6.ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_cntr_jgb_2 (
+module sine_wave_hw_cntr_jgb_2 (
 	r_sync_rst,
 	r_val,
 	counter_reg_bit_0,
@@ -12080,7 +12080,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_cntr_jgb_3 (
+module sine_wave_hw_cntr_jgb_3 (
 	r_sync_rst,
 	fifo_wr,
 	counter_reg_bit_0,
@@ -12316,7 +12316,7 @@ defparam counter_comb_bita5.shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0 (
 	W_alu_result_14,
 	F_pc_12,
 	W_alu_result_12,
@@ -12507,7 +12507,7 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	d_write,
 	write_accepted,
 	Equal4,
-	src3_valid,
+	src4_valid,
 	i_read,
 	F_pc_24,
 	src_valid,
@@ -12735,8 +12735,12 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	src_payload23,
 	src_payload24,
 	src_data_35,
+	src_data_27,
+	src_data_26,
 	src_payload25,
+	src_data_25,
 	src_payload26,
+	src_data_24,
 	src_payload27,
 	src_payload28,
 	src_payload29,
@@ -12748,10 +12752,6 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	src_payload35,
 	src_payload36,
 	src_payload37,
-	src_payload38,
-	src_payload39,
-	src_payload40,
-	src_payload41,
 	av_readdata_pre_131,
 	av_readdata_pre_151,
 	av_readdata_pre_81,
@@ -12764,7 +12764,7 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	za_data_1,
 	za_data_2,
 	za_data_3,
-	src_payload42,
+	src_payload38,
 	za_data_11,
 	za_data_12,
 	za_data_13,
@@ -12772,10 +12772,10 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	za_data_15,
 	za_data_5,
 	woverflow,
-	src_payload43,
-	src_payload44,
-	src_payload45,
-	src_payload46,
+	src_data_30,
+	src_data_29,
+	src_data_28,
+	src_data_311,
 	za_data_6,
 	za_data_8,
 	za_data_10,
@@ -12788,19 +12788,27 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	ac,
 	readdata_41,
 	readdata_32,
-	src_payload47,
+	src_payload39,
 	readdata_210,
-	src_payload48,
-	src_payload49,
+	src_payload40,
+	src_payload41,
 	read_latency_shift_reg1,
 	readdata_110,
 	readdata_01,
+	src_payload42,
+	src_payload43,
+	src_data_351,
+	src_payload44,
+	src_payload45,
+	src_data_331,
+	src_payload46,
+	src_payload47,
+	src_payload48,
+	src_payload49,
 	src_payload50,
 	src_payload51,
-	src_data_351,
 	src_payload52,
 	src_payload53,
-	src_data_331,
 	src_payload54,
 	src_payload55,
 	src_payload56,
@@ -12814,14 +12822,6 @@ module sine_hw_sine_hw_mm_interconnect_0 (
 	src_payload64,
 	src_payload65,
 	src_payload66,
-	src_payload67,
-	src_payload68,
-	src_payload69,
-	src_payload70,
-	src_payload71,
-	src_payload72,
-	src_payload73,
-	src_payload74,
 	GND_port,
 	clk_clk)/* synthesis synthesis_greybox=1 */;
 input 	W_alu_result_14;
@@ -13014,7 +13014,7 @@ input 	rst1;
 input 	d_write;
 output 	write_accepted;
 output 	Equal4;
-output 	src3_valid;
+output 	src4_valid;
 input 	i_read;
 input 	F_pc_24;
 output 	src_valid;
@@ -13242,8 +13242,12 @@ output 	src_payload22;
 output 	src_payload23;
 output 	src_payload24;
 output 	src_data_35;
+output 	src_data_27;
+output 	src_data_26;
 output 	src_payload25;
+output 	src_data_25;
 output 	src_payload26;
+output 	src_data_24;
 output 	src_payload27;
 output 	src_payload28;
 output 	src_payload29;
@@ -13255,10 +13259,6 @@ output 	src_payload34;
 output 	src_payload35;
 output 	src_payload36;
 output 	src_payload37;
-output 	src_payload38;
-output 	src_payload39;
-output 	src_payload40;
-output 	src_payload41;
 output 	av_readdata_pre_131;
 output 	av_readdata_pre_151;
 output 	av_readdata_pre_81;
@@ -13271,7 +13271,7 @@ input 	za_data_0;
 input 	za_data_1;
 input 	za_data_2;
 input 	za_data_3;
-output 	src_payload42;
+output 	src_payload38;
 input 	za_data_11;
 input 	za_data_12;
 input 	za_data_13;
@@ -13279,10 +13279,10 @@ input 	za_data_14;
 input 	za_data_15;
 input 	za_data_5;
 input 	woverflow;
-output 	src_payload43;
-output 	src_payload44;
-output 	src_payload45;
-output 	src_payload46;
+output 	src_data_30;
+output 	src_data_29;
+output 	src_data_28;
+output 	src_data_311;
 input 	za_data_6;
 input 	za_data_8;
 input 	za_data_10;
@@ -13295,19 +13295,27 @@ input 	readdata_71;
 input 	ac;
 input 	readdata_41;
 input 	readdata_32;
-output 	src_payload47;
+output 	src_payload39;
 input 	readdata_210;
-output 	src_payload48;
-output 	src_payload49;
+output 	src_payload40;
+output 	src_payload41;
 output 	read_latency_shift_reg1;
 input 	readdata_110;
 input 	readdata_01;
+output 	src_payload42;
+output 	src_payload43;
+output 	src_data_351;
+output 	src_payload44;
+output 	src_payload45;
+output 	src_data_331;
+output 	src_payload46;
+output 	src_payload47;
+output 	src_payload48;
+output 	src_payload49;
 output 	src_payload50;
 output 	src_payload51;
-output 	src_data_351;
 output 	src_payload52;
 output 	src_payload53;
-output 	src_data_331;
 output 	src_payload54;
 output 	src_payload55;
 output 	src_payload56;
@@ -13321,14 +13329,6 @@ output 	src_payload63;
 output 	src_payload64;
 output 	src_payload65;
 output 	src_payload66;
-output 	src_payload67;
-output 	src_payload68;
-output 	src_payload69;
-output 	src_payload70;
-output 	src_payload71;
-output 	src_payload72;
-output 	src_payload73;
-output 	src_payload74;
 input 	GND_port;
 input 	clk_clk;
 
@@ -13358,7 +13358,7 @@ wire \jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[3]~q ;
 wire \jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[2]~q ;
 wire \jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[1]~q ;
 wire \jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[0]~q ;
-wire \cmd_mux_003|src_data[50]~combout ;
+wire \cmd_mux_004|src_data[50]~combout ;
 wire \cmd_demux|src1_valid~0_combout ;
 wire \router|Equal1~0_combout ;
 wire \router|Equal1~1_combout ;
@@ -13376,36 +13376,36 @@ wire \router_001|Equal1~2_combout ;
 wire \router_001|Equal2~0_combout ;
 wire \router_001|Equal2~1_combout ;
 wire \sdram_s1_agent_rsp_fifo|mem_used[7]~q ;
-wire \cmd_mux_003|src_data[67]~combout ;
-wire \cmd_mux_003|src_data[57]~combout ;
-wire \cmd_mux_003|src_data[58]~combout ;
-wire \cmd_mux_003|src_data[59]~combout ;
-wire \cmd_mux_003|src_data[60]~combout ;
-wire \cmd_mux_003|src_data[47]~combout ;
-wire \cmd_mux_003|src_data[61]~combout ;
-wire \cmd_mux_003|src_data[48]~combout ;
-wire \cmd_mux_003|src_data[49]~combout ;
-wire \cmd_mux_003|src_data[51]~combout ;
-wire \cmd_mux_003|src_data[52]~combout ;
-wire \cmd_mux_003|src_data[53]~combout ;
-wire \cmd_mux_003|src_data[54]~combout ;
-wire \cmd_mux_003|src_data[55]~combout ;
-wire \cmd_mux_003|src_data[56]~combout ;
-wire \cmd_mux_003|src_data[38]~combout ;
-wire \cmd_mux_003|src_data[39]~combout ;
-wire \cmd_mux_003|src_data[40]~combout ;
-wire \cmd_mux_003|src_data[41]~combout ;
-wire \cmd_mux_003|src_data[42]~combout ;
-wire \cmd_mux_003|src_data[43]~combout ;
-wire \cmd_mux_003|src_data[44]~combout ;
-wire \cmd_mux_003|src_data[45]~combout ;
-wire \cmd_mux_003|src_data[46]~combout ;
+wire \cmd_mux_004|src_data[67]~combout ;
+wire \cmd_mux_004|src_data[57]~combout ;
+wire \cmd_mux_004|src_data[58]~combout ;
+wire \cmd_mux_004|src_data[59]~combout ;
+wire \cmd_mux_004|src_data[60]~combout ;
+wire \cmd_mux_004|src_data[47]~combout ;
+wire \cmd_mux_004|src_data[61]~combout ;
+wire \cmd_mux_004|src_data[48]~combout ;
+wire \cmd_mux_004|src_data[49]~combout ;
+wire \cmd_mux_004|src_data[51]~combout ;
+wire \cmd_mux_004|src_data[52]~combout ;
+wire \cmd_mux_004|src_data[53]~combout ;
+wire \cmd_mux_004|src_data[54]~combout ;
+wire \cmd_mux_004|src_data[55]~combout ;
+wire \cmd_mux_004|src_data[56]~combout ;
+wire \cmd_mux_004|src_data[38]~combout ;
+wire \cmd_mux_004|src_data[39]~combout ;
+wire \cmd_mux_004|src_data[40]~combout ;
+wire \cmd_mux_004|src_data[41]~combout ;
+wire \cmd_mux_004|src_data[42]~combout ;
+wire \cmd_mux_004|src_data[43]~combout ;
+wire \cmd_mux_004|src_data[44]~combout ;
+wire \cmd_mux_004|src_data[45]~combout ;
+wire \cmd_mux_004|src_data[46]~combout ;
 wire \sdram_s1_agent|WideOr0~0_combout ;
 wire \sdram_s1_agent|WideOr0~1_combout ;
 wire \sdram_s1_agent|cp_ready~combout ;
 wire \sdram_s1_cmd_width_adapter|count[0]~q ;
 wire \cmd_demux_001|src2_valid~0_combout ;
-wire \cmd_mux_003|last_cycle~0_combout ;
+wire \cmd_mux_004|last_cycle~0_combout ;
 wire \sdram_s1_agent_rsp_fifo|mem_used[0]~q ;
 wire \sdram_s1_agent_rdata_fifo|out_valid~q ;
 wire \sw_s1_translator|read_latency_shift_reg[0]~q ;
@@ -13432,36 +13432,36 @@ wire \cmd_mux_002|saved_grant[1]~q ;
 wire \cmd_mux_001|saved_grant[1]~q ;
 wire \sdram_s1_agent|comb~0_combout ;
 wire \sdram_s1_agent|cp_ready~0_combout ;
-wire \cmd_mux_003|src_data[34]~combout ;
-wire \cmd_mux_003|src_data[35]~combout ;
+wire \cmd_mux_004|src_data[34]~combout ;
+wire \cmd_mux_004|src_data[35]~combout ;
 wire \sdram_s1_agent_rsp_fifo|mem_used[0]~1_combout ;
 wire \sdram_s1_agent|rf_source_data[86]~0_combout ;
 wire \sdram_s1_agent|rf_source_data[86]~1_combout ;
-wire \cmd_mux_003|src_data[73]~combout ;
+wire \cmd_mux_004|src_data[73]~combout ;
 wire \sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ;
 wire \ram_s1_translator|read_latency_shift_reg~0_combout ;
 wire \ram_s1_agent_rsp_fifo|mem~0_combout ;
 wire \sw_s1_agent|m0_write~0_combout ;
 wire \cmd_demux_001|src0_valid~0_combout ;
 wire \cmd_demux_001|src1_valid~0_combout ;
-wire \cmd_mux_003|src_valid~1_combout ;
+wire \cmd_mux_004|src_valid~1_combout ;
 wire \sdram_s1_agent_rsp_fifo|mem[0][58]~q ;
-wire \cmd_mux_003|src_payload~0_combout ;
-wire \cmd_mux_003|src_payload~1_combout ;
-wire \cmd_mux_003|src_payload~2_combout ;
-wire \cmd_mux_003|src_payload~3_combout ;
-wire \cmd_mux_003|src_payload~4_combout ;
-wire \cmd_mux_003|src_payload~5_combout ;
-wire \cmd_mux_003|src_payload~6_combout ;
-wire \cmd_mux_003|src_payload~7_combout ;
-wire \cmd_mux_003|src_payload~8_combout ;
-wire \cmd_mux_003|src_payload~9_combout ;
-wire \cmd_mux_003|src_payload~10_combout ;
-wire \cmd_mux_003|src_payload~11_combout ;
-wire \cmd_mux_003|src_payload~12_combout ;
-wire \cmd_mux_003|src_payload~13_combout ;
-wire \cmd_mux_003|src_payload~14_combout ;
-wire \cmd_mux_003|src_payload~15_combout ;
+wire \cmd_mux_004|src_payload~0_combout ;
+wire \cmd_mux_004|src_payload~1_combout ;
+wire \cmd_mux_004|src_payload~2_combout ;
+wire \cmd_mux_004|src_payload~3_combout ;
+wire \cmd_mux_004|src_payload~4_combout ;
+wire \cmd_mux_004|src_payload~5_combout ;
+wire \cmd_mux_004|src_payload~6_combout ;
+wire \cmd_mux_004|src_payload~7_combout ;
+wire \cmd_mux_004|src_payload~8_combout ;
+wire \cmd_mux_004|src_payload~9_combout ;
+wire \cmd_mux_004|src_payload~10_combout ;
+wire \cmd_mux_004|src_payload~11_combout ;
+wire \cmd_mux_004|src_payload~12_combout ;
+wire \cmd_mux_004|src_payload~13_combout ;
+wire \cmd_mux_004|src_payload~14_combout ;
+wire \cmd_mux_004|src_payload~15_combout ;
 wire \sw_s1_translator|av_readdata_pre[5]~q ;
 wire \sw_s1_translator|av_readdata_pre[6]~q ;
 wire \sw_s1_translator|av_readdata_pre[7]~q ;
@@ -13472,7 +13472,7 @@ wire \sw_s1_translator|av_readdata_pre[1]~q ;
 wire \sw_s1_translator|av_readdata_pre[0]~q ;
 
 
-sine_hw_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
+sine_wave_hw_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
 	.byteen_reg_0(byteen_reg_0),
 	.byteen_reg_1(byteen_reg_1),
 	.d_writedata_8(d_writedata_8),
@@ -13486,65 +13486,65 @@ sine_hw_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
 	.reset(r_sync_rst),
 	.use_reg1(use_reg),
 	.saved_grant_0(saved_grant_0),
-	.src_data_50(\cmd_mux_003|src_data[50]~combout ),
+	.src_data_50(\cmd_mux_004|src_data[50]~combout ),
 	.out_data_32(out_data_32),
 	.Equal0(Equal0),
-	.src3_valid(src3_valid),
+	.src4_valid(src4_valid),
 	.src_valid(src_valid),
 	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_57(\cmd_mux_003|src_data[57]~combout ),
+	.src_data_57(\cmd_mux_004|src_data[57]~combout ),
 	.out_data_39(out_data_39),
-	.src_data_58(\cmd_mux_003|src_data[58]~combout ),
+	.src_data_58(\cmd_mux_004|src_data[58]~combout ),
 	.out_data_40(out_data_40),
-	.src_data_59(\cmd_mux_003|src_data[59]~combout ),
+	.src_data_59(\cmd_mux_004|src_data[59]~combout ),
 	.out_data_41(out_data_41),
-	.src_data_60(\cmd_mux_003|src_data[60]~combout ),
+	.src_data_60(\cmd_mux_004|src_data[60]~combout ),
 	.out_data_42(out_data_42),
-	.src_data_47(\cmd_mux_003|src_data[47]~combout ),
+	.src_data_47(\cmd_mux_004|src_data[47]~combout ),
 	.out_data_29(out_data_29),
-	.src_data_61(\cmd_mux_003|src_data[61]~combout ),
+	.src_data_61(\cmd_mux_004|src_data[61]~combout ),
 	.out_data_43(out_data_43),
-	.src_data_48(\cmd_mux_003|src_data[48]~combout ),
+	.src_data_48(\cmd_mux_004|src_data[48]~combout ),
 	.out_data_30(out_data_30),
-	.src_data_49(\cmd_mux_003|src_data[49]~combout ),
+	.src_data_49(\cmd_mux_004|src_data[49]~combout ),
 	.out_data_31(out_data_31),
-	.src_data_51(\cmd_mux_003|src_data[51]~combout ),
+	.src_data_51(\cmd_mux_004|src_data[51]~combout ),
 	.out_data_33(out_data_33),
-	.src_data_52(\cmd_mux_003|src_data[52]~combout ),
+	.src_data_52(\cmd_mux_004|src_data[52]~combout ),
 	.out_data_34(out_data_34),
-	.src_data_53(\cmd_mux_003|src_data[53]~combout ),
+	.src_data_53(\cmd_mux_004|src_data[53]~combout ),
 	.out_data_35(out_data_35),
-	.src_data_54(\cmd_mux_003|src_data[54]~combout ),
+	.src_data_54(\cmd_mux_004|src_data[54]~combout ),
 	.out_data_36(out_data_36),
-	.src_data_55(\cmd_mux_003|src_data[55]~combout ),
+	.src_data_55(\cmd_mux_004|src_data[55]~combout ),
 	.out_data_37(out_data_37),
-	.src_data_56(\cmd_mux_003|src_data[56]~combout ),
+	.src_data_56(\cmd_mux_004|src_data[56]~combout ),
 	.out_data_38(out_data_38),
 	.out_data_19(out_data_19),
-	.src_data_38(\cmd_mux_003|src_data[38]~combout ),
+	.src_data_38(\cmd_mux_004|src_data[38]~combout ),
 	.out_data_20(out_data_20),
-	.src_data_39(\cmd_mux_003|src_data[39]~combout ),
+	.src_data_39(\cmd_mux_004|src_data[39]~combout ),
 	.out_data_21(out_data_21),
-	.src_data_40(\cmd_mux_003|src_data[40]~combout ),
+	.src_data_40(\cmd_mux_004|src_data[40]~combout ),
 	.out_data_22(out_data_22),
-	.src_data_41(\cmd_mux_003|src_data[41]~combout ),
+	.src_data_41(\cmd_mux_004|src_data[41]~combout ),
 	.out_data_23(out_data_23),
-	.src_data_42(\cmd_mux_003|src_data[42]~combout ),
+	.src_data_42(\cmd_mux_004|src_data[42]~combout ),
 	.out_data_24(out_data_24),
-	.src_data_43(\cmd_mux_003|src_data[43]~combout ),
+	.src_data_43(\cmd_mux_004|src_data[43]~combout ),
 	.out_data_25(out_data_25),
-	.src_data_44(\cmd_mux_003|src_data[44]~combout ),
+	.src_data_44(\cmd_mux_004|src_data[44]~combout ),
 	.out_data_26(out_data_26),
-	.src_data_45(\cmd_mux_003|src_data[45]~combout ),
+	.src_data_45(\cmd_mux_004|src_data[45]~combout ),
 	.out_data_27(out_data_27),
-	.src_data_46(\cmd_mux_003|src_data[46]~combout ),
+	.src_data_46(\cmd_mux_004|src_data[46]~combout ),
 	.out_data_28(out_data_28),
 	.WideOr0(\sdram_s1_agent|WideOr0~1_combout ),
 	.cp_ready(\sdram_s1_agent|cp_ready~combout ),
 	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
-	.src_data_34(\cmd_mux_003|src_data[34]~combout ),
-	.src_data_35(\cmd_mux_003|src_data[35]~combout ),
-	.in_endofpacket(\cmd_mux_003|src_data[73]~combout ),
+	.src_data_34(\cmd_mux_004|src_data[34]~combout ),
+	.src_data_35(\cmd_mux_004|src_data[35]~combout ),
+	.in_endofpacket(\cmd_mux_004|src_data[73]~combout ),
 	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
 	.d_writedata_0(d_writedata_0),
 	.out_data_0(out_data_0),
@@ -13570,25 +13570,25 @@ sine_hw_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
 	.out_data_13(out_data_13),
 	.out_data_14(out_data_14),
 	.out_data_15(out_data_15),
-	.src_payload(\cmd_mux_003|src_payload~0_combout ),
-	.src_payload1(\cmd_mux_003|src_payload~1_combout ),
-	.src_payload2(\cmd_mux_003|src_payload~2_combout ),
-	.src_payload3(\cmd_mux_003|src_payload~3_combout ),
-	.src_payload4(\cmd_mux_003|src_payload~4_combout ),
-	.src_payload5(\cmd_mux_003|src_payload~5_combout ),
-	.src_payload6(\cmd_mux_003|src_payload~6_combout ),
-	.src_payload7(\cmd_mux_003|src_payload~7_combout ),
-	.src_payload8(\cmd_mux_003|src_payload~8_combout ),
-	.src_payload9(\cmd_mux_003|src_payload~9_combout ),
-	.src_payload10(\cmd_mux_003|src_payload~10_combout ),
-	.src_payload11(\cmd_mux_003|src_payload~11_combout ),
-	.src_payload12(\cmd_mux_003|src_payload~12_combout ),
-	.src_payload13(\cmd_mux_003|src_payload~13_combout ),
-	.src_payload14(\cmd_mux_003|src_payload~14_combout ),
-	.src_payload15(\cmd_mux_003|src_payload~15_combout ),
+	.src_payload(\cmd_mux_004|src_payload~0_combout ),
+	.src_payload1(\cmd_mux_004|src_payload~1_combout ),
+	.src_payload2(\cmd_mux_004|src_payload~2_combout ),
+	.src_payload3(\cmd_mux_004|src_payload~3_combout ),
+	.src_payload4(\cmd_mux_004|src_payload~4_combout ),
+	.src_payload5(\cmd_mux_004|src_payload~5_combout ),
+	.src_payload6(\cmd_mux_004|src_payload~6_combout ),
+	.src_payload7(\cmd_mux_004|src_payload~7_combout ),
+	.src_payload8(\cmd_mux_004|src_payload~8_combout ),
+	.src_payload9(\cmd_mux_004|src_payload~9_combout ),
+	.src_payload10(\cmd_mux_004|src_payload~10_combout ),
+	.src_payload11(\cmd_mux_004|src_payload~11_combout ),
+	.src_payload12(\cmd_mux_004|src_payload~12_combout ),
+	.src_payload13(\cmd_mux_004|src_payload~13_combout ),
+	.src_payload14(\cmd_mux_004|src_payload~14_combout ),
+	.src_payload15(\cmd_mux_004|src_payload~15_combout ),
 	.clk(clk_clk));
 
-sine_hw_altera_merlin_width_adapter_1 sdram_s1_rsp_width_adapter(
+sine_wave_hw_altera_merlin_width_adapter_1 sdram_s1_rsp_width_adapter(
 	.mem_55_0(mem_55_0),
 	.mem_87_0(\sdram_s1_agent_rsp_fifo|mem[0][87]~q ),
 	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
@@ -13629,7 +13629,7 @@ sine_hw_altera_merlin_width_adapter_1 sdram_s1_rsp_width_adapter(
 	.out_payload_7(out_payload_7),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_mm_interconnect_0_rsp_mux_001 rsp_mux_001(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_mux_001 rsp_mux_001(
 	.rp_valid(rp_valid),
 	.source_addr_1(source_addr_1),
 	.always10(always10),
@@ -13644,7 +13644,7 @@ sine_hw_sine_hw_mm_interconnect_0_rsp_mux_001 rsp_mux_001(
 	.WideOr11(WideOr13),
 	.src_payload(src_payload2));
 
-sine_hw_sine_hw_mm_interconnect_0_rsp_mux rsp_mux(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_mux rsp_mux(
 	.mem_55_0(mem_55_0),
 	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
 	.ram_block1a36(ram_block1a36),
@@ -13747,10 +13747,10 @@ sine_hw_sine_hw_mm_interconnect_0_rsp_mux rsp_mux(
 	.F_iw_7(F_iw_7),
 	.av_readdata_pre_71(av_readdata_pre_7),
 	.src_payload(src_payload21),
-	.src_payload1(src_payload25),
-	.src_payload2(src_payload26),
-	.src_payload3(src_payload28),
-	.src_payload4(src_payload30),
+	.src_data_27(src_data_27),
+	.src_data_26(src_data_26),
+	.src_data_25(src_data_25),
+	.src_data_24(src_data_24),
 	.av_readdata_pre_52(\sw_s1_translator|av_readdata_pre[5]~q ),
 	.av_readdata_pre_62(\sw_s1_translator|av_readdata_pre[6]~q ),
 	.av_readdata_pre_72(\sw_s1_translator|av_readdata_pre[7]~q ),
@@ -13759,12 +13759,12 @@ sine_hw_sine_hw_mm_interconnect_0_rsp_mux rsp_mux(
 	.av_readdata_pre_22(\sw_s1_translator|av_readdata_pre[2]~q ),
 	.av_readdata_pre_12(\sw_s1_translator|av_readdata_pre[1]~q ),
 	.av_readdata_pre_02(\sw_s1_translator|av_readdata_pre[0]~q ),
-	.src_payload5(src_payload43),
-	.src_payload6(src_payload44),
-	.src_payload7(src_payload45),
-	.src_payload8(src_payload46));
+	.src_data_30(src_data_30),
+	.src_data_29(src_data_29),
+	.src_data_28(src_data_28),
+	.src_data_311(src_data_311));
 
-sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001_2 rsp_demux_003(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001_2 rsp_demux_004(
 	.mem_49_0(\sdram_s1_agent_rsp_fifo|mem[0][49]~q ),
 	.mem_67_0(\sdram_s1_agent_rsp_fifo|mem[0][67]~q ),
 	.rp_valid(rp_valid),
@@ -13774,21 +13774,21 @@ sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001_2 rsp_demux_003(
 	.src0_valid(src0_valid2),
 	.src1_valid1(src1_valid3));
 
-sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001_1 rsp_demux_002(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001_1 rsp_demux_002(
 	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
 	.mem_85_0(\ram_s1_agent_rsp_fifo|mem[0][85]~q ),
 	.mem_67_0(\ram_s1_agent_rsp_fifo|mem[0][67]~q ),
 	.src0_valid(src0_valid1),
 	.src1_valid(src1_valid4));
 
-sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001 rsp_demux_001(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001 rsp_demux_001(
 	.read_latency_shift_reg_0(\nios2_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
 	.mem_85_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][85]~q ),
 	.mem_67_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][67]~q ),
 	.src0_valid(src0_valid),
 	.src1_valid(src1_valid2));
 
-sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 cmd_mux_003(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001_2 cmd_mux_004(
 	.W_alu_result_14(W_alu_result_14),
 	.F_pc_12(F_pc_12),
 	.W_alu_result_12(W_alu_result_12),
@@ -13848,7 +13848,7 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 cmd_mux_003(
 	.r_sync_rst(r_sync_rst),
 	.saved_grant_0(saved_grant_0),
 	.saved_grant_1(saved_grant_1),
-	.src_data_50(\cmd_mux_003|src_data[50]~combout ),
+	.src_data_50(\cmd_mux_004|src_data[50]~combout ),
 	.Equal0(Equal0),
 	.d_read(d_read),
 	.read_accepted(read_accepted),
@@ -13856,7 +13856,7 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 cmd_mux_003(
 	.Equal2(\router|Equal2~1_combout ),
 	.Equal4(Equal4),
 	.Equal1(\router|Equal1~3_combout ),
-	.src3_valid(src3_valid),
+	.src4_valid(src4_valid),
 	.i_read(i_read),
 	.read_accepted1(\nios2_instruction_master_translator|read_accepted~q ),
 	.cp_valid(\nios2_instruction_master_agent|cp_valid~0_combout ),
@@ -13866,69 +13866,69 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 cmd_mux_003(
 	.Equal21(\router_001|Equal2~1_combout ),
 	.src_valid(src_valid),
 	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_67(\cmd_mux_003|src_data[67]~combout ),
-	.src_data_57(\cmd_mux_003|src_data[57]~combout ),
-	.src_data_58(\cmd_mux_003|src_data[58]~combout ),
-	.src_data_59(\cmd_mux_003|src_data[59]~combout ),
-	.src_data_60(\cmd_mux_003|src_data[60]~combout ),
-	.src_data_47(\cmd_mux_003|src_data[47]~combout ),
-	.src_data_61(\cmd_mux_003|src_data[61]~combout ),
-	.src_data_48(\cmd_mux_003|src_data[48]~combout ),
-	.src_data_49(\cmd_mux_003|src_data[49]~combout ),
-	.src_data_51(\cmd_mux_003|src_data[51]~combout ),
-	.src_data_52(\cmd_mux_003|src_data[52]~combout ),
-	.src_data_53(\cmd_mux_003|src_data[53]~combout ),
-	.src_data_54(\cmd_mux_003|src_data[54]~combout ),
-	.src_data_55(\cmd_mux_003|src_data[55]~combout ),
-	.src_data_56(\cmd_mux_003|src_data[56]~combout ),
-	.src_data_38(\cmd_mux_003|src_data[38]~combout ),
-	.src_data_39(\cmd_mux_003|src_data[39]~combout ),
-	.src_data_40(\cmd_mux_003|src_data[40]~combout ),
-	.src_data_41(\cmd_mux_003|src_data[41]~combout ),
-	.src_data_42(\cmd_mux_003|src_data[42]~combout ),
-	.src_data_43(\cmd_mux_003|src_data[43]~combout ),
-	.src_data_44(\cmd_mux_003|src_data[44]~combout ),
-	.src_data_45(\cmd_mux_003|src_data[45]~combout ),
-	.src_data_46(\cmd_mux_003|src_data[46]~combout ),
+	.src_data_67(\cmd_mux_004|src_data[67]~combout ),
+	.src_data_57(\cmd_mux_004|src_data[57]~combout ),
+	.src_data_58(\cmd_mux_004|src_data[58]~combout ),
+	.src_data_59(\cmd_mux_004|src_data[59]~combout ),
+	.src_data_60(\cmd_mux_004|src_data[60]~combout ),
+	.src_data_47(\cmd_mux_004|src_data[47]~combout ),
+	.src_data_61(\cmd_mux_004|src_data[61]~combout ),
+	.src_data_48(\cmd_mux_004|src_data[48]~combout ),
+	.src_data_49(\cmd_mux_004|src_data[49]~combout ),
+	.src_data_51(\cmd_mux_004|src_data[51]~combout ),
+	.src_data_52(\cmd_mux_004|src_data[52]~combout ),
+	.src_data_53(\cmd_mux_004|src_data[53]~combout ),
+	.src_data_54(\cmd_mux_004|src_data[54]~combout ),
+	.src_data_55(\cmd_mux_004|src_data[55]~combout ),
+	.src_data_56(\cmd_mux_004|src_data[56]~combout ),
+	.src_data_38(\cmd_mux_004|src_data[38]~combout ),
+	.src_data_39(\cmd_mux_004|src_data[39]~combout ),
+	.src_data_40(\cmd_mux_004|src_data[40]~combout ),
+	.src_data_41(\cmd_mux_004|src_data[41]~combout ),
+	.src_data_42(\cmd_mux_004|src_data[42]~combout ),
+	.src_data_43(\cmd_mux_004|src_data[43]~combout ),
+	.src_data_44(\cmd_mux_004|src_data[44]~combout ),
+	.src_data_45(\cmd_mux_004|src_data[45]~combout ),
+	.src_data_46(\cmd_mux_004|src_data[46]~combout ),
 	.WideOr0(\sdram_s1_agent|WideOr0~0_combout ),
 	.WideOr01(\sdram_s1_agent|WideOr0~1_combout ),
 	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
 	.src2_valid(\cmd_demux_001|src2_valid~0_combout ),
-	.last_cycle(\cmd_mux_003|last_cycle~0_combout ),
+	.last_cycle(\cmd_mux_004|last_cycle~0_combout ),
 	.always1(\router|always1~1_combout ),
 	.d_byteenable_2(d_byteenable_2),
-	.src_data_34(\cmd_mux_003|src_data[34]~combout ),
+	.src_data_34(\cmd_mux_004|src_data[34]~combout ),
 	.d_byteenable_3(d_byteenable_3),
-	.src_data_35(\cmd_mux_003|src_data[35]~combout ),
-	.src_data_73(\cmd_mux_003|src_data[73]~combout ),
-	.src_valid1(\cmd_mux_003|src_valid~1_combout ),
-	.src_payload(\cmd_mux_003|src_payload~0_combout ),
-	.src_payload1(\cmd_mux_003|src_payload~1_combout ),
-	.src_payload2(\cmd_mux_003|src_payload~2_combout ),
-	.src_payload3(\cmd_mux_003|src_payload~3_combout ),
-	.src_payload4(\cmd_mux_003|src_payload~4_combout ),
-	.src_payload5(\cmd_mux_003|src_payload~5_combout ),
-	.src_payload6(\cmd_mux_003|src_payload~6_combout ),
-	.src_payload7(\cmd_mux_003|src_payload~7_combout ),
+	.src_data_35(\cmd_mux_004|src_data[35]~combout ),
+	.src_data_73(\cmd_mux_004|src_data[73]~combout ),
+	.src_valid1(\cmd_mux_004|src_valid~1_combout ),
+	.src_payload(\cmd_mux_004|src_payload~0_combout ),
+	.src_payload1(\cmd_mux_004|src_payload~1_combout ),
+	.src_payload2(\cmd_mux_004|src_payload~2_combout ),
+	.src_payload3(\cmd_mux_004|src_payload~3_combout ),
+	.src_payload4(\cmd_mux_004|src_payload~4_combout ),
+	.src_payload5(\cmd_mux_004|src_payload~5_combout ),
+	.src_payload6(\cmd_mux_004|src_payload~6_combout ),
+	.src_payload7(\cmd_mux_004|src_payload~7_combout ),
 	.d_writedata_24(d_writedata_24),
-	.src_payload8(\cmd_mux_003|src_payload~8_combout ),
+	.src_payload8(\cmd_mux_004|src_payload~8_combout ),
 	.d_writedata_25(d_writedata_25),
-	.src_payload9(\cmd_mux_003|src_payload~9_combout ),
+	.src_payload9(\cmd_mux_004|src_payload~9_combout ),
 	.d_writedata_26(d_writedata_26),
-	.src_payload10(\cmd_mux_003|src_payload~10_combout ),
+	.src_payload10(\cmd_mux_004|src_payload~10_combout ),
 	.d_writedata_27(d_writedata_27),
-	.src_payload11(\cmd_mux_003|src_payload~11_combout ),
+	.src_payload11(\cmd_mux_004|src_payload~11_combout ),
 	.d_writedata_28(d_writedata_28),
-	.src_payload12(\cmd_mux_003|src_payload~12_combout ),
+	.src_payload12(\cmd_mux_004|src_payload~12_combout ),
 	.d_writedata_29(d_writedata_29),
-	.src_payload13(\cmd_mux_003|src_payload~13_combout ),
+	.src_payload13(\cmd_mux_004|src_payload~13_combout ),
 	.d_writedata_30(d_writedata_30),
-	.src_payload14(\cmd_mux_003|src_payload~14_combout ),
+	.src_payload14(\cmd_mux_004|src_payload~14_combout ),
 	.d_writedata_31(d_writedata_31),
-	.src_payload15(\cmd_mux_003|src_payload~15_combout ),
+	.src_payload15(\cmd_mux_004|src_payload~15_combout ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_1 cmd_mux_002(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001_1 cmd_mux_002(
 	.W_alu_result_14(W_alu_result_14),
 	.F_pc_12(F_pc_12),
 	.W_alu_result_12(W_alu_result_12),
@@ -14046,423 +14046,22 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_1 cmd_mux_002(
 	.src_payload17(src_payload23),
 	.src_payload18(src_payload24),
 	.src_data_35(src_data_35),
-	.src_payload19(src_payload27),
-	.src_payload20(src_payload29),
-	.src_payload21(src_payload31),
-	.src_payload22(src_payload32),
-	.src_payload23(src_payload33),
-	.src_payload24(src_payload34),
-	.src_payload25(src_payload35),
-	.src_payload26(src_payload36),
-	.src_payload27(src_payload37),
-	.src_payload28(src_payload38),
-	.src_payload29(src_payload39),
-	.src_payload30(src_payload40),
-	.src_payload31(src_payload41),
+	.src_payload19(src_payload25),
+	.src_payload20(src_payload26),
+	.src_payload21(src_payload27),
+	.src_payload22(src_payload28),
+	.src_payload23(src_payload29),
+	.src_payload24(src_payload30),
+	.src_payload25(src_payload31),
+	.src_payload26(src_payload32),
+	.src_payload27(src_payload33),
+	.src_payload28(src_payload34),
+	.src_payload29(src_payload35),
+	.src_payload30(src_payload36),
+	.src_payload31(src_payload37),
 	.clk_clk(clk_clk));
 
-sine_hw_altera_avalon_sc_fifo jtag_uart_avalon_jtag_slave_agent_rsp_fifo(
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.Equal4(Equal4),
-	.read_latency_shift_reg_0(read_latency_shift_reg_0),
-	.uav_read(uav_read),
-	.mem_used_1(\jtag_uart_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.av_waitrequest(av_waitrequest),
-	.read_latency_shift_reg(read_latency_shift_reg),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_master_agent_1 nios2_instruction_master_agent(
-	.rst1(rst1),
-	.i_read(i_read),
-	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
-	.cp_valid(\nios2_instruction_master_agent|cp_valid~0_combout ));
-
-sine_hw_altera_merlin_slave_translator_4 sw_s1_translator(
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.read_latency_shift_reg_0(\sw_s1_translator|read_latency_shift_reg[0]~q ),
-	.uav_read(uav_read),
-	.always2(always2),
-	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.sink_ready(\cmd_demux|sink_ready~0_combout ),
-	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
-	.wait_latency_counter_0(\sw_s1_translator|wait_latency_counter[0]~q ),
-	.sink_ready1(sink_ready),
-	.always1(\router|always1~1_combout ),
-	.av_waitrequest_generated(\sw_s1_translator|av_waitrequest_generated~0_combout ),
-	.av_readdata_pre_5(\sw_s1_translator|av_readdata_pre[5]~q ),
-	.av_readdata_pre_6(\sw_s1_translator|av_readdata_pre[6]~q ),
-	.av_readdata_pre_7(\sw_s1_translator|av_readdata_pre[7]~q ),
-	.av_readdata_pre_4(\sw_s1_translator|av_readdata_pre[4]~q ),
-	.av_readdata_pre_3(\sw_s1_translator|av_readdata_pre[3]~q ),
-	.av_readdata_pre_2(\sw_s1_translator|av_readdata_pre[2]~q ),
-	.av_readdata_pre_1(\sw_s1_translator|av_readdata_pre[1]~q ),
-	.av_readdata_pre_0(\sw_s1_translator|av_readdata_pre[0]~q ),
-	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,readdata_71,readdata_61,readdata_51,readdata_41,readdata_32,readdata_210,readdata_110,readdata_01}),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_slave_translator_2 ram_s1_translator(
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
-	.saved_grant_0(saved_grant_01),
-	.mem_used_1(mem_used_1),
-	.read_latency_shift_reg(\ram_s1_translator|read_latency_shift_reg~0_combout ),
-	.src2_valid(src2_valid),
-	.src_valid(src_valid2),
-	.mem(\ram_s1_agent_rsp_fifo|mem~0_combout ),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_slave_translator_1 nios2_debug_mem_slave_translator(
-	.av_readdata({readdata_31,readdata_30,readdata_29,readdata_28,readdata_27,readdata_26,readdata_25,readdata_24,readdata_23,readdata_22,readdata_21,readdata_20,readdata_19,readdata_18,readdata_17,readdata_16,readdata_15,readdata_14,readdata_13,readdata_12,readdata_11,readdata_10,readdata_9,
-readdata_8,readdata_7,readdata_6,readdata_5,readdata_4,readdata_3,readdata_2,readdata_1,readdata_0}),
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.read_latency_shift_reg_0(\nios2_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
-	.saved_grant_0(saved_grant_02),
-	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
-	.src1_valid(src1_valid1),
-	.src_valid(src_valid1),
-	.mem(mem1),
-	.av_readdata_pre_4(av_readdata_pre_4),
-	.av_readdata_pre_0(av_readdata_pre_0),
-	.av_readdata_pre_1(av_readdata_pre_1),
-	.av_readdata_pre_2(av_readdata_pre_2),
-	.av_readdata_pre_3(av_readdata_pre_3),
-	.av_readdata_pre_11(av_readdata_pre_11),
-	.av_readdata_pre_12(av_readdata_pre_12),
-	.av_readdata_pre_13(av_readdata_pre_13),
-	.av_readdata_pre_14(av_readdata_pre_14),
-	.av_readdata_pre_15(av_readdata_pre_15),
-	.av_readdata_pre_16(av_readdata_pre_161),
-	.av_readdata_pre_5(av_readdata_pre_5),
-	.av_readdata_pre_20(av_readdata_pre_201),
-	.av_readdata_pre_18(av_readdata_pre_181),
-	.av_readdata_pre_17(av_readdata_pre_171),
-	.av_readdata_pre_22(av_readdata_pre_221),
-	.av_readdata_pre_21(av_readdata_pre_211),
-	.av_readdata_pre_8(av_readdata_pre_8),
-	.av_readdata_pre_31(av_readdata_pre_31),
-	.av_readdata_pre_30(av_readdata_pre_30),
-	.av_readdata_pre_29(av_readdata_pre_29),
-	.av_readdata_pre_28(av_readdata_pre_28),
-	.av_readdata_pre_27(av_readdata_pre_27),
-	.av_readdata_pre_26(av_readdata_pre_26),
-	.av_readdata_pre_9(av_readdata_pre_9),
-	.av_readdata_pre_23(av_readdata_pre_23),
-	.av_readdata_pre_10(av_readdata_pre_10),
-	.av_readdata_pre_24(av_readdata_pre_24),
-	.av_readdata_pre_25(av_readdata_pre_25),
-	.av_readdata_pre_6(av_readdata_pre_6),
-	.av_readdata_pre_7(av_readdata_pre_7),
-	.av_readdata_pre_19(av_readdata_pre_191),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_slave_translator jtag_uart_avalon_jtag_slave_translator(
-	.av_readdata_pre_18(av_readdata_pre_18),
-	.av_readdata_pre_22(av_readdata_pre_22),
-	.av_readdata_pre_19(av_readdata_pre_19),
-	.av_readdata_pre_20(av_readdata_pre_20),
-	.av_readdata_pre_21(av_readdata_pre_21),
-	.av_readdata_pre_16(av_readdata_pre_16),
-	.av_readdata_pre_17(av_readdata_pre_17),
-	.av_readdata_pre_5(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[5]~q ),
-	.av_readdata_pre_6(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[6]~q ),
-	.av_readdata_pre_7(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[7]~q ),
-	.av_readdata_pre_4(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[4]~q ),
-	.av_readdata_pre_3(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[3]~q ),
-	.av_readdata_pre_2(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[2]~q ),
-	.av_readdata_pre_1(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[1]~q ),
-	.av_readdata_pre_0(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[0]~q ),
-	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,Add11,Add14,Add13,Add12,Add1,Add16,Add15,rvalid,woverflow,gnd,b_non_empty,gnd,ac,av_readdata_9,av_readdata_8,GND_port,GND_port,GND_port,GND_port,GND_port,GND_port,ien_AE,ien_AF}),
-	.q_b_5(q_b_5),
-	.q_b_6(q_b_6),
-	.q_b_7(q_b_7),
-	.q_b_4(q_b_4),
-	.q_b_3(q_b_3),
-	.q_b_2(q_b_2),
-	.q_b_1(q_b_1),
-	.q_b_0(q_b_0),
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.Equal4(Equal4),
-	.read_latency_shift_reg_0(read_latency_shift_reg_0),
-	.uav_read(uav_read),
-	.mem_used_1(\jtag_uart_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.av_waitrequest(av_waitrequest),
-	.read_latency_shift_reg(read_latency_shift_reg),
-	.b_full(b_full),
-	.counter_reg_bit_1(counter_reg_bit_1),
-	.counter_reg_bit_0(counter_reg_bit_0),
-	.counter_reg_bit_5(counter_reg_bit_5),
-	.counter_reg_bit_4(counter_reg_bit_4),
-	.counter_reg_bit_3(counter_reg_bit_3),
-	.counter_reg_bit_2(counter_reg_bit_2),
-	.av_readdata_pre_14(av_readdata_pre_141),
-	.av_readdata_pre_12(av_readdata_pre_121),
-	.av_readdata_pre_13(av_readdata_pre_131),
-	.av_readdata_pre_15(av_readdata_pre_151),
-	.av_readdata_pre_8(av_readdata_pre_81),
-	.av_readdata_pre_10(av_readdata_pre_101),
-	.av_readdata_pre_9(av_readdata_pre_91),
-	.b_full1(b_full1),
-	.read_0(read_0),
-	.read_latency_shift_reg1(read_latency_shift_reg1),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_master_translator_1 nios2_instruction_master_translator(
-	.F_pc_9(F_pc_9),
-	.reset(r_sync_rst),
-	.saved_grant_1(saved_grant_1),
-	.rst1(rst1),
-	.i_read(i_read),
-	.read_accepted1(\nios2_instruction_master_translator|read_accepted~q ),
-	.Equal1(\router_001|Equal1~0_combout ),
-	.Equal11(\router_001|Equal1~1_combout ),
-	.Equal12(\router_001|Equal1~2_combout ),
-	.Equal2(\router_001|Equal2~0_combout ),
-	.last_cycle(\cmd_mux_003|last_cycle~0_combout ),
-	.mem_used_1(mem_used_1),
-	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
-	.WideOr1(WideOr13),
-	.saved_grant_11(\cmd_mux_002|saved_grant[1]~q ),
-	.saved_grant_12(\cmd_mux_001|saved_grant[1]~q ),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_master_translator nios2_data_master_translator(
-	.av_waitrequest(nios2_data_master_waitrequest),
-	.reset(r_sync_rst),
-	.d_read(d_read),
-	.read_accepted1(read_accepted),
-	.rst1(rst1),
-	.d_write(d_write),
-	.write_accepted1(write_accepted),
-	.WideOr1(WideOr1),
-	.WideOr11(WideOr11),
-	.uav_read(uav_read),
-	.always2(always2),
-	.sink_ready(\cmd_demux|sink_ready~0_combout ),
-	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
-	.sink_ready1(sink_ready),
-	.WideOr0(\cmd_demux|WideOr0~0_combout ),
-	.WideOr01(\cmd_demux|WideOr0~3_combout ),
-	.WideOr02(\cmd_demux|WideOr0~4_combout ),
-	.WideOr03(WideOr01),
-	.av_waitrequest1(av_waitrequest1),
-	.src0_valid(src0_valid2),
-	.av_waitrequest_generated(\sw_s1_translator|av_waitrequest_generated~0_combout ),
-	.WideOr04(\cmd_demux|WideOr0~6_combout ),
-	.WideOr05(\cmd_demux|WideOr0~7_combout ),
-	.av_waitrequest2(av_waitrequest2),
-	.clk(clk_clk));
-
-sine_hw_sine_hw_mm_interconnect_0_router router(
-	.W_alu_result_14(W_alu_result_14),
-	.W_alu_result_12(W_alu_result_12),
-	.W_alu_result_11(W_alu_result_11),
-	.W_alu_result_18(W_alu_result_18),
-	.W_alu_result_27(W_alu_result_27),
-	.W_alu_result_26(W_alu_result_26),
-	.W_alu_result_25(W_alu_result_25),
-	.W_alu_result_24(W_alu_result_24),
-	.W_alu_result_23(W_alu_result_23),
-	.W_alu_result_22(W_alu_result_22),
-	.W_alu_result_19(W_alu_result_19),
-	.W_alu_result_20(W_alu_result_20),
-	.W_alu_result_21(W_alu_result_21),
-	.W_alu_result_16(W_alu_result_16),
-	.W_alu_result_17(W_alu_result_17),
-	.W_alu_result_13(W_alu_result_13),
-	.W_alu_result_15(W_alu_result_15),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_6(W_alu_result_6),
-	.W_alu_result_7(W_alu_result_7),
-	.W_alu_result_8(W_alu_result_8),
-	.W_alu_result_10(W_alu_result_10),
-	.W_alu_result_9(W_alu_result_9),
-	.W_alu_result_4(W_alu_result_4),
-	.W_alu_result_3(W_alu_result_3),
-	.d_read(d_read),
-	.read_accepted(read_accepted),
-	.Equal1(\router|Equal1~0_combout ),
-	.Equal11(\router|Equal1~1_combout ),
-	.Equal2(\router|Equal2~0_combout ),
-	.Equal21(\router|Equal2~1_combout ),
-	.Equal4(\router|Equal4~2_combout ),
-	.always1(\router|always1~0_combout ),
-	.Equal41(Equal4),
-	.Equal12(\router|Equal1~2_combout ),
-	.Equal13(\router|Equal1~3_combout ),
-	.always11(\router|always1~1_combout ));
-
-sine_hw_altera_avalon_sc_fifo_5 sw_s1_agent_rsp_fifo(
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.Equal4(\router|Equal4~2_combout ),
-	.always1(\router|always1~0_combout ),
-	.read_latency_shift_reg_0(\sw_s1_translator|read_latency_shift_reg[0]~q ),
-	.always2(always2),
-	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.sink_ready(\cmd_demux|sink_ready~0_combout ),
-	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
-	.wait_latency_counter_0(\sw_s1_translator|wait_latency_counter[0]~q ),
-	.m0_write(\sw_s1_agent|m0_write~0_combout ),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_slave_agent_4 sw_s1_agent(
-	.W_alu_result_4(W_alu_result_4),
-	.rst1(rst1),
-	.Equal4(\router|Equal4~2_combout ),
-	.uav_read(uav_read),
-	.always2(always2),
-	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.m0_write(\sw_s1_agent|m0_write~0_combout ));
-
-sine_hw_altera_avalon_sc_fifo_3 sdram_s1_agent_rdata_fifo(
-	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
-	.reset(r_sync_rst),
-	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.out_valid1(\sdram_s1_agent_rdata_fifo|out_valid~q ),
-	.out_payload_4(out_payload_4),
-	.out_payload_0(out_payload_0),
-	.out_payload_1(out_payload_1),
-	.out_payload_2(out_payload_2),
-	.out_payload_3(out_payload_3),
-	.out_payload_11(out_payload_11),
-	.out_payload_12(out_payload_12),
-	.out_payload_13(out_payload_13),
-	.out_payload_14(out_payload_14),
-	.out_payload_15(out_payload_15),
-	.out_payload_5(out_payload_5),
-	.out_payload_6(out_payload_6),
-	.out_payload_8(out_payload_8),
-	.out_payload_10(out_payload_10),
-	.out_payload_9(out_payload_9),
-	.out_payload_7(out_payload_7),
-	.za_valid(za_valid),
-	.za_data_4(za_data_4),
-	.za_data_0(za_data_0),
-	.za_data_1(za_data_1),
-	.za_data_2(za_data_2),
-	.za_data_3(za_data_3),
-	.za_data_11(za_data_11),
-	.za_data_12(za_data_12),
-	.za_data_13(za_data_13),
-	.za_data_14(za_data_14),
-	.za_data_15(za_data_15),
-	.za_data_5(za_data_5),
-	.za_data_6(za_data_6),
-	.za_data_8(za_data_8),
-	.za_data_10(za_data_10),
-	.za_data_9(za_data_9),
-	.za_data_7(za_data_7),
-	.clk(clk_clk));
-
-sine_hw_altera_avalon_sc_fifo_4 sdram_s1_agent_rsp_fifo(
-	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
-	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
-	.mem_55_0(mem_55_0),
-	.mem_87_0(\sdram_s1_agent_rsp_fifo|mem[0][87]~q ),
-	.mem_49_0(\sdram_s1_agent_rsp_fifo|mem[0][49]~q ),
-	.mem_67_0(\sdram_s1_agent_rsp_fifo|mem[0][67]~q ),
-	.reset(r_sync_rst),
-	.saved_grant_0(saved_grant_0),
-	.saved_grant_1(saved_grant_1),
-	.src3_valid(src3_valid),
-	.src_valid(src_valid),
-	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_67(\cmd_mux_003|src_data[67]~combout ),
-	.mem(mem),
-	.out_data_19(out_data_19),
-	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
-	.always2(always21),
-	.comb(\sdram_s1_agent|comb~0_combout ),
-	.cp_ready(\sdram_s1_agent|cp_ready~0_combout ),
-	.mem_used_01(\sdram_s1_agent_rsp_fifo|mem_used[0]~1_combout ),
-	.rf_source_data_86(\sdram_s1_agent|rf_source_data[86]~0_combout ),
-	.rf_source_data_861(\sdram_s1_agent|rf_source_data[86]~1_combout ),
-	.src_data_73(\cmd_mux_003|src_data[73]~combout ),
-	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
-	.src_valid1(\cmd_mux_003|src_valid~1_combout ),
-	.mem_58_0(\sdram_s1_agent_rsp_fifo|mem[0][58]~q ),
-	.clk(clk_clk));
-
-sine_hw_altera_merlin_slave_agent_3 sdram_s1_agent(
-	.byteen_reg_0(byteen_reg_0),
-	.byteen_reg_1(byteen_reg_1),
-	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
-	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
-	.mem_55_0(mem_55_0),
-	.WideOr0(WideOr0),
-	.r_sync_rst(r_sync_rst),
-	.use_reg(use_reg),
-	.saved_grant_0(saved_grant_0),
-	.saved_grant_1(saved_grant_1),
-	.Equal0(Equal0),
-	.d_write(d_write),
-	.write_accepted(write_accepted),
-	.src3_valid(src3_valid),
-	.src_valid(src_valid),
-	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_67(\cmd_mux_003|src_data[67]~combout ),
-	.d_byteenable_1(d_byteenable_1),
-	.d_byteenable_0(d_byteenable_0),
-	.m0_write(m0_write),
-	.m0_write1(m0_write1),
-	.WideOr01(\sdram_s1_agent|WideOr0~0_combout ),
-	.WideOr02(\sdram_s1_agent|WideOr0~1_combout ),
-	.cp_ready1(\sdram_s1_agent|cp_ready~combout ),
-	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
-	.rp_valid1(rp_valid),
-	.source_addr_1(source_addr_1),
-	.comb(\sdram_s1_agent|comb~0_combout ),
-	.cp_ready2(\sdram_s1_agent|cp_ready~0_combout ),
-	.mem_used_01(\sdram_s1_agent_rsp_fifo|mem_used[0]~1_combout ),
-	.rf_source_data_86(\sdram_s1_agent|rf_source_data[86]~0_combout ),
-	.rf_source_data_861(\sdram_s1_agent|rf_source_data[86]~1_combout ),
-	.mem_58_0(\sdram_s1_agent_rsp_fifo|mem[0][58]~q ),
-	.clk_clk(clk_clk));
-
-sine_hw_altera_avalon_sc_fifo_2 ram_s1_agent_rsp_fifo(
-	.reset(r_sync_rst),
-	.rst1(rst1),
-	.i_read(i_read),
-	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
-	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
-	.mem_85_0(\ram_s1_agent_rsp_fifo|mem[0][85]~q ),
-	.mem_67_0(\ram_s1_agent_rsp_fifo|mem[0][67]~q ),
-	.uav_read(uav_read),
-	.saved_grant_0(saved_grant_01),
-	.mem_used_1(mem_used_1),
-	.saved_grant_1(\cmd_mux_002|saved_grant[1]~q ),
-	.read_latency_shift_reg(\ram_s1_translator|read_latency_shift_reg~0_combout ),
-	.src2_valid(src2_valid),
-	.src_valid(src_valid2),
-	.mem(\ram_s1_agent_rsp_fifo|mem~0_combout ),
-	.clk(clk_clk));
-
-sine_hw_altera_avalon_sc_fifo_1 nios2_debug_mem_slave_agent_rsp_fifo(
-	.reset(r_sync_rst),
-	.i_read(i_read),
-	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
-	.read_latency_shift_reg_0(\nios2_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
-	.mem_85_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][85]~q ),
-	.mem_67_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][67]~q ),
-	.uav_read(uav_read),
-	.saved_grant_0(saved_grant_02),
-	.waitrequest(waitrequest),
-	.mem_used_1(mem_used_11),
-	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
-	.saved_grant_1(\cmd_mux_001|saved_grant[1]~q ),
-	.src1_valid(src1_valid1),
-	.src_valid(src_valid1),
-	.mem(mem1),
-	.clk(clk_clk));
-
-sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001 cmd_mux_001(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001 cmd_mux_001(
 	.W_alu_result_5(W_alu_result_5),
 	.W_alu_result_6(W_alu_result_6),
 	.W_alu_result_7(W_alu_result_7),
@@ -14545,40 +14144,40 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001 cmd_mux_001(
 	.d_writedata_31(d_writedata_31),
 	.src_payload3(src_payload9),
 	.src_data_34(src_data_34),
-	.src_payload4(src_payload42),
-	.src_payload5(src_payload47),
-	.src_payload6(src_payload48),
-	.src_payload7(src_payload49),
-	.src_payload8(src_payload50),
-	.src_payload9(src_payload51),
+	.src_payload4(src_payload38),
+	.src_payload5(src_payload39),
+	.src_payload6(src_payload40),
+	.src_payload7(src_payload41),
+	.src_payload8(src_payload42),
+	.src_payload9(src_payload43),
 	.src_data_35(src_data_351),
-	.src_payload10(src_payload52),
-	.src_payload11(src_payload53),
+	.src_payload10(src_payload44),
+	.src_payload11(src_payload45),
 	.src_data_33(src_data_331),
-	.src_payload12(src_payload54),
-	.src_payload13(src_payload55),
-	.src_payload14(src_payload56),
-	.src_payload15(src_payload57),
-	.src_payload16(src_payload58),
-	.src_payload17(src_payload59),
-	.src_payload18(src_payload60),
-	.src_payload19(src_payload61),
-	.src_payload20(src_payload62),
-	.src_payload21(src_payload63),
-	.src_payload22(src_payload64),
-	.src_payload23(src_payload65),
-	.src_payload24(src_payload66),
-	.src_payload25(src_payload67),
-	.src_payload26(src_payload68),
-	.src_payload27(src_payload69),
-	.src_payload28(src_payload70),
-	.src_payload29(src_payload71),
-	.src_payload30(src_payload72),
-	.src_payload31(src_payload73),
-	.src_payload32(src_payload74),
+	.src_payload12(src_payload46),
+	.src_payload13(src_payload47),
+	.src_payload14(src_payload48),
+	.src_payload15(src_payload49),
+	.src_payload16(src_payload50),
+	.src_payload17(src_payload51),
+	.src_payload18(src_payload52),
+	.src_payload19(src_payload53),
+	.src_payload20(src_payload54),
+	.src_payload21(src_payload55),
+	.src_payload22(src_payload56),
+	.src_payload23(src_payload57),
+	.src_payload24(src_payload58),
+	.src_payload25(src_payload59),
+	.src_payload26(src_payload60),
+	.src_payload27(src_payload61),
+	.src_payload28(src_payload62),
+	.src_payload29(src_payload63),
+	.src_payload30(src_payload64),
+	.src_payload31(src_payload65),
+	.src_payload32(src_payload66),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_mm_interconnect_0_cmd_demux_001 cmd_demux_001(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_demux_001 cmd_demux_001(
 	.F_pc_9(F_pc_9),
 	.cp_valid(\nios2_instruction_master_agent|cp_valid~0_combout ),
 	.Equal1(\router_001|Equal1~0_combout ),
@@ -14589,7 +14188,7 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_demux_001 cmd_demux_001(
 	.src0_valid(\cmd_demux_001|src0_valid~0_combout ),
 	.src1_valid(\cmd_demux_001|src1_valid~0_combout ));
 
-sine_hw_sine_hw_mm_interconnect_0_cmd_demux cmd_demux(
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_demux cmd_demux(
 	.W_alu_result_12(W_alu_result_12),
 	.W_alu_result_11(W_alu_result_11),
 	.W_alu_result_4(W_alu_result_4),
@@ -14612,10 +14211,10 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_demux cmd_demux(
 	.Equal41(Equal4),
 	.Equal12(\router|Equal1~2_combout ),
 	.Equal13(\router|Equal1~3_combout ),
-	.src3_valid(src3_valid),
+	.src4_valid(src4_valid),
 	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
 	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
-	.last_cycle(\cmd_mux_003|last_cycle~0_combout ),
+	.last_cycle(\cmd_mux_004|last_cycle~0_combout ),
 	.always2(always2),
 	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
 	.sink_ready(\cmd_demux|sink_ready~0_combout ),
@@ -14639,7 +14238,248 @@ sine_hw_sine_hw_mm_interconnect_0_cmd_demux cmd_demux(
 	.src1_valid1(src1_valid1),
 	.src2_valid(src2_valid));
 
-sine_hw_sine_hw_mm_interconnect_0_router_001 router_001(
+sine_wave_hw_altera_merlin_master_translator_1 nios2_instruction_master_translator(
+	.F_pc_9(F_pc_9),
+	.reset(r_sync_rst),
+	.saved_grant_1(saved_grant_1),
+	.rst1(rst1),
+	.i_read(i_read),
+	.read_accepted1(\nios2_instruction_master_translator|read_accepted~q ),
+	.Equal1(\router_001|Equal1~0_combout ),
+	.Equal11(\router_001|Equal1~1_combout ),
+	.Equal12(\router_001|Equal1~2_combout ),
+	.Equal2(\router_001|Equal2~0_combout ),
+	.last_cycle(\cmd_mux_004|last_cycle~0_combout ),
+	.mem_used_1(mem_used_1),
+	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
+	.WideOr1(WideOr13),
+	.saved_grant_11(\cmd_mux_002|saved_grant[1]~q ),
+	.saved_grant_12(\cmd_mux_001|saved_grant[1]~q ),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_master_translator nios2_data_master_translator(
+	.av_waitrequest(nios2_data_master_waitrequest),
+	.reset(r_sync_rst),
+	.d_read(d_read),
+	.read_accepted1(read_accepted),
+	.rst1(rst1),
+	.d_write(d_write),
+	.write_accepted1(write_accepted),
+	.WideOr1(WideOr1),
+	.WideOr11(WideOr11),
+	.uav_read(uav_read),
+	.always2(always2),
+	.sink_ready(\cmd_demux|sink_ready~0_combout ),
+	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
+	.sink_ready1(sink_ready),
+	.WideOr0(\cmd_demux|WideOr0~0_combout ),
+	.WideOr01(\cmd_demux|WideOr0~3_combout ),
+	.WideOr02(\cmd_demux|WideOr0~4_combout ),
+	.WideOr03(WideOr01),
+	.av_waitrequest1(av_waitrequest1),
+	.src0_valid(src0_valid2),
+	.av_waitrequest_generated(\sw_s1_translator|av_waitrequest_generated~0_combout ),
+	.WideOr04(\cmd_demux|WideOr0~6_combout ),
+	.WideOr05(\cmd_demux|WideOr0~7_combout ),
+	.av_waitrequest2(av_waitrequest2),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_slave_agent_4 sw_s1_agent(
+	.W_alu_result_4(W_alu_result_4),
+	.rst1(rst1),
+	.Equal4(\router|Equal4~2_combout ),
+	.uav_read(uav_read),
+	.always2(always2),
+	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.m0_write(\sw_s1_agent|m0_write~0_combout ));
+
+sine_wave_hw_altera_avalon_sc_fifo_2 ram_s1_agent_rsp_fifo(
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.i_read(i_read),
+	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
+	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
+	.mem_85_0(\ram_s1_agent_rsp_fifo|mem[0][85]~q ),
+	.mem_67_0(\ram_s1_agent_rsp_fifo|mem[0][67]~q ),
+	.uav_read(uav_read),
+	.saved_grant_0(saved_grant_01),
+	.mem_used_1(mem_used_1),
+	.saved_grant_1(\cmd_mux_002|saved_grant[1]~q ),
+	.read_latency_shift_reg(\ram_s1_translator|read_latency_shift_reg~0_combout ),
+	.src2_valid(src2_valid),
+	.src_valid(src_valid2),
+	.mem(\ram_s1_agent_rsp_fifo|mem~0_combout ),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_avalon_sc_fifo_1 nios2_debug_mem_slave_agent_rsp_fifo(
+	.reset(r_sync_rst),
+	.i_read(i_read),
+	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
+	.read_latency_shift_reg_0(\nios2_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
+	.mem_85_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][85]~q ),
+	.mem_67_0(\nios2_debug_mem_slave_agent_rsp_fifo|mem[0][67]~q ),
+	.uav_read(uav_read),
+	.saved_grant_0(saved_grant_02),
+	.waitrequest(waitrequest),
+	.mem_used_1(mem_used_11),
+	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
+	.saved_grant_1(\cmd_mux_001|saved_grant[1]~q ),
+	.src1_valid(src1_valid1),
+	.src_valid(src_valid1),
+	.mem(mem1),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_avalon_sc_fifo jtag_uart_avalon_jtag_slave_agent_rsp_fifo(
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.Equal4(Equal4),
+	.read_latency_shift_reg_0(read_latency_shift_reg_0),
+	.uav_read(uav_read),
+	.mem_used_1(\jtag_uart_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.av_waitrequest(av_waitrequest),
+	.read_latency_shift_reg(read_latency_shift_reg),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_master_agent_1 nios2_instruction_master_agent(
+	.rst1(rst1),
+	.i_read(i_read),
+	.read_accepted(\nios2_instruction_master_translator|read_accepted~q ),
+	.cp_valid(\nios2_instruction_master_agent|cp_valid~0_combout ));
+
+sine_wave_hw_altera_merlin_slave_translator_4 sw_s1_translator(
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.read_latency_shift_reg_0(\sw_s1_translator|read_latency_shift_reg[0]~q ),
+	.uav_read(uav_read),
+	.always2(always2),
+	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.sink_ready(\cmd_demux|sink_ready~0_combout ),
+	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
+	.wait_latency_counter_0(\sw_s1_translator|wait_latency_counter[0]~q ),
+	.sink_ready1(sink_ready),
+	.always1(\router|always1~1_combout ),
+	.av_waitrequest_generated(\sw_s1_translator|av_waitrequest_generated~0_combout ),
+	.av_readdata_pre_5(\sw_s1_translator|av_readdata_pre[5]~q ),
+	.av_readdata_pre_6(\sw_s1_translator|av_readdata_pre[6]~q ),
+	.av_readdata_pre_7(\sw_s1_translator|av_readdata_pre[7]~q ),
+	.av_readdata_pre_4(\sw_s1_translator|av_readdata_pre[4]~q ),
+	.av_readdata_pre_3(\sw_s1_translator|av_readdata_pre[3]~q ),
+	.av_readdata_pre_2(\sw_s1_translator|av_readdata_pre[2]~q ),
+	.av_readdata_pre_1(\sw_s1_translator|av_readdata_pre[1]~q ),
+	.av_readdata_pre_0(\sw_s1_translator|av_readdata_pre[0]~q ),
+	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,readdata_71,readdata_61,readdata_51,readdata_41,readdata_32,readdata_210,readdata_110,readdata_01}),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_slave_translator_2 ram_s1_translator(
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
+	.saved_grant_0(saved_grant_01),
+	.mem_used_1(mem_used_1),
+	.read_latency_shift_reg(\ram_s1_translator|read_latency_shift_reg~0_combout ),
+	.src2_valid(src2_valid),
+	.src_valid(src_valid2),
+	.mem(\ram_s1_agent_rsp_fifo|mem~0_combout ),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_slave_translator_1 nios2_debug_mem_slave_translator(
+	.av_readdata({readdata_31,readdata_30,readdata_29,readdata_28,readdata_27,readdata_26,readdata_25,readdata_24,readdata_23,readdata_22,readdata_21,readdata_20,readdata_19,readdata_18,readdata_17,readdata_16,readdata_15,readdata_14,readdata_13,readdata_12,readdata_11,readdata_10,readdata_9,
+readdata_8,readdata_7,readdata_6,readdata_5,readdata_4,readdata_3,readdata_2,readdata_1,readdata_0}),
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.read_latency_shift_reg_0(\nios2_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
+	.saved_grant_0(saved_grant_02),
+	.write(\nios2_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
+	.src1_valid(src1_valid1),
+	.src_valid(src_valid1),
+	.mem(mem1),
+	.av_readdata_pre_4(av_readdata_pre_4),
+	.av_readdata_pre_0(av_readdata_pre_0),
+	.av_readdata_pre_1(av_readdata_pre_1),
+	.av_readdata_pre_2(av_readdata_pre_2),
+	.av_readdata_pre_3(av_readdata_pre_3),
+	.av_readdata_pre_11(av_readdata_pre_11),
+	.av_readdata_pre_12(av_readdata_pre_12),
+	.av_readdata_pre_13(av_readdata_pre_13),
+	.av_readdata_pre_14(av_readdata_pre_14),
+	.av_readdata_pre_15(av_readdata_pre_15),
+	.av_readdata_pre_16(av_readdata_pre_161),
+	.av_readdata_pre_5(av_readdata_pre_5),
+	.av_readdata_pre_20(av_readdata_pre_201),
+	.av_readdata_pre_18(av_readdata_pre_181),
+	.av_readdata_pre_17(av_readdata_pre_171),
+	.av_readdata_pre_22(av_readdata_pre_221),
+	.av_readdata_pre_21(av_readdata_pre_211),
+	.av_readdata_pre_8(av_readdata_pre_8),
+	.av_readdata_pre_31(av_readdata_pre_31),
+	.av_readdata_pre_30(av_readdata_pre_30),
+	.av_readdata_pre_29(av_readdata_pre_29),
+	.av_readdata_pre_28(av_readdata_pre_28),
+	.av_readdata_pre_27(av_readdata_pre_27),
+	.av_readdata_pre_26(av_readdata_pre_26),
+	.av_readdata_pre_9(av_readdata_pre_9),
+	.av_readdata_pre_23(av_readdata_pre_23),
+	.av_readdata_pre_10(av_readdata_pre_10),
+	.av_readdata_pre_24(av_readdata_pre_24),
+	.av_readdata_pre_25(av_readdata_pre_25),
+	.av_readdata_pre_6(av_readdata_pre_6),
+	.av_readdata_pre_7(av_readdata_pre_7),
+	.av_readdata_pre_19(av_readdata_pre_191),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_slave_translator jtag_uart_avalon_jtag_slave_translator(
+	.av_readdata_pre_18(av_readdata_pre_18),
+	.av_readdata_pre_22(av_readdata_pre_22),
+	.av_readdata_pre_19(av_readdata_pre_19),
+	.av_readdata_pre_20(av_readdata_pre_20),
+	.av_readdata_pre_21(av_readdata_pre_21),
+	.av_readdata_pre_16(av_readdata_pre_16),
+	.av_readdata_pre_17(av_readdata_pre_17),
+	.av_readdata_pre_5(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[5]~q ),
+	.av_readdata_pre_6(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[6]~q ),
+	.av_readdata_pre_7(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[7]~q ),
+	.av_readdata_pre_4(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[4]~q ),
+	.av_readdata_pre_3(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[3]~q ),
+	.av_readdata_pre_2(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[2]~q ),
+	.av_readdata_pre_1(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[1]~q ),
+	.av_readdata_pre_0(\jtag_uart_avalon_jtag_slave_translator|av_readdata_pre[0]~q ),
+	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,Add11,Add14,Add13,Add12,Add1,Add16,Add15,rvalid,woverflow,gnd,b_non_empty,gnd,ac,av_readdata_9,av_readdata_8,GND_port,GND_port,GND_port,GND_port,GND_port,GND_port,ien_AE,ien_AF}),
+	.q_b_5(q_b_5),
+	.q_b_6(q_b_6),
+	.q_b_7(q_b_7),
+	.q_b_4(q_b_4),
+	.q_b_3(q_b_3),
+	.q_b_2(q_b_2),
+	.q_b_1(q_b_1),
+	.q_b_0(q_b_0),
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.Equal4(Equal4),
+	.read_latency_shift_reg_0(read_latency_shift_reg_0),
+	.uav_read(uav_read),
+	.mem_used_1(\jtag_uart_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.av_waitrequest(av_waitrequest),
+	.read_latency_shift_reg(read_latency_shift_reg),
+	.b_full(b_full),
+	.counter_reg_bit_1(counter_reg_bit_1),
+	.counter_reg_bit_0(counter_reg_bit_0),
+	.counter_reg_bit_5(counter_reg_bit_5),
+	.counter_reg_bit_4(counter_reg_bit_4),
+	.counter_reg_bit_3(counter_reg_bit_3),
+	.counter_reg_bit_2(counter_reg_bit_2),
+	.av_readdata_pre_14(av_readdata_pre_141),
+	.av_readdata_pre_12(av_readdata_pre_121),
+	.av_readdata_pre_13(av_readdata_pre_131),
+	.av_readdata_pre_15(av_readdata_pre_151),
+	.av_readdata_pre_8(av_readdata_pre_81),
+	.av_readdata_pre_10(av_readdata_pre_101),
+	.av_readdata_pre_9(av_readdata_pre_91),
+	.b_full1(b_full1),
+	.read_0(read_0),
+	.read_latency_shift_reg1(read_latency_shift_reg1),
+	.clk(clk_clk));
+
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_router_001 router_001(
 	.F_pc_12(F_pc_12),
 	.F_pc_18(F_pc_18),
 	.F_pc_19(F_pc_19),
@@ -14663,9 +14503,169 @@ sine_hw_sine_hw_mm_interconnect_0_router_001 router_001(
 	.Equal2(\router_001|Equal2~0_combout ),
 	.Equal21(\router_001|Equal2~1_combout ));
 
+sine_wave_hw_sine_wave_hw_mm_interconnect_0_router router(
+	.W_alu_result_14(W_alu_result_14),
+	.W_alu_result_12(W_alu_result_12),
+	.W_alu_result_11(W_alu_result_11),
+	.W_alu_result_18(W_alu_result_18),
+	.W_alu_result_27(W_alu_result_27),
+	.W_alu_result_26(W_alu_result_26),
+	.W_alu_result_25(W_alu_result_25),
+	.W_alu_result_24(W_alu_result_24),
+	.W_alu_result_23(W_alu_result_23),
+	.W_alu_result_22(W_alu_result_22),
+	.W_alu_result_19(W_alu_result_19),
+	.W_alu_result_20(W_alu_result_20),
+	.W_alu_result_21(W_alu_result_21),
+	.W_alu_result_16(W_alu_result_16),
+	.W_alu_result_17(W_alu_result_17),
+	.W_alu_result_13(W_alu_result_13),
+	.W_alu_result_15(W_alu_result_15),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_6(W_alu_result_6),
+	.W_alu_result_7(W_alu_result_7),
+	.W_alu_result_8(W_alu_result_8),
+	.W_alu_result_10(W_alu_result_10),
+	.W_alu_result_9(W_alu_result_9),
+	.W_alu_result_4(W_alu_result_4),
+	.W_alu_result_3(W_alu_result_3),
+	.d_read(d_read),
+	.read_accepted(read_accepted),
+	.Equal1(\router|Equal1~0_combout ),
+	.Equal11(\router|Equal1~1_combout ),
+	.Equal2(\router|Equal2~0_combout ),
+	.Equal21(\router|Equal2~1_combout ),
+	.Equal4(\router|Equal4~2_combout ),
+	.always1(\router|always1~0_combout ),
+	.Equal41(Equal4),
+	.Equal12(\router|Equal1~2_combout ),
+	.Equal13(\router|Equal1~3_combout ),
+	.always11(\router|always1~1_combout ));
+
+sine_wave_hw_altera_avalon_sc_fifo_3 sdram_s1_agent_rdata_fifo(
+	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
+	.reset(r_sync_rst),
+	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.out_valid1(\sdram_s1_agent_rdata_fifo|out_valid~q ),
+	.out_payload_4(out_payload_4),
+	.out_payload_0(out_payload_0),
+	.out_payload_1(out_payload_1),
+	.out_payload_2(out_payload_2),
+	.out_payload_3(out_payload_3),
+	.out_payload_11(out_payload_11),
+	.out_payload_12(out_payload_12),
+	.out_payload_13(out_payload_13),
+	.out_payload_14(out_payload_14),
+	.out_payload_15(out_payload_15),
+	.out_payload_5(out_payload_5),
+	.out_payload_6(out_payload_6),
+	.out_payload_8(out_payload_8),
+	.out_payload_10(out_payload_10),
+	.out_payload_9(out_payload_9),
+	.out_payload_7(out_payload_7),
+	.za_valid(za_valid),
+	.za_data_4(za_data_4),
+	.za_data_0(za_data_0),
+	.za_data_1(za_data_1),
+	.za_data_2(za_data_2),
+	.za_data_3(za_data_3),
+	.za_data_11(za_data_11),
+	.za_data_12(za_data_12),
+	.za_data_13(za_data_13),
+	.za_data_14(za_data_14),
+	.za_data_15(za_data_15),
+	.za_data_5(za_data_5),
+	.za_data_6(za_data_6),
+	.za_data_8(za_data_8),
+	.za_data_10(za_data_10),
+	.za_data_9(za_data_9),
+	.za_data_7(za_data_7),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_avalon_sc_fifo_4 sdram_s1_agent_rsp_fifo(
+	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
+	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.mem_55_0(mem_55_0),
+	.mem_87_0(\sdram_s1_agent_rsp_fifo|mem[0][87]~q ),
+	.mem_49_0(\sdram_s1_agent_rsp_fifo|mem[0][49]~q ),
+	.mem_67_0(\sdram_s1_agent_rsp_fifo|mem[0][67]~q ),
+	.reset(r_sync_rst),
+	.saved_grant_0(saved_grant_0),
+	.saved_grant_1(saved_grant_1),
+	.src4_valid(src4_valid),
+	.src_valid(src_valid),
+	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
+	.src_data_67(\cmd_mux_004|src_data[67]~combout ),
+	.mem(mem),
+	.out_data_19(out_data_19),
+	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
+	.always2(always21),
+	.comb(\sdram_s1_agent|comb~0_combout ),
+	.cp_ready(\sdram_s1_agent|cp_ready~0_combout ),
+	.mem_used_01(\sdram_s1_agent_rsp_fifo|mem_used[0]~1_combout ),
+	.rf_source_data_86(\sdram_s1_agent|rf_source_data[86]~0_combout ),
+	.rf_source_data_861(\sdram_s1_agent|rf_source_data[86]~1_combout ),
+	.src_data_73(\cmd_mux_004|src_data[73]~combout ),
+	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
+	.src_valid1(\cmd_mux_004|src_valid~1_combout ),
+	.mem_58_0(\sdram_s1_agent_rsp_fifo|mem[0][58]~q ),
+	.clk(clk_clk));
+
+sine_wave_hw_altera_merlin_slave_agent_3 sdram_s1_agent(
+	.byteen_reg_0(byteen_reg_0),
+	.byteen_reg_1(byteen_reg_1),
+	.mem_86_0(\sdram_s1_agent_rsp_fifo|mem[0][86]~q ),
+	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.mem_55_0(mem_55_0),
+	.WideOr0(WideOr0),
+	.r_sync_rst(r_sync_rst),
+	.use_reg(use_reg),
+	.saved_grant_0(saved_grant_0),
+	.saved_grant_1(saved_grant_1),
+	.Equal0(Equal0),
+	.d_write(d_write),
+	.write_accepted(write_accepted),
+	.src4_valid(src4_valid),
+	.src_valid(src_valid),
+	.mem_used_7(\sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
+	.src_data_67(\cmd_mux_004|src_data[67]~combout ),
+	.d_byteenable_1(d_byteenable_1),
+	.d_byteenable_0(d_byteenable_0),
+	.m0_write(m0_write),
+	.m0_write1(m0_write1),
+	.WideOr01(\sdram_s1_agent|WideOr0~0_combout ),
+	.WideOr02(\sdram_s1_agent|WideOr0~1_combout ),
+	.cp_ready1(\sdram_s1_agent|cp_ready~combout ),
+	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
+	.rp_valid1(rp_valid),
+	.source_addr_1(source_addr_1),
+	.comb(\sdram_s1_agent|comb~0_combout ),
+	.cp_ready2(\sdram_s1_agent|cp_ready~0_combout ),
+	.mem_used_01(\sdram_s1_agent_rsp_fifo|mem_used[0]~1_combout ),
+	.rf_source_data_86(\sdram_s1_agent|rf_source_data[86]~0_combout ),
+	.rf_source_data_861(\sdram_s1_agent|rf_source_data[86]~1_combout ),
+	.mem_58_0(\sdram_s1_agent_rsp_fifo|mem[0][58]~q ),
+	.clk_clk(clk_clk));
+
+sine_wave_hw_altera_avalon_sc_fifo_5 sw_s1_agent_rsp_fifo(
+	.reset(r_sync_rst),
+	.rst1(rst1),
+	.Equal4(\router|Equal4~2_combout ),
+	.always1(\router|always1~0_combout ),
+	.read_latency_shift_reg_0(\sw_s1_translator|read_latency_shift_reg[0]~q ),
+	.always2(always2),
+	.mem_used_1(\sw_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.sink_ready(\cmd_demux|sink_ready~0_combout ),
+	.wait_latency_counter_1(\sw_s1_translator|wait_latency_counter[1]~q ),
+	.wait_latency_counter_0(\sw_s1_translator|wait_latency_counter[0]~q ),
+	.m0_write(\sw_s1_agent|m0_write~0_combout ),
+	.clk(clk_clk));
+
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo (
+module sine_wave_hw_altera_avalon_sc_fifo (
 	reset,
 	rst1,
 	Equal4,
@@ -14803,7 +14803,7 @@ defparam \mem_used[1]~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo_1 (
+module sine_wave_hw_altera_avalon_sc_fifo_1 (
 	reset,
 	i_read,
 	read_accepted,
@@ -15125,7 +15125,7 @@ defparam \mem_used[1]~3 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo_2 (
+module sine_wave_hw_altera_avalon_sc_fifo_2 (
 	reset,
 	rst1,
 	i_read,
@@ -15429,7 +15429,7 @@ defparam \mem_used[1]~3 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo_3 (
+module sine_wave_hw_altera_avalon_sc_fifo_3 (
 	mem_86_0,
 	reset,
 	mem_used_0,
@@ -16269,7 +16269,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a4 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a4 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a4 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a4 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a4 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a4 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a4 .port_a_address_clear = "none";
@@ -16327,7 +16327,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a0 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a0 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a0 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a0 .port_a_address_clear = "none";
@@ -16385,7 +16385,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a1 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a1 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a1 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a1 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a1 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a1 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a1 .port_a_address_clear = "none";
@@ -16443,7 +16443,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a2 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a2 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a2 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a2 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a2 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a2 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a2 .port_a_address_clear = "none";
@@ -16501,7 +16501,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a3 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a3 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a3 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a3 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a3 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a3 .port_a_address_clear = "none";
@@ -16559,7 +16559,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a11 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a11 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a11 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a11 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a11 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a11 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a11 .port_a_address_clear = "none";
@@ -16617,7 +16617,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a12 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a12 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a12 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a12 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a12 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a12 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a12 .port_a_address_clear = "none";
@@ -16675,7 +16675,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a13 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a13 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a13 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a13 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a13 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a13 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a13 .port_a_address_clear = "none";
@@ -16733,7 +16733,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a14 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a14 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a14 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a14 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a14 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a14 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a14 .port_a_address_clear = "none";
@@ -16791,7 +16791,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a15 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a15 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a15 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a15 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a15 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a15 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a15 .port_a_address_clear = "none";
@@ -16849,7 +16849,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a5 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a5 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a5 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a5 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a5 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a5 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a5 .port_a_address_clear = "none";
@@ -16907,7 +16907,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a6 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a6 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a6 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a6 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a6 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a6 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a6 .port_a_address_clear = "none";
@@ -16965,7 +16965,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a8 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a8 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a8 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a8 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a8 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a8 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a8 .port_a_address_clear = "none";
@@ -17023,7 +17023,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a10 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a10 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a10 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a10 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a10 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a10 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a10 .port_a_address_clear = "none";
@@ -17081,7 +17081,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a9 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a9 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a9 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a9 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a9 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a9 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a9 .port_a_address_clear = "none";
@@ -17139,7 +17139,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 	.dftout());
 defparam \mem_rtl_0|auto_generated|ram_block1a7 .data_interleave_offset_in_bits = 1;
 defparam \mem_rtl_0|auto_generated|ram_block1a7 .data_interleave_width_in_bits = 1;
-defparam \mem_rtl_0|auto_generated|ram_block1a7 .logical_ram_name = "sine_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
+defparam \mem_rtl_0|auto_generated|ram_block1a7 .logical_ram_name = "sine_wave_hw_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_agent_rdata_fifo|altsyncram:mem_rtl_0|altsyncram_40n1:auto_generated|ALTSYNCRAM";
 defparam \mem_rtl_0|auto_generated|ram_block1a7 .mixed_port_feed_through_mode = "old";
 defparam \mem_rtl_0|auto_generated|ram_block1a7 .operation_mode = "dual_port";
 defparam \mem_rtl_0|auto_generated|ram_block1a7 .port_a_address_clear = "none";
@@ -17170,7 +17170,7 @@ defparam \mem_rtl_0|auto_generated|ram_block1a7 .ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo_4 (
+module sine_wave_hw_altera_avalon_sc_fifo_4 (
 	mem_86_0,
 	mem_19_0,
 	mem_55_0,
@@ -17180,7 +17180,7 @@ module sine_hw_altera_avalon_sc_fifo_4 (
 	reset,
 	saved_grant_0,
 	saved_grant_1,
-	src3_valid,
+	src4_valid,
 	src_valid,
 	mem_used_7,
 	src_data_67,
@@ -17208,7 +17208,7 @@ output 	mem_67_0;
 input 	reset;
 input 	saved_grant_0;
 input 	saved_grant_1;
-input 	src3_valid;
+input 	src4_valid;
 input 	src_valid;
 output 	mem_used_7;
 input 	src_data_67;
@@ -17503,7 +17503,7 @@ defparam \mem[7][86] .power_up = "low";
 cyclonev_lcell_comb \mem~5 (
 	.dataa(!mem_used_7),
 	.datab(!saved_grant_0),
-	.datac(!src3_valid),
+	.datac(!src4_valid),
 	.datad(!src_valid),
 	.datae(!\mem[7][86]~q ),
 	.dataf(!rf_source_data_86),
@@ -17538,7 +17538,7 @@ defparam \mem_used~6 .shared_arith = "off";
 
 cyclonev_lcell_comb \mem_used[1]~5 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!mem),
 	.datae(!comb),
@@ -18556,7 +18556,7 @@ defparam \mem_used[0]~2 .shared_arith = "off";
 
 cyclonev_lcell_comb \mem_used[0]~3 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!mem),
 	.datae(!cp_ready),
@@ -18798,7 +18798,7 @@ defparam \mem[0][58]~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_avalon_sc_fifo_5 (
+module sine_wave_hw_altera_avalon_sc_fifo_5 (
 	reset,
 	rst1,
 	Equal4,
@@ -18961,7 +18961,7 @@ defparam \mem_used[1]~2 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_master_agent_1 (
+module sine_wave_hw_altera_merlin_master_agent_1 (
 	rst1,
 	i_read,
 	read_accepted,
@@ -19002,7 +19002,7 @@ defparam \cp_valid~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_master_translator (
+module sine_wave_hw_altera_merlin_master_translator (
 	av_waitrequest,
 	reset,
 	d_read,
@@ -19258,7 +19258,7 @@ defparam \write_accepted~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_master_translator_1 (
+module sine_wave_hw_altera_merlin_master_translator_1 (
 	F_pc_9,
 	reset,
 	saved_grant_1,
@@ -19416,7 +19416,7 @@ defparam \read_accepted~4 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_agent_3 (
+module sine_wave_hw_altera_merlin_slave_agent_3 (
 	byteen_reg_0,
 	byteen_reg_1,
 	mem_86_0,
@@ -19430,7 +19430,7 @@ module sine_hw_altera_merlin_slave_agent_3 (
 	Equal0,
 	d_write,
 	write_accepted,
-	src3_valid,
+	src4_valid,
 	src_valid,
 	mem_used_7,
 	src_data_67,
@@ -19465,7 +19465,7 @@ input 	saved_grant_1;
 input 	Equal0;
 input 	d_write;
 input 	write_accepted;
-input 	src3_valid;
+input 	src4_valid;
 input 	src_valid;
 input 	mem_used_7;
 input 	src_data_67;
@@ -19499,7 +19499,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altera_merlin_burst_uncompressor_3 uncompressor(
+sine_wave_hw_altera_merlin_burst_uncompressor_3 uncompressor(
 	.mem_86_0(mem_86_0),
 	.mem_19_0(mem_19_0),
 	.mem_55_0(mem_55_0),
@@ -19550,7 +19550,7 @@ defparam \m0_write~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \m0_write~1 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!WideOr0),
 	.datae(!m0_write),
@@ -19694,7 +19694,7 @@ defparam \rf_source_data[86]~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \rf_source_data[86]~1 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!rf_source_data_86),
 	.datae(gnd),
@@ -19712,7 +19712,7 @@ defparam \rf_source_data[86]~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_burst_uncompressor_3 (
+module sine_wave_hw_altera_merlin_burst_uncompressor_3 (
 	mem_86_0,
 	mem_19_0,
 	mem_55_0,
@@ -19908,7 +19908,7 @@ defparam \burst_uncompress_address_offset[1] .power_up = "low";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_agent_4 (
+module sine_wave_hw_altera_merlin_slave_agent_4 (
 	W_alu_result_4,
 	rst1,
 	Equal4,
@@ -19955,7 +19955,7 @@ defparam \m0_write~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_translator (
+module sine_wave_hw_altera_merlin_slave_translator (
 	av_readdata_pre_18,
 	av_readdata_pre_22,
 	av_readdata_pre_19,
@@ -20466,7 +20466,7 @@ defparam \av_readdata_pre[13]~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_translator_1 (
+module sine_wave_hw_altera_merlin_slave_translator_1 (
 	av_readdata,
 	reset,
 	rst1,
@@ -21046,7 +21046,7 @@ defparam \read_latency_shift_reg~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_translator_2 (
+module sine_wave_hw_altera_merlin_slave_translator_2 (
 	reset,
 	rst1,
 	read_latency_shift_reg_0,
@@ -21132,7 +21132,7 @@ defparam \read_latency_shift_reg~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_slave_translator_4 (
+module sine_wave_hw_altera_merlin_slave_translator_4 (
 	reset,
 	rst1,
 	read_latency_shift_reg_0,
@@ -21401,7 +21401,7 @@ defparam \wait_latency_counter~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_width_adapter (
+module sine_wave_hw_altera_merlin_width_adapter (
 	byteen_reg_0,
 	byteen_reg_1,
 	d_writedata_8,
@@ -21418,7 +21418,7 @@ module sine_hw_altera_merlin_width_adapter (
 	src_data_50,
 	out_data_32,
 	Equal0,
-	src3_valid,
+	src4_valid,
 	src_valid,
 	mem_used_7,
 	src_data_57,
@@ -21532,7 +21532,7 @@ input 	saved_grant_0;
 input 	src_data_50;
 output 	out_data_32;
 input 	Equal0;
-input 	src3_valid;
+input 	src4_valid;
 input 	src_valid;
 input 	mem_used_7;
 input 	src_data_57;
@@ -22520,7 +22520,7 @@ defparam \data_reg[9]~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \use_reg~0 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!use_reg1),
 	.datae(!cp_ready),
@@ -22906,7 +22906,7 @@ defparam \address_reg[10] .power_up = "low";
 
 cyclonev_lcell_comb \count[0]~0 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!use_reg1),
 	.datae(!cp_ready),
@@ -23162,7 +23162,7 @@ defparam \data_reg[15] .power_up = "low";
 
 endmodule
 
-module sine_hw_altera_merlin_width_adapter_1 (
+module sine_wave_hw_altera_merlin_width_adapter_1 (
 	mem_55_0,
 	mem_87_0,
 	data_reg_4,
@@ -23820,7 +23820,7 @@ defparam \data_reg~15 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_cmd_demux (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_demux (
 	W_alu_result_12,
 	W_alu_result_11,
 	W_alu_result_4,
@@ -23843,7 +23843,7 @@ module sine_hw_sine_hw_mm_interconnect_0_cmd_demux (
 	Equal41,
 	Equal12,
 	Equal13,
-	src3_valid,
+	src4_valid,
 	mem_used_7,
 	count_0,
 	last_cycle,
@@ -23891,7 +23891,7 @@ input 	always1;
 input 	Equal41;
 input 	Equal12;
 input 	Equal13;
-output 	src3_valid;
+output 	src4_valid;
 input 	mem_used_7;
 input 	count_0;
 input 	last_cycle;
@@ -23949,7 +23949,7 @@ defparam \src1_valid~0 .extended_lut = "off";
 defparam \src1_valid~0 .lut_mask = 64'hFFFFDFFFFFFFDFFF;
 defparam \src1_valid~0 .shared_arith = "off";
 
-cyclonev_lcell_comb \src3_valid~0 (
+cyclonev_lcell_comb \src4_valid~0 (
 	.dataa(!src1_valid),
 	.datab(!Equal21),
 	.datac(!Equal4),
@@ -23959,13 +23959,13 @@ cyclonev_lcell_comb \src3_valid~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src3_valid),
+	.combout(src4_valid),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src3_valid~0 .extended_lut = "off";
-defparam \src3_valid~0 .lut_mask = 64'hFFFFFFFFFFFFFFFD;
-defparam \src3_valid~0 .shared_arith = "off";
+defparam \src4_valid~0 .extended_lut = "off";
+defparam \src4_valid~0 .lut_mask = 64'hFFFFFFFFFFFFFFFD;
+defparam \src4_valid~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \sink_ready~0 (
 	.dataa(!W_alu_result_4),
@@ -24185,7 +24185,7 @@ defparam \WideOr0~2 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_cmd_demux_001 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_demux_001 (
 	F_pc_9,
 	cp_valid,
 	Equal1,
@@ -24272,7 +24272,7 @@ defparam \src1_valid~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001 (
 	W_alu_result_5,
 	W_alu_result_6,
 	W_alu_result_7,
@@ -24518,7 +24518,7 @@ wire \packet_in_progress~q ;
 wire \update_grant~0_combout ;
 
 
-sine_hw_altera_merlin_arbitrator arb(
+sine_wave_hw_altera_merlin_arbitrator arb(
 	.reset(r_sync_rst),
 	.saved_grant_0(saved_grant_0),
 	.write(write),
@@ -25456,7 +25456,7 @@ defparam \update_grant~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_arbitrator (
+module sine_wave_hw_altera_merlin_arbitrator (
 	reset,
 	saved_grant_0,
 	write,
@@ -25595,7 +25595,7 @@ defparam \top_priority_reg[1] .power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_1 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001_1 (
 	W_alu_result_14,
 	F_pc_12,
 	W_alu_result_12,
@@ -25875,7 +25875,7 @@ wire \packet_in_progress~q ;
 wire \update_grant~0_combout ;
 
 
-sine_hw_altera_merlin_arbitrator_1 arb(
+sine_wave_hw_altera_merlin_arbitrator_1 arb(
 	.reset(r_sync_rst),
 	.src1_valid(src1_valid),
 	.Equal2(Equal2),
@@ -26894,7 +26894,7 @@ defparam \update_grant~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_arbitrator_1 (
+module sine_wave_hw_altera_merlin_arbitrator_1 (
 	reset,
 	src1_valid,
 	Equal2,
@@ -27070,7 +27070,7 @@ defparam \grant[0]~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_cmd_mux_001_2 (
 	W_alu_result_14,
 	F_pc_12,
 	W_alu_result_12,
@@ -27138,7 +27138,7 @@ module sine_hw_sine_hw_mm_interconnect_0_cmd_mux_001_2 (
 	Equal2,
 	Equal4,
 	Equal1,
-	src3_valid,
+	src4_valid,
 	i_read,
 	read_accepted1,
 	cp_valid,
@@ -27276,7 +27276,7 @@ input 	src1_valid;
 input 	Equal2;
 input 	Equal4;
 input 	Equal1;
-input 	src3_valid;
+input 	src4_valid;
 input 	i_read;
 input 	read_accepted1;
 input 	cp_valid;
@@ -27364,11 +27364,11 @@ wire \packet_in_progress~q ;
 wire \update_grant~0_combout ;
 
 
-sine_hw_altera_merlin_arbitrator_2 arb(
+sine_wave_hw_altera_merlin_arbitrator_2 arb(
 	.reset(r_sync_rst),
 	.saved_grant_0(saved_grant_0),
 	.saved_grant_1(saved_grant_1),
-	.src3_valid(src3_valid),
+	.src4_valid(src4_valid),
 	.src2_valid(src2_valid),
 	.grant_0(\arb|grant[0]~0_combout ),
 	.last_cycle(last_cycle),
@@ -28284,7 +28284,7 @@ defparam packet_in_progress.power_up = "low";
 
 cyclonev_lcell_comb \update_grant~0 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!saved_grant_1),
 	.datad(!src_valid),
 	.datae(!last_cycle),
@@ -28302,11 +28302,11 @@ defparam \update_grant~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_merlin_arbitrator_2 (
+module sine_wave_hw_altera_merlin_arbitrator_2 (
 	reset,
 	saved_grant_0,
 	saved_grant_1,
-	src3_valid,
+	src4_valid,
 	src2_valid,
 	grant_0,
 	last_cycle,
@@ -28316,7 +28316,7 @@ module sine_hw_altera_merlin_arbitrator_2 (
 input 	reset;
 input 	saved_grant_0;
 input 	saved_grant_1;
-input 	src3_valid;
+input 	src4_valid;
 input 	src2_valid;
 output 	grant_0;
 input 	last_cycle;
@@ -28340,7 +28340,7 @@ wire \top_priority_reg[1]~q ;
 
 
 cyclonev_lcell_comb \grant[0]~0 (
-	.dataa(!src3_valid),
+	.dataa(!src4_valid),
 	.datab(!src2_valid),
 	.datac(!\top_priority_reg[0]~q ),
 	.datad(!\top_priority_reg[1]~q ),
@@ -28358,7 +28358,7 @@ defparam \grant[0]~0 .lut_mask = 64'hFDFFFDFFFDFFFDFF;
 defparam \grant[0]~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \grant[1]~1 (
-	.dataa(!src3_valid),
+	.dataa(!src4_valid),
 	.datab(!src2_valid),
 	.datac(!\top_priority_reg[0]~q ),
 	.datad(!\top_priority_reg[1]~q ),
@@ -28395,7 +28395,7 @@ defparam \top_priority_reg[0]~1 .shared_arith = "off";
 
 cyclonev_lcell_comb \top_priority_reg[0]~0 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!saved_grant_1),
 	.datad(!src2_valid),
 	.datae(!last_cycle),
@@ -28441,7 +28441,7 @@ defparam \top_priority_reg[1] .power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_router (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_router (
 	W_alu_result_14,
 	W_alu_result_12,
 	W_alu_result_11,
@@ -28767,7 +28767,7 @@ defparam \Equal4~3 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_router_001 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_router_001 (
 	F_pc_12,
 	F_pc_18,
 	F_pc_19,
@@ -28916,7 +28916,7 @@ defparam \Equal2~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001 (
 	read_latency_shift_reg_0,
 	mem_85_0,
 	mem_67_0,
@@ -28977,7 +28977,7 @@ defparam \src1_valid~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001_1 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001_1 (
 	read_latency_shift_reg_0,
 	mem_85_0,
 	mem_67_0,
@@ -29038,7 +29038,7 @@ defparam \src1_valid~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_rsp_demux_001_2 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_demux_001_2 (
 	mem_49_0,
 	mem_67_0,
 	rp_valid,
@@ -29123,7 +29123,7 @@ defparam \src1_valid~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_rsp_mux (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_mux (
 	mem_55_0,
 	data_reg_4,
 	ram_block1a36,
@@ -29226,10 +29226,10 @@ module sine_hw_sine_hw_mm_interconnect_0_rsp_mux (
 	F_iw_7,
 	av_readdata_pre_71,
 	src_payload,
-	src_payload1,
-	src_payload2,
-	src_payload3,
-	src_payload4,
+	src_data_27,
+	src_data_26,
+	src_data_25,
+	src_data_24,
 	av_readdata_pre_52,
 	av_readdata_pre_62,
 	av_readdata_pre_72,
@@ -29238,10 +29238,10 @@ module sine_hw_sine_hw_mm_interconnect_0_rsp_mux (
 	av_readdata_pre_22,
 	av_readdata_pre_12,
 	av_readdata_pre_02,
-	src_payload5,
-	src_payload6,
-	src_payload7,
-	src_payload8)/* synthesis synthesis_greybox=1 */;
+	src_data_30,
+	src_data_29,
+	src_data_28,
+	src_data_311)/* synthesis synthesis_greybox=1 */;
 input 	mem_55_0;
 input 	data_reg_4;
 input 	ram_block1a36;
@@ -29344,10 +29344,10 @@ input 	av_readdata_pre_61;
 input 	F_iw_7;
 input 	av_readdata_pre_71;
 output 	src_payload;
-output 	src_payload1;
-output 	src_payload2;
-output 	src_payload3;
-output 	src_payload4;
+output 	src_data_27;
+output 	src_data_26;
+output 	src_data_25;
+output 	src_data_24;
 input 	av_readdata_pre_52;
 input 	av_readdata_pre_62;
 input 	av_readdata_pre_72;
@@ -29356,10 +29356,10 @@ input 	av_readdata_pre_32;
 input 	av_readdata_pre_22;
 input 	av_readdata_pre_12;
 input 	av_readdata_pre_02;
-output 	src_payload5;
-output 	src_payload6;
-output 	src_payload7;
-output 	src_payload8;
+output 	src_data_30;
+output 	src_data_29;
+output 	src_data_28;
+output 	src_data_311;
 
 wire gnd;
 wire vcc;
@@ -29370,29 +29370,29 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \src_data[0]~11_combout ;
-wire \src_data[1]~10_combout ;
-wire \src_data[2]~9_combout ;
-wire \src_data[3]~8_combout ;
-wire \src_data[4]~4_combout ;
-wire \src_data[7]~7_combout ;
-wire \src_data[6]~6_combout ;
-wire \src_data[5]~5_combout ;
-wire \src_payload~9_combout ;
-wire \src_payload~10_combout ;
-wire \src_payload~11_combout ;
-wire \src_payload~12_combout ;
-wire \src_payload~14_combout ;
-wire \src_payload~16_combout ;
-wire \src_payload~15_combout ;
-wire \src_payload~13_combout ;
+wire \src_data[0]~19_combout ;
+wire \src_data[1]~18_combout ;
+wire \src_data[2]~17_combout ;
+wire \src_data[3]~16_combout ;
+wire \src_data[4]~12_combout ;
+wire \src_data[7]~15_combout ;
+wire \src_data[6]~14_combout ;
+wire \src_data[5]~13_combout ;
+wire \src_data[27]~20_combout ;
+wire \src_data[26]~21_combout ;
+wire \src_data[25]~22_combout ;
+wire \src_data[24]~23_combout ;
+wire \src_data[30]~25_combout ;
+wire \src_data[29]~27_combout ;
+wire \src_data[28]~26_combout ;
+wire \src_data[31]~24_combout ;
 
 
-cyclonev_lcell_comb \src_data[0]~12 (
+cyclonev_lcell_comb \src_data[0]~28 (
 	.dataa(!F_iw_0),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a32),
-	.datad(!\src_data[0]~11_combout ),
+	.datad(!\src_data[0]~19_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a0),
@@ -29402,15 +29402,15 @@ cyclonev_lcell_comb \src_data[0]~12 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[0]~12 .extended_lut = "on";
-defparam \src_data[0]~12 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[0]~12 .shared_arith = "off";
+defparam \src_data[0]~28 .extended_lut = "on";
+defparam \src_data[0]~28 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[0]~28 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[1]~16 (
+cyclonev_lcell_comb \src_data[1]~32 (
 	.dataa(!src_data_11),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a33),
-	.datad(!\src_data[1]~10_combout ),
+	.datad(!\src_data[1]~18_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a1),
@@ -29420,15 +29420,15 @@ cyclonev_lcell_comb \src_data[1]~16 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[1]~16 .extended_lut = "on";
-defparam \src_data[1]~16 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[1]~16 .shared_arith = "off";
+defparam \src_data[1]~32 .extended_lut = "on";
+defparam \src_data[1]~32 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[1]~32 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[2]~20 (
+cyclonev_lcell_comb \src_data[2]~36 (
 	.dataa(!F_iw_2),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a34),
-	.datad(!\src_data[2]~9_combout ),
+	.datad(!\src_data[2]~17_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a2),
@@ -29438,15 +29438,15 @@ cyclonev_lcell_comb \src_data[2]~20 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[2]~20 .extended_lut = "on";
-defparam \src_data[2]~20 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[2]~20 .shared_arith = "off";
+defparam \src_data[2]~36 .extended_lut = "on";
+defparam \src_data[2]~36 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[2]~36 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[3]~24 (
+cyclonev_lcell_comb \src_data[3]~40 (
 	.dataa(!src_data_31),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a35),
-	.datad(!\src_data[3]~8_combout ),
+	.datad(!\src_data[3]~16_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a3),
@@ -29456,15 +29456,15 @@ cyclonev_lcell_comb \src_data[3]~24 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[3]~24 .extended_lut = "on";
-defparam \src_data[3]~24 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[3]~24 .shared_arith = "off";
+defparam \src_data[3]~40 .extended_lut = "on";
+defparam \src_data[3]~40 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[3]~40 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[4]~28 (
+cyclonev_lcell_comb \src_data[4]~44 (
 	.dataa(!src_data_41),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a36),
-	.datad(!\src_data[4]~4_combout ),
+	.datad(!\src_data[4]~12_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a4),
@@ -29474,15 +29474,15 @@ cyclonev_lcell_comb \src_data[4]~28 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[4]~28 .extended_lut = "on";
-defparam \src_data[4]~28 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[4]~28 .shared_arith = "off";
+defparam \src_data[4]~44 .extended_lut = "on";
+defparam \src_data[4]~44 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[4]~44 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[7]~32 (
+cyclonev_lcell_comb \src_data[7]~48 (
 	.dataa(!F_iw_7),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a39),
-	.datad(!\src_data[7]~7_combout ),
+	.datad(!\src_data[7]~15_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a7),
@@ -29492,15 +29492,15 @@ cyclonev_lcell_comb \src_data[7]~32 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[7]~32 .extended_lut = "on";
-defparam \src_data[7]~32 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[7]~32 .shared_arith = "off";
+defparam \src_data[7]~48 .extended_lut = "on";
+defparam \src_data[7]~48 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[7]~48 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[6]~36 (
+cyclonev_lcell_comb \src_data[6]~52 (
 	.dataa(!F_iw_6),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a38),
-	.datad(!\src_data[6]~6_combout ),
+	.datad(!\src_data[6]~14_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a6),
@@ -29510,15 +29510,15 @@ cyclonev_lcell_comb \src_data[6]~36 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[6]~36 .extended_lut = "on";
-defparam \src_data[6]~36 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[6]~36 .shared_arith = "off";
+defparam \src_data[6]~52 .extended_lut = "on";
+defparam \src_data[6]~52 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[6]~52 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[5]~40 (
+cyclonev_lcell_comb \src_data[5]~56 (
 	.dataa(!src_data_51),
 	.datab(!src0_valid2),
 	.datac(!ram_block1a37),
-	.datad(!\src_data[5]~5_combout ),
+	.datad(!\src_data[5]~13_combout ),
 	.datae(!address_reg_a_0),
 	.dataf(!src0_valid1),
 	.datag(!ram_block1a5),
@@ -29528,9 +29528,9 @@ cyclonev_lcell_comb \src_data[5]~40 (
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[5]~40 .extended_lut = "on";
-defparam \src_data[5]~40 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
-defparam \src_data[5]~40 .shared_arith = "off";
+defparam \src_data[5]~56 .extended_lut = "on";
+defparam \src_data[5]~56 .lut_mask = 64'hFFFEFFFEFFFEFFFE;
+defparam \src_data[5]~56 .shared_arith = "off";
 
 cyclonev_lcell_comb \WideOr1~0 (
 	.dataa(!read_latency_shift_reg_0),
@@ -29658,151 +29658,151 @@ defparam \src_payload~0 .extended_lut = "off";
 defparam \src_payload~0 .lut_mask = 64'hFFDDFFDDFFDDFFDD;
 defparam \src_payload~0 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~1 (
+cyclonev_lcell_comb \src_data[27]~4 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a59),
 	.datad(!ram_block1a27),
-	.datae(!\src_payload~9_combout ),
+	.datae(!\src_data[27]~20_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload1),
+	.combout(src_data_27),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~1 .extended_lut = "off";
-defparam \src_payload~1 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~1 .shared_arith = "off";
+defparam \src_data[27]~4 .extended_lut = "off";
+defparam \src_data[27]~4 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[27]~4 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~2 (
+cyclonev_lcell_comb \src_data[26]~5 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a58),
 	.datad(!ram_block1a26),
-	.datae(!\src_payload~10_combout ),
+	.datae(!\src_data[26]~21_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload2),
+	.combout(src_data_26),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~2 .extended_lut = "off";
-defparam \src_payload~2 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~2 .shared_arith = "off";
+defparam \src_data[26]~5 .extended_lut = "off";
+defparam \src_data[26]~5 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[26]~5 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~3 (
+cyclonev_lcell_comb \src_data[25]~6 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a57),
 	.datad(!ram_block1a25),
-	.datae(!\src_payload~11_combout ),
+	.datae(!\src_data[25]~22_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload3),
+	.combout(src_data_25),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~3 .extended_lut = "off";
-defparam \src_payload~3 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~3 .shared_arith = "off";
+defparam \src_data[25]~6 .extended_lut = "off";
+defparam \src_data[25]~6 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[25]~6 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~4 (
+cyclonev_lcell_comb \src_data[24]~7 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a56),
 	.datad(!ram_block1a24),
-	.datae(!\src_payload~12_combout ),
+	.datae(!\src_data[24]~23_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload4),
+	.combout(src_data_24),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~4 .extended_lut = "off";
-defparam \src_payload~4 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~4 .shared_arith = "off";
+defparam \src_data[24]~7 .extended_lut = "off";
+defparam \src_data[24]~7 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[24]~7 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~5 (
+cyclonev_lcell_comb \src_data[30]~8 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a62),
 	.datad(!ram_block1a30),
-	.datae(!\src_payload~14_combout ),
+	.datae(!\src_data[30]~25_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload5),
+	.combout(src_data_30),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~5 .extended_lut = "off";
-defparam \src_payload~5 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~5 .shared_arith = "off";
+defparam \src_data[30]~8 .extended_lut = "off";
+defparam \src_data[30]~8 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[30]~8 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~6 (
+cyclonev_lcell_comb \src_data[29]~9 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a61),
 	.datad(!ram_block1a29),
-	.datae(!\src_payload~16_combout ),
+	.datae(!\src_data[29]~27_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload6),
+	.combout(src_data_29),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~6 .extended_lut = "off";
-defparam \src_payload~6 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~6 .shared_arith = "off";
+defparam \src_data[29]~9 .extended_lut = "off";
+defparam \src_data[29]~9 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[29]~9 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~7 (
+cyclonev_lcell_comb \src_data[28]~10 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a60),
 	.datad(!ram_block1a28),
-	.datae(!\src_payload~15_combout ),
+	.datae(!\src_data[28]~26_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload7),
+	.combout(src_data_28),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~7 .extended_lut = "off";
-defparam \src_payload~7 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~7 .shared_arith = "off";
+defparam \src_data[28]~10 .extended_lut = "off";
+defparam \src_data[28]~10 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[28]~10 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~8 (
+cyclonev_lcell_comb \src_data[31]~11 (
 	.dataa(!src0_valid1),
 	.datab(!address_reg_a_0),
 	.datac(!ram_block1a63),
 	.datad(!ram_block1a31),
-	.datae(!\src_payload~13_combout ),
+	.datae(!\src_data[31]~24_combout ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(src_payload8),
+	.combout(src_data_311),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~8 .extended_lut = "off";
-defparam \src_payload~8 .lut_mask = 64'h47FFFFFF47FFFFFF;
-defparam \src_payload~8 .shared_arith = "off";
+defparam \src_data[31]~11 .extended_lut = "off";
+defparam \src_data[31]~11 .lut_mask = 64'h47FFFFFF47FFFFFF;
+defparam \src_data[31]~11 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[0]~11 (
+cyclonev_lcell_comb \src_data[0]~19 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_01),
 	.datac(!read_latency_shift_reg_0),
@@ -29812,15 +29812,15 @@ cyclonev_lcell_comb \src_data[0]~11 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[0]~11_combout ),
+	.combout(\src_data[0]~19_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[0]~11 .extended_lut = "off";
-defparam \src_data[0]~11 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[0]~11 .shared_arith = "off";
+defparam \src_data[0]~19 .extended_lut = "off";
+defparam \src_data[0]~19 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[0]~19 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[1]~10 (
+cyclonev_lcell_comb \src_data[1]~18 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_11),
 	.datac(!read_latency_shift_reg_0),
@@ -29830,15 +29830,15 @@ cyclonev_lcell_comb \src_data[1]~10 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[1]~10_combout ),
+	.combout(\src_data[1]~18_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[1]~10 .extended_lut = "off";
-defparam \src_data[1]~10 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[1]~10 .shared_arith = "off";
+defparam \src_data[1]~18 .extended_lut = "off";
+defparam \src_data[1]~18 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[1]~18 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[2]~9 (
+cyclonev_lcell_comb \src_data[2]~17 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_21),
 	.datac(!read_latency_shift_reg_0),
@@ -29848,15 +29848,15 @@ cyclonev_lcell_comb \src_data[2]~9 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[2]~9_combout ),
+	.combout(\src_data[2]~17_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[2]~9 .extended_lut = "off";
-defparam \src_data[2]~9 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[2]~9 .shared_arith = "off";
+defparam \src_data[2]~17 .extended_lut = "off";
+defparam \src_data[2]~17 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[2]~17 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[3]~8 (
+cyclonev_lcell_comb \src_data[3]~16 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_31),
 	.datac(!read_latency_shift_reg_0),
@@ -29866,15 +29866,15 @@ cyclonev_lcell_comb \src_data[3]~8 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[3]~8_combout ),
+	.combout(\src_data[3]~16_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[3]~8 .extended_lut = "off";
-defparam \src_data[3]~8 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[3]~8 .shared_arith = "off";
+defparam \src_data[3]~16 .extended_lut = "off";
+defparam \src_data[3]~16 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[3]~16 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[4]~4 (
+cyclonev_lcell_comb \src_data[4]~12 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_41),
 	.datac(!read_latency_shift_reg_0),
@@ -29884,15 +29884,15 @@ cyclonev_lcell_comb \src_data[4]~4 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[4]~4_combout ),
+	.combout(\src_data[4]~12_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[4]~4 .extended_lut = "off";
-defparam \src_data[4]~4 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[4]~4 .shared_arith = "off";
+defparam \src_data[4]~12 .extended_lut = "off";
+defparam \src_data[4]~12 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[4]~12 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[7]~7 (
+cyclonev_lcell_comb \src_data[7]~15 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_71),
 	.datac(!read_latency_shift_reg_0),
@@ -29902,15 +29902,15 @@ cyclonev_lcell_comb \src_data[7]~7 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[7]~7_combout ),
+	.combout(\src_data[7]~15_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[7]~7 .extended_lut = "off";
-defparam \src_data[7]~7 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[7]~7 .shared_arith = "off";
+defparam \src_data[7]~15 .extended_lut = "off";
+defparam \src_data[7]~15 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[7]~15 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[6]~6 (
+cyclonev_lcell_comb \src_data[6]~14 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_61),
 	.datac(!read_latency_shift_reg_0),
@@ -29920,15 +29920,15 @@ cyclonev_lcell_comb \src_data[6]~6 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[6]~6_combout ),
+	.combout(\src_data[6]~14_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[6]~6 .extended_lut = "off";
-defparam \src_data[6]~6 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[6]~6 .shared_arith = "off";
+defparam \src_data[6]~14 .extended_lut = "off";
+defparam \src_data[6]~14 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[6]~14 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_data[5]~5 (
+cyclonev_lcell_comb \src_data[5]~13 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_51),
 	.datac(!read_latency_shift_reg_0),
@@ -29938,15 +29938,15 @@ cyclonev_lcell_comb \src_data[5]~5 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_data[5]~5_combout ),
+	.combout(\src_data[5]~13_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_data[5]~5 .extended_lut = "off";
-defparam \src_data[5]~5 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
-defparam \src_data[5]~5 .shared_arith = "off";
+defparam \src_data[5]~13 .extended_lut = "off";
+defparam \src_data[5]~13 .lut_mask = 64'h7FFFFFFFFFFFFFFF;
+defparam \src_data[5]~13 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~9 (
+cyclonev_lcell_comb \src_data[27]~20 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_11),
 	.datac(!av_readdata_pre_27),
@@ -29956,15 +29956,15 @@ cyclonev_lcell_comb \src_payload~9 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~9_combout ),
+	.combout(\src_data[27]~20_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~9 .extended_lut = "off";
-defparam \src_payload~9 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~9 .shared_arith = "off";
+defparam \src_data[27]~20 .extended_lut = "off";
+defparam \src_data[27]~20 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[27]~20 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~10 (
+cyclonev_lcell_comb \src_data[26]~21 (
 	.dataa(!src0_valid),
 	.datab(!av_readdata_pre_26),
 	.datac(!out_payload_10),
@@ -29974,15 +29974,15 @@ cyclonev_lcell_comb \src_payload~10 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~10_combout ),
+	.combout(\src_data[26]~21_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~10 .extended_lut = "off";
-defparam \src_payload~10 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~10 .shared_arith = "off";
+defparam \src_data[26]~21 .extended_lut = "off";
+defparam \src_data[26]~21 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[26]~21 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~11 (
+cyclonev_lcell_comb \src_data[25]~22 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_9),
 	.datac(!av_readdata_pre_25),
@@ -29992,15 +29992,15 @@ cyclonev_lcell_comb \src_payload~11 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~11_combout ),
+	.combout(\src_data[25]~22_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~11 .extended_lut = "off";
-defparam \src_payload~11 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~11 .shared_arith = "off";
+defparam \src_data[25]~22 .extended_lut = "off";
+defparam \src_data[25]~22 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[25]~22 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~12 (
+cyclonev_lcell_comb \src_data[24]~23 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_8),
 	.datac(!av_readdata_pre_24),
@@ -30010,15 +30010,15 @@ cyclonev_lcell_comb \src_payload~12 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~12_combout ),
+	.combout(\src_data[24]~23_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~12 .extended_lut = "off";
-defparam \src_payload~12 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~12 .shared_arith = "off";
+defparam \src_data[24]~23 .extended_lut = "off";
+defparam \src_data[24]~23 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[24]~23 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~14 (
+cyclonev_lcell_comb \src_data[30]~25 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_14),
 	.datac(!av_readdata_pre_30),
@@ -30028,15 +30028,15 @@ cyclonev_lcell_comb \src_payload~14 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~14_combout ),
+	.combout(\src_data[30]~25_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~14 .extended_lut = "off";
-defparam \src_payload~14 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~14 .shared_arith = "off";
+defparam \src_data[30]~25 .extended_lut = "off";
+defparam \src_data[30]~25 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[30]~25 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~16 (
+cyclonev_lcell_comb \src_data[29]~27 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_13),
 	.datac(!av_readdata_pre_29),
@@ -30046,15 +30046,15 @@ cyclonev_lcell_comb \src_payload~16 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~16_combout ),
+	.combout(\src_data[29]~27_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~16 .extended_lut = "off";
-defparam \src_payload~16 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~16 .shared_arith = "off";
+defparam \src_data[29]~27 .extended_lut = "off";
+defparam \src_data[29]~27 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[29]~27 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~15 (
+cyclonev_lcell_comb \src_data[28]~26 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_12),
 	.datac(!av_readdata_pre_28),
@@ -30064,15 +30064,15 @@ cyclonev_lcell_comb \src_payload~15 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~15_combout ),
+	.combout(\src_data[28]~26_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~15 .extended_lut = "off";
-defparam \src_payload~15 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~15 .shared_arith = "off";
+defparam \src_data[28]~26 .extended_lut = "off";
+defparam \src_data[28]~26 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[28]~26 .shared_arith = "off";
 
-cyclonev_lcell_comb \src_payload~13 (
+cyclonev_lcell_comb \src_data[31]~24 (
 	.dataa(!src0_valid),
 	.datab(!out_payload_15),
 	.datac(!av_readdata_pre_311),
@@ -30082,17 +30082,17 @@ cyclonev_lcell_comb \src_payload~13 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\src_payload~13_combout ),
+	.combout(\src_data[31]~24_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \src_payload~13 .extended_lut = "off";
-defparam \src_payload~13 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
-defparam \src_payload~13 .shared_arith = "off";
+defparam \src_data[31]~24 .extended_lut = "off";
+defparam \src_data[31]~24 .lut_mask = 64'h7FFF7FFF7FFF7FFF;
+defparam \src_data[31]~24 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_mm_interconnect_0_rsp_mux_001 (
+module sine_wave_hw_sine_wave_hw_mm_interconnect_0_rsp_mux_001 (
 	rp_valid,
 	source_addr_1,
 	always10,
@@ -30187,7 +30187,7 @@ defparam \src_payload~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2 (
+module sine_wave_hw_sine_wave_hw_nios2 (
 	W_alu_result_14,
 	F_pc_12,
 	W_alu_result_12,
@@ -30515,29 +30515,37 @@ module sine_hw_sine_hw_nios2 (
 	av_readdata_pre_141,
 	av_readdata_pre_121,
 	src_payload5,
-	src_payload6,
-	src_payload7,
-	src_payload8,
-	src_payload9,
+	src_data_27,
+	src_data_26,
+	src_data_25,
+	src_data_24,
 	av_readdata_pre_131,
 	av_readdata_pre_151,
 	av_readdata_pre_81,
 	av_readdata_pre_101,
 	av_readdata_pre_91,
+	src_payload6,
+	src_data_30,
+	src_data_29,
+	src_data_28,
+	src_data_311,
+	src_payload7,
+	src_payload8,
+	src_payload9,
 	src_payload10,
 	src_payload11,
+	src_data_35,
 	src_payload12,
 	src_payload13,
+	src_data_33,
 	src_payload14,
 	src_payload15,
 	src_payload16,
 	src_payload17,
 	src_payload18,
 	src_payload19,
-	src_data_35,
 	src_payload20,
 	src_payload21,
-	src_data_33,
 	src_payload22,
 	src_payload23,
 	src_payload24,
@@ -30551,14 +30559,6 @@ module sine_hw_sine_hw_nios2 (
 	src_payload32,
 	src_payload33,
 	src_payload34,
-	src_payload35,
-	src_payload36,
-	src_payload37,
-	src_payload38,
-	src_payload39,
-	src_payload40,
-	src_payload41,
-	src_payload42,
 	altera_internal_jtag,
 	altera_internal_jtag1,
 	state_1,
@@ -30897,29 +30897,37 @@ input 	src_data_34;
 input 	av_readdata_pre_141;
 input 	av_readdata_pre_121;
 input 	src_payload5;
-input 	src_payload6;
-input 	src_payload7;
-input 	src_payload8;
-input 	src_payload9;
+input 	src_data_27;
+input 	src_data_26;
+input 	src_data_25;
+input 	src_data_24;
 input 	av_readdata_pre_131;
 input 	av_readdata_pre_151;
 input 	av_readdata_pre_81;
 input 	av_readdata_pre_101;
 input 	av_readdata_pre_91;
+input 	src_payload6;
+input 	src_data_30;
+input 	src_data_29;
+input 	src_data_28;
+input 	src_data_311;
+input 	src_payload7;
+input 	src_payload8;
+input 	src_payload9;
 input 	src_payload10;
 input 	src_payload11;
+input 	src_data_35;
 input 	src_payload12;
 input 	src_payload13;
+input 	src_data_33;
 input 	src_payload14;
 input 	src_payload15;
 input 	src_payload16;
 input 	src_payload17;
 input 	src_payload18;
 input 	src_payload19;
-input 	src_data_35;
 input 	src_payload20;
 input 	src_payload21;
-input 	src_data_33;
 input 	src_payload22;
 input 	src_payload23;
 input 	src_payload24;
@@ -30933,14 +30941,6 @@ input 	src_payload31;
 input 	src_payload32;
 input 	src_payload33;
 input 	src_payload34;
-input 	src_payload35;
-input 	src_payload36;
-input 	src_payload37;
-input 	src_payload38;
-input 	src_payload39;
-input 	src_payload40;
-input 	src_payload41;
-input 	src_payload42;
 input 	altera_internal_jtag;
 input 	altera_internal_jtag1;
 input 	state_1;
@@ -30964,7 +30964,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_sine_hw_nios2_cpu cpu(
+sine_wave_hw_sine_wave_hw_nios2_cpu cpu(
 	.W_alu_result_14(W_alu_result_14),
 	.F_pc_12(F_pc_12),
 	.W_alu_result_12(W_alu_result_12),
@@ -31292,29 +31292,37 @@ sine_hw_sine_hw_nios2_cpu cpu(
 	.av_readdata_pre_141(av_readdata_pre_141),
 	.av_readdata_pre_121(av_readdata_pre_121),
 	.src_payload5(src_payload5),
-	.src_payload6(src_payload6),
-	.src_payload7(src_payload7),
-	.src_payload8(src_payload8),
-	.src_payload9(src_payload9),
+	.src_data_27(src_data_27),
+	.src_data_26(src_data_26),
+	.src_data_25(src_data_25),
+	.src_data_24(src_data_24),
 	.av_readdata_pre_131(av_readdata_pre_131),
 	.av_readdata_pre_151(av_readdata_pre_151),
 	.av_readdata_pre_81(av_readdata_pre_81),
 	.av_readdata_pre_101(av_readdata_pre_101),
 	.av_readdata_pre_91(av_readdata_pre_91),
+	.src_payload6(src_payload6),
+	.src_data_30(src_data_30),
+	.src_data_29(src_data_29),
+	.src_data_28(src_data_28),
+	.src_data_311(src_data_311),
+	.src_payload7(src_payload7),
+	.src_payload8(src_payload8),
+	.src_payload9(src_payload9),
 	.src_payload10(src_payload10),
 	.src_payload11(src_payload11),
+	.src_data_35(src_data_35),
 	.src_payload12(src_payload12),
 	.src_payload13(src_payload13),
+	.src_data_33(src_data_33),
 	.src_payload14(src_payload14),
 	.src_payload15(src_payload15),
 	.src_payload16(src_payload16),
 	.src_payload17(src_payload17),
 	.src_payload18(src_payload18),
 	.src_payload19(src_payload19),
-	.src_data_35(src_data_35),
 	.src_payload20(src_payload20),
 	.src_payload21(src_payload21),
-	.src_data_33(src_data_33),
 	.src_payload22(src_payload22),
 	.src_payload23(src_payload23),
 	.src_payload24(src_payload24),
@@ -31328,14 +31336,6 @@ sine_hw_sine_hw_nios2_cpu cpu(
 	.src_payload32(src_payload32),
 	.src_payload33(src_payload33),
 	.src_payload34(src_payload34),
-	.src_payload35(src_payload35),
-	.src_payload36(src_payload36),
-	.src_payload37(src_payload37),
-	.src_payload38(src_payload38),
-	.src_payload39(src_payload39),
-	.src_payload40(src_payload40),
-	.src_payload41(src_payload41),
-	.src_payload42(src_payload42),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
 	.state_1(state_1),
@@ -31350,7 +31350,7 @@ sine_hw_sine_hw_nios2_cpu cpu(
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu (
+module sine_wave_hw_sine_wave_hw_nios2_cpu (
 	W_alu_result_14,
 	F_pc_12,
 	W_alu_result_12,
@@ -31678,29 +31678,37 @@ module sine_hw_sine_hw_nios2_cpu (
 	av_readdata_pre_141,
 	av_readdata_pre_121,
 	src_payload5,
-	src_payload6,
-	src_payload7,
-	src_payload8,
-	src_payload9,
+	src_data_27,
+	src_data_26,
+	src_data_25,
+	src_data_24,
 	av_readdata_pre_131,
 	av_readdata_pre_151,
 	av_readdata_pre_81,
 	av_readdata_pre_101,
 	av_readdata_pre_91,
+	src_payload6,
+	src_data_30,
+	src_data_29,
+	src_data_28,
+	src_data_311,
+	src_payload7,
+	src_payload8,
+	src_payload9,
 	src_payload10,
 	src_payload11,
+	src_data_35,
 	src_payload12,
 	src_payload13,
+	src_data_33,
 	src_payload14,
 	src_payload15,
 	src_payload16,
 	src_payload17,
 	src_payload18,
 	src_payload19,
-	src_data_35,
 	src_payload20,
 	src_payload21,
-	src_data_33,
 	src_payload22,
 	src_payload23,
 	src_payload24,
@@ -31714,14 +31722,6 @@ module sine_hw_sine_hw_nios2_cpu (
 	src_payload32,
 	src_payload33,
 	src_payload34,
-	src_payload35,
-	src_payload36,
-	src_payload37,
-	src_payload38,
-	src_payload39,
-	src_payload40,
-	src_payload41,
-	src_payload42,
 	altera_internal_jtag,
 	altera_internal_jtag1,
 	state_1,
@@ -32060,29 +32060,37 @@ input 	src_data_34;
 input 	av_readdata_pre_141;
 input 	av_readdata_pre_121;
 input 	src_payload5;
-input 	src_payload6;
-input 	src_payload7;
-input 	src_payload8;
-input 	src_payload9;
+input 	src_data_27;
+input 	src_data_26;
+input 	src_data_25;
+input 	src_data_24;
 input 	av_readdata_pre_131;
 input 	av_readdata_pre_151;
 input 	av_readdata_pre_81;
 input 	av_readdata_pre_101;
 input 	av_readdata_pre_91;
+input 	src_payload6;
+input 	src_data_30;
+input 	src_data_29;
+input 	src_data_28;
+input 	src_data_311;
+input 	src_payload7;
+input 	src_payload8;
+input 	src_payload9;
 input 	src_payload10;
 input 	src_payload11;
+input 	src_data_35;
 input 	src_payload12;
 input 	src_payload13;
+input 	src_data_33;
 input 	src_payload14;
 input 	src_payload15;
 input 	src_payload16;
 input 	src_payload17;
 input 	src_payload18;
 input 	src_payload19;
-input 	src_data_35;
 input 	src_payload20;
 input 	src_payload21;
-input 	src_data_33;
 input 	src_payload22;
 input 	src_payload23;
 input 	src_payload24;
@@ -32096,14 +32104,6 @@ input 	src_payload31;
 input 	src_payload32;
 input 	src_payload33;
 input 	src_payload34;
-input 	src_payload35;
-input 	src_payload36;
-input 	src_payload37;
-input 	src_payload38;
-input 	src_payload39;
-input 	src_payload40;
-input 	src_payload41;
-input 	src_payload42;
 input 	altera_internal_jtag;
 input 	altera_internal_jtag1;
 input 	state_1;
@@ -32125,71 +32125,71 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ;
 wire \Add2~121_sumout ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ;
-wire \sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ;
-wire \sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ;
+wire \sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ;
 wire \av_ld_byte3_data[3]~q ;
 wire \av_ld_byte3_data[2]~q ;
 wire \av_ld_byte3_data[1]~q ;
@@ -32231,7 +32231,7 @@ wire \av_ld_byte1_data_nxt[4]~45_combout ;
 wire \W_rf_wr_data[0]~31_combout ;
 wire \av_ld_byte1_data_nxt[6]~49_combout ;
 wire \D_ctrl_ld_signed~0_combout ;
-wire \the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ;
 wire \av_ld_byte1_data_nxt[6]~4_combout ;
 wire \R_wr_dst_reg~q ;
 wire \W_rf_wren~combout ;
@@ -32281,8 +32281,8 @@ wire \av_ld_byte1_data[1]~q ;
 wire \W_rf_wr_data[9]~22_combout ;
 wire \W_rf_wr_data[4]~23_combout ;
 wire \W_rf_wr_data[3]~24_combout ;
-wire \the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ;
 wire \W_rf_wr_data[2]~25_combout ;
 wire \D_dst_regnum[1]~0_combout ;
 wire \D_dst_regnum[1]~1_combout ;
@@ -33055,7 +33055,7 @@ wire \E_st_data[30]~7_combout ;
 wire \E_st_data[31]~8_combout ;
 
 
-sine_hw_sine_hw_nios2_cpu_nios2_oci the_sine_hw_nios2_cpu_nios2_oci(
+sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci the_sine_wave_hw_nios2_cpu_nios2_oci(
 	.readdata_4(readdata_4),
 	.readdata_0(readdata_0),
 	.readdata_1(readdata_1),
@@ -33101,14 +33101,14 @@ sine_hw_sine_hw_nios2_cpu_nios2_oci the_sine_hw_nios2_cpu_nios2_oci(
 	.src1_valid(src1_valid1),
 	.src_valid(src_valid),
 	.mem(mem),
-	.jtag_break(\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ),
+	.jtag_break(\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ),
 	.r_early_rst(r_early_rst),
-	.writedata_nxt({src_payload31,src_payload32,src_payload33,src_payload34,src_payload35,src_payload36,src_payload39,src_payload19,src_payload17,src_payload10,src_payload4,src_payload20,src_payload42,src_payload28,src_payload29,src_payload26,src_payload25,src_payload24,src_payload23,
-src_payload22,src_payload21,src_payload38,src_payload37,src_payload30,src_payload41,src_payload40,src_payload27,src_payload18,src_payload15,src_payload16,src_payload,src_payload3}),
+	.writedata_nxt({src_payload23,src_payload24,src_payload25,src_payload26,src_payload27,src_payload28,src_payload31,src_payload11,src_payload9,src_payload6,src_payload4,src_payload12,src_payload34,src_payload20,src_payload21,src_payload18,src_payload17,src_payload16,src_payload15,
+src_payload14,src_payload13,src_payload30,src_payload29,src_payload22,src_payload33,src_payload32,src_payload19,src_payload10,src_payload7,src_payload8,src_payload,src_payload3}),
 	.address_nxt({src_data_46,src_data_45,src_data_44,src_data_43,src_data_42,src_data_411,src_data_40,src_data_39,src_data_38}),
 	.debugaccess_nxt(src_payload1),
-	.oci_ienable_0(\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ),
-	.oci_single_step_mode(\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ),
+	.oci_ienable_0(\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ),
+	.oci_single_step_mode(\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ),
 	.byteenable_nxt({src_data_35,src_data_34,src_data_33,src_data_32}),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
@@ -33122,44 +33122,44 @@ src_payload22,src_payload21,src_payload38,src_payload37,src_payload30,src_payloa
 	.irf_reg_1_2(irf_reg_1_2),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_register_bank_b_module sine_hw_nios2_cpu_register_bank_b(
-	.q_b_14(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
-	.q_b_12(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
-	.q_b_11(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_register_bank_b_module sine_wave_hw_nios2_cpu_register_bank_b(
+	.q_b_14(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
+	.q_b_12(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
+	.q_b_11(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
 	.D_iw_22(\D_iw[22]~q ),
-	.q_b_18(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
-	.q_b_27(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
-	.q_b_26(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
-	.q_b_25(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
-	.q_b_24(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
-	.q_b_23(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
-	.q_b_22(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
+	.q_b_18(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
+	.q_b_27(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
+	.q_b_26(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
+	.q_b_25(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
+	.q_b_24(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
+	.q_b_23(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
+	.q_b_22(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
 	.D_iw_26(\D_iw[26]~q ),
-	.q_b_19(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
+	.q_b_19(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
 	.D_iw_23(\D_iw[23]~q ),
-	.q_b_20(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
+	.q_b_20(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
 	.D_iw_24(\D_iw[24]~q ),
-	.q_b_21(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
+	.q_b_21(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
 	.D_iw_25(\D_iw[25]~q ),
-	.q_b_16(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
-	.q_b_17(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
-	.q_b_13(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
-	.q_b_15(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
-	.q_b_5(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
-	.q_b_6(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
-	.q_b_7(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
-	.q_b_8(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
-	.q_b_10(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
-	.q_b_9(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
-	.q_b_4(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
-	.q_b_3(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
-	.q_b_2(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
-	.q_b_1(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
-	.q_b_0(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
-	.q_b_30(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
-	.q_b_29(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
-	.q_b_28(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
-	.q_b_31(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
+	.q_b_16(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
+	.q_b_17(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
+	.q_b_13(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
+	.q_b_15(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
+	.q_b_5(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.q_b_6(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.q_b_7(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.q_b_8(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
+	.q_b_10(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
+	.q_b_9(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
+	.q_b_4(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.q_b_3(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.q_b_2(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.q_b_1(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.q_b_0(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.q_b_30(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
+	.q_b_29(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
+	.q_b_28(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
+	.q_b_31(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
 	.W_rf_wr_data_0(\W_rf_wr_data[0]~31_combout ),
 	.W_rf_wren(\W_rf_wren~combout ),
 	.W_rf_wr_data_14(\W_rf_wr_data[14]~0_combout ),
@@ -33200,44 +33200,44 @@ sine_hw_sine_hw_nios2_cpu_register_bank_b_module sine_hw_nios2_cpu_register_bank
 	.W_rf_wr_data_31(\W_rf_wr_data[31]~30_combout ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_register_bank_a_module sine_hw_nios2_cpu_register_bank_a(
-	.q_b_14(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ),
-	.q_b_12(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ),
-	.q_b_11(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ),
-	.q_b_18(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_register_bank_a_module sine_wave_hw_nios2_cpu_register_bank_a(
+	.q_b_14(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ),
+	.q_b_12(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ),
+	.q_b_11(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ),
+	.q_b_18(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ),
 	.D_iw_31(\D_iw[31]~q ),
-	.q_b_27(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ),
+	.q_b_27(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ),
 	.D_iw_30(\D_iw[30]~q ),
-	.q_b_26(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ),
+	.q_b_26(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ),
 	.D_iw_29(\D_iw[29]~q ),
-	.q_b_25(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ),
+	.q_b_25(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ),
 	.D_iw_28(\D_iw[28]~q ),
-	.q_b_24(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ),
+	.q_b_24(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ),
 	.D_iw_27(\D_iw[27]~q ),
-	.q_b_23(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ),
-	.q_b_22(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ),
-	.q_b_19(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ),
-	.q_b_20(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ),
-	.q_b_21(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ),
-	.q_b_16(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ),
-	.q_b_17(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ),
-	.q_b_13(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ),
-	.q_b_15(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ),
-	.q_b_5(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ),
-	.q_b_6(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ),
-	.q_b_7(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ),
-	.q_b_8(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ),
-	.q_b_10(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ),
-	.q_b_9(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ),
-	.q_b_4(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ),
-	.q_b_3(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ),
-	.q_b_2(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ),
-	.q_b_1(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ),
-	.q_b_0(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ),
-	.q_b_30(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ),
-	.q_b_29(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ),
-	.q_b_28(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ),
-	.q_b_31(\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ),
+	.q_b_23(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ),
+	.q_b_22(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ),
+	.q_b_19(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ),
+	.q_b_20(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ),
+	.q_b_21(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ),
+	.q_b_16(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ),
+	.q_b_17(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ),
+	.q_b_13(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ),
+	.q_b_15(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ),
+	.q_b_5(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ),
+	.q_b_6(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ),
+	.q_b_7(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ),
+	.q_b_8(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ),
+	.q_b_10(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ),
+	.q_b_9(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ),
+	.q_b_4(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ),
+	.q_b_3(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ),
+	.q_b_2(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ),
+	.q_b_1(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ),
+	.q_b_0(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ),
+	.q_b_30(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ),
+	.q_b_29(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ),
+	.q_b_28(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ),
+	.q_b_31(\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ),
 	.W_rf_wr_data_0(\W_rf_wr_data[0]~31_combout ),
 	.W_rf_wren(\W_rf_wren~combout ),
 	.W_rf_wr_data_14(\W_rf_wr_data[14]~0_combout ),
@@ -33298,7 +33298,7 @@ defparam \Add2~121 .shared_arith = "off";
 
 dffeas \av_ld_byte3_data[3] (
 	.clk(clk_clk),
-	.d(src_payload6),
+	.d(src_data_27),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33312,7 +33312,7 @@ defparam \av_ld_byte3_data[3] .power_up = "low";
 
 dffeas \av_ld_byte3_data[2] (
 	.clk(clk_clk),
-	.d(src_payload7),
+	.d(src_data_26),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33326,7 +33326,7 @@ defparam \av_ld_byte3_data[2] .power_up = "low";
 
 dffeas \av_ld_byte3_data[1] (
 	.clk(clk_clk),
-	.d(src_payload8),
+	.d(src_data_25),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33340,7 +33340,7 @@ defparam \av_ld_byte3_data[1] .power_up = "low";
 
 dffeas \av_ld_byte3_data[0] (
 	.clk(clk_clk),
-	.d(src_payload9),
+	.d(src_data_24),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33512,7 +33512,7 @@ defparam \av_ld_byte0_data[0] .power_up = "low";
 
 dffeas \av_ld_byte3_data[6] (
 	.clk(clk_clk),
-	.d(src_payload11),
+	.d(src_data_30),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33540,7 +33540,7 @@ defparam \W_alu_result[30] .power_up = "low";
 
 dffeas \av_ld_byte3_data[5] (
 	.clk(clk_clk),
-	.d(src_payload12),
+	.d(src_data_29),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33568,7 +33568,7 @@ defparam \W_alu_result[29] .power_up = "low";
 
 dffeas \av_ld_byte3_data[4] (
 	.clk(clk_clk),
-	.d(src_payload13),
+	.d(src_data_28),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -33596,7 +33596,7 @@ defparam \W_alu_result[28] .power_up = "low";
 
 dffeas \av_ld_byte3_data[7] (
 	.clk(clk_clk),
-	.d(src_payload14),
+	.d(src_data_311),
 	.asdata(\av_fill_bit~0_combout ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -36672,8 +36672,8 @@ defparam \F_pc[8] .power_up = "low";
 
 dffeas \d_writedata[8] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36686,8 +36686,8 @@ defparam \d_writedata[8] .power_up = "low";
 
 dffeas \d_writedata[9] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36700,8 +36700,8 @@ defparam \d_writedata[9] .power_up = "low";
 
 dffeas \d_writedata[10] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36714,8 +36714,8 @@ defparam \d_writedata[10] .power_up = "low";
 
 dffeas \d_writedata[11] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36728,8 +36728,8 @@ defparam \d_writedata[11] .power_up = "low";
 
 dffeas \d_writedata[12] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36742,8 +36742,8 @@ defparam \d_writedata[12] .power_up = "low";
 
 dffeas \d_writedata[13] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36756,8 +36756,8 @@ defparam \d_writedata[13] .power_up = "low";
 
 dffeas \d_writedata[14] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36770,8 +36770,8 @@ defparam \d_writedata[14] .power_up = "low";
 
 dffeas \d_writedata[15] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36784,8 +36784,8 @@ defparam \d_writedata[15] .power_up = "low";
 
 dffeas \d_writedata[16] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36798,8 +36798,8 @@ defparam \d_writedata[16] .power_up = "low";
 
 dffeas \d_writedata[17] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36812,8 +36812,8 @@ defparam \d_writedata[17] .power_up = "low";
 
 dffeas \d_writedata[18] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36826,8 +36826,8 @@ defparam \d_writedata[18] .power_up = "low";
 
 dffeas \d_writedata[19] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36840,8 +36840,8 @@ defparam \d_writedata[19] .power_up = "low";
 
 dffeas \d_writedata[20] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36854,8 +36854,8 @@ defparam \d_writedata[20] .power_up = "low";
 
 dffeas \d_writedata[21] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36868,8 +36868,8 @@ defparam \d_writedata[21] .power_up = "low";
 
 dffeas \d_writedata[22] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -36882,8 +36882,8 @@ defparam \d_writedata[22] .power_up = "low";
 
 dffeas \d_writedata[23] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
@@ -37058,7 +37058,7 @@ defparam \F_iw[2]~4 .shared_arith = "off";
 
 dffeas \d_writedata[0] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37072,7 +37072,7 @@ defparam \d_writedata[0] .power_up = "low";
 
 dffeas \d_writedata[1] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37086,7 +37086,7 @@ defparam \d_writedata[1] .power_up = "low";
 
 dffeas \d_writedata[2] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37100,7 +37100,7 @@ defparam \d_writedata[2] .power_up = "low";
 
 dffeas \d_writedata[3] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37114,7 +37114,7 @@ defparam \d_writedata[3] .power_up = "low";
 
 dffeas \d_writedata[4] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37128,7 +37128,7 @@ defparam \d_writedata[4] .power_up = "low";
 
 dffeas \d_writedata[5] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37142,7 +37142,7 @@ defparam \d_writedata[5] .power_up = "low";
 
 dffeas \d_writedata[6] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -37156,7 +37156,7 @@ defparam \d_writedata[6] .power_up = "low";
 
 dffeas \d_writedata[7] (
 	.clk(clk_clk),
-	.d(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.d(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -38953,7 +38953,7 @@ cyclonev_lcell_comb \R_src2_lo[0]~5 (
 	.datab(!\D_iw[6]~q ),
 	.datac(!\R_ctrl_force_src2_zero~q ),
 	.datad(!\R_src2_lo~0_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -39085,7 +39085,7 @@ cyclonev_lcell_comb \R_src2_lo[1]~4 (
 	.datab(!\R_ctrl_force_src2_zero~q ),
 	.datac(!\D_iw[7]~q ),
 	.datad(!\R_src2_lo~0_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -39217,7 +39217,7 @@ cyclonev_lcell_comb \R_src2_lo[2]~3 (
 	.datab(!\R_ctrl_force_src2_zero~q ),
 	.datac(!\D_iw[8]~q ),
 	.datad(!\R_src2_lo~0_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -39349,7 +39349,7 @@ cyclonev_lcell_comb \R_src2_lo[3]~2 (
 	.datab(!\R_ctrl_force_src2_zero~q ),
 	.datac(!\D_iw[9]~q ),
 	.datad(!\R_src2_lo~0_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -39499,7 +39499,7 @@ cyclonev_lcell_comb \R_src2_lo[4]~1 (
 	.datab(!\R_ctrl_force_src2_zero~q ),
 	.datac(!\D_iw[10]~q ),
 	.datad(!\R_src2_lo~0_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -39676,7 +39676,7 @@ cyclonev_lcell_comb \wait_for_one_post_bret_inst~0 (
 	.dataa(!hbreak_enabled1),
 	.datab(!\wait_for_one_post_bret_inst~q ),
 	.datac(!\F_valid~0_combout ),
-	.datad(!\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ),
+	.datad(!\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_single_step_mode~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -39708,7 +39708,7 @@ cyclonev_lcell_comb \hbreak_req~0 (
 	.dataa(!\W_valid~q ),
 	.datab(!hbreak_enabled1),
 	.datac(!\hbreak_pending~q ),
-	.datad(!\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ),
+	.datad(!\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_oci_debug|jtag_break~q ),
 	.datae(!\wait_for_one_post_bret_inst~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -40079,7 +40079,7 @@ defparam \R_src1~1 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[0]~29 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[0] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -40360,7 +40360,7 @@ defparam \W_ienable_reg[0] .power_up = "low";
 
 cyclonev_lcell_comb \W_ipending_reg_nxt[0]~0 (
 	.dataa(!\W_ienable_reg[0]~q ),
-	.datab(!\the_sine_hw_nios2_cpu_nios2_oci|the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ),
+	.datab(!\the_sine_wave_hw_nios2_cpu_nios2_oci|the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[0]~q ),
 	.datac(!av_readdata_9),
 	.datad(!av_readdata_8),
 	.datae(gnd),
@@ -41087,7 +41087,7 @@ cyclonev_lcell_comb \R_src1[15]~18 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[19]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[15] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41219,7 +41219,7 @@ cyclonev_lcell_comb \R_src1[16]~15 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\D_iw[20]~q ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[16] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41351,7 +41351,7 @@ cyclonev_lcell_comb \R_src1[17]~16 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[21]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[17] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41483,7 +41483,7 @@ cyclonev_lcell_comb \R_src1[18]~5 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[22]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[18] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41615,7 +41615,7 @@ cyclonev_lcell_comb \R_src1[19]~12 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[23]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[19] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41747,7 +41747,7 @@ cyclonev_lcell_comb \R_src1[20]~13 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[24]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[20] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -41879,7 +41879,7 @@ cyclonev_lcell_comb \R_src1[21]~14 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[25]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[21] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42011,7 +42011,7 @@ cyclonev_lcell_comb \R_src1[22]~11 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[26]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[22] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42143,7 +42143,7 @@ cyclonev_lcell_comb \R_src1[23]~10 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[27]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[23] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42275,7 +42275,7 @@ cyclonev_lcell_comb \R_src1[24]~9 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[28]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[24] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42407,7 +42407,7 @@ cyclonev_lcell_comb \R_src1[25]~8 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[29]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[25] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42539,7 +42539,7 @@ cyclonev_lcell_comb \R_src1[26]~7 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[30]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[26] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42671,7 +42671,7 @@ cyclonev_lcell_comb \R_src1[27]~6 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[31]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[27] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -42733,7 +42733,7 @@ defparam \E_shift_rot_result_nxt[28]~26 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[28]~32 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[28] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -42797,7 +42797,7 @@ defparam \E_shift_rot_result_nxt[29]~28 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[29]~31 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[29] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -42861,7 +42861,7 @@ defparam \E_shift_rot_result_nxt[30]~30 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[30]~30 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[30] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -42925,7 +42925,7 @@ defparam \E_shift_rot_result_nxt[31]~31 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[31]~33 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[31] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -43039,7 +43039,7 @@ defparam \E_shift_rot_result_nxt[1]~27 .shared_arith = "off";
 cyclonev_lcell_comb \R_src1[1]~28 (
 	.dataa(!\R_src1~0_combout ),
 	.datab(!\R_src1~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[1] ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -43105,7 +43105,7 @@ cyclonev_lcell_comb \R_src1[2]~27 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[6]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[2] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43169,7 +43169,7 @@ cyclonev_lcell_comb \R_src1[3]~26 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[7]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[3] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43233,7 +43233,7 @@ cyclonev_lcell_comb \R_src1[4]~25 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[8]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[4] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43297,7 +43297,7 @@ cyclonev_lcell_comb \R_src1[5]~19 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[9]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[5] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43361,7 +43361,7 @@ cyclonev_lcell_comb \R_src1[6]~20 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[10]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[6] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43425,7 +43425,7 @@ cyclonev_lcell_comb \R_src1[7]~21 (
 	.datab(!\D_iw[11]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[7] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43489,7 +43489,7 @@ cyclonev_lcell_comb \R_src1[8]~22 (
 	.datab(!\D_iw[12]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[8] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43553,7 +43553,7 @@ cyclonev_lcell_comb \R_src1[9]~24 (
 	.datab(!\D_iw[13]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[9] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43617,7 +43617,7 @@ cyclonev_lcell_comb \R_src1[10]~23 (
 	.datab(!\D_iw[14]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[10] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43681,7 +43681,7 @@ cyclonev_lcell_comb \R_src1[11]~4 (
 	.datab(!\D_iw[15]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[11] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43745,7 +43745,7 @@ cyclonev_lcell_comb \R_src1[12]~3 (
 	.datab(!\D_iw[16]~q ),
 	.datac(!\R_src1~0_combout ),
 	.datad(!\R_src1~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[12] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43877,7 +43877,7 @@ cyclonev_lcell_comb \R_src1[13]~17 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[17]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[13] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -43991,7 +43991,7 @@ cyclonev_lcell_comb \R_src1[14]~2 (
 	.datab(!\R_src1~0_combout ),
 	.datac(!\R_src1~1_combout ),
 	.datad(!\D_iw[18]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_a|the_altsyncram|auto_generated|q_b[14] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -44207,7 +44207,7 @@ defparam \E_src2[15]~0 .shared_arith = "off";
 dffeas \E_src2[14] (
 	.clk(clk_clk),
 	.d(\D_iw[20]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44307,7 +44307,7 @@ defparam E_alu_sub.power_up = "low";
 dffeas \E_src2[13] (
 	.clk(clk_clk),
 	.d(\D_iw[19]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44321,7 +44321,7 @@ defparam \E_src2[13] .power_up = "low";
 dffeas \E_src2[12] (
 	.clk(clk_clk),
 	.d(\D_iw[18]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44335,7 +44335,7 @@ defparam \E_src2[12] .power_up = "low";
 dffeas \E_src2[11] (
 	.clk(clk_clk),
 	.d(\D_iw[17]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44349,7 +44349,7 @@ defparam \E_src2[11] .power_up = "low";
 dffeas \E_src2[10] (
 	.clk(clk_clk),
 	.d(\D_iw[16]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44363,7 +44363,7 @@ defparam \E_src2[10] .power_up = "low";
 dffeas \E_src2[9] (
 	.clk(clk_clk),
 	.d(\D_iw[15]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44377,7 +44377,7 @@ defparam \E_src2[9] .power_up = "low";
 dffeas \E_src2[8] (
 	.clk(clk_clk),
 	.d(\D_iw[14]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44391,7 +44391,7 @@ defparam \E_src2[8] .power_up = "low";
 dffeas \E_src2[7] (
 	.clk(clk_clk),
 	.d(\D_iw[13]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44405,7 +44405,7 @@ defparam \E_src2[7] .power_up = "low";
 dffeas \E_src2[6] (
 	.clk(clk_clk),
 	.d(\D_iw[12]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -44419,7 +44419,7 @@ defparam \E_src2[6] .power_up = "low";
 dffeas \E_src2[5] (
 	.clk(clk_clk),
 	.d(\D_iw[11]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -45175,7 +45175,7 @@ cyclonev_lcell_comb \R_src2_hi[15]~16 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\R_src2_hi~1_combout ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45207,7 +45207,7 @@ cyclonev_lcell_comb \R_src2_hi[14]~13 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45239,7 +45239,7 @@ cyclonev_lcell_comb \R_src2_hi[13]~14 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[19]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45271,7 +45271,7 @@ cyclonev_lcell_comb \R_src2_hi[12]~15 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[18]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45303,7 +45303,7 @@ cyclonev_lcell_comb \R_src2_hi[11]~2 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[17]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45335,7 +45335,7 @@ cyclonev_lcell_comb \R_src2_hi[10]~3 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45367,7 +45367,7 @@ cyclonev_lcell_comb \R_src2_hi[9]~4 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45399,7 +45399,7 @@ cyclonev_lcell_comb \R_src2_hi[8]~5 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45431,7 +45431,7 @@ cyclonev_lcell_comb \R_src2_hi[7]~6 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[23] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45463,7 +45463,7 @@ cyclonev_lcell_comb \R_src2_hi[6]~7 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[22] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45495,7 +45495,7 @@ cyclonev_lcell_comb \R_src2_hi[5]~10 (
 	.datab(!\R_ctrl_hi_imm16~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[21] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45527,7 +45527,7 @@ cyclonev_lcell_comb \R_src2_hi[4]~9 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[10]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[20] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45559,7 +45559,7 @@ cyclonev_lcell_comb \R_src2_hi[3]~8 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[9]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[19] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45591,7 +45591,7 @@ cyclonev_lcell_comb \R_src2_hi[2]~0 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[8]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[18] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45623,7 +45623,7 @@ cyclonev_lcell_comb \R_src2_hi[1]~12 (
 	.datab(!\D_iw[21]~q ),
 	.datac(!\R_src2_use_imm~q ),
 	.datad(!\D_iw[7]~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[17] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45655,7 +45655,7 @@ cyclonev_lcell_comb \R_src2_hi[0]~11 (
 	.datab(!\D_iw[6]~q ),
 	.datac(!\D_iw[21]~q ),
 	.datad(!\R_src2_use_imm~q ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[16] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -45685,7 +45685,7 @@ defparam \E_src2[16] .power_up = "low";
 dffeas \E_src2[15] (
 	.clk(clk_clk),
 	.d(\D_iw[21]~q ),
-	.asdata(\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
+	.asdata(\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(\E_src2[15]~0_combout ),
@@ -48073,9 +48073,9 @@ defparam \hbreak_enabled~0 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[24]~1 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[24] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[8] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[0] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48091,9 +48091,9 @@ defparam \E_st_data[24]~1 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[25]~2 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[25] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[9] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[1] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48109,9 +48109,9 @@ defparam \E_st_data[25]~2 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[26]~3 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[26] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[10] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[2] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48127,9 +48127,9 @@ defparam \E_st_data[26]~3 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[27]~4 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[27] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[11] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[3] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48145,9 +48145,9 @@ defparam \E_st_data[27]~4 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[28]~5 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[4] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[12] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[28] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48163,9 +48163,9 @@ defparam \E_st_data[28]~5 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[29]~6 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[5] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[13] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[29] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48181,9 +48181,9 @@ defparam \E_st_data[29]~6 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[30]~7 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[6] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[14] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[30] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48199,9 +48199,9 @@ defparam \E_st_data[30]~7 .shared_arith = "off";
 cyclonev_lcell_comb \E_st_data[31]~8 (
 	.dataa(!\D_ctrl_mem8~1_combout ),
 	.datab(!\D_ctrl_mem16~1_combout ),
-	.datac(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
-	.datad(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
-	.datae(!\sine_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
+	.datac(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[7] ),
+	.datad(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[15] ),
+	.datae(!\sine_wave_hw_nios2_cpu_register_bank_b|the_altsyncram|auto_generated|q_b[31] ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -48216,7 +48216,7 @@ defparam \E_st_data[31]~8 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_nios2_oci (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci (
 	readdata_4,
 	readdata_0,
 	readdata_1,
@@ -48355,111 +48355,111 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ;
 wire \read~0_combout ;
 wire \write~0_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ;
 wire \writedata[1]~q ;
 wire \address[2]~q ;
 wire \address[1]~q ;
@@ -48468,69 +48468,69 @@ wire \address[6]~q ;
 wire \address[5]~q ;
 wire \address[4]~q ;
 wire \address[3]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ;
 wire \debugaccess~q ;
 wire \write~q ;
-wire \the_sine_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ;
 wire \read~q ;
 wire \writedata[0]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ;
 wire \byteenable[0]~q ;
 wire \writedata[21]~q ;
 wire \byteenable[2]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ;
 wire \writedata[22]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ;
 wire \writedata[3]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ;
 wire \writedata[2]~q ;
 wire \writedata[23]~q ;
 wire \writedata[4]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ;
 wire \writedata[24]~q ;
 wire \byteenable[3]~q ;
 wire \writedata[20]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ;
 wire \writedata[11]~q ;
 wire \byteenable[1]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ;
 wire \writedata[12]~q ;
 wire \writedata[13]~q ;
 wire \writedata[14]~q ;
 wire \writedata[15]~q ;
 wire \writedata[16]~q ;
 wire \writedata[5]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ;
 wire \writedata[18]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ;
 wire \writedata[17]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ;
 wire \writedata[8]~q ;
 wire \writedata[31]~q ;
 wire \writedata[30]~q ;
@@ -48539,20 +48539,20 @@ wire \writedata[28]~q ;
 wire \writedata[27]~q ;
 wire \writedata[26]~q ;
 wire \writedata[9]~q ;
-wire \the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ;
+wire \the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ;
 wire \writedata[10]~q ;
 wire \writedata[25]~q ;
 wire \writedata[6]~q ;
 wire \writedata[7]~q ;
 wire \writedata[19]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ;
 wire \address[8]~q ;
 wire \address[0]~q ;
 wire \readdata~0_combout ;
@@ -48560,123 +48560,123 @@ wire \readdata~1_combout ;
 wire \readdata~2_combout ;
 
 
-sine_hw_sine_hw_nios2_cpu_debug_slave_wrapper the_sine_hw_nios2_cpu_debug_slave_wrapper(
-	.break_readreg_0(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ),
-	.MonDReg_0(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ),
-	.break_readreg_21(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ),
-	.MonDReg_21(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ),
-	.break_readreg_1(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ),
-	.MonDReg_1(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ),
-	.break_readreg_22(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ),
-	.MonDReg_22(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ),
-	.break_readreg_2(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ),
-	.break_readreg_23(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ),
-	.MonDReg_23(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ),
-	.break_readreg_3(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ),
-	.break_readreg_24(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ),
-	.MonDReg_24(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ),
-	.break_readreg_20(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ),
-	.MonDReg_20(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ),
-	.break_readreg_4(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ),
-	.break_readreg_25(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ),
-	.MonDReg_25(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ),
-	.break_readreg_16(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ),
-	.MonDReg_16(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ),
-	.break_readreg_19(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ),
-	.MonDReg_19(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ),
-	.break_readreg_5(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ),
-	.break_readreg_26(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ),
-	.break_readreg_27(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ),
-	.MonDReg_27(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ),
-	.break_readreg_28(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ),
-	.MonDReg_28(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ),
-	.break_readreg_29(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ),
-	.MonDReg_30(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ),
-	.break_readreg_30(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ),
-	.break_readreg_31(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ),
-	.MonDReg_31(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ),
-	.MonDReg_13(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ),
-	.MonDReg_14(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ),
-	.MonDReg_15(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ),
-	.MonDReg_17(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ),
-	.break_readreg_17(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ),
-	.MonDReg_9(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ),
-	.MonDReg_6(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ),
-	.MonDReg_7(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ),
-	.break_readreg_18(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ),
-	.break_readreg_6(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ),
-	.break_readreg_7(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ),
-	.break_readreg_15(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ),
-	.break_readreg_8(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ),
-	.break_readreg_13(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ),
-	.break_readreg_14(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ),
-	.break_readreg_10(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ),
-	.break_readreg_11(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ),
-	.break_readreg_12(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ),
-	.break_readreg_9(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_wrapper the_sine_wave_hw_nios2_cpu_debug_slave_wrapper(
+	.break_readreg_0(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ),
+	.MonDReg_0(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ),
+	.break_readreg_21(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ),
+	.MonDReg_21(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ),
+	.break_readreg_1(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ),
+	.MonDReg_1(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ),
+	.break_readreg_22(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ),
+	.MonDReg_22(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ),
+	.break_readreg_2(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ),
+	.break_readreg_23(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ),
+	.MonDReg_23(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ),
+	.break_readreg_3(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ),
+	.break_readreg_24(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ),
+	.MonDReg_24(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ),
+	.break_readreg_20(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ),
+	.MonDReg_20(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ),
+	.break_readreg_4(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ),
+	.break_readreg_25(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ),
+	.MonDReg_25(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ),
+	.break_readreg_16(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ),
+	.MonDReg_16(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ),
+	.break_readreg_19(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ),
+	.MonDReg_19(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ),
+	.break_readreg_5(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ),
+	.break_readreg_26(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ),
+	.break_readreg_27(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ),
+	.MonDReg_27(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ),
+	.break_readreg_28(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ),
+	.MonDReg_28(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ),
+	.break_readreg_29(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ),
+	.MonDReg_30(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ),
+	.break_readreg_30(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ),
+	.break_readreg_31(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ),
+	.MonDReg_31(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ),
+	.MonDReg_13(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ),
+	.MonDReg_14(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ),
+	.MonDReg_15(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ),
+	.MonDReg_17(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ),
+	.break_readreg_17(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ),
+	.MonDReg_9(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ),
+	.MonDReg_6(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ),
+	.MonDReg_7(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ),
+	.break_readreg_18(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ),
+	.break_readreg_6(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ),
+	.break_readreg_7(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ),
+	.break_readreg_15(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ),
+	.break_readreg_8(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ),
+	.break_readreg_13(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ),
+	.break_readreg_14(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ),
+	.break_readreg_10(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ),
+	.break_readreg_11(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ),
+	.break_readreg_12(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ),
+	.break_readreg_9(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ),
 	.sr_0(sr_0),
 	.ir_out_0(ir_out_0),
 	.ir_out_1(ir_out_1),
-	.jdo_22(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
-	.jdo_34(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
-	.jdo_35(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
-	.ir_1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ),
-	.ir_0(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ),
-	.enable_action_strobe(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ),
-	.take_action_ocimem_a(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
-	.take_action_ocimem_a1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
-	.monitor_error(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
-	.monitor_ready(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
-	.jdo_0(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ),
-	.jdo_36(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ),
-	.jdo_37(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ),
-	.jdo_3(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
-	.take_action_ocimem_b(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
+	.jdo_22(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
+	.jdo_34(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
+	.jdo_35(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
+	.ir_1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ),
+	.ir_0(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ),
+	.enable_action_strobe(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ),
+	.take_action_ocimem_a(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
+	.take_action_ocimem_a1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
+	.monitor_error(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
+	.monitor_ready(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
+	.jdo_0(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ),
+	.jdo_36(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ),
+	.jdo_37(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ),
+	.jdo_3(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
+	.take_action_ocimem_b(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
 	.hbreak_enabled(hbreak_enabled),
-	.jdo_21(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
-	.jdo_24(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
-	.jdo_25(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
-	.MonDReg_2(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ),
-	.jdo_1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ),
-	.jdo_4(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
-	.jdo_17(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
-	.jdo_20(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.MonDReg_3(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ),
-	.jdo_2(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ),
-	.jdo_5(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
-	.take_action_ocimem_a2(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
-	.jdo_26(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
-	.jdo_27(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
-	.jdo_28(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
-	.jdo_29(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
-	.jdo_30(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
-	.jdo_31(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
-	.jdo_32(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ),
-	.jdo_33(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ),
-	.jdo_23(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
-	.jdo_19(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
-	.jdo_18(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
-	.MonDReg_4(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ),
-	.jdo_6(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
-	.MonDReg_5(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ),
-	.jdo_7(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
-	.MonDReg_26(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ),
-	.MonDReg_29(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ),
-	.resetlatch(\the_sine_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ),
-	.MonDReg_11(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ),
-	.MonDReg_12(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ),
-	.MonDReg_18(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ),
-	.jdo_16(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
-	.MonDReg_8(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ),
-	.MonDReg_10(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ),
-	.jdo_8(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
-	.jdo_14(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
-	.jdo_15(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
-	.jdo_11(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
-	.jdo_12(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
-	.jdo_13(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
-	.jdo_9(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
-	.jdo_10(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
+	.jdo_21(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
+	.jdo_24(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
+	.jdo_25(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
+	.MonDReg_2(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ),
+	.jdo_1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ),
+	.jdo_4(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
+	.jdo_17(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
+	.jdo_20(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.MonDReg_3(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ),
+	.jdo_2(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ),
+	.jdo_5(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
+	.take_action_ocimem_a2(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
+	.jdo_26(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
+	.jdo_27(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
+	.jdo_28(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
+	.jdo_29(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
+	.jdo_30(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
+	.jdo_31(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
+	.jdo_32(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ),
+	.jdo_33(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ),
+	.jdo_23(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
+	.jdo_19(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
+	.jdo_18(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.MonDReg_4(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ),
+	.jdo_6(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
+	.MonDReg_5(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ),
+	.jdo_7(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
+	.MonDReg_26(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ),
+	.MonDReg_29(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ),
+	.resetlatch(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ),
+	.MonDReg_11(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ),
+	.MonDReg_12(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ),
+	.MonDReg_18(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ),
+	.jdo_16(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
+	.MonDReg_8(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ),
+	.MonDReg_10(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ),
+	.jdo_8(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
+	.jdo_14(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
+	.jdo_15(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
+	.jdo_11(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
+	.jdo_12(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
+	.jdo_13(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
+	.jdo_9(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
+	.jdo_10(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
 	.state_4(state_4),
@@ -48688,71 +48688,71 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_wrapper the_sine_hw_nios2_cpu_debug_slave_
 	.irf_reg_1_2(irf_reg_1_2),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_nios2_ocimem the_sine_hw_nios2_cpu_nios2_ocimem(
-	.MonDReg_0(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ),
-	.MonDReg_21(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ),
-	.MonDReg_1(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ),
-	.q_a_0(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ),
-	.MonDReg_22(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ),
-	.q_a_21(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ),
-	.q_a_1(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ),
-	.MonDReg_23(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ),
-	.q_a_22(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ),
-	.q_a_2(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ),
-	.MonDReg_24(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ),
-	.q_a_23(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ),
-	.MonDReg_20(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ),
-	.q_a_4(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ),
-	.q_a_3(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ),
-	.MonDReg_25(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ),
-	.q_a_24(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ),
-	.q_a_20(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ),
-	.q_a_11(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ),
-	.q_a_12(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ),
-	.q_a_13(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ),
-	.q_a_14(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ),
-	.q_a_15(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ),
-	.q_a_16(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ),
-	.q_a_5(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ),
-	.q_a_18(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ),
-	.MonDReg_16(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ),
-	.q_a_17(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ),
-	.q_a_8(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ),
-	.q_a_31(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ),
-	.q_a_30(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ),
-	.q_a_29(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ),
-	.q_a_28(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ),
-	.q_a_27(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ),
-	.q_a_26(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ),
-	.q_a_9(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ),
-	.q_a_10(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ),
-	.q_a_25(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ),
-	.q_a_6(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ),
-	.q_a_7(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ),
-	.q_a_19(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ),
-	.MonDReg_19(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ),
-	.MonDReg_27(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ),
-	.MonDReg_28(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ),
-	.MonDReg_30(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ),
-	.MonDReg_31(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ),
-	.MonDReg_13(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ),
-	.MonDReg_14(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ),
-	.MonDReg_15(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ),
-	.MonDReg_17(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ),
-	.MonDReg_9(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ),
-	.MonDReg_6(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ),
-	.MonDReg_7(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ),
-	.jdo_22(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
-	.jdo_34(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
-	.jdo_35(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
-	.take_action_ocimem_a(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
-	.take_action_ocimem_a1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_ocimem the_sine_wave_hw_nios2_cpu_nios2_ocimem(
+	.MonDReg_0(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[0]~q ),
+	.MonDReg_21(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[21]~q ),
+	.MonDReg_1(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[1]~q ),
+	.q_a_0(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ),
+	.MonDReg_22(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[22]~q ),
+	.q_a_21(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ),
+	.q_a_1(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ),
+	.MonDReg_23(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[23]~q ),
+	.q_a_22(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ),
+	.q_a_2(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ),
+	.MonDReg_24(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[24]~q ),
+	.q_a_23(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ),
+	.MonDReg_20(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[20]~q ),
+	.q_a_4(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ),
+	.q_a_3(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ),
+	.MonDReg_25(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[25]~q ),
+	.q_a_24(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ),
+	.q_a_20(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ),
+	.q_a_11(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ),
+	.q_a_12(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ),
+	.q_a_13(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ),
+	.q_a_14(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ),
+	.q_a_15(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ),
+	.q_a_16(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ),
+	.q_a_5(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ),
+	.q_a_18(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ),
+	.MonDReg_16(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[16]~q ),
+	.q_a_17(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ),
+	.q_a_8(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ),
+	.q_a_31(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ),
+	.q_a_30(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ),
+	.q_a_29(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ),
+	.q_a_28(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ),
+	.q_a_27(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ),
+	.q_a_26(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ),
+	.q_a_9(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ),
+	.q_a_10(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ),
+	.q_a_25(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ),
+	.q_a_6(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ),
+	.q_a_7(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ),
+	.q_a_19(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ),
+	.MonDReg_19(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[19]~q ),
+	.MonDReg_27(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[27]~q ),
+	.MonDReg_28(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[28]~q ),
+	.MonDReg_30(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[30]~q ),
+	.MonDReg_31(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[31]~q ),
+	.MonDReg_13(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[13]~q ),
+	.MonDReg_14(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[14]~q ),
+	.MonDReg_15(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[15]~q ),
+	.MonDReg_17(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[17]~q ),
+	.MonDReg_9(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[9]~q ),
+	.MonDReg_6(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[6]~q ),
+	.MonDReg_7(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[7]~q ),
+	.jdo_22(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
+	.jdo_34(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
+	.jdo_35(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
+	.take_action_ocimem_a(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
+	.take_action_ocimem_a1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
 	.waitrequest1(waitrequest),
-	.jdo_3(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
-	.take_action_ocimem_b(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
-	.jdo_21(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
-	.jdo_24(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
-	.jdo_25(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
+	.jdo_3(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
+	.take_action_ocimem_b(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
+	.jdo_21(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
+	.jdo_24(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
+	.jdo_25(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
 	.writedata_1(\writedata[1]~q ),
 	.address_0(\address[0]~q ),
 	.address_2(\address[2]~q ),
@@ -48767,57 +48767,57 @@ sine_hw_sine_hw_nios2_cpu_nios2_ocimem the_sine_hw_nios2_cpu_nios2_ocimem(
 	.write(\write~q ),
 	.read(\read~q ),
 	.writedata_0(\writedata[0]~q ),
-	.MonDReg_2(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ),
-	.jdo_4(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
+	.MonDReg_2(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[2]~q ),
+	.jdo_4(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
 	.r_early_rst(r_early_rst),
 	.byteenable_0(\byteenable[0]~q ),
 	.writedata_21(\writedata[21]~q ),
 	.byteenable_2(\byteenable[2]~q ),
-	.jdo_17(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
-	.jdo_20(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.MonDReg_3(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ),
-	.jdo_5(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
-	.take_no_action_ocimem_a(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
-	.jdo_26(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
-	.jdo_27(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
-	.jdo_28(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
-	.jdo_29(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
-	.jdo_30(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
-	.jdo_31(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
-	.jdo_32(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ),
-	.jdo_33(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ),
-	.jdo_23(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
+	.jdo_17(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
+	.jdo_20(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.MonDReg_3(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[3]~q ),
+	.jdo_5(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
+	.take_no_action_ocimem_a(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
+	.jdo_26(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
+	.jdo_27(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
+	.jdo_28(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
+	.jdo_29(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
+	.jdo_30(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
+	.jdo_31(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
+	.jdo_32(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[32]~q ),
+	.jdo_33(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[33]~q ),
+	.jdo_23(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
 	.writedata_22(\writedata[22]~q ),
-	.jdo_19(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
-	.jdo_18(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.jdo_19(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
+	.jdo_18(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
 	.writedata_3(\writedata[3]~q ),
-	.MonDReg_4(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ),
-	.jdo_6(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
+	.MonDReg_4(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[4]~q ),
+	.jdo_6(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
 	.writedata_2(\writedata[2]~q ),
 	.writedata_23(\writedata[23]~q ),
 	.writedata_4(\writedata[4]~q ),
-	.MonDReg_5(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ),
-	.jdo_7(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
-	.MonDReg_26(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ),
-	.MonDReg_29(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ),
+	.MonDReg_5(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[5]~q ),
+	.jdo_7(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
+	.MonDReg_26(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[26]~q ),
+	.MonDReg_29(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[29]~q ),
 	.writedata_24(\writedata[24]~q ),
 	.byteenable_3(\byteenable[3]~q ),
 	.writedata_20(\writedata[20]~q ),
-	.MonDReg_11(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ),
+	.MonDReg_11(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[11]~q ),
 	.writedata_11(\writedata[11]~q ),
 	.byteenable_1(\byteenable[1]~q ),
-	.MonDReg_12(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ),
+	.MonDReg_12(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[12]~q ),
 	.writedata_12(\writedata[12]~q ),
 	.writedata_13(\writedata[13]~q ),
 	.writedata_14(\writedata[14]~q ),
 	.writedata_15(\writedata[15]~q ),
 	.writedata_16(\writedata[16]~q ),
 	.writedata_5(\writedata[5]~q ),
-	.MonDReg_18(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ),
+	.MonDReg_18(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[18]~q ),
 	.writedata_18(\writedata[18]~q ),
-	.jdo_16(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
+	.jdo_16(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
 	.writedata_17(\writedata[17]~q ),
-	.MonDReg_8(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ),
+	.MonDReg_8(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[8]~q ),
 	.writedata_8(\writedata[8]~q ),
 	.writedata_31(\writedata[31]~q ),
 	.writedata_30(\writedata[30]~q ),
@@ -48826,25 +48826,25 @@ sine_hw_sine_hw_nios2_cpu_nios2_ocimem the_sine_hw_nios2_cpu_nios2_ocimem(
 	.writedata_27(\writedata[27]~q ),
 	.writedata_26(\writedata[26]~q ),
 	.writedata_9(\writedata[9]~q ),
-	.MonDReg_10(\the_sine_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ),
+	.MonDReg_10(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|MonDReg[10]~q ),
 	.writedata_10(\writedata[10]~q ),
 	.writedata_25(\writedata[25]~q ),
 	.writedata_6(\writedata[6]~q ),
 	.writedata_7(\writedata[7]~q ),
 	.writedata_19(\writedata[19]~q ),
-	.jdo_8(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
-	.jdo_14(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
-	.jdo_15(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
-	.jdo_11(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
-	.jdo_12(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
-	.jdo_13(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
-	.jdo_9(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
-	.jdo_10(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
+	.jdo_8(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
+	.jdo_14(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
+	.jdo_15(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
+	.jdo_11(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
+	.jdo_12(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
+	.jdo_13(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
+	.jdo_9(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
+	.jdo_10(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_nios2_avalon_reg the_sine_hw_nios2_cpu_nios2_avalon_reg(
+sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_avalon_reg the_sine_wave_hw_nios2_cpu_nios2_avalon_reg(
 	.r_sync_rst(r_sync_rst),
-	.monitor_error(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
+	.monitor_error(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
 	.address_0(\address[0]~q ),
 	.address_2(\address[2]~q ),
 	.address_1(\address[1]~q ),
@@ -48854,114 +48854,114 @@ sine_hw_sine_hw_nios2_cpu_nios2_avalon_reg the_sine_hw_nios2_cpu_nios2_avalon_re
 	.address_5(\address[5]~q ),
 	.address_4(\address[4]~q ),
 	.address_3(\address[3]~q ),
-	.Equal0(\the_sine_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
+	.Equal0(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
 	.debugaccess(\debugaccess~q ),
 	.write(\write~q ),
-	.take_action_ocireg(\the_sine_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
+	.take_action_ocireg(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
 	.writedata_0(\writedata[0]~q ),
 	.oci_ienable_0(oci_ienable_0),
 	.oci_single_step_mode1(oci_single_step_mode),
-	.oci_ienable_8(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
-	.oci_reg_readdata(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.oci_ienable_8(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
+	.oci_reg_readdata(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
 	.writedata_3(\writedata[3]~q ),
-	.oci_reg_readdata_0(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ),
+	.oci_reg_readdata_0(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_nios2_oci_break the_sine_hw_nios2_cpu_nios2_oci_break(
-	.break_readreg_0(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ),
-	.break_readreg_21(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ),
-	.break_readreg_1(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ),
-	.break_readreg_22(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ),
-	.break_readreg_2(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ),
-	.break_readreg_23(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ),
-	.break_readreg_3(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ),
-	.break_readreg_24(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ),
-	.break_readreg_20(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ),
-	.break_readreg_4(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ),
-	.break_readreg_25(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ),
-	.break_readreg_16(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ),
-	.break_readreg_19(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ),
-	.break_readreg_5(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ),
-	.break_readreg_26(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ),
-	.break_readreg_27(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ),
-	.break_readreg_28(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ),
-	.break_readreg_29(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ),
-	.break_readreg_30(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ),
-	.break_readreg_31(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ),
-	.break_readreg_17(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ),
-	.break_readreg_18(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ),
-	.break_readreg_6(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ),
-	.break_readreg_7(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ),
-	.break_readreg_15(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ),
-	.break_readreg_8(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ),
-	.break_readreg_13(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ),
-	.break_readreg_14(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ),
-	.break_readreg_10(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ),
-	.break_readreg_11(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ),
-	.break_readreg_12(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ),
-	.break_readreg_9(\the_sine_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ),
-	.jdo_22(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
-	.ir_1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ),
-	.ir_0(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ),
-	.enable_action_strobe(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ),
-	.jdo_0(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ),
-	.jdo_36(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ),
-	.jdo_37(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ),
-	.jdo_3(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
-	.jdo_21(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
-	.jdo_24(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
-	.jdo_25(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
-	.jdo_1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ),
-	.jdo_4(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
-	.jdo_17(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
-	.jdo_20(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.jdo_2(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ),
-	.jdo_5(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
-	.jdo_26(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
-	.jdo_27(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
-	.jdo_28(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
-	.jdo_29(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
-	.jdo_30(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
-	.jdo_31(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
-	.jdo_23(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
-	.jdo_19(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
-	.jdo_18(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
-	.jdo_6(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
-	.jdo_7(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
-	.jdo_16(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
-	.jdo_8(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
-	.jdo_14(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
-	.jdo_15(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
-	.jdo_11(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
-	.jdo_12(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
-	.jdo_13(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
-	.jdo_9(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
-	.jdo_10(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci_break the_sine_wave_hw_nios2_cpu_nios2_oci_break(
+	.break_readreg_0(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[0]~q ),
+	.break_readreg_21(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[21]~q ),
+	.break_readreg_1(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[1]~q ),
+	.break_readreg_22(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[22]~q ),
+	.break_readreg_2(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[2]~q ),
+	.break_readreg_23(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[23]~q ),
+	.break_readreg_3(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[3]~q ),
+	.break_readreg_24(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[24]~q ),
+	.break_readreg_20(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[20]~q ),
+	.break_readreg_4(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[4]~q ),
+	.break_readreg_25(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[25]~q ),
+	.break_readreg_16(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[16]~q ),
+	.break_readreg_19(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[19]~q ),
+	.break_readreg_5(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[5]~q ),
+	.break_readreg_26(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[26]~q ),
+	.break_readreg_27(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[27]~q ),
+	.break_readreg_28(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[28]~q ),
+	.break_readreg_29(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[29]~q ),
+	.break_readreg_30(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[30]~q ),
+	.break_readreg_31(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[31]~q ),
+	.break_readreg_17(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[17]~q ),
+	.break_readreg_18(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[18]~q ),
+	.break_readreg_6(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[6]~q ),
+	.break_readreg_7(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[7]~q ),
+	.break_readreg_15(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[15]~q ),
+	.break_readreg_8(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[8]~q ),
+	.break_readreg_13(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[13]~q ),
+	.break_readreg_14(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[14]~q ),
+	.break_readreg_10(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[10]~q ),
+	.break_readreg_11(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[11]~q ),
+	.break_readreg_12(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[12]~q ),
+	.break_readreg_9(\the_sine_wave_hw_nios2_cpu_nios2_oci_break|break_readreg[9]~q ),
+	.jdo_22(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
+	.ir_1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[1]~q ),
+	.ir_0(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|ir[0]~q ),
+	.enable_action_strobe(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|enable_action_strobe~q ),
+	.jdo_0(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[0]~q ),
+	.jdo_36(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[36]~q ),
+	.jdo_37(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[37]~q ),
+	.jdo_3(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[3]~q ),
+	.jdo_21(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
+	.jdo_24(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
+	.jdo_25(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
+	.jdo_1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[1]~q ),
+	.jdo_4(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[4]~q ),
+	.jdo_17(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[17]~q ),
+	.jdo_20(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.jdo_2(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[2]~q ),
+	.jdo_5(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[5]~q ),
+	.jdo_26(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[26]~q ),
+	.jdo_27(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[27]~q ),
+	.jdo_28(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[28]~q ),
+	.jdo_29(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[29]~q ),
+	.jdo_30(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[30]~q ),
+	.jdo_31(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[31]~q ),
+	.jdo_23(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
+	.jdo_19(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
+	.jdo_18(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.jdo_6(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[6]~q ),
+	.jdo_7(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[7]~q ),
+	.jdo_16(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[16]~q ),
+	.jdo_8(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[8]~q ),
+	.jdo_14(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[14]~q ),
+	.jdo_15(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[15]~q ),
+	.jdo_11(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[11]~q ),
+	.jdo_12(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[12]~q ),
+	.jdo_13(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[13]~q ),
+	.jdo_9(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[9]~q ),
+	.jdo_10(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[10]~q ),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_nios2_oci_debug the_sine_hw_nios2_cpu_nios2_oci_debug(
+sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci_debug the_sine_wave_hw_nios2_cpu_nios2_oci_debug(
 	.resetrequest1(resetrequest),
-	.jdo_22(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
-	.jdo_34(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
-	.jdo_35(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
-	.take_action_ocimem_a(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
-	.take_action_ocimem_a1(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
+	.jdo_22(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[22]~q ),
+	.jdo_34(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[34]~q ),
+	.jdo_35(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[35]~q ),
+	.take_action_ocimem_a(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
+	.take_action_ocimem_a1(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
 	.r_sync_rst(r_sync_rst),
-	.monitor_error1(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
-	.monitor_ready1(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
-	.jdo_21(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
-	.jdo_24(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
-	.jdo_25(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
+	.monitor_error1(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_error~q ),
+	.monitor_ready1(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
+	.jdo_21(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[21]~q ),
+	.jdo_24(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[24]~q ),
+	.jdo_25(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[25]~q ),
 	.writedata_1(\writedata[1]~q ),
-	.take_action_ocireg(\the_sine_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
+	.take_action_ocireg(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
 	.jtag_break1(jtag_break),
 	.writedata_0(\writedata[0]~q ),
-	.jdo_20(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.jdo_23(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
-	.jdo_19(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
-	.jdo_18(\the_sine_hw_nios2_cpu_debug_slave_wrapper|the_sine_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
-	.monitor_go1(\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ),
-	.resetlatch1(\the_sine_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ),
+	.jdo_20(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.jdo_23(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[23]~q ),
+	.jdo_19(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[19]~q ),
+	.jdo_18(\the_sine_wave_hw_nios2_cpu_debug_slave_wrapper|the_sine_wave_hw_nios2_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.monitor_go1(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ),
+	.resetlatch1(\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|resetlatch~q ),
 	.state_1(state_1),
 	.clk_clk(clk_clk));
 
@@ -49647,8 +49647,8 @@ defparam \writedata[19] .power_up = "low";
 
 dffeas \readdata[4] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[4] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49661,8 +49661,8 @@ defparam \readdata[4] .power_up = "low";
 
 dffeas \readdata[0] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata[0]~1_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[0] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49676,7 +49676,7 @@ defparam \readdata[0] .power_up = "low";
 dffeas \readdata[1] (
 	.clk(clk_clk),
 	.d(\readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[1] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49690,7 +49690,7 @@ defparam \readdata[1] .power_up = "low";
 dffeas \readdata[2] (
 	.clk(clk_clk),
 	.d(\readdata~1_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[2] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49704,7 +49704,7 @@ defparam \readdata[2] .power_up = "low";
 dffeas \readdata[3] (
 	.clk(clk_clk),
 	.d(\readdata~2_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[3] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49717,8 +49717,8 @@ defparam \readdata[3] .power_up = "low";
 
 dffeas \readdata[11] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[11] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49731,8 +49731,8 @@ defparam \readdata[11] .power_up = "low";
 
 dffeas \readdata[12] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[12] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49745,8 +49745,8 @@ defparam \readdata[12] .power_up = "low";
 
 dffeas \readdata[13] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[13] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49759,8 +49759,8 @@ defparam \readdata[13] .power_up = "low";
 
 dffeas \readdata[14] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[14] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49773,8 +49773,8 @@ defparam \readdata[14] .power_up = "low";
 
 dffeas \readdata[15] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[15] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49787,8 +49787,8 @@ defparam \readdata[15] .power_up = "low";
 
 dffeas \readdata[16] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[16] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49801,8 +49801,8 @@ defparam \readdata[16] .power_up = "low";
 
 dffeas \readdata[5] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[5] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49815,8 +49815,8 @@ defparam \readdata[5] .power_up = "low";
 
 dffeas \readdata[20] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[20] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49829,8 +49829,8 @@ defparam \readdata[20] .power_up = "low";
 
 dffeas \readdata[18] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[18] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49843,8 +49843,8 @@ defparam \readdata[18] .power_up = "low";
 
 dffeas \readdata[17] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[17] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49857,8 +49857,8 @@ defparam \readdata[17] .power_up = "low";
 
 dffeas \readdata[22] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[22] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49871,8 +49871,8 @@ defparam \readdata[22] .power_up = "low";
 
 dffeas \readdata[21] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[21] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49885,8 +49885,8 @@ defparam \readdata[21] .power_up = "low";
 
 dffeas \readdata[8] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[8] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49899,8 +49899,8 @@ defparam \readdata[8] .power_up = "low";
 
 dffeas \readdata[31] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[31] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49913,8 +49913,8 @@ defparam \readdata[31] .power_up = "low";
 
 dffeas \readdata[30] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[30] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49927,8 +49927,8 @@ defparam \readdata[30] .power_up = "low";
 
 dffeas \readdata[29] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[29] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49941,8 +49941,8 @@ defparam \readdata[29] .power_up = "low";
 
 dffeas \readdata[28] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[28] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49955,8 +49955,8 @@ defparam \readdata[28] .power_up = "low";
 
 dffeas \readdata[27] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[27] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49969,8 +49969,8 @@ defparam \readdata[27] .power_up = "low";
 
 dffeas \readdata[26] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[26] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49983,8 +49983,8 @@ defparam \readdata[26] .power_up = "low";
 
 dffeas \readdata[9] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[9] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -49997,8 +49997,8 @@ defparam \readdata[9] .power_up = "low";
 
 dffeas \readdata[23] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[23] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50011,8 +50011,8 @@ defparam \readdata[23] .power_up = "low";
 
 dffeas \readdata[10] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[10] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50025,8 +50025,8 @@ defparam \readdata[10] .power_up = "low";
 
 dffeas \readdata[24] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[24] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50039,8 +50039,8 @@ defparam \readdata[24] .power_up = "low";
 
 dffeas \readdata[25] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[25] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50053,8 +50053,8 @@ defparam \readdata[25] .power_up = "low";
 
 dffeas \readdata[6] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[6] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50067,8 +50067,8 @@ defparam \readdata[6] .power_up = "low";
 
 dffeas \readdata[7] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[7] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50081,8 +50081,8 @@ defparam \readdata[7] .power_up = "low";
 
 dffeas \readdata[19] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
-	.asdata(\the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ),
+	.d(\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
+	.asdata(\the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram|the_altsyncram|auto_generated|q_a[19] ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -50122,10 +50122,10 @@ defparam \address[0] .is_wysiwyg = "true";
 defparam \address[0] .power_up = "low";
 
 cyclonev_lcell_comb \readdata~0 (
-	.dataa(!\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
+	.dataa(!\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_ready~q ),
 	.datab(!\address[0]~q ),
-	.datac(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
-	.datad(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
+	.datac(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
+	.datad(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -50141,9 +50141,9 @@ defparam \readdata~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \readdata~1 (
 	.dataa(!\address[0]~q ),
-	.datab(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
-	.datac(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
-	.datad(!\the_sine_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ),
+	.datab(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
+	.datac(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
+	.datad(!\the_sine_wave_hw_nios2_cpu_nios2_oci_debug|monitor_go~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -50159,9 +50159,9 @@ defparam \readdata~1 .shared_arith = "off";
 
 cyclonev_lcell_comb \readdata~2 (
 	.dataa(!\address[0]~q ),
-	.datab(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
+	.datab(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|Equal0~1_combout ),
 	.datac(!oci_single_step_mode),
-	.datad(!\the_sine_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
+	.datad(!\the_sine_wave_hw_nios2_cpu_nios2_avalon_reg|oci_ienable[8]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -50177,7 +50177,7 @@ defparam \readdata~2 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_debug_slave_wrapper (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_wrapper (
 	break_readreg_0,
 	MonDReg_0,
 	break_readreg_21,
@@ -50440,90 +50440,90 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[1]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[22]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[2]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[23]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[3]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[24]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[4]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[25]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[21]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[5]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[26]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[17]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[20]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[6]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[27]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[28]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[29]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[30]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[32]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[18]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[19]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[8]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[16]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[9]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[14]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[11]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[12]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[13]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[10]~q ;
-wire \sine_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[34]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[35]~q ;
-wire \sine_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ;
-wire \sine_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[36]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[37]~q ;
-wire \sine_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[31]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[33]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[7]~q ;
-wire \the_sine_hw_nios2_cpu_debug_slave_tck|sr[15]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[1]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[22]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[2]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[23]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[3]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[24]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[4]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[25]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[21]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[5]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[26]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[17]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[20]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[6]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[27]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[28]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[29]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[30]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[32]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[18]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[19]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[8]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[16]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[9]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[14]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[11]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[12]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[13]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[10]~q ;
+wire \sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[34]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[35]~q ;
+wire \sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ;
+wire \sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[36]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[37]~q ;
+wire \sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[31]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[33]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[7]~q ;
+wire \the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[15]~q ;
 
 
-sine_hw_sld_virtual_jtag_basic_1 sine_hw_nios2_cpu_debug_slave_phy(
-	.virtual_state_sdr(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
-	.virtual_state_uir1(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
-	.virtual_state_cdr1(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ),
-	.virtual_state_udr(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
+sine_wave_hw_sld_virtual_jtag_basic_1 sine_wave_hw_nios2_cpu_debug_slave_phy(
+	.virtual_state_sdr(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
+	.virtual_state_uir1(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
+	.virtual_state_cdr1(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ),
+	.virtual_state_udr(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
 	.state_4(state_4),
 	.virtual_ir_scan_reg(virtual_ir_scan_reg),
 	.state_3(state_3),
 	.state_8(state_8),
 	.splitter_nodes_receive_1_3(splitter_nodes_receive_1_3));
 
-sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk the_sine_hw_nios2_cpu_debug_slave_sysclk(
-	.sr_1(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[1]~q ),
-	.sr_22(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[22]~q ),
-	.sr_2(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[2]~q ),
-	.sr_23(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[23]~q ),
-	.sr_3(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[3]~q ),
-	.sr_24(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[24]~q ),
-	.sr_4(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[4]~q ),
-	.sr_25(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[25]~q ),
-	.sr_21(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[21]~q ),
-	.sr_5(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[5]~q ),
-	.sr_26(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[26]~q ),
-	.sr_17(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[17]~q ),
-	.sr_20(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[20]~q ),
-	.sr_6(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[6]~q ),
-	.sr_27(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[27]~q ),
-	.sr_28(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[28]~q ),
-	.sr_29(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[29]~q ),
-	.sr_30(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[30]~q ),
-	.sr_32(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[32]~q ),
-	.sr_18(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[18]~q ),
-	.sr_19(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[19]~q ),
-	.sr_8(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[8]~q ),
-	.sr_16(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[16]~q ),
-	.sr_9(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[9]~q ),
-	.sr_14(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[14]~q ),
-	.sr_11(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[11]~q ),
-	.sr_12(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[12]~q ),
-	.sr_13(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[13]~q ),
-	.sr_10(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[10]~q ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_sysclk the_sine_wave_hw_nios2_cpu_debug_slave_sysclk(
+	.sr_1(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[1]~q ),
+	.sr_22(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[22]~q ),
+	.sr_2(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[2]~q ),
+	.sr_23(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[23]~q ),
+	.sr_3(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[3]~q ),
+	.sr_24(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[24]~q ),
+	.sr_4(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[4]~q ),
+	.sr_25(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[25]~q ),
+	.sr_21(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[21]~q ),
+	.sr_5(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[5]~q ),
+	.sr_26(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[26]~q ),
+	.sr_17(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[17]~q ),
+	.sr_20(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[20]~q ),
+	.sr_6(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[6]~q ),
+	.sr_27(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[27]~q ),
+	.sr_28(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[28]~q ),
+	.sr_29(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[29]~q ),
+	.sr_30(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[30]~q ),
+	.sr_32(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[32]~q ),
+	.sr_18(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[18]~q ),
+	.sr_19(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[19]~q ),
+	.sr_8(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[8]~q ),
+	.sr_16(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[16]~q ),
+	.sr_9(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[9]~q ),
+	.sr_14(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[14]~q ),
+	.sr_11(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[11]~q ),
+	.sr_12(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[12]~q ),
+	.sr_13(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[13]~q ),
+	.sr_10(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[10]~q ),
 	.sr_0(sr_0),
 	.jdo_22(jdo_22),
 	.jdo_34(jdo_34),
@@ -50533,10 +50533,10 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk the_sine_hw_nios2_cpu_debug_slave_s
 	.enable_action_strobe1(enable_action_strobe),
 	.take_action_ocimem_a1(take_action_ocimem_a),
 	.take_action_ocimem_a2(take_action_ocimem_a1),
-	.sr_34(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[34]~q ),
-	.sr_35(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[35]~q ),
-	.virtual_state_uir(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
-	.sr_36(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[36]~q ),
+	.sr_34(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[34]~q ),
+	.sr_35(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[35]~q ),
+	.virtual_state_uir(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
+	.sr_36(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[36]~q ),
 	.jdo_0(jdo_0),
 	.jdo_36(jdo_36),
 	.jdo_37(jdo_37),
@@ -50545,10 +50545,10 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk the_sine_hw_nios2_cpu_debug_slave_s
 	.jdo_21(jdo_21),
 	.jdo_24(jdo_24),
 	.jdo_25(jdo_25),
-	.sr_37(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[37]~q ),
+	.sr_37(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[37]~q ),
 	.jdo_1(jdo_1),
 	.jdo_4(jdo_4),
-	.virtual_state_udr(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
+	.virtual_state_udr(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
 	.jdo_17(jdo_17),
 	.jdo_20(jdo_20),
 	.jdo_2(jdo_2),
@@ -50566,9 +50566,9 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk the_sine_hw_nios2_cpu_debug_slave_s
 	.jdo_19(jdo_19),
 	.jdo_18(jdo_18),
 	.jdo_6(jdo_6),
-	.sr_31(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[31]~q ),
-	.sr_33(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[33]~q ),
-	.sr_7(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[7]~q ),
+	.sr_31(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[31]~q ),
+	.sr_33(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[33]~q ),
+	.sr_7(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[7]~q ),
 	.jdo_7(jdo_7),
 	.jdo_16(jdo_16),
 	.jdo_8(jdo_8),
@@ -50579,55 +50579,55 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk the_sine_hw_nios2_cpu_debug_slave_s
 	.jdo_13(jdo_13),
 	.jdo_9(jdo_9),
 	.jdo_10(jdo_10),
-	.sr_15(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[15]~q ),
+	.sr_15(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[15]~q ),
 	.ir_in({irf_reg_1_2,irf_reg_0_2}),
 	.clk_clk(clk_clk));
 
-sine_hw_sine_hw_nios2_cpu_debug_slave_tck the_sine_hw_nios2_cpu_debug_slave_tck(
-	.sr_1(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[1]~q ),
-	.sr_22(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[22]~q ),
-	.sr_2(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[2]~q ),
+sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_tck the_sine_wave_hw_nios2_cpu_debug_slave_tck(
+	.sr_1(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[1]~q ),
+	.sr_22(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[22]~q ),
+	.sr_2(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[2]~q ),
 	.break_readreg_0(break_readreg_0),
 	.MonDReg_0(MonDReg_0),
-	.sr_23(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[23]~q ),
+	.sr_23(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[23]~q ),
 	.break_readreg_21(break_readreg_21),
 	.MonDReg_21(MonDReg_21),
-	.sr_3(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[3]~q ),
+	.sr_3(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[3]~q ),
 	.break_readreg_1(break_readreg_1),
 	.MonDReg_1(MonDReg_1),
-	.sr_24(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[24]~q ),
+	.sr_24(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[24]~q ),
 	.break_readreg_22(break_readreg_22),
 	.MonDReg_22(MonDReg_22),
-	.sr_4(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[4]~q ),
+	.sr_4(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[4]~q ),
 	.break_readreg_2(break_readreg_2),
-	.sr_25(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[25]~q ),
+	.sr_25(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[25]~q ),
 	.break_readreg_23(break_readreg_23),
 	.MonDReg_23(MonDReg_23),
-	.sr_21(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[21]~q ),
-	.sr_5(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[5]~q ),
+	.sr_21(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[21]~q ),
+	.sr_5(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[5]~q ),
 	.break_readreg_3(break_readreg_3),
-	.sr_26(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[26]~q ),
+	.sr_26(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[26]~q ),
 	.break_readreg_24(break_readreg_24),
 	.MonDReg_24(MonDReg_24),
 	.break_readreg_20(break_readreg_20),
 	.MonDReg_20(MonDReg_20),
-	.sr_17(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[17]~q ),
-	.sr_20(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[20]~q ),
-	.sr_6(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[6]~q ),
+	.sr_17(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[17]~q ),
+	.sr_20(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[20]~q ),
+	.sr_6(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[6]~q ),
 	.break_readreg_4(break_readreg_4),
-	.sr_27(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[27]~q ),
-	.sr_28(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[28]~q ),
-	.sr_29(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[29]~q ),
-	.sr_30(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[30]~q ),
-	.sr_32(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[32]~q ),
+	.sr_27(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[27]~q ),
+	.sr_28(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[28]~q ),
+	.sr_29(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[29]~q ),
+	.sr_30(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[30]~q ),
+	.sr_32(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[32]~q ),
 	.break_readreg_25(break_readreg_25),
 	.MonDReg_25(MonDReg_25),
-	.sr_18(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[18]~q ),
+	.sr_18(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[18]~q ),
 	.break_readreg_16(break_readreg_16),
 	.MonDReg_16(MonDReg_16),
 	.break_readreg_19(break_readreg_19),
 	.MonDReg_19(MonDReg_19),
-	.sr_19(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[19]~q ),
+	.sr_19(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[19]~q ),
 	.break_readreg_5(break_readreg_5),
 	.break_readreg_26(break_readreg_26),
 	.break_readreg_27(break_readreg_27),
@@ -50648,17 +50648,17 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_tck the_sine_hw_nios2_cpu_debug_slave_tck(
 	.MonDReg_6(MonDReg_6),
 	.MonDReg_7(MonDReg_7),
 	.break_readreg_18(break_readreg_18),
-	.sr_8(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[8]~q ),
+	.sr_8(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[8]~q ),
 	.break_readreg_6(break_readreg_6),
-	.sr_16(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[16]~q ),
-	.sr_9(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[9]~q ),
+	.sr_16(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[16]~q ),
+	.sr_9(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[9]~q ),
 	.break_readreg_7(break_readreg_7),
-	.sr_14(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[14]~q ),
+	.sr_14(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[14]~q ),
 	.break_readreg_15(break_readreg_15),
-	.sr_11(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[11]~q ),
-	.sr_12(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[12]~q ),
-	.sr_13(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[13]~q ),
-	.sr_10(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[10]~q ),
+	.sr_11(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[11]~q ),
+	.sr_12(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[12]~q ),
+	.sr_13(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[13]~q ),
+	.sr_10(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[10]~q ),
 	.break_readreg_8(break_readreg_8),
 	.break_readreg_13(break_readreg_13),
 	.break_readreg_14(break_readreg_14),
@@ -50669,22 +50669,22 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_tck the_sine_hw_nios2_cpu_debug_slave_tck(
 	.sr_0(sr_0),
 	.ir_out_0(ir_out_0),
 	.ir_out_1(ir_out_1),
-	.virtual_state_sdr(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
-	.sr_34(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[34]~q ),
-	.sr_35(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[35]~q ),
-	.virtual_state_uir(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
+	.virtual_state_sdr(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
+	.sr_34(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[34]~q ),
+	.sr_35(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[35]~q ),
+	.virtual_state_uir(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_uir~combout ),
 	.monitor_error(monitor_error),
-	.virtual_state_cdr(\sine_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ),
-	.sr_36(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[36]~q ),
+	.virtual_state_cdr(\sine_wave_hw_nios2_cpu_debug_slave_phy|virtual_state_cdr~combout ),
+	.sr_36(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[36]~q ),
 	.monitor_ready(monitor_ready),
 	.hbreak_enabled(hbreak_enabled),
-	.sr_37(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[37]~q ),
+	.sr_37(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[37]~q ),
 	.MonDReg_2(MonDReg_2),
 	.MonDReg_3(MonDReg_3),
 	.MonDReg_4(MonDReg_4),
-	.sr_31(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[31]~q ),
-	.sr_33(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[33]~q ),
-	.sr_7(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[7]~q ),
+	.sr_31(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[31]~q ),
+	.sr_33(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[33]~q ),
+	.sr_7(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[7]~q ),
 	.MonDReg_5(MonDReg_5),
 	.MonDReg_26(MonDReg_26),
 	.MonDReg_29(MonDReg_29),
@@ -50694,7 +50694,7 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_tck the_sine_hw_nios2_cpu_debug_slave_tck(
 	.MonDReg_18(MonDReg_18),
 	.MonDReg_8(MonDReg_8),
 	.MonDReg_10(MonDReg_10),
-	.sr_15(\the_sine_hw_nios2_cpu_debug_slave_tck|sr[15]~q ),
+	.sr_15(\the_sine_wave_hw_nios2_cpu_debug_slave_tck|sr[15]~q ),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
 	.state_4(state_4),
@@ -50706,7 +50706,7 @@ sine_hw_sine_hw_nios2_cpu_debug_slave_tck the_sine_hw_nios2_cpu_debug_slave_tck(
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_debug_slave_sysclk (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_sysclk (
 	sr_1,
 	sr_22,
 	sr_2,
@@ -50901,12 +50901,12 @@ wire \jxuir~0_combout ;
 wire \jxuir~q ;
 
 
-sine_hw_altera_std_synchronizer_1 the_altera_std_synchronizer4(
+sine_wave_hw_altera_std_synchronizer_1 the_altera_std_synchronizer4(
 	.din(virtual_state_uir),
 	.dreg_0(\the_altera_std_synchronizer4|dreg[0]~q ),
 	.clk(clk_clk));
 
-sine_hw_altera_std_synchronizer the_altera_std_synchronizer3(
+sine_wave_hw_altera_std_synchronizer the_altera_std_synchronizer3(
 	.dreg_0(\the_altera_std_synchronizer3|dreg[0]~q ),
 	.din(virtual_state_udr),
 	.clk(clk_clk));
@@ -51651,7 +51651,7 @@ defparam jxuir.power_up = "low";
 
 endmodule
 
-module sine_hw_altera_std_synchronizer (
+module sine_wave_hw_altera_std_synchronizer (
 	dreg_0,
 	din,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -51701,7 +51701,7 @@ defparam din_s1.power_up = "low";
 
 endmodule
 
-module sine_hw_altera_std_synchronizer_1 (
+module sine_wave_hw_altera_std_synchronizer_1 (
 	din,
 	dreg_0,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -51751,7 +51751,7 @@ defparam din_s1.power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_debug_slave_tck (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_debug_slave_tck (
 	sr_1,
 	sr_22,
 	sr_2,
@@ -52060,12 +52060,12 @@ wire \sr~48_combout ;
 wire \sr~49_combout ;
 
 
-sine_hw_altera_std_synchronizer_3 the_altera_std_synchronizer2(
+sine_wave_hw_altera_std_synchronizer_3 the_altera_std_synchronizer2(
 	.dreg_0(\the_altera_std_synchronizer2|dreg[0]~q ),
 	.din(monitor_ready),
 	.clk(altera_internal_jtag));
 
-sine_hw_altera_std_synchronizer_2 the_altera_std_synchronizer1(
+sine_wave_hw_altera_std_synchronizer_2 the_altera_std_synchronizer1(
 	.dreg_0(\the_altera_std_synchronizer1|dreg[0]~q ),
 	.din(hbreak_enabled),
 	.clk(altera_internal_jtag));
@@ -53628,7 +53628,7 @@ defparam \sr~49 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_std_synchronizer_2 (
+module sine_wave_hw_altera_std_synchronizer_2 (
 	dreg_0,
 	din,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -53678,7 +53678,7 @@ defparam din_s1.power_up = "low";
 
 endmodule
 
-module sine_hw_altera_std_synchronizer_3 (
+module sine_wave_hw_altera_std_synchronizer_3 (
 	dreg_0,
 	din,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -53728,7 +53728,7 @@ defparam din_s1.power_up = "low";
 
 endmodule
 
-module sine_hw_sld_virtual_jtag_basic_1 (
+module sine_wave_hw_sld_virtual_jtag_basic_1 (
 	virtual_state_sdr,
 	virtual_state_uir1,
 	virtual_state_cdr1,
@@ -53833,7 +53833,7 @@ defparam \virtual_state_udr~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_nios2_avalon_reg (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_avalon_reg (
 	r_sync_rst,
 	monitor_error,
 	address_0,
@@ -54084,7 +54084,7 @@ defparam \oci_single_step_mode~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_nios2_oci_break (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci_break (
 	break_readreg_0,
 	break_readreg_21,
 	break_readreg_1,
@@ -54725,7 +54725,7 @@ defparam \break_readreg[16]~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_nios2_oci_debug (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_oci_debug (
 	resetrequest1,
 	jdo_22,
 	jdo_34,
@@ -54794,7 +54794,7 @@ wire \monitor_go~0_combout ;
 wire \resetlatch~0_combout ;
 
 
-sine_hw_altera_std_synchronizer_4 the_altera_std_synchronizer(
+sine_wave_hw_altera_std_synchronizer_4 the_altera_std_synchronizer(
 	.din(r_sync_rst),
 	.dreg_0(\the_altera_std_synchronizer|dreg[0]~q ),
 	.clk(clk_clk));
@@ -55007,7 +55007,7 @@ defparam \resetlatch~0 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altera_std_synchronizer_4 (
+module sine_wave_hw_altera_std_synchronizer_4 (
 	din,
 	dreg_0,
 	clk)/* synthesis synthesis_greybox=1 */;
@@ -55057,7 +55057,7 @@ defparam din_s1.power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_nios2_ocimem (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_nios2_ocimem (
 	MonDReg_0,
 	MonDReg_21,
 	MonDReg_1,
@@ -55478,7 +55478,7 @@ wire \MonDReg~12_combout ;
 wire \MonDReg~13_combout ;
 
 
-sine_hw_sine_hw_nios2_cpu_ociram_sp_ram_module sine_hw_nios2_cpu_ociram_sp_ram(
+sine_wave_hw_sine_wave_hw_nios2_cpu_ociram_sp_ram_module sine_wave_hw_nios2_cpu_ociram_sp_ram(
 	.q_a_0(q_a_0),
 	.q_a_21(q_a_21),
 	.q_a_1(q_a_1),
@@ -57687,7 +57687,7 @@ defparam \MonDReg~13 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_ociram_sp_ram_module (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_ociram_sp_ram_module (
 	q_a_0,
 	q_a_21,
 	q_a_1,
@@ -57858,7 +57858,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_1 the_altsyncram(
+sine_wave_hw_altsyncram_1 the_altsyncram(
 	.q_a({q_a_31,q_a_30,q_a_29,q_a_28,q_a_27,q_a_26,q_a_25,q_a_24,q_a_23,q_a_22,q_a_21,q_a_20,q_a_19,q_a_18,q_a_17,q_a_16,q_a_15,q_a_14,q_a_13,q_a_12,q_a_11,q_a_10,q_a_9,q_a_8,q_a_7,q_a_6,q_a_5,q_a_4,q_a_3,q_a_2,q_a_1,q_a_0}),
 	.wren_a(ociram_wr_en),
 	.clocken0(ociram_reset_req),
@@ -57871,7 +57871,7 @@ ociram_wr_data_1,ociram_wr_data_0}),
 
 endmodule
 
-module sine_hw_altsyncram_1 (
+module sine_wave_hw_altsyncram_1 (
 	q_a,
 	wren_a,
 	clocken0,
@@ -57898,7 +57898,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_qid1 auto_generated(
+sine_wave_hw_altsyncram_qid1 auto_generated(
 	.q_a({q_a[31],q_a[30],q_a[29],q_a[28],q_a[27],q_a[26],q_a[25],q_a[24],q_a[23],q_a[22],q_a[21],q_a[20],q_a[19],q_a[18],q_a[17],q_a[16],q_a[15],q_a[14],q_a[13],q_a[12],q_a[11],q_a[10],q_a[9],q_a[8],q_a[7],q_a[6],q_a[5],q_a[4],q_a[3],q_a[2],q_a[1],q_a[0]}),
 	.wren_a(wren_a),
 	.clocken0(clocken0),
@@ -57909,7 +57909,7 @@ sine_hw_altsyncram_qid1 auto_generated(
 
 endmodule
 
-module sine_hw_altsyncram_qid1 (
+module sine_wave_hw_altsyncram_qid1 (
 	q_a,
 	wren_a,
 	clocken0,
@@ -58063,7 +58063,7 @@ defparam ram_block1a0.clk0_core_clock_enable = "ena0";
 defparam ram_block1a0.clk0_input_clock_enable = "ena0";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a0.operation_mode = "single_port";
 defparam ram_block1a0.port_a_address_clear = "none";
 defparam ram_block1a0.port_a_address_width = 8;
@@ -58111,7 +58111,7 @@ defparam ram_block1a21.clk0_core_clock_enable = "ena0";
 defparam ram_block1a21.clk0_input_clock_enable = "ena0";
 defparam ram_block1a21.data_interleave_offset_in_bits = 1;
 defparam ram_block1a21.data_interleave_width_in_bits = 1;
-defparam ram_block1a21.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a21.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a21.operation_mode = "single_port";
 defparam ram_block1a21.port_a_address_clear = "none";
 defparam ram_block1a21.port_a_address_width = 8;
@@ -58159,7 +58159,7 @@ defparam ram_block1a1.clk0_core_clock_enable = "ena0";
 defparam ram_block1a1.clk0_input_clock_enable = "ena0";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a1.operation_mode = "single_port";
 defparam ram_block1a1.port_a_address_clear = "none";
 defparam ram_block1a1.port_a_address_width = 8;
@@ -58207,7 +58207,7 @@ defparam ram_block1a22.clk0_core_clock_enable = "ena0";
 defparam ram_block1a22.clk0_input_clock_enable = "ena0";
 defparam ram_block1a22.data_interleave_offset_in_bits = 1;
 defparam ram_block1a22.data_interleave_width_in_bits = 1;
-defparam ram_block1a22.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a22.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a22.operation_mode = "single_port";
 defparam ram_block1a22.port_a_address_clear = "none";
 defparam ram_block1a22.port_a_address_width = 8;
@@ -58255,7 +58255,7 @@ defparam ram_block1a2.clk0_core_clock_enable = "ena0";
 defparam ram_block1a2.clk0_input_clock_enable = "ena0";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a2.operation_mode = "single_port";
 defparam ram_block1a2.port_a_address_clear = "none";
 defparam ram_block1a2.port_a_address_width = 8;
@@ -58303,7 +58303,7 @@ defparam ram_block1a23.clk0_core_clock_enable = "ena0";
 defparam ram_block1a23.clk0_input_clock_enable = "ena0";
 defparam ram_block1a23.data_interleave_offset_in_bits = 1;
 defparam ram_block1a23.data_interleave_width_in_bits = 1;
-defparam ram_block1a23.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a23.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a23.operation_mode = "single_port";
 defparam ram_block1a23.port_a_address_clear = "none";
 defparam ram_block1a23.port_a_address_width = 8;
@@ -58351,7 +58351,7 @@ defparam ram_block1a4.clk0_core_clock_enable = "ena0";
 defparam ram_block1a4.clk0_input_clock_enable = "ena0";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a4.operation_mode = "single_port";
 defparam ram_block1a4.port_a_address_clear = "none";
 defparam ram_block1a4.port_a_address_width = 8;
@@ -58399,7 +58399,7 @@ defparam ram_block1a3.clk0_core_clock_enable = "ena0";
 defparam ram_block1a3.clk0_input_clock_enable = "ena0";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a3.operation_mode = "single_port";
 defparam ram_block1a3.port_a_address_clear = "none";
 defparam ram_block1a3.port_a_address_width = 8;
@@ -58447,7 +58447,7 @@ defparam ram_block1a24.clk0_core_clock_enable = "ena0";
 defparam ram_block1a24.clk0_input_clock_enable = "ena0";
 defparam ram_block1a24.data_interleave_offset_in_bits = 1;
 defparam ram_block1a24.data_interleave_width_in_bits = 1;
-defparam ram_block1a24.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a24.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a24.operation_mode = "single_port";
 defparam ram_block1a24.port_a_address_clear = "none";
 defparam ram_block1a24.port_a_address_width = 8;
@@ -58495,7 +58495,7 @@ defparam ram_block1a20.clk0_core_clock_enable = "ena0";
 defparam ram_block1a20.clk0_input_clock_enable = "ena0";
 defparam ram_block1a20.data_interleave_offset_in_bits = 1;
 defparam ram_block1a20.data_interleave_width_in_bits = 1;
-defparam ram_block1a20.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a20.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a20.operation_mode = "single_port";
 defparam ram_block1a20.port_a_address_clear = "none";
 defparam ram_block1a20.port_a_address_width = 8;
@@ -58543,7 +58543,7 @@ defparam ram_block1a11.clk0_core_clock_enable = "ena0";
 defparam ram_block1a11.clk0_input_clock_enable = "ena0";
 defparam ram_block1a11.data_interleave_offset_in_bits = 1;
 defparam ram_block1a11.data_interleave_width_in_bits = 1;
-defparam ram_block1a11.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a11.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a11.operation_mode = "single_port";
 defparam ram_block1a11.port_a_address_clear = "none";
 defparam ram_block1a11.port_a_address_width = 8;
@@ -58591,7 +58591,7 @@ defparam ram_block1a12.clk0_core_clock_enable = "ena0";
 defparam ram_block1a12.clk0_input_clock_enable = "ena0";
 defparam ram_block1a12.data_interleave_offset_in_bits = 1;
 defparam ram_block1a12.data_interleave_width_in_bits = 1;
-defparam ram_block1a12.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a12.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a12.operation_mode = "single_port";
 defparam ram_block1a12.port_a_address_clear = "none";
 defparam ram_block1a12.port_a_address_width = 8;
@@ -58639,7 +58639,7 @@ defparam ram_block1a13.clk0_core_clock_enable = "ena0";
 defparam ram_block1a13.clk0_input_clock_enable = "ena0";
 defparam ram_block1a13.data_interleave_offset_in_bits = 1;
 defparam ram_block1a13.data_interleave_width_in_bits = 1;
-defparam ram_block1a13.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a13.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a13.operation_mode = "single_port";
 defparam ram_block1a13.port_a_address_clear = "none";
 defparam ram_block1a13.port_a_address_width = 8;
@@ -58687,7 +58687,7 @@ defparam ram_block1a14.clk0_core_clock_enable = "ena0";
 defparam ram_block1a14.clk0_input_clock_enable = "ena0";
 defparam ram_block1a14.data_interleave_offset_in_bits = 1;
 defparam ram_block1a14.data_interleave_width_in_bits = 1;
-defparam ram_block1a14.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a14.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a14.operation_mode = "single_port";
 defparam ram_block1a14.port_a_address_clear = "none";
 defparam ram_block1a14.port_a_address_width = 8;
@@ -58735,7 +58735,7 @@ defparam ram_block1a15.clk0_core_clock_enable = "ena0";
 defparam ram_block1a15.clk0_input_clock_enable = "ena0";
 defparam ram_block1a15.data_interleave_offset_in_bits = 1;
 defparam ram_block1a15.data_interleave_width_in_bits = 1;
-defparam ram_block1a15.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a15.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a15.operation_mode = "single_port";
 defparam ram_block1a15.port_a_address_clear = "none";
 defparam ram_block1a15.port_a_address_width = 8;
@@ -58783,7 +58783,7 @@ defparam ram_block1a16.clk0_core_clock_enable = "ena0";
 defparam ram_block1a16.clk0_input_clock_enable = "ena0";
 defparam ram_block1a16.data_interleave_offset_in_bits = 1;
 defparam ram_block1a16.data_interleave_width_in_bits = 1;
-defparam ram_block1a16.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a16.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a16.operation_mode = "single_port";
 defparam ram_block1a16.port_a_address_clear = "none";
 defparam ram_block1a16.port_a_address_width = 8;
@@ -58831,7 +58831,7 @@ defparam ram_block1a5.clk0_core_clock_enable = "ena0";
 defparam ram_block1a5.clk0_input_clock_enable = "ena0";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a5.operation_mode = "single_port";
 defparam ram_block1a5.port_a_address_clear = "none";
 defparam ram_block1a5.port_a_address_width = 8;
@@ -58879,7 +58879,7 @@ defparam ram_block1a18.clk0_core_clock_enable = "ena0";
 defparam ram_block1a18.clk0_input_clock_enable = "ena0";
 defparam ram_block1a18.data_interleave_offset_in_bits = 1;
 defparam ram_block1a18.data_interleave_width_in_bits = 1;
-defparam ram_block1a18.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a18.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a18.operation_mode = "single_port";
 defparam ram_block1a18.port_a_address_clear = "none";
 defparam ram_block1a18.port_a_address_width = 8;
@@ -58927,7 +58927,7 @@ defparam ram_block1a17.clk0_core_clock_enable = "ena0";
 defparam ram_block1a17.clk0_input_clock_enable = "ena0";
 defparam ram_block1a17.data_interleave_offset_in_bits = 1;
 defparam ram_block1a17.data_interleave_width_in_bits = 1;
-defparam ram_block1a17.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a17.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a17.operation_mode = "single_port";
 defparam ram_block1a17.port_a_address_clear = "none";
 defparam ram_block1a17.port_a_address_width = 8;
@@ -58975,7 +58975,7 @@ defparam ram_block1a8.clk0_core_clock_enable = "ena0";
 defparam ram_block1a8.clk0_input_clock_enable = "ena0";
 defparam ram_block1a8.data_interleave_offset_in_bits = 1;
 defparam ram_block1a8.data_interleave_width_in_bits = 1;
-defparam ram_block1a8.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a8.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a8.operation_mode = "single_port";
 defparam ram_block1a8.port_a_address_clear = "none";
 defparam ram_block1a8.port_a_address_width = 8;
@@ -59023,7 +59023,7 @@ defparam ram_block1a31.clk0_core_clock_enable = "ena0";
 defparam ram_block1a31.clk0_input_clock_enable = "ena0";
 defparam ram_block1a31.data_interleave_offset_in_bits = 1;
 defparam ram_block1a31.data_interleave_width_in_bits = 1;
-defparam ram_block1a31.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a31.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a31.operation_mode = "single_port";
 defparam ram_block1a31.port_a_address_clear = "none";
 defparam ram_block1a31.port_a_address_width = 8;
@@ -59071,7 +59071,7 @@ defparam ram_block1a30.clk0_core_clock_enable = "ena0";
 defparam ram_block1a30.clk0_input_clock_enable = "ena0";
 defparam ram_block1a30.data_interleave_offset_in_bits = 1;
 defparam ram_block1a30.data_interleave_width_in_bits = 1;
-defparam ram_block1a30.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a30.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a30.operation_mode = "single_port";
 defparam ram_block1a30.port_a_address_clear = "none";
 defparam ram_block1a30.port_a_address_width = 8;
@@ -59119,7 +59119,7 @@ defparam ram_block1a29.clk0_core_clock_enable = "ena0";
 defparam ram_block1a29.clk0_input_clock_enable = "ena0";
 defparam ram_block1a29.data_interleave_offset_in_bits = 1;
 defparam ram_block1a29.data_interleave_width_in_bits = 1;
-defparam ram_block1a29.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a29.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a29.operation_mode = "single_port";
 defparam ram_block1a29.port_a_address_clear = "none";
 defparam ram_block1a29.port_a_address_width = 8;
@@ -59167,7 +59167,7 @@ defparam ram_block1a28.clk0_core_clock_enable = "ena0";
 defparam ram_block1a28.clk0_input_clock_enable = "ena0";
 defparam ram_block1a28.data_interleave_offset_in_bits = 1;
 defparam ram_block1a28.data_interleave_width_in_bits = 1;
-defparam ram_block1a28.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a28.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a28.operation_mode = "single_port";
 defparam ram_block1a28.port_a_address_clear = "none";
 defparam ram_block1a28.port_a_address_width = 8;
@@ -59215,7 +59215,7 @@ defparam ram_block1a27.clk0_core_clock_enable = "ena0";
 defparam ram_block1a27.clk0_input_clock_enable = "ena0";
 defparam ram_block1a27.data_interleave_offset_in_bits = 1;
 defparam ram_block1a27.data_interleave_width_in_bits = 1;
-defparam ram_block1a27.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a27.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a27.operation_mode = "single_port";
 defparam ram_block1a27.port_a_address_clear = "none";
 defparam ram_block1a27.port_a_address_width = 8;
@@ -59263,7 +59263,7 @@ defparam ram_block1a26.clk0_core_clock_enable = "ena0";
 defparam ram_block1a26.clk0_input_clock_enable = "ena0";
 defparam ram_block1a26.data_interleave_offset_in_bits = 1;
 defparam ram_block1a26.data_interleave_width_in_bits = 1;
-defparam ram_block1a26.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a26.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a26.operation_mode = "single_port";
 defparam ram_block1a26.port_a_address_clear = "none";
 defparam ram_block1a26.port_a_address_width = 8;
@@ -59311,7 +59311,7 @@ defparam ram_block1a9.clk0_core_clock_enable = "ena0";
 defparam ram_block1a9.clk0_input_clock_enable = "ena0";
 defparam ram_block1a9.data_interleave_offset_in_bits = 1;
 defparam ram_block1a9.data_interleave_width_in_bits = 1;
-defparam ram_block1a9.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a9.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a9.operation_mode = "single_port";
 defparam ram_block1a9.port_a_address_clear = "none";
 defparam ram_block1a9.port_a_address_width = 8;
@@ -59359,7 +59359,7 @@ defparam ram_block1a10.clk0_core_clock_enable = "ena0";
 defparam ram_block1a10.clk0_input_clock_enable = "ena0";
 defparam ram_block1a10.data_interleave_offset_in_bits = 1;
 defparam ram_block1a10.data_interleave_width_in_bits = 1;
-defparam ram_block1a10.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a10.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a10.operation_mode = "single_port";
 defparam ram_block1a10.port_a_address_clear = "none";
 defparam ram_block1a10.port_a_address_width = 8;
@@ -59407,7 +59407,7 @@ defparam ram_block1a25.clk0_core_clock_enable = "ena0";
 defparam ram_block1a25.clk0_input_clock_enable = "ena0";
 defparam ram_block1a25.data_interleave_offset_in_bits = 1;
 defparam ram_block1a25.data_interleave_width_in_bits = 1;
-defparam ram_block1a25.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a25.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a25.operation_mode = "single_port";
 defparam ram_block1a25.port_a_address_clear = "none";
 defparam ram_block1a25.port_a_address_width = 8;
@@ -59455,7 +59455,7 @@ defparam ram_block1a6.clk0_core_clock_enable = "ena0";
 defparam ram_block1a6.clk0_input_clock_enable = "ena0";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a6.operation_mode = "single_port";
 defparam ram_block1a6.port_a_address_clear = "none";
 defparam ram_block1a6.port_a_address_width = 8;
@@ -59503,7 +59503,7 @@ defparam ram_block1a7.clk0_core_clock_enable = "ena0";
 defparam ram_block1a7.clk0_input_clock_enable = "ena0";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a7.operation_mode = "single_port";
 defparam ram_block1a7.port_a_address_clear = "none";
 defparam ram_block1a7.port_a_address_width = 8;
@@ -59551,7 +59551,7 @@ defparam ram_block1a19.clk0_core_clock_enable = "ena0";
 defparam ram_block1a19.clk0_input_clock_enable = "ena0";
 defparam ram_block1a19.data_interleave_offset_in_bits = 1;
 defparam ram_block1a19.data_interleave_width_in_bits = 1;
-defparam ram_block1a19.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_nios2_oci:the_sine_hw_nios2_cpu_nios2_oci|sine_hw_nios2_cpu_nios2_ocimem:the_sine_hw_nios2_cpu_nios2_ocimem|sine_hw_nios2_cpu_ociram_sp_ram_module:sine_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a19.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_nios2_oci:the_sine_wave_hw_nios2_cpu_nios2_oci|sine_wave_hw_nios2_cpu_nios2_ocimem:the_sine_wave_hw_nios2_cpu_nios2_ocimem|sine_wave_hw_nios2_cpu_ociram_sp_ram_module:sine_wave_hw_nios2_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_qid1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a19.operation_mode = "single_port";
 defparam ram_block1a19.port_a_address_clear = "none";
 defparam ram_block1a19.port_a_address_width = 8;
@@ -59570,7 +59570,7 @@ defparam ram_block1a19.ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_register_bank_a_module (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_register_bank_a_module (
 	q_b_14,
 	q_b_12,
 	q_b_11,
@@ -59735,7 +59735,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_2 the_altsyncram(
+sine_wave_hw_altsyncram_2 the_altsyncram(
 	.q_b({q_b_31,q_b_30,q_b_29,q_b_28,q_b_27,q_b_26,q_b_25,q_b_24,q_b_23,q_b_22,q_b_21,q_b_20,q_b_19,q_b_18,q_b_17,q_b_16,q_b_15,q_b_14,q_b_13,q_b_12,q_b_11,q_b_10,q_b_9,q_b_8,q_b_7,q_b_6,q_b_5,q_b_4,q_b_3,q_b_2,q_b_1,q_b_0}),
 	.address_b({D_iw_31,D_iw_30,D_iw_29,D_iw_28,D_iw_27}),
 	.data_a({W_rf_wr_data_31,W_rf_wr_data_30,W_rf_wr_data_29,W_rf_wr_data_28,W_rf_wr_data_27,W_rf_wr_data_26,W_rf_wr_data_25,W_rf_wr_data_24,W_rf_wr_data_23,W_rf_wr_data_22,W_rf_wr_data_21,W_rf_wr_data_20,W_rf_wr_data_19,W_rf_wr_data_18,W_rf_wr_data_17,W_rf_wr_data_16,W_rf_wr_data_15,
@@ -59746,7 +59746,7 @@ W_rf_wr_data_14,W_rf_wr_data_13,W_rf_wr_data_12,W_rf_wr_data_11,W_rf_wr_data_10,
 
 endmodule
 
-module sine_hw_altsyncram_2 (
+module sine_wave_hw_altsyncram_2 (
 	q_b,
 	address_b,
 	data_a,
@@ -59771,7 +59771,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_msi1 auto_generated(
+sine_wave_hw_altsyncram_msi1 auto_generated(
 	.q_b({q_b[31],q_b[30],q_b[29],q_b[28],q_b[27],q_b[26],q_b[25],q_b[24],q_b[23],q_b[22],q_b[21],q_b[20],q_b[19],q_b[18],q_b[17],q_b[16],q_b[15],q_b[14],q_b[13],q_b[12],q_b[11],q_b[10],q_b[9],q_b[8],q_b[7],q_b[6],q_b[5],q_b[4],q_b[3],q_b[2],q_b[1],q_b[0]}),
 	.address_b({address_b[4],address_b[3],address_b[2],address_b[1],address_b[0]}),
 	.data_a({data_a[31],data_a[30],data_a[29],data_a[28],data_a[27],data_a[26],data_a[25],data_a[24],data_a[23],data_a[22],data_a[21],data_a[20],data_a[19],data_a[18],data_a[17],data_a[16],data_a[15],data_a[14],data_a[13],data_a[12],data_a[11],data_a[10],data_a[9],data_a[8],data_a[7],data_a[6],data_a[5],data_a[4],data_a[3],data_a[2],data_a[1],data_a[0]}),
@@ -59781,7 +59781,7 @@ sine_hw_altsyncram_msi1 auto_generated(
 
 endmodule
 
-module sine_hw_altsyncram_msi1 (
+module sine_wave_hw_altsyncram_msi1 (
 	q_b,
 	address_b,
 	data_a,
@@ -59932,7 +59932,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a14.clk0_core_clock_enable = "ena0";
 defparam ram_block1a14.data_interleave_offset_in_bits = 1;
 defparam ram_block1a14.data_interleave_width_in_bits = 1;
-defparam ram_block1a14.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a14.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a14.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a14.operation_mode = "dual_port";
 defparam ram_block1a14.port_a_address_clear = "none";
@@ -59991,7 +59991,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a12.clk0_core_clock_enable = "ena0";
 defparam ram_block1a12.data_interleave_offset_in_bits = 1;
 defparam ram_block1a12.data_interleave_width_in_bits = 1;
-defparam ram_block1a12.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a12.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a12.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a12.operation_mode = "dual_port";
 defparam ram_block1a12.port_a_address_clear = "none";
@@ -60050,7 +60050,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a11.clk0_core_clock_enable = "ena0";
 defparam ram_block1a11.data_interleave_offset_in_bits = 1;
 defparam ram_block1a11.data_interleave_width_in_bits = 1;
-defparam ram_block1a11.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a11.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a11.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a11.operation_mode = "dual_port";
 defparam ram_block1a11.port_a_address_clear = "none";
@@ -60109,7 +60109,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a18.clk0_core_clock_enable = "ena0";
 defparam ram_block1a18.data_interleave_offset_in_bits = 1;
 defparam ram_block1a18.data_interleave_width_in_bits = 1;
-defparam ram_block1a18.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a18.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a18.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a18.operation_mode = "dual_port";
 defparam ram_block1a18.port_a_address_clear = "none";
@@ -60168,7 +60168,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a27.clk0_core_clock_enable = "ena0";
 defparam ram_block1a27.data_interleave_offset_in_bits = 1;
 defparam ram_block1a27.data_interleave_width_in_bits = 1;
-defparam ram_block1a27.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a27.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a27.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a27.operation_mode = "dual_port";
 defparam ram_block1a27.port_a_address_clear = "none";
@@ -60227,7 +60227,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a26.clk0_core_clock_enable = "ena0";
 defparam ram_block1a26.data_interleave_offset_in_bits = 1;
 defparam ram_block1a26.data_interleave_width_in_bits = 1;
-defparam ram_block1a26.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a26.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a26.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a26.operation_mode = "dual_port";
 defparam ram_block1a26.port_a_address_clear = "none";
@@ -60286,7 +60286,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a25.clk0_core_clock_enable = "ena0";
 defparam ram_block1a25.data_interleave_offset_in_bits = 1;
 defparam ram_block1a25.data_interleave_width_in_bits = 1;
-defparam ram_block1a25.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a25.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a25.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a25.operation_mode = "dual_port";
 defparam ram_block1a25.port_a_address_clear = "none";
@@ -60345,7 +60345,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a24.clk0_core_clock_enable = "ena0";
 defparam ram_block1a24.data_interleave_offset_in_bits = 1;
 defparam ram_block1a24.data_interleave_width_in_bits = 1;
-defparam ram_block1a24.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a24.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a24.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a24.operation_mode = "dual_port";
 defparam ram_block1a24.port_a_address_clear = "none";
@@ -60404,7 +60404,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a23.clk0_core_clock_enable = "ena0";
 defparam ram_block1a23.data_interleave_offset_in_bits = 1;
 defparam ram_block1a23.data_interleave_width_in_bits = 1;
-defparam ram_block1a23.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a23.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a23.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a23.operation_mode = "dual_port";
 defparam ram_block1a23.port_a_address_clear = "none";
@@ -60463,7 +60463,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a22.clk0_core_clock_enable = "ena0";
 defparam ram_block1a22.data_interleave_offset_in_bits = 1;
 defparam ram_block1a22.data_interleave_width_in_bits = 1;
-defparam ram_block1a22.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a22.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a22.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a22.operation_mode = "dual_port";
 defparam ram_block1a22.port_a_address_clear = "none";
@@ -60522,7 +60522,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a19.clk0_core_clock_enable = "ena0";
 defparam ram_block1a19.data_interleave_offset_in_bits = 1;
 defparam ram_block1a19.data_interleave_width_in_bits = 1;
-defparam ram_block1a19.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a19.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a19.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a19.operation_mode = "dual_port";
 defparam ram_block1a19.port_a_address_clear = "none";
@@ -60581,7 +60581,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a20.clk0_core_clock_enable = "ena0";
 defparam ram_block1a20.data_interleave_offset_in_bits = 1;
 defparam ram_block1a20.data_interleave_width_in_bits = 1;
-defparam ram_block1a20.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a20.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a20.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a20.operation_mode = "dual_port";
 defparam ram_block1a20.port_a_address_clear = "none";
@@ -60640,7 +60640,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a21.clk0_core_clock_enable = "ena0";
 defparam ram_block1a21.data_interleave_offset_in_bits = 1;
 defparam ram_block1a21.data_interleave_width_in_bits = 1;
-defparam ram_block1a21.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a21.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a21.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a21.operation_mode = "dual_port";
 defparam ram_block1a21.port_a_address_clear = "none";
@@ -60699,7 +60699,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a16.clk0_core_clock_enable = "ena0";
 defparam ram_block1a16.data_interleave_offset_in_bits = 1;
 defparam ram_block1a16.data_interleave_width_in_bits = 1;
-defparam ram_block1a16.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a16.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a16.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a16.operation_mode = "dual_port";
 defparam ram_block1a16.port_a_address_clear = "none";
@@ -60758,7 +60758,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a17.clk0_core_clock_enable = "ena0";
 defparam ram_block1a17.data_interleave_offset_in_bits = 1;
 defparam ram_block1a17.data_interleave_width_in_bits = 1;
-defparam ram_block1a17.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a17.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a17.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a17.operation_mode = "dual_port";
 defparam ram_block1a17.port_a_address_clear = "none";
@@ -60817,7 +60817,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a13.clk0_core_clock_enable = "ena0";
 defparam ram_block1a13.data_interleave_offset_in_bits = 1;
 defparam ram_block1a13.data_interleave_width_in_bits = 1;
-defparam ram_block1a13.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a13.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a13.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a13.operation_mode = "dual_port";
 defparam ram_block1a13.port_a_address_clear = "none";
@@ -60876,7 +60876,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a15.clk0_core_clock_enable = "ena0";
 defparam ram_block1a15.data_interleave_offset_in_bits = 1;
 defparam ram_block1a15.data_interleave_width_in_bits = 1;
-defparam ram_block1a15.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a15.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a15.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a15.operation_mode = "dual_port";
 defparam ram_block1a15.port_a_address_clear = "none";
@@ -60935,7 +60935,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a5.clk0_core_clock_enable = "ena0";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a5.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a5.operation_mode = "dual_port";
 defparam ram_block1a5.port_a_address_clear = "none";
@@ -60994,7 +60994,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a6.clk0_core_clock_enable = "ena0";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a6.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a6.operation_mode = "dual_port";
 defparam ram_block1a6.port_a_address_clear = "none";
@@ -61053,7 +61053,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a7.clk0_core_clock_enable = "ena0";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a7.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a7.operation_mode = "dual_port";
 defparam ram_block1a7.port_a_address_clear = "none";
@@ -61112,7 +61112,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a8.clk0_core_clock_enable = "ena0";
 defparam ram_block1a8.data_interleave_offset_in_bits = 1;
 defparam ram_block1a8.data_interleave_width_in_bits = 1;
-defparam ram_block1a8.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a8.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a8.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a8.operation_mode = "dual_port";
 defparam ram_block1a8.port_a_address_clear = "none";
@@ -61171,7 +61171,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a10.clk0_core_clock_enable = "ena0";
 defparam ram_block1a10.data_interleave_offset_in_bits = 1;
 defparam ram_block1a10.data_interleave_width_in_bits = 1;
-defparam ram_block1a10.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a10.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a10.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a10.operation_mode = "dual_port";
 defparam ram_block1a10.port_a_address_clear = "none";
@@ -61230,7 +61230,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a9.clk0_core_clock_enable = "ena0";
 defparam ram_block1a9.data_interleave_offset_in_bits = 1;
 defparam ram_block1a9.data_interleave_width_in_bits = 1;
-defparam ram_block1a9.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a9.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a9.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a9.operation_mode = "dual_port";
 defparam ram_block1a9.port_a_address_clear = "none";
@@ -61289,7 +61289,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a4.clk0_core_clock_enable = "ena0";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a4.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a4.operation_mode = "dual_port";
 defparam ram_block1a4.port_a_address_clear = "none";
@@ -61348,7 +61348,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a3.clk0_core_clock_enable = "ena0";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a3.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a3.operation_mode = "dual_port";
 defparam ram_block1a3.port_a_address_clear = "none";
@@ -61407,7 +61407,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a2.clk0_core_clock_enable = "ena0";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a2.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a2.operation_mode = "dual_port";
 defparam ram_block1a2.port_a_address_clear = "none";
@@ -61466,7 +61466,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a1.clk0_core_clock_enable = "ena0";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a1.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a1.operation_mode = "dual_port";
 defparam ram_block1a1.port_a_address_clear = "none";
@@ -61525,7 +61525,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a0.clk0_core_clock_enable = "ena0";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a0.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a0.operation_mode = "dual_port";
 defparam ram_block1a0.port_a_address_clear = "none";
@@ -61584,7 +61584,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a30.clk0_core_clock_enable = "ena0";
 defparam ram_block1a30.data_interleave_offset_in_bits = 1;
 defparam ram_block1a30.data_interleave_width_in_bits = 1;
-defparam ram_block1a30.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a30.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a30.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a30.operation_mode = "dual_port";
 defparam ram_block1a30.port_a_address_clear = "none";
@@ -61643,7 +61643,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a29.clk0_core_clock_enable = "ena0";
 defparam ram_block1a29.data_interleave_offset_in_bits = 1;
 defparam ram_block1a29.data_interleave_width_in_bits = 1;
-defparam ram_block1a29.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a29.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a29.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a29.operation_mode = "dual_port";
 defparam ram_block1a29.port_a_address_clear = "none";
@@ -61702,7 +61702,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a28.clk0_core_clock_enable = "ena0";
 defparam ram_block1a28.data_interleave_offset_in_bits = 1;
 defparam ram_block1a28.data_interleave_width_in_bits = 1;
-defparam ram_block1a28.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a28.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a28.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a28.operation_mode = "dual_port";
 defparam ram_block1a28.port_a_address_clear = "none";
@@ -61761,7 +61761,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a31.clk0_core_clock_enable = "ena0";
 defparam ram_block1a31.data_interleave_offset_in_bits = 1;
 defparam ram_block1a31.data_interleave_width_in_bits = 1;
-defparam ram_block1a31.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_a_module:sine_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a31.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_a_module:sine_wave_hw_nios2_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a31.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a31.operation_mode = "dual_port";
 defparam ram_block1a31.port_a_address_clear = "none";
@@ -61792,7 +61792,7 @@ defparam ram_block1a31.ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_sine_hw_nios2_cpu_register_bank_b_module (
+module sine_wave_hw_sine_wave_hw_nios2_cpu_register_bank_b_module (
 	q_b_14,
 	q_b_12,
 	q_b_11,
@@ -61957,7 +61957,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_3 the_altsyncram(
+sine_wave_hw_altsyncram_3 the_altsyncram(
 	.q_b({q_b_31,q_b_30,q_b_29,q_b_28,q_b_27,q_b_26,q_b_25,q_b_24,q_b_23,q_b_22,q_b_21,q_b_20,q_b_19,q_b_18,q_b_17,q_b_16,q_b_15,q_b_14,q_b_13,q_b_12,q_b_11,q_b_10,q_b_9,q_b_8,q_b_7,q_b_6,q_b_5,q_b_4,q_b_3,q_b_2,q_b_1,q_b_0}),
 	.address_b({D_iw_26,D_iw_25,D_iw_24,D_iw_23,D_iw_22}),
 	.data_a({W_rf_wr_data_31,W_rf_wr_data_30,W_rf_wr_data_29,W_rf_wr_data_28,W_rf_wr_data_27,W_rf_wr_data_26,W_rf_wr_data_25,W_rf_wr_data_24,W_rf_wr_data_23,W_rf_wr_data_22,W_rf_wr_data_21,W_rf_wr_data_20,W_rf_wr_data_19,W_rf_wr_data_18,W_rf_wr_data_17,W_rf_wr_data_16,W_rf_wr_data_15,
@@ -61968,7 +61968,7 @@ W_rf_wr_data_14,W_rf_wr_data_13,W_rf_wr_data_12,W_rf_wr_data_11,W_rf_wr_data_10,
 
 endmodule
 
-module sine_hw_altsyncram_3 (
+module sine_wave_hw_altsyncram_3 (
 	q_b,
 	address_b,
 	data_a,
@@ -61993,7 +61993,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_msi1_1 auto_generated(
+sine_wave_hw_altsyncram_msi1_1 auto_generated(
 	.q_b({q_b[31],q_b[30],q_b[29],q_b[28],q_b[27],q_b[26],q_b[25],q_b[24],q_b[23],q_b[22],q_b[21],q_b[20],q_b[19],q_b[18],q_b[17],q_b[16],q_b[15],q_b[14],q_b[13],q_b[12],q_b[11],q_b[10],q_b[9],q_b[8],q_b[7],q_b[6],q_b[5],q_b[4],q_b[3],q_b[2],q_b[1],q_b[0]}),
 	.address_b({address_b[4],address_b[3],address_b[2],address_b[1],address_b[0]}),
 	.data_a({data_a[31],data_a[30],data_a[29],data_a[28],data_a[27],data_a[26],data_a[25],data_a[24],data_a[23],data_a[22],data_a[21],data_a[20],data_a[19],data_a[18],data_a[17],data_a[16],data_a[15],data_a[14],data_a[13],data_a[12],data_a[11],data_a[10],data_a[9],data_a[8],data_a[7],data_a[6],data_a[5],data_a[4],data_a[3],data_a[2],data_a[1],data_a[0]}),
@@ -62003,7 +62003,7 @@ sine_hw_altsyncram_msi1_1 auto_generated(
 
 endmodule
 
-module sine_hw_altsyncram_msi1_1 (
+module sine_wave_hw_altsyncram_msi1_1 (
 	q_b,
 	address_b,
 	data_a,
@@ -62154,7 +62154,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a14.clk0_core_clock_enable = "ena0";
 defparam ram_block1a14.data_interleave_offset_in_bits = 1;
 defparam ram_block1a14.data_interleave_width_in_bits = 1;
-defparam ram_block1a14.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a14.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a14.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a14.operation_mode = "dual_port";
 defparam ram_block1a14.port_a_address_clear = "none";
@@ -62213,7 +62213,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a12.clk0_core_clock_enable = "ena0";
 defparam ram_block1a12.data_interleave_offset_in_bits = 1;
 defparam ram_block1a12.data_interleave_width_in_bits = 1;
-defparam ram_block1a12.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a12.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a12.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a12.operation_mode = "dual_port";
 defparam ram_block1a12.port_a_address_clear = "none";
@@ -62272,7 +62272,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a11.clk0_core_clock_enable = "ena0";
 defparam ram_block1a11.data_interleave_offset_in_bits = 1;
 defparam ram_block1a11.data_interleave_width_in_bits = 1;
-defparam ram_block1a11.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a11.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a11.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a11.operation_mode = "dual_port";
 defparam ram_block1a11.port_a_address_clear = "none";
@@ -62331,7 +62331,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a18.clk0_core_clock_enable = "ena0";
 defparam ram_block1a18.data_interleave_offset_in_bits = 1;
 defparam ram_block1a18.data_interleave_width_in_bits = 1;
-defparam ram_block1a18.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a18.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a18.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a18.operation_mode = "dual_port";
 defparam ram_block1a18.port_a_address_clear = "none";
@@ -62390,7 +62390,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a27.clk0_core_clock_enable = "ena0";
 defparam ram_block1a27.data_interleave_offset_in_bits = 1;
 defparam ram_block1a27.data_interleave_width_in_bits = 1;
-defparam ram_block1a27.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a27.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a27.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a27.operation_mode = "dual_port";
 defparam ram_block1a27.port_a_address_clear = "none";
@@ -62449,7 +62449,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a26.clk0_core_clock_enable = "ena0";
 defparam ram_block1a26.data_interleave_offset_in_bits = 1;
 defparam ram_block1a26.data_interleave_width_in_bits = 1;
-defparam ram_block1a26.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a26.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a26.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a26.operation_mode = "dual_port";
 defparam ram_block1a26.port_a_address_clear = "none";
@@ -62508,7 +62508,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a25.clk0_core_clock_enable = "ena0";
 defparam ram_block1a25.data_interleave_offset_in_bits = 1;
 defparam ram_block1a25.data_interleave_width_in_bits = 1;
-defparam ram_block1a25.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a25.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a25.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a25.operation_mode = "dual_port";
 defparam ram_block1a25.port_a_address_clear = "none";
@@ -62567,7 +62567,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a24.clk0_core_clock_enable = "ena0";
 defparam ram_block1a24.data_interleave_offset_in_bits = 1;
 defparam ram_block1a24.data_interleave_width_in_bits = 1;
-defparam ram_block1a24.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a24.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a24.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a24.operation_mode = "dual_port";
 defparam ram_block1a24.port_a_address_clear = "none";
@@ -62626,7 +62626,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a23.clk0_core_clock_enable = "ena0";
 defparam ram_block1a23.data_interleave_offset_in_bits = 1;
 defparam ram_block1a23.data_interleave_width_in_bits = 1;
-defparam ram_block1a23.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a23.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a23.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a23.operation_mode = "dual_port";
 defparam ram_block1a23.port_a_address_clear = "none";
@@ -62685,7 +62685,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a22.clk0_core_clock_enable = "ena0";
 defparam ram_block1a22.data_interleave_offset_in_bits = 1;
 defparam ram_block1a22.data_interleave_width_in_bits = 1;
-defparam ram_block1a22.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a22.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a22.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a22.operation_mode = "dual_port";
 defparam ram_block1a22.port_a_address_clear = "none";
@@ -62744,7 +62744,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a19.clk0_core_clock_enable = "ena0";
 defparam ram_block1a19.data_interleave_offset_in_bits = 1;
 defparam ram_block1a19.data_interleave_width_in_bits = 1;
-defparam ram_block1a19.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a19.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a19.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a19.operation_mode = "dual_port";
 defparam ram_block1a19.port_a_address_clear = "none";
@@ -62803,7 +62803,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a20.clk0_core_clock_enable = "ena0";
 defparam ram_block1a20.data_interleave_offset_in_bits = 1;
 defparam ram_block1a20.data_interleave_width_in_bits = 1;
-defparam ram_block1a20.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a20.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a20.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a20.operation_mode = "dual_port";
 defparam ram_block1a20.port_a_address_clear = "none";
@@ -62862,7 +62862,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a21.clk0_core_clock_enable = "ena0";
 defparam ram_block1a21.data_interleave_offset_in_bits = 1;
 defparam ram_block1a21.data_interleave_width_in_bits = 1;
-defparam ram_block1a21.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a21.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a21.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a21.operation_mode = "dual_port";
 defparam ram_block1a21.port_a_address_clear = "none";
@@ -62921,7 +62921,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a16.clk0_core_clock_enable = "ena0";
 defparam ram_block1a16.data_interleave_offset_in_bits = 1;
 defparam ram_block1a16.data_interleave_width_in_bits = 1;
-defparam ram_block1a16.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a16.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a16.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a16.operation_mode = "dual_port";
 defparam ram_block1a16.port_a_address_clear = "none";
@@ -62980,7 +62980,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a17.clk0_core_clock_enable = "ena0";
 defparam ram_block1a17.data_interleave_offset_in_bits = 1;
 defparam ram_block1a17.data_interleave_width_in_bits = 1;
-defparam ram_block1a17.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a17.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a17.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a17.operation_mode = "dual_port";
 defparam ram_block1a17.port_a_address_clear = "none";
@@ -63039,7 +63039,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a13.clk0_core_clock_enable = "ena0";
 defparam ram_block1a13.data_interleave_offset_in_bits = 1;
 defparam ram_block1a13.data_interleave_width_in_bits = 1;
-defparam ram_block1a13.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a13.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a13.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a13.operation_mode = "dual_port";
 defparam ram_block1a13.port_a_address_clear = "none";
@@ -63098,7 +63098,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a15.clk0_core_clock_enable = "ena0";
 defparam ram_block1a15.data_interleave_offset_in_bits = 1;
 defparam ram_block1a15.data_interleave_width_in_bits = 1;
-defparam ram_block1a15.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a15.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a15.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a15.operation_mode = "dual_port";
 defparam ram_block1a15.port_a_address_clear = "none";
@@ -63157,7 +63157,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a5.clk0_core_clock_enable = "ena0";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a5.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a5.operation_mode = "dual_port";
 defparam ram_block1a5.port_a_address_clear = "none";
@@ -63216,7 +63216,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a6.clk0_core_clock_enable = "ena0";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a6.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a6.operation_mode = "dual_port";
 defparam ram_block1a6.port_a_address_clear = "none";
@@ -63275,7 +63275,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a7.clk0_core_clock_enable = "ena0";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a7.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a7.operation_mode = "dual_port";
 defparam ram_block1a7.port_a_address_clear = "none";
@@ -63334,7 +63334,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a8.clk0_core_clock_enable = "ena0";
 defparam ram_block1a8.data_interleave_offset_in_bits = 1;
 defparam ram_block1a8.data_interleave_width_in_bits = 1;
-defparam ram_block1a8.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a8.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a8.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a8.operation_mode = "dual_port";
 defparam ram_block1a8.port_a_address_clear = "none";
@@ -63393,7 +63393,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a10.clk0_core_clock_enable = "ena0";
 defparam ram_block1a10.data_interleave_offset_in_bits = 1;
 defparam ram_block1a10.data_interleave_width_in_bits = 1;
-defparam ram_block1a10.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a10.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a10.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a10.operation_mode = "dual_port";
 defparam ram_block1a10.port_a_address_clear = "none";
@@ -63452,7 +63452,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a9.clk0_core_clock_enable = "ena0";
 defparam ram_block1a9.data_interleave_offset_in_bits = 1;
 defparam ram_block1a9.data_interleave_width_in_bits = 1;
-defparam ram_block1a9.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a9.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a9.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a9.operation_mode = "dual_port";
 defparam ram_block1a9.port_a_address_clear = "none";
@@ -63511,7 +63511,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a4.clk0_core_clock_enable = "ena0";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a4.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a4.operation_mode = "dual_port";
 defparam ram_block1a4.port_a_address_clear = "none";
@@ -63570,7 +63570,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a3.clk0_core_clock_enable = "ena0";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a3.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a3.operation_mode = "dual_port";
 defparam ram_block1a3.port_a_address_clear = "none";
@@ -63629,7 +63629,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a2.clk0_core_clock_enable = "ena0";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a2.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a2.operation_mode = "dual_port";
 defparam ram_block1a2.port_a_address_clear = "none";
@@ -63688,7 +63688,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a1.clk0_core_clock_enable = "ena0";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a1.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a1.operation_mode = "dual_port";
 defparam ram_block1a1.port_a_address_clear = "none";
@@ -63747,7 +63747,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a0.clk0_core_clock_enable = "ena0";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a0.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a0.operation_mode = "dual_port";
 defparam ram_block1a0.port_a_address_clear = "none";
@@ -63806,7 +63806,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a30.clk0_core_clock_enable = "ena0";
 defparam ram_block1a30.data_interleave_offset_in_bits = 1;
 defparam ram_block1a30.data_interleave_width_in_bits = 1;
-defparam ram_block1a30.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a30.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a30.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a30.operation_mode = "dual_port";
 defparam ram_block1a30.port_a_address_clear = "none";
@@ -63865,7 +63865,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a29.clk0_core_clock_enable = "ena0";
 defparam ram_block1a29.data_interleave_offset_in_bits = 1;
 defparam ram_block1a29.data_interleave_width_in_bits = 1;
-defparam ram_block1a29.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a29.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a29.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a29.operation_mode = "dual_port";
 defparam ram_block1a29.port_a_address_clear = "none";
@@ -63924,7 +63924,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a28.clk0_core_clock_enable = "ena0";
 defparam ram_block1a28.data_interleave_offset_in_bits = 1;
 defparam ram_block1a28.data_interleave_width_in_bits = 1;
-defparam ram_block1a28.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a28.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a28.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a28.operation_mode = "dual_port";
 defparam ram_block1a28.port_a_address_clear = "none";
@@ -63983,7 +63983,7 @@ gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
 defparam ram_block1a31.clk0_core_clock_enable = "ena0";
 defparam ram_block1a31.data_interleave_offset_in_bits = 1;
 defparam ram_block1a31.data_interleave_width_in_bits = 1;
-defparam ram_block1a31.logical_ram_name = "sine_hw_nios2:nios2|sine_hw_nios2_cpu:cpu|sine_hw_nios2_cpu_register_bank_b_module:sine_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a31.logical_ram_name = "sine_wave_hw_nios2:nios2|sine_wave_hw_nios2_cpu:cpu|sine_wave_hw_nios2_cpu_register_bank_b_module:sine_wave_hw_nios2_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_msi1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a31.mixed_port_feed_through_mode = "dont_care";
 defparam ram_block1a31.operation_mode = "dual_port";
 defparam ram_block1a31.port_a_address_clear = "none";
@@ -64014,7 +64014,7 @@ defparam ram_block1a31.ram_block_type = "auto";
 
 endmodule
 
-module sine_hw_sine_hw_ram (
+module sine_wave_hw_sine_wave_hw_ram (
 	ram_block1a36,
 	ram_block1a4,
 	ram_block1a32,
@@ -64275,7 +64275,7 @@ wire \wren~0_combout ;
 wire \wren~1_combout ;
 
 
-sine_hw_altsyncram_4 the_altsyncram(
+sine_wave_hw_altsyncram_4 the_altsyncram(
 	.ram_block1a36(ram_block1a36),
 	.ram_block1a4(ram_block1a4),
 	.ram_block1a32(ram_block1a32),
@@ -64391,7 +64391,7 @@ defparam \wren~1 .shared_arith = "off";
 
 endmodule
 
-module sine_hw_altsyncram_4 (
+module sine_wave_hw_altsyncram_4 (
 	ram_block1a36,
 	ram_block1a4,
 	ram_block1a32,
@@ -64554,7 +64554,7 @@ assign unknown = 1'b0;
 
 
 
-sine_hw_altsyncram_b7m1 auto_generated(
+sine_wave_hw_altsyncram_tnm1 auto_generated(
 	.ram_block1a361(ram_block1a36),
 	.ram_block1a410(ram_block1a4),
 	.ram_block1a321(ram_block1a32),
@@ -64633,7 +64633,7 @@ sine_hw_altsyncram_b7m1 auto_generated(
 
 endmodule
 
-module sine_hw_altsyncram_b7m1 (
+module sine_wave_hw_altsyncram_tnm1 (
 	ram_block1a361,
 	ram_block1a410,
 	ram_block1a321,
@@ -64990,7 +64990,7 @@ assign ram_block1a511 = ram_block1a51_PORTADATAOUT_bus[0];
 
 assign ram_block1a191 = ram_block1a19_PORTADATAOUT_bus[0];
 
-sine_hw_decode_5la decode3(
+sine_wave_hw_decode_5la decode3(
 	.saved_grant_0(saved_grant_0),
 	.src2_valid(src2_valid),
 	.src_valid(src_valid),
@@ -65030,9 +65030,9 @@ defparam ram_block1a36.clk0_core_clock_enable = "ena0";
 defparam ram_block1a36.clk0_input_clock_enable = "ena0";
 defparam ram_block1a36.data_interleave_offset_in_bits = 1;
 defparam ram_block1a36.data_interleave_width_in_bits = 1;
-defparam ram_block1a36.init_file = "sine_hw_ram.hex";
+defparam ram_block1a36.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a36.init_file_layout = "port_a";
-defparam ram_block1a36.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a36.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a36.operation_mode = "single_port";
 defparam ram_block1a36.port_a_address_clear = "none";
 defparam ram_block1a36.port_a_address_width = 13;
@@ -65084,9 +65084,9 @@ defparam ram_block1a4.clk0_core_clock_enable = "ena0";
 defparam ram_block1a4.clk0_input_clock_enable = "ena0";
 defparam ram_block1a4.data_interleave_offset_in_bits = 1;
 defparam ram_block1a4.data_interleave_width_in_bits = 1;
-defparam ram_block1a4.init_file = "sine_hw_ram.hex";
+defparam ram_block1a4.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a4.init_file_layout = "port_a";
-defparam ram_block1a4.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a4.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a4.operation_mode = "single_port";
 defparam ram_block1a4.port_a_address_clear = "none";
 defparam ram_block1a4.port_a_address_width = 13;
@@ -65138,9 +65138,9 @@ defparam ram_block1a32.clk0_core_clock_enable = "ena0";
 defparam ram_block1a32.clk0_input_clock_enable = "ena0";
 defparam ram_block1a32.data_interleave_offset_in_bits = 1;
 defparam ram_block1a32.data_interleave_width_in_bits = 1;
-defparam ram_block1a32.init_file = "sine_hw_ram.hex";
+defparam ram_block1a32.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a32.init_file_layout = "port_a";
-defparam ram_block1a32.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a32.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a32.operation_mode = "single_port";
 defparam ram_block1a32.port_a_address_clear = "none";
 defparam ram_block1a32.port_a_address_width = 13;
@@ -65192,9 +65192,9 @@ defparam ram_block1a0.clk0_core_clock_enable = "ena0";
 defparam ram_block1a0.clk0_input_clock_enable = "ena0";
 defparam ram_block1a0.data_interleave_offset_in_bits = 1;
 defparam ram_block1a0.data_interleave_width_in_bits = 1;
-defparam ram_block1a0.init_file = "sine_hw_ram.hex";
+defparam ram_block1a0.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a0.init_file_layout = "port_a";
-defparam ram_block1a0.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a0.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a0.operation_mode = "single_port";
 defparam ram_block1a0.port_a_address_clear = "none";
 defparam ram_block1a0.port_a_address_width = 13;
@@ -65246,9 +65246,9 @@ defparam ram_block1a33.clk0_core_clock_enable = "ena0";
 defparam ram_block1a33.clk0_input_clock_enable = "ena0";
 defparam ram_block1a33.data_interleave_offset_in_bits = 1;
 defparam ram_block1a33.data_interleave_width_in_bits = 1;
-defparam ram_block1a33.init_file = "sine_hw_ram.hex";
+defparam ram_block1a33.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a33.init_file_layout = "port_a";
-defparam ram_block1a33.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a33.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a33.operation_mode = "single_port";
 defparam ram_block1a33.port_a_address_clear = "none";
 defparam ram_block1a33.port_a_address_width = 13;
@@ -65300,9 +65300,9 @@ defparam ram_block1a1.clk0_core_clock_enable = "ena0";
 defparam ram_block1a1.clk0_input_clock_enable = "ena0";
 defparam ram_block1a1.data_interleave_offset_in_bits = 1;
 defparam ram_block1a1.data_interleave_width_in_bits = 1;
-defparam ram_block1a1.init_file = "sine_hw_ram.hex";
+defparam ram_block1a1.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a1.init_file_layout = "port_a";
-defparam ram_block1a1.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a1.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a1.operation_mode = "single_port";
 defparam ram_block1a1.port_a_address_clear = "none";
 defparam ram_block1a1.port_a_address_width = 13;
@@ -65354,9 +65354,9 @@ defparam ram_block1a34.clk0_core_clock_enable = "ena0";
 defparam ram_block1a34.clk0_input_clock_enable = "ena0";
 defparam ram_block1a34.data_interleave_offset_in_bits = 1;
 defparam ram_block1a34.data_interleave_width_in_bits = 1;
-defparam ram_block1a34.init_file = "sine_hw_ram.hex";
+defparam ram_block1a34.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a34.init_file_layout = "port_a";
-defparam ram_block1a34.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a34.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a34.operation_mode = "single_port";
 defparam ram_block1a34.port_a_address_clear = "none";
 defparam ram_block1a34.port_a_address_width = 13;
@@ -65408,9 +65408,9 @@ defparam ram_block1a2.clk0_core_clock_enable = "ena0";
 defparam ram_block1a2.clk0_input_clock_enable = "ena0";
 defparam ram_block1a2.data_interleave_offset_in_bits = 1;
 defparam ram_block1a2.data_interleave_width_in_bits = 1;
-defparam ram_block1a2.init_file = "sine_hw_ram.hex";
+defparam ram_block1a2.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a2.init_file_layout = "port_a";
-defparam ram_block1a2.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a2.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a2.operation_mode = "single_port";
 defparam ram_block1a2.port_a_address_clear = "none";
 defparam ram_block1a2.port_a_address_width = 13;
@@ -65462,9 +65462,9 @@ defparam ram_block1a35.clk0_core_clock_enable = "ena0";
 defparam ram_block1a35.clk0_input_clock_enable = "ena0";
 defparam ram_block1a35.data_interleave_offset_in_bits = 1;
 defparam ram_block1a35.data_interleave_width_in_bits = 1;
-defparam ram_block1a35.init_file = "sine_hw_ram.hex";
+defparam ram_block1a35.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a35.init_file_layout = "port_a";
-defparam ram_block1a35.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a35.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a35.operation_mode = "single_port";
 defparam ram_block1a35.port_a_address_clear = "none";
 defparam ram_block1a35.port_a_address_width = 13;
@@ -65516,9 +65516,9 @@ defparam ram_block1a3.clk0_core_clock_enable = "ena0";
 defparam ram_block1a3.clk0_input_clock_enable = "ena0";
 defparam ram_block1a3.data_interleave_offset_in_bits = 1;
 defparam ram_block1a3.data_interleave_width_in_bits = 1;
-defparam ram_block1a3.init_file = "sine_hw_ram.hex";
+defparam ram_block1a3.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a3.init_file_layout = "port_a";
-defparam ram_block1a3.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a3.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a3.operation_mode = "single_port";
 defparam ram_block1a3.port_a_address_clear = "none";
 defparam ram_block1a3.port_a_address_width = 13;
@@ -65570,9 +65570,9 @@ defparam ram_block1a43.clk0_core_clock_enable = "ena0";
 defparam ram_block1a43.clk0_input_clock_enable = "ena0";
 defparam ram_block1a43.data_interleave_offset_in_bits = 1;
 defparam ram_block1a43.data_interleave_width_in_bits = 1;
-defparam ram_block1a43.init_file = "sine_hw_ram.hex";
+defparam ram_block1a43.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a43.init_file_layout = "port_a";
-defparam ram_block1a43.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a43.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a43.operation_mode = "single_port";
 defparam ram_block1a43.port_a_address_clear = "none";
 defparam ram_block1a43.port_a_address_width = 13;
@@ -65624,9 +65624,9 @@ defparam ram_block1a11.clk0_core_clock_enable = "ena0";
 defparam ram_block1a11.clk0_input_clock_enable = "ena0";
 defparam ram_block1a11.data_interleave_offset_in_bits = 1;
 defparam ram_block1a11.data_interleave_width_in_bits = 1;
-defparam ram_block1a11.init_file = "sine_hw_ram.hex";
+defparam ram_block1a11.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a11.init_file_layout = "port_a";
-defparam ram_block1a11.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a11.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a11.operation_mode = "single_port";
 defparam ram_block1a11.port_a_address_clear = "none";
 defparam ram_block1a11.port_a_address_width = 13;
@@ -65678,9 +65678,9 @@ defparam ram_block1a44.clk0_core_clock_enable = "ena0";
 defparam ram_block1a44.clk0_input_clock_enable = "ena0";
 defparam ram_block1a44.data_interleave_offset_in_bits = 1;
 defparam ram_block1a44.data_interleave_width_in_bits = 1;
-defparam ram_block1a44.init_file = "sine_hw_ram.hex";
+defparam ram_block1a44.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a44.init_file_layout = "port_a";
-defparam ram_block1a44.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a44.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a44.operation_mode = "single_port";
 defparam ram_block1a44.port_a_address_clear = "none";
 defparam ram_block1a44.port_a_address_width = 13;
@@ -65732,9 +65732,9 @@ defparam ram_block1a12.clk0_core_clock_enable = "ena0";
 defparam ram_block1a12.clk0_input_clock_enable = "ena0";
 defparam ram_block1a12.data_interleave_offset_in_bits = 1;
 defparam ram_block1a12.data_interleave_width_in_bits = 1;
-defparam ram_block1a12.init_file = "sine_hw_ram.hex";
+defparam ram_block1a12.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a12.init_file_layout = "port_a";
-defparam ram_block1a12.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a12.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a12.operation_mode = "single_port";
 defparam ram_block1a12.port_a_address_clear = "none";
 defparam ram_block1a12.port_a_address_width = 13;
@@ -65786,9 +65786,9 @@ defparam ram_block1a45.clk0_core_clock_enable = "ena0";
 defparam ram_block1a45.clk0_input_clock_enable = "ena0";
 defparam ram_block1a45.data_interleave_offset_in_bits = 1;
 defparam ram_block1a45.data_interleave_width_in_bits = 1;
-defparam ram_block1a45.init_file = "sine_hw_ram.hex";
+defparam ram_block1a45.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a45.init_file_layout = "port_a";
-defparam ram_block1a45.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a45.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a45.operation_mode = "single_port";
 defparam ram_block1a45.port_a_address_clear = "none";
 defparam ram_block1a45.port_a_address_width = 13;
@@ -65840,9 +65840,9 @@ defparam ram_block1a13.clk0_core_clock_enable = "ena0";
 defparam ram_block1a13.clk0_input_clock_enable = "ena0";
 defparam ram_block1a13.data_interleave_offset_in_bits = 1;
 defparam ram_block1a13.data_interleave_width_in_bits = 1;
-defparam ram_block1a13.init_file = "sine_hw_ram.hex";
+defparam ram_block1a13.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a13.init_file_layout = "port_a";
-defparam ram_block1a13.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a13.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a13.operation_mode = "single_port";
 defparam ram_block1a13.port_a_address_clear = "none";
 defparam ram_block1a13.port_a_address_width = 13;
@@ -65894,9 +65894,9 @@ defparam ram_block1a46.clk0_core_clock_enable = "ena0";
 defparam ram_block1a46.clk0_input_clock_enable = "ena0";
 defparam ram_block1a46.data_interleave_offset_in_bits = 1;
 defparam ram_block1a46.data_interleave_width_in_bits = 1;
-defparam ram_block1a46.init_file = "sine_hw_ram.hex";
+defparam ram_block1a46.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a46.init_file_layout = "port_a";
-defparam ram_block1a46.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a46.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a46.operation_mode = "single_port";
 defparam ram_block1a46.port_a_address_clear = "none";
 defparam ram_block1a46.port_a_address_width = 13;
@@ -65948,9 +65948,9 @@ defparam ram_block1a14.clk0_core_clock_enable = "ena0";
 defparam ram_block1a14.clk0_input_clock_enable = "ena0";
 defparam ram_block1a14.data_interleave_offset_in_bits = 1;
 defparam ram_block1a14.data_interleave_width_in_bits = 1;
-defparam ram_block1a14.init_file = "sine_hw_ram.hex";
+defparam ram_block1a14.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a14.init_file_layout = "port_a";
-defparam ram_block1a14.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a14.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a14.operation_mode = "single_port";
 defparam ram_block1a14.port_a_address_clear = "none";
 defparam ram_block1a14.port_a_address_width = 13;
@@ -66002,9 +66002,9 @@ defparam ram_block1a47.clk0_core_clock_enable = "ena0";
 defparam ram_block1a47.clk0_input_clock_enable = "ena0";
 defparam ram_block1a47.data_interleave_offset_in_bits = 1;
 defparam ram_block1a47.data_interleave_width_in_bits = 1;
-defparam ram_block1a47.init_file = "sine_hw_ram.hex";
+defparam ram_block1a47.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a47.init_file_layout = "port_a";
-defparam ram_block1a47.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a47.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a47.operation_mode = "single_port";
 defparam ram_block1a47.port_a_address_clear = "none";
 defparam ram_block1a47.port_a_address_width = 13;
@@ -66056,9 +66056,9 @@ defparam ram_block1a15.clk0_core_clock_enable = "ena0";
 defparam ram_block1a15.clk0_input_clock_enable = "ena0";
 defparam ram_block1a15.data_interleave_offset_in_bits = 1;
 defparam ram_block1a15.data_interleave_width_in_bits = 1;
-defparam ram_block1a15.init_file = "sine_hw_ram.hex";
+defparam ram_block1a15.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a15.init_file_layout = "port_a";
-defparam ram_block1a15.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a15.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a15.operation_mode = "single_port";
 defparam ram_block1a15.port_a_address_clear = "none";
 defparam ram_block1a15.port_a_address_width = 13;
@@ -66110,9 +66110,9 @@ defparam ram_block1a48.clk0_core_clock_enable = "ena0";
 defparam ram_block1a48.clk0_input_clock_enable = "ena0";
 defparam ram_block1a48.data_interleave_offset_in_bits = 1;
 defparam ram_block1a48.data_interleave_width_in_bits = 1;
-defparam ram_block1a48.init_file = "sine_hw_ram.hex";
+defparam ram_block1a48.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a48.init_file_layout = "port_a";
-defparam ram_block1a48.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a48.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a48.operation_mode = "single_port";
 defparam ram_block1a48.port_a_address_clear = "none";
 defparam ram_block1a48.port_a_address_width = 13;
@@ -66164,9 +66164,9 @@ defparam ram_block1a16.clk0_core_clock_enable = "ena0";
 defparam ram_block1a16.clk0_input_clock_enable = "ena0";
 defparam ram_block1a16.data_interleave_offset_in_bits = 1;
 defparam ram_block1a16.data_interleave_width_in_bits = 1;
-defparam ram_block1a16.init_file = "sine_hw_ram.hex";
+defparam ram_block1a16.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a16.init_file_layout = "port_a";
-defparam ram_block1a16.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a16.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a16.operation_mode = "single_port";
 defparam ram_block1a16.port_a_address_clear = "none";
 defparam ram_block1a16.port_a_address_width = 13;
@@ -66218,9 +66218,9 @@ defparam ram_block1a37.clk0_core_clock_enable = "ena0";
 defparam ram_block1a37.clk0_input_clock_enable = "ena0";
 defparam ram_block1a37.data_interleave_offset_in_bits = 1;
 defparam ram_block1a37.data_interleave_width_in_bits = 1;
-defparam ram_block1a37.init_file = "sine_hw_ram.hex";
+defparam ram_block1a37.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a37.init_file_layout = "port_a";
-defparam ram_block1a37.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a37.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a37.operation_mode = "single_port";
 defparam ram_block1a37.port_a_address_clear = "none";
 defparam ram_block1a37.port_a_address_width = 13;
@@ -66272,9 +66272,9 @@ defparam ram_block1a5.clk0_core_clock_enable = "ena0";
 defparam ram_block1a5.clk0_input_clock_enable = "ena0";
 defparam ram_block1a5.data_interleave_offset_in_bits = 1;
 defparam ram_block1a5.data_interleave_width_in_bits = 1;
-defparam ram_block1a5.init_file = "sine_hw_ram.hex";
+defparam ram_block1a5.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a5.init_file_layout = "port_a";
-defparam ram_block1a5.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a5.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a5.operation_mode = "single_port";
 defparam ram_block1a5.port_a_address_clear = "none";
 defparam ram_block1a5.port_a_address_width = 13;
@@ -66326,9 +66326,9 @@ defparam ram_block1a52.clk0_core_clock_enable = "ena0";
 defparam ram_block1a52.clk0_input_clock_enable = "ena0";
 defparam ram_block1a52.data_interleave_offset_in_bits = 1;
 defparam ram_block1a52.data_interleave_width_in_bits = 1;
-defparam ram_block1a52.init_file = "sine_hw_ram.hex";
+defparam ram_block1a52.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a52.init_file_layout = "port_a";
-defparam ram_block1a52.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a52.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a52.operation_mode = "single_port";
 defparam ram_block1a52.port_a_address_clear = "none";
 defparam ram_block1a52.port_a_address_width = 13;
@@ -66380,9 +66380,9 @@ defparam ram_block1a20.clk0_core_clock_enable = "ena0";
 defparam ram_block1a20.clk0_input_clock_enable = "ena0";
 defparam ram_block1a20.data_interleave_offset_in_bits = 1;
 defparam ram_block1a20.data_interleave_width_in_bits = 1;
-defparam ram_block1a20.init_file = "sine_hw_ram.hex";
+defparam ram_block1a20.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a20.init_file_layout = "port_a";
-defparam ram_block1a20.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a20.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a20.operation_mode = "single_port";
 defparam ram_block1a20.port_a_address_clear = "none";
 defparam ram_block1a20.port_a_address_width = 13;
@@ -66434,9 +66434,9 @@ defparam ram_block1a50.clk0_core_clock_enable = "ena0";
 defparam ram_block1a50.clk0_input_clock_enable = "ena0";
 defparam ram_block1a50.data_interleave_offset_in_bits = 1;
 defparam ram_block1a50.data_interleave_width_in_bits = 1;
-defparam ram_block1a50.init_file = "sine_hw_ram.hex";
+defparam ram_block1a50.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a50.init_file_layout = "port_a";
-defparam ram_block1a50.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a50.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a50.operation_mode = "single_port";
 defparam ram_block1a50.port_a_address_clear = "none";
 defparam ram_block1a50.port_a_address_width = 13;
@@ -66488,9 +66488,9 @@ defparam ram_block1a18.clk0_core_clock_enable = "ena0";
 defparam ram_block1a18.clk0_input_clock_enable = "ena0";
 defparam ram_block1a18.data_interleave_offset_in_bits = 1;
 defparam ram_block1a18.data_interleave_width_in_bits = 1;
-defparam ram_block1a18.init_file = "sine_hw_ram.hex";
+defparam ram_block1a18.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a18.init_file_layout = "port_a";
-defparam ram_block1a18.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a18.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a18.operation_mode = "single_port";
 defparam ram_block1a18.port_a_address_clear = "none";
 defparam ram_block1a18.port_a_address_width = 13;
@@ -66542,9 +66542,9 @@ defparam ram_block1a49.clk0_core_clock_enable = "ena0";
 defparam ram_block1a49.clk0_input_clock_enable = "ena0";
 defparam ram_block1a49.data_interleave_offset_in_bits = 1;
 defparam ram_block1a49.data_interleave_width_in_bits = 1;
-defparam ram_block1a49.init_file = "sine_hw_ram.hex";
+defparam ram_block1a49.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a49.init_file_layout = "port_a";
-defparam ram_block1a49.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a49.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a49.operation_mode = "single_port";
 defparam ram_block1a49.port_a_address_clear = "none";
 defparam ram_block1a49.port_a_address_width = 13;
@@ -66596,9 +66596,9 @@ defparam ram_block1a17.clk0_core_clock_enable = "ena0";
 defparam ram_block1a17.clk0_input_clock_enable = "ena0";
 defparam ram_block1a17.data_interleave_offset_in_bits = 1;
 defparam ram_block1a17.data_interleave_width_in_bits = 1;
-defparam ram_block1a17.init_file = "sine_hw_ram.hex";
+defparam ram_block1a17.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a17.init_file_layout = "port_a";
-defparam ram_block1a17.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a17.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a17.operation_mode = "single_port";
 defparam ram_block1a17.port_a_address_clear = "none";
 defparam ram_block1a17.port_a_address_width = 13;
@@ -66650,9 +66650,9 @@ defparam ram_block1a54.clk0_core_clock_enable = "ena0";
 defparam ram_block1a54.clk0_input_clock_enable = "ena0";
 defparam ram_block1a54.data_interleave_offset_in_bits = 1;
 defparam ram_block1a54.data_interleave_width_in_bits = 1;
-defparam ram_block1a54.init_file = "sine_hw_ram.hex";
+defparam ram_block1a54.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a54.init_file_layout = "port_a";
-defparam ram_block1a54.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a54.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a54.operation_mode = "single_port";
 defparam ram_block1a54.port_a_address_clear = "none";
 defparam ram_block1a54.port_a_address_width = 13;
@@ -66704,9 +66704,9 @@ defparam ram_block1a22.clk0_core_clock_enable = "ena0";
 defparam ram_block1a22.clk0_input_clock_enable = "ena0";
 defparam ram_block1a22.data_interleave_offset_in_bits = 1;
 defparam ram_block1a22.data_interleave_width_in_bits = 1;
-defparam ram_block1a22.init_file = "sine_hw_ram.hex";
+defparam ram_block1a22.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a22.init_file_layout = "port_a";
-defparam ram_block1a22.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a22.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a22.operation_mode = "single_port";
 defparam ram_block1a22.port_a_address_clear = "none";
 defparam ram_block1a22.port_a_address_width = 13;
@@ -66758,9 +66758,9 @@ defparam ram_block1a53.clk0_core_clock_enable = "ena0";
 defparam ram_block1a53.clk0_input_clock_enable = "ena0";
 defparam ram_block1a53.data_interleave_offset_in_bits = 1;
 defparam ram_block1a53.data_interleave_width_in_bits = 1;
-defparam ram_block1a53.init_file = "sine_hw_ram.hex";
+defparam ram_block1a53.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a53.init_file_layout = "port_a";
-defparam ram_block1a53.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a53.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a53.operation_mode = "single_port";
 defparam ram_block1a53.port_a_address_clear = "none";
 defparam ram_block1a53.port_a_address_width = 13;
@@ -66812,9 +66812,9 @@ defparam ram_block1a21.clk0_core_clock_enable = "ena0";
 defparam ram_block1a21.clk0_input_clock_enable = "ena0";
 defparam ram_block1a21.data_interleave_offset_in_bits = 1;
 defparam ram_block1a21.data_interleave_width_in_bits = 1;
-defparam ram_block1a21.init_file = "sine_hw_ram.hex";
+defparam ram_block1a21.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a21.init_file_layout = "port_a";
-defparam ram_block1a21.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a21.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a21.operation_mode = "single_port";
 defparam ram_block1a21.port_a_address_clear = "none";
 defparam ram_block1a21.port_a_address_width = 13;
@@ -66866,9 +66866,9 @@ defparam ram_block1a40.clk0_core_clock_enable = "ena0";
 defparam ram_block1a40.clk0_input_clock_enable = "ena0";
 defparam ram_block1a40.data_interleave_offset_in_bits = 1;
 defparam ram_block1a40.data_interleave_width_in_bits = 1;
-defparam ram_block1a40.init_file = "sine_hw_ram.hex";
+defparam ram_block1a40.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a40.init_file_layout = "port_a";
-defparam ram_block1a40.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a40.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a40.operation_mode = "single_port";
 defparam ram_block1a40.port_a_address_clear = "none";
 defparam ram_block1a40.port_a_address_width = 13;
@@ -66920,9 +66920,9 @@ defparam ram_block1a8.clk0_core_clock_enable = "ena0";
 defparam ram_block1a8.clk0_input_clock_enable = "ena0";
 defparam ram_block1a8.data_interleave_offset_in_bits = 1;
 defparam ram_block1a8.data_interleave_width_in_bits = 1;
-defparam ram_block1a8.init_file = "sine_hw_ram.hex";
+defparam ram_block1a8.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a8.init_file_layout = "port_a";
-defparam ram_block1a8.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a8.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a8.operation_mode = "single_port";
 defparam ram_block1a8.port_a_address_clear = "none";
 defparam ram_block1a8.port_a_address_width = 13;
@@ -66974,9 +66974,9 @@ defparam ram_block1a63.clk0_core_clock_enable = "ena0";
 defparam ram_block1a63.clk0_input_clock_enable = "ena0";
 defparam ram_block1a63.data_interleave_offset_in_bits = 1;
 defparam ram_block1a63.data_interleave_width_in_bits = 1;
-defparam ram_block1a63.init_file = "sine_hw_ram.hex";
+defparam ram_block1a63.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a63.init_file_layout = "port_a";
-defparam ram_block1a63.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a63.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a63.operation_mode = "single_port";
 defparam ram_block1a63.port_a_address_clear = "none";
 defparam ram_block1a63.port_a_address_width = 13;
@@ -67028,9 +67028,9 @@ defparam ram_block1a31.clk0_core_clock_enable = "ena0";
 defparam ram_block1a31.clk0_input_clock_enable = "ena0";
 defparam ram_block1a31.data_interleave_offset_in_bits = 1;
 defparam ram_block1a31.data_interleave_width_in_bits = 1;
-defparam ram_block1a31.init_file = "sine_hw_ram.hex";
+defparam ram_block1a31.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a31.init_file_layout = "port_a";
-defparam ram_block1a31.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a31.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a31.operation_mode = "single_port";
 defparam ram_block1a31.port_a_address_clear = "none";
 defparam ram_block1a31.port_a_address_width = 13;
@@ -67082,9 +67082,9 @@ defparam ram_block1a62.clk0_core_clock_enable = "ena0";
 defparam ram_block1a62.clk0_input_clock_enable = "ena0";
 defparam ram_block1a62.data_interleave_offset_in_bits = 1;
 defparam ram_block1a62.data_interleave_width_in_bits = 1;
-defparam ram_block1a62.init_file = "sine_hw_ram.hex";
+defparam ram_block1a62.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a62.init_file_layout = "port_a";
-defparam ram_block1a62.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a62.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a62.operation_mode = "single_port";
 defparam ram_block1a62.port_a_address_clear = "none";
 defparam ram_block1a62.port_a_address_width = 13;
@@ -67136,9 +67136,9 @@ defparam ram_block1a30.clk0_core_clock_enable = "ena0";
 defparam ram_block1a30.clk0_input_clock_enable = "ena0";
 defparam ram_block1a30.data_interleave_offset_in_bits = 1;
 defparam ram_block1a30.data_interleave_width_in_bits = 1;
-defparam ram_block1a30.init_file = "sine_hw_ram.hex";
+defparam ram_block1a30.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a30.init_file_layout = "port_a";
-defparam ram_block1a30.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a30.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a30.operation_mode = "single_port";
 defparam ram_block1a30.port_a_address_clear = "none";
 defparam ram_block1a30.port_a_address_width = 13;
@@ -67190,9 +67190,9 @@ defparam ram_block1a61.clk0_core_clock_enable = "ena0";
 defparam ram_block1a61.clk0_input_clock_enable = "ena0";
 defparam ram_block1a61.data_interleave_offset_in_bits = 1;
 defparam ram_block1a61.data_interleave_width_in_bits = 1;
-defparam ram_block1a61.init_file = "sine_hw_ram.hex";
+defparam ram_block1a61.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a61.init_file_layout = "port_a";
-defparam ram_block1a61.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a61.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a61.operation_mode = "single_port";
 defparam ram_block1a61.port_a_address_clear = "none";
 defparam ram_block1a61.port_a_address_width = 13;
@@ -67244,9 +67244,9 @@ defparam ram_block1a29.clk0_core_clock_enable = "ena0";
 defparam ram_block1a29.clk0_input_clock_enable = "ena0";
 defparam ram_block1a29.data_interleave_offset_in_bits = 1;
 defparam ram_block1a29.data_interleave_width_in_bits = 1;
-defparam ram_block1a29.init_file = "sine_hw_ram.hex";
+defparam ram_block1a29.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a29.init_file_layout = "port_a";
-defparam ram_block1a29.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a29.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a29.operation_mode = "single_port";
 defparam ram_block1a29.port_a_address_clear = "none";
 defparam ram_block1a29.port_a_address_width = 13;
@@ -67298,9 +67298,9 @@ defparam ram_block1a60.clk0_core_clock_enable = "ena0";
 defparam ram_block1a60.clk0_input_clock_enable = "ena0";
 defparam ram_block1a60.data_interleave_offset_in_bits = 1;
 defparam ram_block1a60.data_interleave_width_in_bits = 1;
-defparam ram_block1a60.init_file = "sine_hw_ram.hex";
+defparam ram_block1a60.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a60.init_file_layout = "port_a";
-defparam ram_block1a60.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a60.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a60.operation_mode = "single_port";
 defparam ram_block1a60.port_a_address_clear = "none";
 defparam ram_block1a60.port_a_address_width = 13;
@@ -67352,9 +67352,9 @@ defparam ram_block1a28.clk0_core_clock_enable = "ena0";
 defparam ram_block1a28.clk0_input_clock_enable = "ena0";
 defparam ram_block1a28.data_interleave_offset_in_bits = 1;
 defparam ram_block1a28.data_interleave_width_in_bits = 1;
-defparam ram_block1a28.init_file = "sine_hw_ram.hex";
+defparam ram_block1a28.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a28.init_file_layout = "port_a";
-defparam ram_block1a28.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a28.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a28.operation_mode = "single_port";
 defparam ram_block1a28.port_a_address_clear = "none";
 defparam ram_block1a28.port_a_address_width = 13;
@@ -67406,9 +67406,9 @@ defparam ram_block1a59.clk0_core_clock_enable = "ena0";
 defparam ram_block1a59.clk0_input_clock_enable = "ena0";
 defparam ram_block1a59.data_interleave_offset_in_bits = 1;
 defparam ram_block1a59.data_interleave_width_in_bits = 1;
-defparam ram_block1a59.init_file = "sine_hw_ram.hex";
+defparam ram_block1a59.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a59.init_file_layout = "port_a";
-defparam ram_block1a59.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a59.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a59.operation_mode = "single_port";
 defparam ram_block1a59.port_a_address_clear = "none";
 defparam ram_block1a59.port_a_address_width = 13;
@@ -67460,9 +67460,9 @@ defparam ram_block1a27.clk0_core_clock_enable = "ena0";
 defparam ram_block1a27.clk0_input_clock_enable = "ena0";
 defparam ram_block1a27.data_interleave_offset_in_bits = 1;
 defparam ram_block1a27.data_interleave_width_in_bits = 1;
-defparam ram_block1a27.init_file = "sine_hw_ram.hex";
+defparam ram_block1a27.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a27.init_file_layout = "port_a";
-defparam ram_block1a27.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a27.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a27.operation_mode = "single_port";
 defparam ram_block1a27.port_a_address_clear = "none";
 defparam ram_block1a27.port_a_address_width = 13;
@@ -67514,9 +67514,9 @@ defparam ram_block1a58.clk0_core_clock_enable = "ena0";
 defparam ram_block1a58.clk0_input_clock_enable = "ena0";
 defparam ram_block1a58.data_interleave_offset_in_bits = 1;
 defparam ram_block1a58.data_interleave_width_in_bits = 1;
-defparam ram_block1a58.init_file = "sine_hw_ram.hex";
+defparam ram_block1a58.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a58.init_file_layout = "port_a";
-defparam ram_block1a58.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a58.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a58.operation_mode = "single_port";
 defparam ram_block1a58.port_a_address_clear = "none";
 defparam ram_block1a58.port_a_address_width = 13;
@@ -67568,9 +67568,9 @@ defparam ram_block1a26.clk0_core_clock_enable = "ena0";
 defparam ram_block1a26.clk0_input_clock_enable = "ena0";
 defparam ram_block1a26.data_interleave_offset_in_bits = 1;
 defparam ram_block1a26.data_interleave_width_in_bits = 1;
-defparam ram_block1a26.init_file = "sine_hw_ram.hex";
+defparam ram_block1a26.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a26.init_file_layout = "port_a";
-defparam ram_block1a26.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a26.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a26.operation_mode = "single_port";
 defparam ram_block1a26.port_a_address_clear = "none";
 defparam ram_block1a26.port_a_address_width = 13;
@@ -67622,9 +67622,9 @@ defparam ram_block1a41.clk0_core_clock_enable = "ena0";
 defparam ram_block1a41.clk0_input_clock_enable = "ena0";
 defparam ram_block1a41.data_interleave_offset_in_bits = 1;
 defparam ram_block1a41.data_interleave_width_in_bits = 1;
-defparam ram_block1a41.init_file = "sine_hw_ram.hex";
+defparam ram_block1a41.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a41.init_file_layout = "port_a";
-defparam ram_block1a41.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a41.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a41.operation_mode = "single_port";
 defparam ram_block1a41.port_a_address_clear = "none";
 defparam ram_block1a41.port_a_address_width = 13;
@@ -67676,9 +67676,9 @@ defparam ram_block1a9.clk0_core_clock_enable = "ena0";
 defparam ram_block1a9.clk0_input_clock_enable = "ena0";
 defparam ram_block1a9.data_interleave_offset_in_bits = 1;
 defparam ram_block1a9.data_interleave_width_in_bits = 1;
-defparam ram_block1a9.init_file = "sine_hw_ram.hex";
+defparam ram_block1a9.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a9.init_file_layout = "port_a";
-defparam ram_block1a9.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a9.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a9.operation_mode = "single_port";
 defparam ram_block1a9.port_a_address_clear = "none";
 defparam ram_block1a9.port_a_address_width = 13;
@@ -67730,9 +67730,9 @@ defparam ram_block1a55.clk0_core_clock_enable = "ena0";
 defparam ram_block1a55.clk0_input_clock_enable = "ena0";
 defparam ram_block1a55.data_interleave_offset_in_bits = 1;
 defparam ram_block1a55.data_interleave_width_in_bits = 1;
-defparam ram_block1a55.init_file = "sine_hw_ram.hex";
+defparam ram_block1a55.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a55.init_file_layout = "port_a";
-defparam ram_block1a55.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a55.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a55.operation_mode = "single_port";
 defparam ram_block1a55.port_a_address_clear = "none";
 defparam ram_block1a55.port_a_address_width = 13;
@@ -67784,9 +67784,9 @@ defparam ram_block1a23.clk0_core_clock_enable = "ena0";
 defparam ram_block1a23.clk0_input_clock_enable = "ena0";
 defparam ram_block1a23.data_interleave_offset_in_bits = 1;
 defparam ram_block1a23.data_interleave_width_in_bits = 1;
-defparam ram_block1a23.init_file = "sine_hw_ram.hex";
+defparam ram_block1a23.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a23.init_file_layout = "port_a";
-defparam ram_block1a23.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a23.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a23.operation_mode = "single_port";
 defparam ram_block1a23.port_a_address_clear = "none";
 defparam ram_block1a23.port_a_address_width = 13;
@@ -67838,9 +67838,9 @@ defparam ram_block1a42.clk0_core_clock_enable = "ena0";
 defparam ram_block1a42.clk0_input_clock_enable = "ena0";
 defparam ram_block1a42.data_interleave_offset_in_bits = 1;
 defparam ram_block1a42.data_interleave_width_in_bits = 1;
-defparam ram_block1a42.init_file = "sine_hw_ram.hex";
+defparam ram_block1a42.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a42.init_file_layout = "port_a";
-defparam ram_block1a42.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a42.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a42.operation_mode = "single_port";
 defparam ram_block1a42.port_a_address_clear = "none";
 defparam ram_block1a42.port_a_address_width = 13;
@@ -67892,9 +67892,9 @@ defparam ram_block1a10.clk0_core_clock_enable = "ena0";
 defparam ram_block1a10.clk0_input_clock_enable = "ena0";
 defparam ram_block1a10.data_interleave_offset_in_bits = 1;
 defparam ram_block1a10.data_interleave_width_in_bits = 1;
-defparam ram_block1a10.init_file = "sine_hw_ram.hex";
+defparam ram_block1a10.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a10.init_file_layout = "port_a";
-defparam ram_block1a10.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a10.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a10.operation_mode = "single_port";
 defparam ram_block1a10.port_a_address_clear = "none";
 defparam ram_block1a10.port_a_address_width = 13;
@@ -67946,9 +67946,9 @@ defparam ram_block1a56.clk0_core_clock_enable = "ena0";
 defparam ram_block1a56.clk0_input_clock_enable = "ena0";
 defparam ram_block1a56.data_interleave_offset_in_bits = 1;
 defparam ram_block1a56.data_interleave_width_in_bits = 1;
-defparam ram_block1a56.init_file = "sine_hw_ram.hex";
+defparam ram_block1a56.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a56.init_file_layout = "port_a";
-defparam ram_block1a56.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a56.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a56.operation_mode = "single_port";
 defparam ram_block1a56.port_a_address_clear = "none";
 defparam ram_block1a56.port_a_address_width = 13;
@@ -68000,9 +68000,9 @@ defparam ram_block1a24.clk0_core_clock_enable = "ena0";
 defparam ram_block1a24.clk0_input_clock_enable = "ena0";
 defparam ram_block1a24.data_interleave_offset_in_bits = 1;
 defparam ram_block1a24.data_interleave_width_in_bits = 1;
-defparam ram_block1a24.init_file = "sine_hw_ram.hex";
+defparam ram_block1a24.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a24.init_file_layout = "port_a";
-defparam ram_block1a24.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a24.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a24.operation_mode = "single_port";
 defparam ram_block1a24.port_a_address_clear = "none";
 defparam ram_block1a24.port_a_address_width = 13;
@@ -68054,9 +68054,9 @@ defparam ram_block1a57.clk0_core_clock_enable = "ena0";
 defparam ram_block1a57.clk0_input_clock_enable = "ena0";
 defparam ram_block1a57.data_interleave_offset_in_bits = 1;
 defparam ram_block1a57.data_interleave_width_in_bits = 1;
-defparam ram_block1a57.init_file = "sine_hw_ram.hex";
+defparam ram_block1a57.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a57.init_file_layout = "port_a";
-defparam ram_block1a57.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a57.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a57.operation_mode = "single_port";
 defparam ram_block1a57.port_a_address_clear = "none";
 defparam ram_block1a57.port_a_address_width = 13;
@@ -68108,9 +68108,9 @@ defparam ram_block1a25.clk0_core_clock_enable = "ena0";
 defparam ram_block1a25.clk0_input_clock_enable = "ena0";
 defparam ram_block1a25.data_interleave_offset_in_bits = 1;
 defparam ram_block1a25.data_interleave_width_in_bits = 1;
-defparam ram_block1a25.init_file = "sine_hw_ram.hex";
+defparam ram_block1a25.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a25.init_file_layout = "port_a";
-defparam ram_block1a25.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a25.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a25.operation_mode = "single_port";
 defparam ram_block1a25.port_a_address_clear = "none";
 defparam ram_block1a25.port_a_address_width = 13;
@@ -68162,9 +68162,9 @@ defparam ram_block1a38.clk0_core_clock_enable = "ena0";
 defparam ram_block1a38.clk0_input_clock_enable = "ena0";
 defparam ram_block1a38.data_interleave_offset_in_bits = 1;
 defparam ram_block1a38.data_interleave_width_in_bits = 1;
-defparam ram_block1a38.init_file = "sine_hw_ram.hex";
+defparam ram_block1a38.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a38.init_file_layout = "port_a";
-defparam ram_block1a38.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a38.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a38.operation_mode = "single_port";
 defparam ram_block1a38.port_a_address_clear = "none";
 defparam ram_block1a38.port_a_address_width = 13;
@@ -68216,9 +68216,9 @@ defparam ram_block1a6.clk0_core_clock_enable = "ena0";
 defparam ram_block1a6.clk0_input_clock_enable = "ena0";
 defparam ram_block1a6.data_interleave_offset_in_bits = 1;
 defparam ram_block1a6.data_interleave_width_in_bits = 1;
-defparam ram_block1a6.init_file = "sine_hw_ram.hex";
+defparam ram_block1a6.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a6.init_file_layout = "port_a";
-defparam ram_block1a6.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a6.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a6.operation_mode = "single_port";
 defparam ram_block1a6.port_a_address_clear = "none";
 defparam ram_block1a6.port_a_address_width = 13;
@@ -68270,9 +68270,9 @@ defparam ram_block1a39.clk0_core_clock_enable = "ena0";
 defparam ram_block1a39.clk0_input_clock_enable = "ena0";
 defparam ram_block1a39.data_interleave_offset_in_bits = 1;
 defparam ram_block1a39.data_interleave_width_in_bits = 1;
-defparam ram_block1a39.init_file = "sine_hw_ram.hex";
+defparam ram_block1a39.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a39.init_file_layout = "port_a";
-defparam ram_block1a39.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a39.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a39.operation_mode = "single_port";
 defparam ram_block1a39.port_a_address_clear = "none";
 defparam ram_block1a39.port_a_address_width = 13;
@@ -68324,9 +68324,9 @@ defparam ram_block1a7.clk0_core_clock_enable = "ena0";
 defparam ram_block1a7.clk0_input_clock_enable = "ena0";
 defparam ram_block1a7.data_interleave_offset_in_bits = 1;
 defparam ram_block1a7.data_interleave_width_in_bits = 1;
-defparam ram_block1a7.init_file = "sine_hw_ram.hex";
+defparam ram_block1a7.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a7.init_file_layout = "port_a";
-defparam ram_block1a7.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a7.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a7.operation_mode = "single_port";
 defparam ram_block1a7.port_a_address_clear = "none";
 defparam ram_block1a7.port_a_address_width = 13;
@@ -68378,9 +68378,9 @@ defparam ram_block1a51.clk0_core_clock_enable = "ena0";
 defparam ram_block1a51.clk0_input_clock_enable = "ena0";
 defparam ram_block1a51.data_interleave_offset_in_bits = 1;
 defparam ram_block1a51.data_interleave_width_in_bits = 1;
-defparam ram_block1a51.init_file = "sine_hw_ram.hex";
+defparam ram_block1a51.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a51.init_file_layout = "port_a";
-defparam ram_block1a51.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a51.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a51.operation_mode = "single_port";
 defparam ram_block1a51.port_a_address_clear = "none";
 defparam ram_block1a51.port_a_address_width = 13;
@@ -68432,9 +68432,9 @@ defparam ram_block1a19.clk0_core_clock_enable = "ena0";
 defparam ram_block1a19.clk0_input_clock_enable = "ena0";
 defparam ram_block1a19.data_interleave_offset_in_bits = 1;
 defparam ram_block1a19.data_interleave_width_in_bits = 1;
-defparam ram_block1a19.init_file = "sine_hw_ram.hex";
+defparam ram_block1a19.init_file = "sine_wave_hw_ram.hex";
 defparam ram_block1a19.init_file_layout = "port_a";
-defparam ram_block1a19.logical_ram_name = "sine_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_b7m1:auto_generated|ALTSYNCRAM";
+defparam ram_block1a19.logical_ram_name = "sine_wave_hw_ram:ram|altsyncram:the_altsyncram|altsyncram_tnm1:auto_generated|ALTSYNCRAM";
 defparam ram_block1a19.operation_mode = "single_port";
 defparam ram_block1a19.port_a_address_clear = "none";
 defparam ram_block1a19.port_a_address_width = 13;
@@ -68471,7 +68471,7 @@ defparam \address_reg_a[0] .power_up = "low";
 
 endmodule
 
-module sine_hw_decode_5la (
+module sine_wave_hw_decode_5la (
 	saved_grant_0,
 	src2_valid,
 	src_valid,
@@ -68536,7 +68536,7 @@ defparam \eq_node[0] .shared_arith = "off";
 
 endmodule
 
-module sine_hw_sine_hw_sdram (
+module sine_wave_hw_sine_wave_hw_sdram (
 	m_addr_0,
 	m_addr_1,
 	m_addr_2,
@@ -68568,7 +68568,7 @@ module sine_hw_sine_hw_sdram (
 	saved_grant_1,
 	out_data_32,
 	Equal0,
-	src3_valid,
+	src4_valid,
 	src_valid,
 	mem,
 	d_byteenable_1,
@@ -68697,7 +68697,7 @@ input 	saved_grant_0;
 input 	saved_grant_1;
 input 	out_data_32;
 output 	Equal0;
-input 	src3_valid;
+input 	src4_valid;
 input 	src_valid;
 input 	mem;
 input 	d_byteenable_1;
@@ -68805,88 +68805,88 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \the_sine_hw_sdram_input_efifo_module|rd_address~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[31]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[31]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entries[1]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entries[0]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[38]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[38]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[38]~0_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[39]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[39]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[39]~1_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[40]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[40]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[41]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[41]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[28]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[28]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[28]~2_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[42]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[42]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[29]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[29]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[30]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[30]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[43]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[43]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[33]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[33]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[34]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[34]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[35]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[35]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[36]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[36]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_1[37]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|entry_0[37]~q ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[18]~3_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[19]~4_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[20]~5_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[21]~6_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[22]~7_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[23]~8_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[24]~9_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[25]~10_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[26]~11_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[27]~12_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[42]~13_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[16]~14_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[17]~15_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[29]~16_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[43]~17_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[31]~18_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[40]~19_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[41]~20_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[30]~21_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[32]~22_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[33]~23_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[34]~24_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[35]~25_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[36]~26_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[37]~27_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[31]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[31]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entries[1]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entries[0]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[38]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[38]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[38]~0_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[39]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[39]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[39]~1_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[40]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[40]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[41]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[41]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[28]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[28]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[28]~2_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[42]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[42]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[29]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[29]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[30]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[30]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[43]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[43]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[33]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[33]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[34]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[34]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[35]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[35]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[36]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[36]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_1[37]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|entry_0[37]~q ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[18]~3_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[19]~4_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[20]~5_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[21]~6_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[22]~7_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[23]~8_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[24]~9_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[25]~10_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[26]~11_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[27]~12_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[42]~13_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[16]~14_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[17]~15_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[29]~16_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[43]~17_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[31]~18_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[40]~19_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[41]~20_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[30]~21_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[32]~22_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[33]~23_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[34]~24_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[35]~25_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[36]~26_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[37]~27_combout ;
 wire \comb~0_combout ;
 wire \comb~1_combout ;
 wire \comb~2_combout ;
 wire \comb~3_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[0]~28_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[1]~29_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[2]~30_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[3]~31_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[4]~32_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[5]~33_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[6]~34_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[7]~35_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[8]~36_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[9]~37_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[10]~38_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[11]~39_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[12]~40_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[13]~41_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[14]~42_combout ;
-wire \the_sine_hw_sdram_input_efifo_module|rd_data[15]~43_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[0]~28_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[1]~29_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[2]~30_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[3]~31_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[4]~32_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[5]~33_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[6]~34_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[7]~35_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[8]~36_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[9]~37_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[10]~38_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[11]~39_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[12]~40_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[13]~41_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[14]~42_combout ;
+wire \the_sine_wave_hw_sdram_input_efifo_module|rd_data[15]~43_combout ;
 wire \active_addr[13]~q ;
 wire \Equal3~0_combout ;
 wire \active_addr[22]~q ;
@@ -68904,17 +68904,17 @@ wire \pending~3_combout ;
 wire \active_addr[24]~q ;
 wire \active_rnw~q ;
 wire \Add0~9_sumout ;
-wire \refresh_counter~0_combout ;
 wire \refresh_counter[0]~q ;
 wire \Add0~10 ;
 wire \Add0~5_sumout ;
+wire \refresh_counter~1_combout ;
 wire \refresh_counter[1]~q ;
 wire \Add0~6 ;
 wire \Add0~49_sumout ;
 wire \refresh_counter[2]~q ;
 wire \Add0~50 ;
 wire \Add0~45_sumout ;
-wire \refresh_counter~8_combout ;
+wire \refresh_counter[3]~12_combout ;
 wire \refresh_counter[3]~q ;
 wire \Add0~46 ;
 wire \Add0~41_sumout ;
@@ -68930,27 +68930,27 @@ wire \refresh_counter~5_combout ;
 wire \refresh_counter[6]~q ;
 wire \Add0~34 ;
 wire \Add0~1_sumout ;
-wire \refresh_counter[7]~9_combout ;
+wire \refresh_counter~0_combout ;
 wire \refresh_counter[7]~q ;
 wire \Add0~2 ;
 wire \Add0~29_sumout ;
-wire \refresh_counter[8]~12_combout ;
+wire \refresh_counter[8]~11_combout ;
 wire \refresh_counter[8]~q ;
 wire \Add0~30 ;
 wire \Add0~25_sumout ;
-wire \refresh_counter~4_combout ;
+wire \refresh_counter[9]~10_combout ;
 wire \refresh_counter[9]~q ;
 wire \Add0~26 ;
 wire \Add0~21_sumout ;
-wire \refresh_counter~3_combout ;
+wire \refresh_counter~4_combout ;
 wire \refresh_counter[10]~q ;
 wire \Add0~22 ;
 wire \Add0~17_sumout ;
-wire \refresh_counter~2_combout ;
+wire \refresh_counter~3_combout ;
 wire \refresh_counter[11]~q ;
 wire \Add0~18 ;
 wire \Add0~13_sumout ;
-wire \refresh_counter~1_combout ;
+wire \refresh_counter~2_combout ;
 wire \refresh_counter[12]~q ;
 wire \Equal0~0_combout ;
 wire \Equal0~1_combout ;
@@ -69174,93 +69174,93 @@ wire \rd_valid[1]~q ;
 wire \rd_valid[2]~q ;
 
 
-sine_hw_sine_hw_sdram_input_efifo_module the_sine_hw_sdram_input_efifo_module(
+sine_wave_hw_sine_wave_hw_sdram_input_efifo_module the_sine_wave_hw_sdram_input_efifo_module(
 	.WideOr0(WideOr0),
 	.f_pop(\f_pop~q ),
-	.rd_address1(\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
-	.entry_1_31(\the_sine_hw_sdram_input_efifo_module|entry_1[31]~q ),
-	.entry_0_31(\the_sine_hw_sdram_input_efifo_module|entry_0[31]~q ),
-	.entries_1(\the_sine_hw_sdram_input_efifo_module|entries[1]~q ),
-	.entries_0(\the_sine_hw_sdram_input_efifo_module|entries[0]~q ),
-	.Equal1(\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
-	.entry_1_38(\the_sine_hw_sdram_input_efifo_module|entry_1[38]~q ),
-	.entry_0_38(\the_sine_hw_sdram_input_efifo_module|entry_0[38]~q ),
-	.rd_data_38(\the_sine_hw_sdram_input_efifo_module|rd_data[38]~0_combout ),
-	.entry_1_39(\the_sine_hw_sdram_input_efifo_module|entry_1[39]~q ),
-	.entry_0_39(\the_sine_hw_sdram_input_efifo_module|entry_0[39]~q ),
-	.rd_data_39(\the_sine_hw_sdram_input_efifo_module|rd_data[39]~1_combout ),
-	.entry_1_40(\the_sine_hw_sdram_input_efifo_module|entry_1[40]~q ),
-	.entry_0_40(\the_sine_hw_sdram_input_efifo_module|entry_0[40]~q ),
-	.entry_1_41(\the_sine_hw_sdram_input_efifo_module|entry_1[41]~q ),
-	.entry_0_41(\the_sine_hw_sdram_input_efifo_module|entry_0[41]~q ),
-	.entry_1_28(\the_sine_hw_sdram_input_efifo_module|entry_1[28]~q ),
-	.entry_0_28(\the_sine_hw_sdram_input_efifo_module|entry_0[28]~q ),
-	.rd_data_28(\the_sine_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
-	.entry_1_42(\the_sine_hw_sdram_input_efifo_module|entry_1[42]~q ),
-	.entry_0_42(\the_sine_hw_sdram_input_efifo_module|entry_0[42]~q ),
-	.entry_1_29(\the_sine_hw_sdram_input_efifo_module|entry_1[29]~q ),
-	.entry_0_29(\the_sine_hw_sdram_input_efifo_module|entry_0[29]~q ),
-	.entry_1_30(\the_sine_hw_sdram_input_efifo_module|entry_1[30]~q ),
-	.entry_0_30(\the_sine_hw_sdram_input_efifo_module|entry_0[30]~q ),
-	.entry_1_43(\the_sine_hw_sdram_input_efifo_module|entry_1[43]~q ),
-	.entry_0_43(\the_sine_hw_sdram_input_efifo_module|entry_0[43]~q ),
-	.entry_1_33(\the_sine_hw_sdram_input_efifo_module|entry_1[33]~q ),
-	.entry_0_33(\the_sine_hw_sdram_input_efifo_module|entry_0[33]~q ),
-	.entry_1_34(\the_sine_hw_sdram_input_efifo_module|entry_1[34]~q ),
-	.entry_0_34(\the_sine_hw_sdram_input_efifo_module|entry_0[34]~q ),
-	.entry_1_35(\the_sine_hw_sdram_input_efifo_module|entry_1[35]~q ),
-	.entry_0_35(\the_sine_hw_sdram_input_efifo_module|entry_0[35]~q ),
-	.entry_1_36(\the_sine_hw_sdram_input_efifo_module|entry_1[36]~q ),
-	.entry_0_36(\the_sine_hw_sdram_input_efifo_module|entry_0[36]~q ),
-	.entry_1_37(\the_sine_hw_sdram_input_efifo_module|entry_1[37]~q ),
-	.entry_0_37(\the_sine_hw_sdram_input_efifo_module|entry_0[37]~q ),
+	.rd_address1(\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
+	.entry_1_31(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[31]~q ),
+	.entry_0_31(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[31]~q ),
+	.entries_1(\the_sine_wave_hw_sdram_input_efifo_module|entries[1]~q ),
+	.entries_0(\the_sine_wave_hw_sdram_input_efifo_module|entries[0]~q ),
+	.Equal1(\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.entry_1_38(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[38]~q ),
+	.entry_0_38(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[38]~q ),
+	.rd_data_38(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[38]~0_combout ),
+	.entry_1_39(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[39]~q ),
+	.entry_0_39(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[39]~q ),
+	.rd_data_39(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[39]~1_combout ),
+	.entry_1_40(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[40]~q ),
+	.entry_0_40(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[40]~q ),
+	.entry_1_41(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[41]~q ),
+	.entry_0_41(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[41]~q ),
+	.entry_1_28(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[28]~q ),
+	.entry_0_28(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[28]~q ),
+	.rd_data_28(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
+	.entry_1_42(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[42]~q ),
+	.entry_0_42(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[42]~q ),
+	.entry_1_29(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[29]~q ),
+	.entry_0_29(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[29]~q ),
+	.entry_1_30(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[30]~q ),
+	.entry_0_30(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[30]~q ),
+	.entry_1_43(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[43]~q ),
+	.entry_0_43(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[43]~q ),
+	.entry_1_33(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[33]~q ),
+	.entry_0_33(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[33]~q ),
+	.entry_1_34(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[34]~q ),
+	.entry_0_34(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[34]~q ),
+	.entry_1_35(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[35]~q ),
+	.entry_0_35(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[35]~q ),
+	.entry_1_36(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[36]~q ),
+	.entry_0_36(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[36]~q ),
+	.entry_1_37(\the_sine_wave_hw_sdram_input_efifo_module|entry_1[37]~q ),
+	.entry_0_37(\the_sine_wave_hw_sdram_input_efifo_module|entry_0[37]~q ),
 	.Selector41(\Selector41~0_combout ),
-	.rd_data_18(\the_sine_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
+	.rd_data_18(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
 	.reset_n(r_sync_rst),
-	.rd_data_19(\the_sine_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
-	.rd_data_20(\the_sine_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
-	.rd_data_21(\the_sine_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
-	.rd_data_22(\the_sine_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
-	.rd_data_23(\the_sine_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
-	.rd_data_24(\the_sine_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
-	.rd_data_25(\the_sine_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
-	.rd_data_26(\the_sine_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
-	.rd_data_27(\the_sine_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
-	.rd_data_42(\the_sine_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
-	.rd_data_16(\the_sine_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
-	.rd_data_17(\the_sine_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
-	.rd_data_29(\the_sine_hw_sdram_input_efifo_module|rd_data[29]~16_combout ),
-	.rd_data_43(\the_sine_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
-	.rd_data_31(\the_sine_hw_sdram_input_efifo_module|rd_data[31]~18_combout ),
+	.rd_data_19(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
+	.rd_data_20(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
+	.rd_data_21(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
+	.rd_data_22(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
+	.rd_data_23(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
+	.rd_data_24(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
+	.rd_data_25(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
+	.rd_data_26(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
+	.rd_data_27(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
+	.rd_data_42(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
+	.rd_data_16(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
+	.rd_data_17(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
+	.rd_data_29(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[29]~16_combout ),
+	.rd_data_43(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
+	.rd_data_31(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[31]~18_combout ),
 	.saved_grant_0(saved_grant_0),
 	.out_data_32(out_data_32),
 	.Equal0(Equal0),
-	.src3_valid(src3_valid),
+	.src4_valid(src4_valid),
 	.src_valid(src_valid),
 	.mem(mem),
 	.m0_write(m0_write1),
 	.out_data_39(out_data_39),
 	.out_data_40(out_data_40),
-	.rd_data_40(\the_sine_hw_sdram_input_efifo_module|rd_data[40]~19_combout ),
+	.rd_data_40(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[40]~19_combout ),
 	.out_data_41(out_data_41),
-	.rd_data_41(\the_sine_hw_sdram_input_efifo_module|rd_data[41]~20_combout ),
+	.rd_data_41(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[41]~20_combout ),
 	.out_data_42(out_data_42),
 	.out_data_29(out_data_29),
 	.out_data_43(out_data_43),
 	.out_data_30(out_data_30),
-	.rd_data_30(\the_sine_hw_sdram_input_efifo_module|rd_data[30]~21_combout ),
+	.rd_data_30(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[30]~21_combout ),
 	.out_data_31(out_data_31),
-	.rd_data_32(\the_sine_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
+	.rd_data_32(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
 	.out_data_33(out_data_33),
-	.rd_data_33(\the_sine_hw_sdram_input_efifo_module|rd_data[33]~23_combout ),
+	.rd_data_33(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[33]~23_combout ),
 	.out_data_34(out_data_34),
-	.rd_data_34(\the_sine_hw_sdram_input_efifo_module|rd_data[34]~24_combout ),
+	.rd_data_34(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[34]~24_combout ),
 	.out_data_35(out_data_35),
-	.rd_data_35(\the_sine_hw_sdram_input_efifo_module|rd_data[35]~25_combout ),
+	.rd_data_35(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[35]~25_combout ),
 	.out_data_36(out_data_36),
-	.rd_data_36(\the_sine_hw_sdram_input_efifo_module|rd_data[36]~26_combout ),
+	.rd_data_36(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[36]~26_combout ),
 	.out_data_37(out_data_37),
-	.rd_data_37(\the_sine_hw_sdram_input_efifo_module|rd_data[37]~27_combout ),
+	.rd_data_37(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[37]~27_combout ),
 	.out_data_38(out_data_38),
 	.out_data_19(out_data_19),
 	.out_data_20(out_data_20),
@@ -69275,22 +69275,22 @@ sine_hw_sine_hw_sdram_input_efifo_module the_sine_hw_sdram_input_efifo_module(
 	.comb(\comb~1_combout ),
 	.comb1(\comb~3_combout ),
 	.always2(always2),
-	.rd_data_0(\the_sine_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
-	.rd_data_1(\the_sine_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
-	.rd_data_2(\the_sine_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
-	.rd_data_3(\the_sine_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
-	.rd_data_4(\the_sine_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
-	.rd_data_5(\the_sine_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
-	.rd_data_6(\the_sine_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
-	.rd_data_7(\the_sine_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
-	.rd_data_8(\the_sine_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
-	.rd_data_9(\the_sine_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
-	.rd_data_10(\the_sine_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
-	.rd_data_11(\the_sine_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
-	.rd_data_12(\the_sine_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
-	.rd_data_13(\the_sine_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
-	.rd_data_14(\the_sine_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
-	.rd_data_15(\the_sine_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
+	.rd_data_0(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
+	.rd_data_1(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
+	.rd_data_2(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
+	.rd_data_3(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
+	.rd_data_4(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
+	.rd_data_5(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
+	.rd_data_6(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
+	.rd_data_7(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
+	.rd_data_8(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
+	.rd_data_9(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
+	.rd_data_10(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
+	.rd_data_11(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
+	.rd_data_12(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
+	.rd_data_13(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
+	.rd_data_14(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
+	.rd_data_15(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
 	.out_data_0(out_data_0),
 	.out_data_1(out_data_1),
 	.out_data_2(out_data_2),
@@ -69329,7 +69329,7 @@ defparam \comb~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \comb~1 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!WideOr0),
 	.datae(!m0_write),
@@ -69365,7 +69365,7 @@ defparam \comb~2 .shared_arith = "off";
 
 cyclonev_lcell_comb \comb~3 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!WideOr0),
 	.datae(!m0_write),
@@ -70153,7 +70153,7 @@ defparam \za_data[7] .power_up = "low";
 
 dffeas \active_addr[13] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[31]~18_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[31]~18_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70166,10 +70166,10 @@ defparam \active_addr[13] .is_wysiwyg = "true";
 defparam \active_addr[13] .power_up = "low";
 
 cyclonev_lcell_comb \Equal3~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[13]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[31]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[31]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[31]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[31]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -70185,7 +70185,7 @@ defparam \Equal3~0 .shared_arith = "off";
 
 dffeas \active_addr[22] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[40]~19_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[40]~19_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70199,7 +70199,7 @@ defparam \active_addr[22] .power_up = "low";
 
 dffeas \active_addr[20] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[38]~0_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[38]~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70213,7 +70213,7 @@ defparam \active_addr[20] .power_up = "low";
 
 dffeas \active_addr[21] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[39]~1_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[39]~1_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70228,10 +70228,10 @@ defparam \active_addr[21] .power_up = "low";
 cyclonev_lcell_comb \pending~7 (
 	.dataa(!\active_addr[20]~q ),
 	.datab(!\active_addr[21]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[38]~q ),
-	.datae(!\the_sine_hw_sdram_input_efifo_module|entry_1[39]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_0[39]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[38]~q ),
+	.datae(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[39]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[39]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -70245,7 +70245,7 @@ defparam \pending~7 .shared_arith = "off";
 
 dffeas \active_addr[23] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[41]~20_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[41]~20_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70259,11 +70259,11 @@ defparam \active_addr[23] .power_up = "low";
 
 cyclonev_lcell_comb \pending~8 (
 	.dataa(!\active_addr[20]~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[38]~q ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[38]~q ),
 	.datad(!\active_addr[23]~q ),
-	.datae(!\the_sine_hw_sdram_input_efifo_module|entry_1[41]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_0[41]~q ),
+	.datae(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[41]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[41]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -70276,10 +70276,10 @@ defparam \pending~8 .lut_mask = 64'h6996966996696996;
 defparam \pending~8 .shared_arith = "off";
 
 cyclonev_lcell_comb \pending~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[22]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[40]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[40]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[40]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[40]~q ),
 	.datae(!\pending~7_combout ),
 	.dataf(!\pending~8_combout ),
 	.datag(gnd),
@@ -70295,7 +70295,7 @@ defparam \pending~0 .shared_arith = "off";
 
 dffeas \active_addr[11] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[29]~16_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[29]~16_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70309,7 +70309,7 @@ defparam \active_addr[11] .power_up = "low";
 
 dffeas \active_addr[12] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[30]~21_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[30]~21_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70322,12 +70322,12 @@ defparam \active_addr[12] .is_wysiwyg = "true";
 defparam \active_addr[12] .power_up = "low";
 
 cyclonev_lcell_comb \pending~4 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[11]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[29]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[29]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[29]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[29]~q ),
 	.datae(!\active_addr[12]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_1[30]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[30]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -70341,7 +70341,7 @@ defparam \pending~4 .shared_arith = "off";
 
 dffeas \active_addr[10] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70355,11 +70355,11 @@ defparam \active_addr[10] .power_up = "low";
 
 cyclonev_lcell_comb \pending~3 (
 	.dataa(!\active_addr[10]~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[28]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[28]~q ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[28]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[28]~q ),
 	.datae(!\active_addr[12]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_0[30]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[30]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -70373,7 +70373,7 @@ defparam \pending~3 .shared_arith = "off";
 
 dffeas \active_addr[24] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70387,7 +70387,7 @@ defparam \active_addr[24] .power_up = "low";
 
 dffeas active_rnw(
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -70417,27 +70417,9 @@ defparam \Add0~9 .extended_lut = "off";
 defparam \Add0~9 .lut_mask = 64'h00000000000000FF;
 defparam \Add0~9 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~0 (
-	.dataa(!\Equal0~2_combout ),
-	.datab(!\Add0~9_sumout ),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\refresh_counter~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-defparam \refresh_counter~0 .extended_lut = "off";
-defparam \refresh_counter~0 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
-defparam \refresh_counter~0 .shared_arith = "off";
-
 dffeas \refresh_counter[0] (
 	.clk(clk_clk),
-	.d(\refresh_counter~0_combout ),
+	.d(\Add0~9_sumout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70467,9 +70449,27 @@ defparam \Add0~5 .extended_lut = "off";
 defparam \Add0~5 .lut_mask = 64'h00000000000000FF;
 defparam \Add0~5 .shared_arith = "off";
 
+cyclonev_lcell_comb \refresh_counter~1 (
+	.dataa(!\Equal0~2_combout ),
+	.datab(!\Add0~5_sumout ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\refresh_counter~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+defparam \refresh_counter~1 .extended_lut = "off";
+defparam \refresh_counter~1 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
+defparam \refresh_counter~1 .shared_arith = "off";
+
 dffeas \refresh_counter[1] (
 	.clk(clk_clk),
-	.d(\Add0~5_sumout ),
+	.d(\refresh_counter~1_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70531,9 +70531,9 @@ defparam \Add0~45 .extended_lut = "off";
 defparam \Add0~45 .lut_mask = 64'h000000000000FF00;
 defparam \Add0~45 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~8 (
-	.dataa(!\Equal0~2_combout ),
-	.datab(!\Add0~45_sumout ),
+cyclonev_lcell_comb \refresh_counter[3]~12 (
+	.dataa(!\Add0~45_sumout ),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -70541,17 +70541,17 @@ cyclonev_lcell_comb \refresh_counter~8 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter~8_combout ),
+	.combout(\refresh_counter[3]~12_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter~8 .extended_lut = "off";
-defparam \refresh_counter~8 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
-defparam \refresh_counter~8 .shared_arith = "off";
+defparam \refresh_counter[3]~12 .extended_lut = "off";
+defparam \refresh_counter[3]~12 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \refresh_counter[3]~12 .shared_arith = "off";
 
 dffeas \refresh_counter[3] (
 	.clk(clk_clk),
-	.d(\refresh_counter~8_combout ),
+	.d(\refresh_counter[3]~12_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70731,9 +70731,9 @@ defparam \Add0~1 .extended_lut = "off";
 defparam \Add0~1 .lut_mask = 64'h000000000000FF00;
 defparam \Add0~1 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter[7]~9 (
-	.dataa(!\Add0~1_sumout ),
-	.datab(gnd),
+cyclonev_lcell_comb \refresh_counter~0 (
+	.dataa(!\Equal0~2_combout ),
+	.datab(!\Add0~1_sumout ),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -70741,17 +70741,17 @@ cyclonev_lcell_comb \refresh_counter[7]~9 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter[7]~9_combout ),
+	.combout(\refresh_counter~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter[7]~9 .extended_lut = "off";
-defparam \refresh_counter[7]~9 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
-defparam \refresh_counter[7]~9 .shared_arith = "off";
+defparam \refresh_counter~0 .extended_lut = "off";
+defparam \refresh_counter~0 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
+defparam \refresh_counter~0 .shared_arith = "off";
 
 dffeas \refresh_counter[7] (
 	.clk(clk_clk),
-	.d(\refresh_counter[7]~9_combout ),
+	.d(\refresh_counter~0_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70781,7 +70781,7 @@ defparam \Add0~29 .extended_lut = "off";
 defparam \Add0~29 .lut_mask = 64'h000000000000FF00;
 defparam \Add0~29 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter[8]~12 (
+cyclonev_lcell_comb \refresh_counter[8]~11 (
 	.dataa(!\Add0~29_sumout ),
 	.datab(gnd),
 	.datac(gnd),
@@ -70791,17 +70791,17 @@ cyclonev_lcell_comb \refresh_counter[8]~12 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter[8]~12_combout ),
+	.combout(\refresh_counter[8]~11_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter[8]~12 .extended_lut = "off";
-defparam \refresh_counter[8]~12 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
-defparam \refresh_counter[8]~12 .shared_arith = "off";
+defparam \refresh_counter[8]~11 .extended_lut = "off";
+defparam \refresh_counter[8]~11 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \refresh_counter[8]~11 .shared_arith = "off";
 
 dffeas \refresh_counter[8] (
 	.clk(clk_clk),
-	.d(\refresh_counter[8]~12_combout ),
+	.d(\refresh_counter[8]~11_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70831,9 +70831,9 @@ defparam \Add0~25 .extended_lut = "off";
 defparam \Add0~25 .lut_mask = 64'h000000000000FF00;
 defparam \Add0~25 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~4 (
-	.dataa(!\Equal0~2_combout ),
-	.datab(!\Add0~25_sumout ),
+cyclonev_lcell_comb \refresh_counter[9]~10 (
+	.dataa(!\Add0~25_sumout ),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
@@ -70841,17 +70841,17 @@ cyclonev_lcell_comb \refresh_counter~4 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter~4_combout ),
+	.combout(\refresh_counter[9]~10_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter~4 .extended_lut = "off";
-defparam \refresh_counter~4 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
-defparam \refresh_counter~4 .shared_arith = "off";
+defparam \refresh_counter[9]~10 .extended_lut = "off";
+defparam \refresh_counter[9]~10 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \refresh_counter[9]~10 .shared_arith = "off";
 
 dffeas \refresh_counter[9] (
 	.clk(clk_clk),
-	.d(\refresh_counter~4_combout ),
+	.d(\refresh_counter[9]~10_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70881,7 +70881,7 @@ defparam \Add0~21 .extended_lut = "off";
 defparam \Add0~21 .lut_mask = 64'h00000000000000FF;
 defparam \Add0~21 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~3 (
+cyclonev_lcell_comb \refresh_counter~4 (
 	.dataa(!\Equal0~2_combout ),
 	.datab(!\Add0~21_sumout ),
 	.datac(gnd),
@@ -70891,17 +70891,17 @@ cyclonev_lcell_comb \refresh_counter~3 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter~3_combout ),
+	.combout(\refresh_counter~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter~3 .extended_lut = "off";
-defparam \refresh_counter~3 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
-defparam \refresh_counter~3 .shared_arith = "off";
+defparam \refresh_counter~4 .extended_lut = "off";
+defparam \refresh_counter~4 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
+defparam \refresh_counter~4 .shared_arith = "off";
 
 dffeas \refresh_counter[10] (
 	.clk(clk_clk),
-	.d(\refresh_counter~3_combout ),
+	.d(\refresh_counter~4_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70931,7 +70931,7 @@ defparam \Add0~17 .extended_lut = "off";
 defparam \Add0~17 .lut_mask = 64'h00000000000000FF;
 defparam \Add0~17 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~2 (
+cyclonev_lcell_comb \refresh_counter~3 (
 	.dataa(!\Equal0~2_combout ),
 	.datab(!\Add0~17_sumout ),
 	.datac(gnd),
@@ -70941,17 +70941,17 @@ cyclonev_lcell_comb \refresh_counter~2 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter~2_combout ),
+	.combout(\refresh_counter~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter~2 .extended_lut = "off";
-defparam \refresh_counter~2 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
-defparam \refresh_counter~2 .shared_arith = "off";
+defparam \refresh_counter~3 .extended_lut = "off";
+defparam \refresh_counter~3 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
+defparam \refresh_counter~3 .shared_arith = "off";
 
 dffeas \refresh_counter[11] (
 	.clk(clk_clk),
-	.d(\refresh_counter~2_combout ),
+	.d(\refresh_counter~3_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -70981,7 +70981,7 @@ defparam \Add0~13 .extended_lut = "off";
 defparam \Add0~13 .lut_mask = 64'h000000000000FF00;
 defparam \Add0~13 .shared_arith = "off";
 
-cyclonev_lcell_comb \refresh_counter~1 (
+cyclonev_lcell_comb \refresh_counter~2 (
 	.dataa(!\Equal0~2_combout ),
 	.datab(!\Add0~13_sumout ),
 	.datac(gnd),
@@ -70991,17 +70991,17 @@ cyclonev_lcell_comb \refresh_counter~1 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\refresh_counter~1_combout ),
+	.combout(\refresh_counter~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
-defparam \refresh_counter~1 .extended_lut = "off";
-defparam \refresh_counter~1 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
-defparam \refresh_counter~1 .shared_arith = "off";
+defparam \refresh_counter~2 .extended_lut = "off";
+defparam \refresh_counter~2 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
+defparam \refresh_counter~2 .shared_arith = "off";
 
 dffeas \refresh_counter[12] (
 	.clk(clk_clk),
-	.d(\refresh_counter~1_combout ),
+	.d(\refresh_counter~2_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -71702,7 +71702,7 @@ defparam \Selector35~0 .lut_mask = 64'hDDDDDDDDDDDDDDDD;
 defparam \Selector35~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector32~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\Selector41~0_combout ),
 	.datac(!\WideOr9~0_combout ),
 	.datad(!\m_state.100000000~q ),
@@ -71735,7 +71735,7 @@ defparam \m_state.100000000 .power_up = "low";
 
 dffeas \active_addr[18] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[36]~26_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[36]~26_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71748,10 +71748,10 @@ defparam \active_addr[18] .is_wysiwyg = "true";
 defparam \active_addr[18] .power_up = "low";
 
 cyclonev_lcell_comb \Equal3~1 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[18]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[36]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[36]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[36]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[36]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -71767,7 +71767,7 @@ defparam \Equal3~1 .shared_arith = "off";
 
 dffeas \active_addr[19] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[37]~27_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[37]~27_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71780,10 +71780,10 @@ defparam \active_addr[19] .is_wysiwyg = "true";
 defparam \active_addr[19] .power_up = "low";
 
 cyclonev_lcell_comb \Equal3~2 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[19]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[37]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[37]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[37]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[37]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -71799,7 +71799,7 @@ defparam \Equal3~2 .shared_arith = "off";
 
 dffeas \active_addr[14] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71813,7 +71813,7 @@ defparam \active_addr[14] .power_up = "low";
 
 dffeas \active_addr[16] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[34]~24_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[34]~24_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71827,7 +71827,7 @@ defparam \active_addr[16] .power_up = "low";
 
 dffeas \active_addr[17] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[35]~25_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[35]~25_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71840,12 +71840,12 @@ defparam \active_addr[17] .is_wysiwyg = "true";
 defparam \active_addr[17] .power_up = "low";
 
 cyclonev_lcell_comb \pending~5 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[16]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_0[34]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[34]~q ),
 	.datad(!\active_addr[17]~q ),
-	.datae(!\the_sine_hw_sdram_input_efifo_module|entry_1[35]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_0[35]~q ),
+	.datae(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[35]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[35]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -71859,7 +71859,7 @@ defparam \pending~5 .shared_arith = "off";
 
 dffeas \active_addr[15] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[33]~23_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[33]~23_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -71872,12 +71872,12 @@ defparam \active_addr[15] .is_wysiwyg = "true";
 defparam \active_addr[15] .power_up = "low";
 
 cyclonev_lcell_comb \pending~6 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.datab(!\active_addr[15]~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[33]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[33]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[33]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[33]~q ),
 	.datae(!\active_addr[16]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|entry_1[34]~q ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[34]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -71895,7 +71895,7 @@ cyclonev_lcell_comb \pending~2 (
 	.datac(!\active_addr[14]~q ),
 	.datad(!\pending~5_combout ),
 	.datae(!\pending~6_combout ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[32]~22_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -71908,7 +71908,7 @@ defparam \pending~2 .lut_mask = 64'hEFFFFFFFFEFFFFFF;
 defparam \pending~2 .shared_arith = "off";
 
 cyclonev_lcell_comb \m_next~17 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\Equal3~0_combout ),
 	.datac(!\pending~0_combout ),
 	.datad(!\pending~9_combout ),
@@ -71978,8 +71978,8 @@ defparam \m_next.000001000 .power_up = "low";
 cyclonev_lcell_comb \Selector28~0 (
 	.dataa(!\m_state.100000000~q ),
 	.datab(!\refresh_request~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entries[1]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entries[0]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entries[1]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entries[0]~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -72080,7 +72080,7 @@ defparam \Selector28~4 .lut_mask = 64'hFFF7FFF7FFF7FFF7;
 defparam \Selector28~4 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector28~5 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\WideOr9~0_combout ),
 	.datac(!\init_done~q ),
 	.datad(!\m_state.000000001~q ),
@@ -72098,7 +72098,7 @@ defparam \Selector28~5 .lut_mask = 64'hFFFF7FFFFFFF7FFF;
 defparam \Selector28~5 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector28~6 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\init_done~q ),
 	.datac(!\m_state.000000001~q ),
 	.datad(gnd),
@@ -72238,7 +72238,7 @@ defparam \m_next.000010000 .is_wysiwyg = "true";
 defparam \m_next.000010000 .power_up = "low";
 
 cyclonev_lcell_comb \Selector28~12 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
 	.datab(!\m_state.000010000~q ),
 	.datac(!\Selector28~2_combout ),
 	.datad(!\Selector28~11_combout ),
@@ -72632,7 +72632,7 @@ defparam \Selector28~2 .lut_mask = 64'hDFDFDFDFDFDFDFDF;
 defparam \Selector28~2 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector27~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[43]~17_combout ),
 	.datab(!\m_state.000001000~q ),
 	.datac(!\m_next.000001000~q ),
 	.datad(!\Selector28~2_combout ),
@@ -72732,7 +72732,7 @@ defparam \m_next.010000000 .is_wysiwyg = "true";
 defparam \m_next.010000000 .power_up = "low";
 
 cyclonev_lcell_comb \Selector31~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\init_done~q ),
 	.datac(!\m_state.000000001~q ),
 	.datad(!\m_state.100000000~q ),
@@ -72882,7 +72882,7 @@ defparam refresh_request.is_wysiwyg = "true";
 defparam refresh_request.power_up = "low";
 
 cyclonev_lcell_comb \Selector25~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datab(!\Selector30~0_combout ),
 	.datac(!\refresh_request~q ),
 	.datad(gnd),
@@ -73069,7 +73069,7 @@ defparam \Selector30~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \active_cs_n~0 (
 	.dataa(!\active_cs_n~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datac(!r_sync_rst),
 	.datad(!\Selector30~0_combout ),
 	.datae(!\refresh_request~q ),
@@ -73101,9 +73101,9 @@ defparam active_cs_n.power_up = "low";
 
 cyclonev_lcell_comb \pending~1 (
 	.dataa(!\active_rnw~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[43]~q ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|entry_0[43]~q ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[43]~q ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[43]~q ),
 	.datae(!\active_cs_n~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -73120,11 +73120,11 @@ defparam \pending~1 .shared_arith = "off";
 cyclonev_lcell_comb \pending~9 (
 	.dataa(!\pending~4_combout ),
 	.datab(!\pending~3_combout ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|entry_1[42]~q ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|entry_1[42]~q ),
 	.datad(!\active_addr[24]~q ),
-	.datae(!\the_sine_hw_sdram_input_efifo_module|rd_address~q ),
+	.datae(!\the_sine_wave_hw_sdram_input_efifo_module|rd_address~q ),
 	.dataf(!\pending~1_combout ),
-	.datag(!\the_sine_hw_sdram_input_efifo_module|entry_0[42]~q ),
+	.datag(!\the_sine_wave_hw_sdram_input_efifo_module|entry_0[42]~q ),
 	.cin(gnd),
 	.sharein(gnd),
 	.combout(\pending~9_combout ),
@@ -73137,7 +73137,7 @@ defparam \pending~9 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector41~0 (
 	.dataa(!\Equal3~0_combout ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datac(!\pending~0_combout ),
 	.datad(!\pending~9_combout ),
 	.datae(!\pending~2_combout ),
@@ -73154,8 +73154,8 @@ defparam \Selector41~0 .lut_mask = 64'hEFFFFFFFEFFFFFFF;
 defparam \Selector41~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \active_rnw~0 (
-	.dataa(!\the_sine_hw_sdram_input_efifo_module|entries[1]~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|entries[0]~q ),
+	.dataa(!\the_sine_wave_hw_sdram_input_efifo_module|entries[1]~q ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|entries[0]~q ),
 	.datac(!\init_done~q ),
 	.datad(gnd),
 	.datae(gnd),
@@ -73209,7 +73209,7 @@ defparam \active_rnw~2 .shared_arith = "off";
 
 dffeas \active_addr[0] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73290,7 +73290,7 @@ cyclonev_lcell_comb \Selector98~0 (
 	.datab(!\active_addr[11]~q ),
 	.datac(!\WideOr9~0_combout ),
 	.datad(!\m_addr[8]~0_combout ),
-	.datae(!\the_sine_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
+	.datae(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[18]~3_combout ),
 	.dataf(!\i_addr[12]~q ),
 	.datag(gnd),
 	.cin(gnd),
@@ -73323,7 +73323,7 @@ defparam \m_addr[8]~1 .shared_arith = "off";
 
 dffeas \active_addr[1] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73341,7 +73341,7 @@ cyclonev_lcell_comb \Selector97~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[1]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[19]~4_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73355,7 +73355,7 @@ defparam \Selector97~0 .shared_arith = "off";
 
 dffeas \active_addr[2] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73373,7 +73373,7 @@ cyclonev_lcell_comb \Selector96~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[2]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[20]~5_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73387,7 +73387,7 @@ defparam \Selector96~0 .shared_arith = "off";
 
 dffeas \active_addr[3] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73405,7 +73405,7 @@ cyclonev_lcell_comb \Selector95~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[3]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[21]~6_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73419,7 +73419,7 @@ defparam \Selector95~0 .shared_arith = "off";
 
 dffeas \active_addr[6] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73437,7 +73437,7 @@ cyclonev_lcell_comb \Selector92~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[6]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[24]~9_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73451,7 +73451,7 @@ defparam \Selector92~0 .shared_arith = "off";
 
 dffeas \active_addr[7] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73469,7 +73469,7 @@ cyclonev_lcell_comb \Selector91~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[7]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[25]~10_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73483,7 +73483,7 @@ defparam \Selector91~0 .shared_arith = "off";
 
 dffeas \active_addr[8] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73501,7 +73501,7 @@ cyclonev_lcell_comb \Selector90~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[8]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[26]~11_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73515,7 +73515,7 @@ defparam \Selector90~0 .shared_arith = "off";
 
 dffeas \active_addr[9] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73533,7 +73533,7 @@ cyclonev_lcell_comb \Selector89~0 (
 	.datac(!\m_addr[8]~0_combout ),
 	.datad(!\i_addr[12]~q ),
 	.datae(!\active_addr[9]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[27]~12_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73548,7 +73548,7 @@ defparam \Selector89~0 .shared_arith = "off";
 cyclonev_lcell_comb \always5~0 (
 	.dataa(!\f_pop~q ),
 	.datab(!\Equal3~0_combout ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|Equal1~0_combout ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|Equal1~0_combout ),
 	.datad(!\pending~0_combout ),
 	.datae(!\pending~9_combout ),
 	.dataf(!\pending~2_combout ),
@@ -73565,7 +73565,7 @@ defparam \always5~0 .shared_arith = "off";
 
 dffeas \active_addr[4] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73601,7 +73601,7 @@ cyclonev_lcell_comb \Selector94~1 (
 	.datac(!\m_state.001000000~q ),
 	.datad(!\active_addr[4]~q ),
 	.datae(!\Selector94~0_combout ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[22]~7_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73615,7 +73615,7 @@ defparam \Selector94~1 .shared_arith = "off";
 
 dffeas \active_addr[5] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73633,7 +73633,7 @@ cyclonev_lcell_comb \Selector93~0 (
 	.datac(!\m_state.001000000~q ),
 	.datad(!\Selector94~0_combout ),
 	.datae(!\active_addr[5]~q ),
-	.dataf(!\the_sine_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
+	.dataf(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[23]~8_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -73719,7 +73719,7 @@ defparam \m_dqm[1]~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector100~0 (
 	.dataa(!\active_addr[10]~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[28]~2_combout ),
 	.datac(!\m_dqm[1]~0_combout ),
 	.datad(gnd),
 	.datae(gnd),
@@ -73755,7 +73755,7 @@ defparam \WideOr16~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \Selector99~0 (
 	.dataa(!\active_addr[24]~q ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[42]~13_combout ),
 	.datac(!\m_dqm[1]~0_combout ),
 	.datad(gnd),
 	.datae(gnd),
@@ -73891,7 +73891,7 @@ defparam \Selector19~1 .shared_arith = "off";
 
 dffeas \active_dqm[0] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73905,7 +73905,7 @@ defparam \active_dqm[0] .power_up = "low";
 
 cyclonev_lcell_comb \Selector118~0 (
 	.dataa(!\m_dqm[1]~0_combout ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[16]~14_combout ),
 	.datac(!\active_dqm[0]~q ),
 	.datad(gnd),
 	.datae(gnd),
@@ -73923,7 +73923,7 @@ defparam \Selector118~0 .shared_arith = "off";
 
 dffeas \active_dqm[1] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -73937,7 +73937,7 @@ defparam \active_dqm[1] .power_up = "low";
 
 cyclonev_lcell_comb \Selector117~0 (
 	.dataa(!\m_dqm[1]~0_combout ),
-	.datab(!\the_sine_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
+	.datab(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[17]~15_combout ),
 	.datac(!\active_dqm[1]~q ),
 	.datad(gnd),
 	.datae(gnd),
@@ -74073,7 +74073,7 @@ defparam \m_data[6]~0 .shared_arith = "off";
 
 dffeas \active_data[0] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74106,7 +74106,7 @@ defparam \WideOr17~0 .shared_arith = "off";
 cyclonev_lcell_comb \Selector116~0 (
 	.dataa(!m_data_0),
 	.datab(!\m_data[6]~0_combout ),
-	.datac(!\the_sine_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
+	.datac(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[0]~28_combout ),
 	.datad(!\active_data[0]~q ),
 	.datae(!\WideOr17~0_combout ),
 	.dataf(gnd),
@@ -74123,7 +74123,7 @@ defparam \Selector116~0 .shared_arith = "off";
 
 dffeas \active_data[1] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74139,7 +74139,7 @@ cyclonev_lcell_comb \Selector115~0 (
 	.dataa(!m_data_1),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[1]~29_combout ),
 	.datae(!\active_data[1]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74155,7 +74155,7 @@ defparam \Selector115~0 .shared_arith = "off";
 
 dffeas \active_data[2] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74171,7 +74171,7 @@ cyclonev_lcell_comb \Selector114~0 (
 	.dataa(!m_data_2),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[2]~30_combout ),
 	.datae(!\active_data[2]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74187,7 +74187,7 @@ defparam \Selector114~0 .shared_arith = "off";
 
 dffeas \active_data[3] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74203,7 +74203,7 @@ cyclonev_lcell_comb \Selector113~0 (
 	.dataa(!m_data_3),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[3]~31_combout ),
 	.datae(!\active_data[3]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74219,7 +74219,7 @@ defparam \Selector113~0 .shared_arith = "off";
 
 dffeas \active_data[4] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74235,7 +74235,7 @@ cyclonev_lcell_comb \Selector112~0 (
 	.dataa(!m_data_4),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[4]~32_combout ),
 	.datae(!\active_data[4]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74251,7 +74251,7 @@ defparam \Selector112~0 .shared_arith = "off";
 
 dffeas \active_data[5] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74267,7 +74267,7 @@ cyclonev_lcell_comb \Selector111~0 (
 	.dataa(!m_data_5),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[5]~33_combout ),
 	.datae(!\active_data[5]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74283,7 +74283,7 @@ defparam \Selector111~0 .shared_arith = "off";
 
 dffeas \active_data[6] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74299,7 +74299,7 @@ cyclonev_lcell_comb \Selector110~0 (
 	.dataa(!m_data_6),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[6]~34_combout ),
 	.datae(!\active_data[6]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74315,7 +74315,7 @@ defparam \Selector110~0 .shared_arith = "off";
 
 dffeas \active_data[7] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74331,7 +74331,7 @@ cyclonev_lcell_comb \Selector109~0 (
 	.dataa(!m_data_7),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[7]~35_combout ),
 	.datae(!\active_data[7]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74347,7 +74347,7 @@ defparam \Selector109~0 .shared_arith = "off";
 
 dffeas \active_data[8] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74363,7 +74363,7 @@ cyclonev_lcell_comb \Selector108~0 (
 	.dataa(!m_data_8),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[8]~36_combout ),
 	.datae(!\active_data[8]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74379,7 +74379,7 @@ defparam \Selector108~0 .shared_arith = "off";
 
 dffeas \active_data[9] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74395,7 +74395,7 @@ cyclonev_lcell_comb \Selector107~0 (
 	.dataa(!m_data_9),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[9]~37_combout ),
 	.datae(!\active_data[9]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74411,7 +74411,7 @@ defparam \Selector107~0 .shared_arith = "off";
 
 dffeas \active_data[10] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74427,7 +74427,7 @@ cyclonev_lcell_comb \Selector106~0 (
 	.dataa(!m_data_10),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[10]~38_combout ),
 	.datae(!\active_data[10]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74443,7 +74443,7 @@ defparam \Selector106~0 .shared_arith = "off";
 
 dffeas \active_data[11] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74459,7 +74459,7 @@ cyclonev_lcell_comb \Selector105~0 (
 	.dataa(!m_data_11),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[11]~39_combout ),
 	.datae(!\active_data[11]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74475,7 +74475,7 @@ defparam \Selector105~0 .shared_arith = "off";
 
 dffeas \active_data[12] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74491,7 +74491,7 @@ cyclonev_lcell_comb \Selector104~0 (
 	.dataa(!m_data_12),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[12]~40_combout ),
 	.datae(!\active_data[12]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74507,7 +74507,7 @@ defparam \Selector104~0 .shared_arith = "off";
 
 dffeas \active_data[13] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74523,7 +74523,7 @@ cyclonev_lcell_comb \Selector103~0 (
 	.dataa(!m_data_13),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[13]~41_combout ),
 	.datae(!\active_data[13]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74539,7 +74539,7 @@ defparam \Selector103~0 .shared_arith = "off";
 
 dffeas \active_data[14] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74555,7 +74555,7 @@ cyclonev_lcell_comb \Selector102~0 (
 	.dataa(!m_data_14),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[14]~42_combout ),
 	.datae(!\active_data[14]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74571,7 +74571,7 @@ defparam \Selector102~0 .shared_arith = "off";
 
 dffeas \active_data[15] (
 	.clk(clk_clk),
-	.d(\the_sine_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
+	.d(\the_sine_wave_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -74587,7 +74587,7 @@ cyclonev_lcell_comb \Selector101~0 (
 	.dataa(!m_data_15),
 	.datab(!\m_data[6]~0_combout ),
 	.datac(!\WideOr17~0_combout ),
-	.datad(!\the_sine_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
+	.datad(!\the_sine_wave_hw_sdram_input_efifo_module|rd_data[15]~43_combout ),
 	.datae(!\active_data[15]~q ),
 	.dataf(gnd),
 	.datag(gnd),
@@ -74663,7 +74663,7 @@ defparam \rd_valid[2] .power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_sdram_input_efifo_module (
+module sine_wave_hw_sine_wave_hw_sdram_input_efifo_module (
 	WideOr0,
 	f_pop,
 	rd_address1,
@@ -74724,7 +74724,7 @@ module sine_hw_sine_hw_sdram_input_efifo_module (
 	saved_grant_0,
 	out_data_32,
 	Equal0,
-	src3_valid,
+	src4_valid,
 	src_valid,
 	mem,
 	m0_write,
@@ -74857,7 +74857,7 @@ output 	rd_data_31;
 input 	saved_grant_0;
 input 	out_data_32;
 output 	Equal0;
-input 	src3_valid;
+input 	src4_valid;
 input 	src_valid;
 input 	mem;
 input 	m0_write;
@@ -76012,7 +76012,7 @@ defparam \rd_data[37]~27 .shared_arith = "off";
 
 cyclonev_lcell_comb \always2~1 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!mem),
 	.datae(gnd),
@@ -76336,7 +76336,7 @@ defparam \rd_address~0 .shared_arith = "off";
 
 cyclonev_lcell_comb \always2~0 (
 	.dataa(!saved_grant_0),
-	.datab(!src3_valid),
+	.datab(!src4_valid),
 	.datac(!src_valid),
 	.datad(!mem),
 	.datae(!WideOr0),
@@ -77270,7 +77270,7 @@ defparam \entry_0[15] .power_up = "low";
 
 endmodule
 
-module sine_hw_sine_hw_sw (
+module sine_wave_hw_sine_wave_hw_sw (
 	W_alu_result_3,
 	W_alu_result_2,
 	r_sync_rst,

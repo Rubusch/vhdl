@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 646 linux 2020.08.26.18:29:25
+# ACDS 18.1 646 linux 2020.08.27.19:32:43
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -107,7 +107,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 646 linux 2020.08.26.18:29:25
+# ACDS 18.1 646 linux 2020.08.27.19:32:43
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="SDRAM_CLK_ALTPLL"

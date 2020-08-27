@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags=""
-   categories="System" />
+   categories="" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element clk
@@ -57,35 +57,19 @@
          type = "int";
       }
    }
-   element ram.s1
-   {
-      datum baseAddress
-      {
-         value = "134283264";
-         type = "String";
-      }
-   }
    element sdram
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
-      }
-   }
-   element sdram.s1
-   {
-      datum baseAddress
-      {
-         value = "67108864";
-         type = "String";
       }
    }
    element sw
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "4";
          type = "int";
       }
    }
@@ -111,7 +95,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="sine_wave.qpf" />
+ <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -369,9 +353,9 @@
    enabled="1">
   <parameter name="TAC" value="5.5" />
   <parameter name="TMRD" value="3" />
-  <parameter name="TRCD" value="15.0" />
+  <parameter name="TRCD" value="20.0" />
   <parameter name="TRFC" value="70.0" />
-  <parameter name="TRP" value="15.0" />
+  <parameter name="TRP" value="20.0" />
   <parameter name="TWR" value="14.0" />
   <parameter name="casLatency" value="3" />
   <parameter name="clockRate" value="50000000" />
@@ -387,7 +371,7 @@
   <parameter name="numberOfChipSelects" value="1" />
   <parameter name="pinsSharedViaTriState" value="false" />
   <parameter name="powerUpDelay" value="100.0" />
-  <parameter name="refreshPeriod" value="7.8125" />
+  <parameter name="refreshPeriod" value="15.625" />
   <parameter name="registerDataIn" value="true" />
   <parameter name="rowWidth" value="13" />
  </module>
@@ -428,14 +412,14 @@
   <parameter name="baseAddress" value="0x08010000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="nios2.data_master" end="sdram.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04000000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
  <connection kind="avalon" version="18.1" start="nios2.data_master" end="sw.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08021000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="18.1" start="nios2.data_master" end="sdram.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -467,8 +451,8 @@
  </connection>
  <connection kind="clock" version="18.1" start="clk.clk" end="nios2.clk" />
  <connection kind="clock" version="18.1" start="clk.clk" end="jtag_uart.clk" />
- <connection kind="clock" version="18.1" start="clk.clk" end="sdram.clk" />
  <connection kind="clock" version="18.1" start="clk.clk" end="sw.clk" />
+ <connection kind="clock" version="18.1" start="clk.clk" end="sdram.clk" />
  <connection kind="clock" version="18.1" start="clk.clk" end="ram.clk1" />
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
@@ -479,8 +463,8 @@
    version="18.1"
    start="clk.clk_reset"
    end="jtag_uart.reset" />
- <connection kind="reset" version="18.1" start="clk.clk_reset" end="sdram.reset" />
  <connection kind="reset" version="18.1" start="clk.clk_reset" end="sw.reset" />
+ <connection kind="reset" version="18.1" start="clk.clk_reset" end="sdram.reset" />
  <connection kind="reset" version="18.1" start="clk.clk_reset" end="ram.reset1" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />

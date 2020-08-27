@@ -1,10 +1,10 @@
 /*
  * system.h - SOPC Builder system and BSP software package information
  *
- * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
- * SOPC Builder design path: ../../sine_hw.sopcinfo
+ * Machine generated for CPU 'nios2' in SOPC Builder design 'sine_wave_hw'
+ * SOPC Builder design path: ../../sine_wave_hw.sopcinfo
  *
- * Generated: Wed Aug 26 23:22:40 CEST 2020
+ * Generated: Thu Aug 27 20:14:31 CEST 2020
  */
 
 /*
@@ -173,7 +173,7 @@
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
-#define ALT_SYSTEM_NAME "sine_hw"
+#define ALT_SYSTEM_NAME "sine_wave_hw"
 
 
 /*
@@ -217,7 +217,7 @@
 #define RAM_CONTENTS_INFO ""
 #define RAM_DUAL_PORT 0
 #define RAM_GUI_RAM_BLOCK_TYPE "AUTO"
-#define RAM_INIT_CONTENTS_FILE "sine_hw_ram"
+#define RAM_INIT_CONTENTS_FILE "sine_wave_hw_ram"
 #define RAM_INIT_MEM_CONTENT 1
 #define RAM_INSTANCE_ID "NONE"
 #define RAM_IRQ -1
@@ -250,7 +250,7 @@
 #define SDRAM_IS_INITIALIZED 1
 #define SDRAM_NAME "/dev/sdram"
 #define SDRAM_POWERUP_DELAY 100.0
-#define SDRAM_REFRESH_PERIOD 7.8125
+#define SDRAM_REFRESH_PERIOD 15.625
 #define SDRAM_REGISTER_DATA_IN 1
 #define SDRAM_SDRAM_ADDR_WIDTH 0x19
 #define SDRAM_SDRAM_BANK_WIDTH 2
@@ -267,9 +267,9 @@
 #define SDRAM_TYPE "altera_avalon_new_sdram_controller"
 #define SDRAM_T_AC 5.5
 #define SDRAM_T_MRD 3
-#define SDRAM_T_RCD 15.0
+#define SDRAM_T_RCD 20.0
 #define SDRAM_T_RFC 70.0
-#define SDRAM_T_RP 15.0
+#define SDRAM_T_RP 20.0
 #define SDRAM_T_WR 14.0
 
 

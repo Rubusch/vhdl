@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 0 0 352 352)
-	(text "sine_hw" (rect 152 -1 183 11)(font "Arial" (font_size 10)))
+	(text "sine_wave_hw" (rect 133 -1 192 11)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 336 20 348)(font "Arial" ))
 	(port
 		(pt 0 72)
@@ -134,7 +134,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "we_n" (rect 133 275 290 560)(font "Arial" (color 0 0 0)))
 		(text "sw" (rect 112 291 236 595)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 133 315 302 640)(font "Arial" (color 0 0 0)))
-		(text " sine_hw " (rect 315 336 684 682)(font "Arial" ))
+		(text " sine_wave_hw " (rect 287 336 658 682)(font "Arial" ))
 		(line (pt 128 32)(pt 208 32)(line_width 1))
 		(line (pt 208 32)(pt 208 336)(line_width 1))
 		(line (pt 128 336)(pt 208 336)(line_width 1))

@@ -1,10 +1,9 @@
 /*
  * main.c
  *
- *  Created on: Aug 26, 2020
+ *  Created on: Aug 27, 2020
  *      Author: user
  */
-
 
 #include <stdio.h>
 

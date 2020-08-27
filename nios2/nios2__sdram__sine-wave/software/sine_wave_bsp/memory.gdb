@@ -1,9 +1,9 @@
 # memory.gdb - GDB memory region definitions
 #
-# Machine generated for CPU 'nios2' in SOPC Builder design 'sine_hw'
-# SOPC Builder design path: ../../sine_hw.sopcinfo
+# Machine generated for CPU 'nios2' in SOPC Builder design 'sine_wave_hw'
+# SOPC Builder design path: ../../sine_wave_hw.sopcinfo
 #
-# Generated: Wed Aug 26 23:22:40 CEST 2020
+# Generated: Thu Aug 27 20:14:31 CEST 2020
 
 # DO NOT MODIFY THIS FILE
 #
