@@ -1,3 +1,18 @@
+## GENERAL POLICY:
+## 1.) clone/checkout sources
+## 2.) build project (.sip, .qip, ...)
+
+## ...thus full content of the following folders is to be EXCLUDED
+greybox
+synthesis
+simulation
+testbench
+
+## qsys output, generated folders
+submodules
+
+
+
 ## general, editor backups, logs, etc
 *~
 *#
@@ -300,13 +315,6 @@ output_files
 .qsys_edit
 
 ## qsys output folders
-## qip / sip /... generation may lead to bloatied repos, quickfix solution is to exclude all generated stuff
-synthesis
-simulation
-testbench
-
-## qsys output, generated folders
-submodules
 
 ## quartus design space explorer (dse)
 dse
