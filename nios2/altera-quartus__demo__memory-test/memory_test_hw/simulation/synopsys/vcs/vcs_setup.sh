@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 linux 2020.08.23.12:02:40
+# ACDS 18.1 625 linux 2020.08.30.22:37:40
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 linux 2020.08.23.12:02:40
+# ACDS 18.1 625 linux 2020.08.30.22:37:40
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="memory_test_hw"
@@ -156,24 +156,37 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_hssi_atoms.v \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/synopsys/cyclonev_pcie_hip_atoms_ncrypt.v \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_pcie_hip_atoms.v \
+  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_avalon_st_adapter_005_error_adapter_0.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv \
+  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_avalon_st_adapter_005.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_avalon_st_adapter.v \
+  $QSYS_SIMDIR/submodules/altera_merlin_width_adapter.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_address_alignment.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_rsp_mux_001.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_rsp_mux.sv \
-  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_rsp_demux_002.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_rsp_demux.sv \
-  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_cmd_mux_002.sv \
+  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_cmd_mux_001.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_cmd_mux.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_cmd_demux_001.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_cmd_demux.sv \
-  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router_004.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_adapter.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_adapter_uncmpr.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_adapter_13_1.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_adapter_new.sv \
+  $QSYS_SIMDIR/submodules/altera_incr_burst_converter.sv \
+  $QSYS_SIMDIR/submodules/altera_wrap_burst_converter.sv \
+  $QSYS_SIMDIR/submodules/altera_default_burst_converter.sv \
+  $QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_stage.sv \
+  $QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_base.v \
+  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router_007.sv \
+  $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router_003.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router_002.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router_001.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0_router.sv \
   $QSYS_SIMDIR/submodules/altera_avalon_sc_fifo.v \
   $QSYS_SIMDIR/submodules/altera_merlin_slave_agent.sv \
-  $QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv \
@@ -186,12 +199,13 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   $QSYS_SIMDIR/submodules/altera_reset_synchronizer.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_irq_mapper.sv \
   $QSYS_SIMDIR/submodules/memory_test_hw_mm_interconnect_0.v \
+  $QSYS_SIMDIR/submodules/memory_test_hw_sdram.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_ram1.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_ram0.v \
+  $QSYS_SIMDIR/submodules/memory_test_hw_pll.vo \
   $QSYS_SIMDIR/submodules/memory_test_hw_nios2.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_led.v \
   $QSYS_SIMDIR/submodules/memory_test_hw_jtag_uart.v \
-  $QSYS_SIMDIR/submodules/memory_test_hw_cf_0.v \
   $QSYS_SIMDIR/memory_test_hw.v \
   -top $TOP_LEVEL_NAME
 # ----------------------------------------

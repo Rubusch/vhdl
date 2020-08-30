@@ -20,9 +20,9 @@
 // Altera IRQ Mapper
 //
 // Parameters
-//   NUM_RCVRS        : 3
+//   NUM_RCVRS        : 1
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:1,1:2,2:0
+//   IRQ_MAP          : 0:0
 //
 // -------------------------------------------------------
 
@@ -40,8 +40,6 @@ module memory_test_hw_irq_mapper
     // IRQ Receivers
     // -------------------
     input                receiver0_irq,
-    input                receiver1_irq,
-    input                receiver2_irq,
 
     // -------------------
     // Command Source (Output)
@@ -53,9 +51,7 @@ module memory_test_hw_irq_mapper
     always @* begin
 	sender_irq = 0;
 
-        sender_irq[1] = receiver0_irq;
-        sender_irq[2] = receiver1_irq;
-        sender_irq[0] = receiver2_irq;
+        sender_irq[0] = receiver0_irq;
     end
 
 endmodule
