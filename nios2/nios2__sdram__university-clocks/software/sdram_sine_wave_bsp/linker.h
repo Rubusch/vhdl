@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'sdram_sine_wave_hw'
  * SOPC Builder design path: ../../sdram_sine_wave_hw.sopcinfo
  *
- * Generated: Sat Aug 29 22:57:08 CEST 2020
+ * Generated: Sun Aug 30 10:08:39 CEST 2020
  */
 
 /*
@@ -66,7 +66,7 @@
  */
 
 #define RAM_REGION_BASE 0x8000000
-#define RAM_REGION_SPAN 20480
+#define RAM_REGION_SPAN 262144
 #define RESET_REGION_BASE 0x4000000
 #define RESET_REGION_SPAN 32
 #define SDRAM_REGION_BASE 0x4000020

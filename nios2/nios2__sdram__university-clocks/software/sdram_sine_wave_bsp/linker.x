@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'sdram_sine_wave_hw'
  * SOPC Builder design path: ../../sdram_sine_wave_hw.sopcinfo
  *
- * Generated: Sat Aug 29 22:57:08 CEST 2020
+ * Generated: Sun Aug 30 10:08:39 CEST 2020
  */
 
 /*
@@ -52,7 +52,7 @@ MEMORY
 {
     reset : ORIGIN = 0x4000000, LENGTH = 32
     sdram : ORIGIN = 0x4000020, LENGTH = 67108832
-    ram : ORIGIN = 0x8000000, LENGTH = 20480
+    ram : ORIGIN = 0x8000000, LENGTH = 262144
 }
 
 /* Define symbols for each memory base-address */

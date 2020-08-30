@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'sdram_sine_wave_hw'
 # SOPC Builder design path: ../../sdram_sine_wave_hw.sopcinfo
 #
-# Generated: Sat Aug 29 22:57:08 CEST 2020
+# Generated: Sun Aug 30 10:08:39 CEST 2020
 
 # DO NOT MODIFY THIS FILE
 #
@@ -50,4 +50,4 @@
 memory 0x4000000 0x8000000 cache
 
 # ram
-memory 0x8000000 0x8005000 cache
+memory 0x8000000 0x8040000 cache
