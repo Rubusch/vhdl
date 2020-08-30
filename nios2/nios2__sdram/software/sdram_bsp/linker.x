@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'sdram_demo'
  * SOPC Builder design path: ../../sdram_demo.sopcinfo
  *
- * Generated: Tue Aug 25 22:21:03 CEST 2020
+ * Generated: Sun Aug 30 18:20:47 CEST 2020
  */
 
 /*
@@ -52,12 +52,12 @@ MEMORY
 {
     reset : ORIGIN = 0x4000000, LENGTH = 32
     sdram : ORIGIN = 0x4000020, LENGTH = 67108832
-    ram : ORIGIN = 0x8010000, LENGTH = 65536
+    ram : ORIGIN = 0x8040000, LENGTH = 262144
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_sdram = 0x4000000;
-__alt_mem_ram = 0x8010000;
+__alt_mem_ram = 0x8040000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",

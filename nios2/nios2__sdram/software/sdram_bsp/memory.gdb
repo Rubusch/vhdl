@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'sdram_demo'
 # SOPC Builder design path: ../../sdram_demo.sopcinfo
 #
-# Generated: Tue Aug 25 22:21:03 CEST 2020
+# Generated: Sun Aug 30 18:20:47 CEST 2020
 
 # DO NOT MODIFY THIS FILE
 #
@@ -50,4 +50,4 @@
 memory 0x4000000 0x8000000 cache
 
 # ram
-memory 0x8010000 0x8020000 cache
+memory 0x8040000 0x8080000 cache
