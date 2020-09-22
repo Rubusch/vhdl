@@ -1,12 +1,12 @@
-# system info linux_hw on 2020.09.18.21:14:10
+# system info linux_hw on 2020.09.21.23:54:33
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1600456428
+GENERATION_ID,1600725254
 #
 #
-# Files generated for linux_hw on 2020.09.18.21:14:10
+# Files generated for linux_hw on 2020.09.21.23:54:33
 files:
 filepath,kind,attributes,module,is_top
 simulation/linux_hw.v,VERILOG,,linux_hw,true
@@ -167,3 +167,4 @@ linux_hw.mm_interconnect_0.avalon_st_adapter_004,linux_hw_mm_interconnect_0_aval
 linux_hw.mm_interconnect_0.avalon_st_adapter_004.error_adapter_0,linux_hw_mm_interconnect_0_avalon_st_adapter_004_error_adapter_0
 linux_hw.irq_mapper,linux_hw_irq_mapper
 linux_hw.rst_controller,altera_reset_controller
+linux_hw.rst_controller_001,altera_reset_controller

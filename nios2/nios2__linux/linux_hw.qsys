@@ -9,7 +9,7 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element clk50
+   element clk25
    {
       datum _sortIndex
       {
@@ -198,7 +198,7 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface name="clk" internal="clk50.clk_in" type="clock" dir="end" />
+ <interface name="clk" internal="clk25.clk_in" type="clock" dir="end" />
  <interface
    name="led"
    internal="led.external_connection"
@@ -211,8 +211,8 @@
    dir="start" />
  <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
  <interface name="sw" internal="sw.external_connection" type="conduit" dir="end" />
- <module name="clk50" kind="clock_source" version="18.1" enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
+ <module name="clk25" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="25000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
@@ -223,8 +223,8 @@
    version="18.1"
    enabled="1">
   <parameter name="autoInitializationFileName" value="$${FILENAME}_epcq" />
-  <parameter name="autoSelectASMIAtom" value="false" />
-  <parameter name="clockRate" value="50000000" />
+  <parameter name="autoSelectASMIAtom" value="true" />
+  <parameter name="clockRate" value="25000000" />
   <parameter name="deviceFamilyString" value="Cyclone V" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="useASMIAtom" value="true" />
@@ -236,7 +236,7 @@
    enabled="1">
   <parameter name="allowMultipleConnections" value="false" />
   <parameter name="avalonSpec" value="2.0" />
-  <parameter name="clkFreq" value="50000000" />
+  <parameter name="clkFreq" value="25000000" />
   <parameter name="hubInstanceID" value="0" />
   <parameter name="readBufferDepth" value="64" />
   <parameter name="readIRQThreshold" value="8" />
@@ -252,7 +252,7 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
+  <parameter name="clockRate" value="25000000" />
   <parameter name="direction" value="Output" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
@@ -271,7 +271,7 @@
   <parameter name="breakOffset" value="32" />
   <parameter name="breakSlave" value="None" />
   <parameter name="cdx_enabled" value="false" />
-  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequency" value="25000000" />
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
@@ -452,7 +452,7 @@
   <parameter name="TRP" value="20.0" />
   <parameter name="TWR" value="14.0" />
   <parameter name="casLatency" value="3" />
-  <parameter name="clockRate" value="50000000" />
+  <parameter name="clockRate" value="25000000" />
   <parameter name="columnWidth" value="10" />
   <parameter name="componentName" value="$${FILENAME}_sdram" />
   <parameter name="dataWidth" value="16" />
@@ -588,7 +588,7 @@
   <parameter name="gui_multiply_factor" value="1" />
   <parameter name="gui_number_of_clocks" value="1" />
   <parameter name="gui_operation_mode" value="normal" />
-  <parameter name="gui_output_clock_frequency0" value="50.0" />
+  <parameter name="gui_output_clock_frequency0" value="25.0" />
   <parameter name="gui_output_clock_frequency1" value="100.0" />
   <parameter name="gui_output_clock_frequency10" value="100.0" />
   <parameter name="gui_output_clock_frequency11" value="100.0" />
@@ -708,7 +708,7 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
+  <parameter name="clockRate" value="25000000" />
   <parameter name="direction" value="Input" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
@@ -792,41 +792,81 @@
   <parameter name="baseAddress" value="0x00080000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="clock" version="18.1" start="clk50.clk" end="nios2.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="jtag_uart.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="sdram.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="sw.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="led.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="epcq.clk" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="sram.clk1" />
- <connection kind="clock" version="18.1" start="clk50.clk" end="sdram_pll.refclk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="nios2.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="jtag_uart.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="sdram.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="sw.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="led.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="epcq.clk" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="sram.clk1" />
+ <connection kind="clock" version="18.1" start="clk25.clk" end="sdram_pll.refclk" />
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
  </connection>
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="epcq.irq">
   <parameter name="irqNumber" value="1" />
  </connection>
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="nios2.reset" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="nios2.reset" />
  <connection
    kind="reset"
    version="18.1"
-   start="clk50.clk_reset"
+   start="clk25.clk_reset"
    end="jtag_uart.reset" />
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="sdram.reset" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="sdram.reset" />
  <connection
    kind="reset"
    version="18.1"
-   start="clk50.clk_reset"
+   start="clk25.clk_reset"
    end="sdram_pll.reset" />
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="sw.reset" />
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="led.reset" />
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="epcq.reset" />
- <connection kind="reset" version="18.1" start="clk50.clk_reset" end="sram.reset1" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="sw.reset" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="led.reset" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="epcq.reset" />
+ <connection kind="reset" version="18.1" start="clk25.clk_reset" end="sram.reset1" />
  <connection
    kind="reset"
    version="18.1"
    start="nios2.debug_reset_request"
-   end="clk50.clk_in_reset" />
+   end="clk25.clk_in_reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="epcq.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="nios2.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="jtag_uart.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="led.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sdram.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sdram_pll.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sw.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="sram.reset1" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
