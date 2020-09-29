@@ -1,12 +1,12 @@
-# system info linux_hw on 2020.09.28.23:52:44
+# system info linux_hw on 2020.09.29.22:22:52
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1601329941
+GENERATION_ID,1601410944
 #
 #
-# Files generated for linux_hw on 2020.09.28.23:52:44
+# Files generated for linux_hw on 2020.09.29.22:22:52
 files:
 filepath,kind,attributes,module,is_top
 simulation/linux_hw.v,VERILOG,,linux_hw,true
