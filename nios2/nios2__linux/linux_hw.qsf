@@ -153,7 +153,7 @@ set_global_assignment -name ENABLE_SPI_MODE_CHECK OFF
 set_global_assignment -name FORCE_SSMCLK_TO_ISMCLK ON
 set_global_assignment -name FALLBACK_TO_EXTERNAL_FLASH OFF
 set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 0
-set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X1"
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
