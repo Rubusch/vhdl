@@ -2,6 +2,10 @@
 ## 1.) clone/checkout sources
 ## 2.) build project (.sip, .qip, ...)
 
+
+## general don't check in folders by the name of...
+REMOVEME
+
 ## ...thus full content of the following folders is to be EXCLUDED
 greybox
 synthesis
