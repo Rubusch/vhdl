@@ -1,12 +1,12 @@
-# system info hello_hw on 2020.08.22.16:14:05
+# system info hello_hw on 2020.11.01.21:43:30
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598105638
+GENERATION_ID,1604263402
 #
 #
-# Files generated for hello_hw on 2020.08.22.16:14:05
+# Files generated for hello_hw on 2020.11.01.21:43:30
 files:
 filepath,kind,attributes,module,is_top
 simulation/hello_hw.v,VERILOG,,hello_hw,true
