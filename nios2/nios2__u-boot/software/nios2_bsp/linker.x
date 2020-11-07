@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2_de1soc'
  * SOPC Builder design path: ../../nios2_de1soc.sopcinfo
  *
- * Generated: Thu Nov 05 22:52:33 CET 2020
+ * Generated: Sat Nov 07 21:21:12 CET 2020
  */
 
 /*
@@ -50,12 +50,17 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x40000, LENGTH = 32
-    sram : ORIGIN = 0x40020, LENGTH = 262112
+    sdram : ORIGIN = 0x0, LENGTH = 67108864
+    reset : ORIGIN = 0x6000000, LENGTH = 32
+    epcq256_avl_mem : ORIGIN = 0x6000020, LENGTH = 33554400
+    sram_BEFORE_EXCEPTION : ORIGIN = 0x8040000, LENGTH = 32
+    sram : ORIGIN = 0x8040020, LENGTH = 262112
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_sram = 0x40000;
+__alt_mem_sdram = 0x0;
+__alt_mem_epcq256_avl_mem = 0x6000000;
+__alt_mem_sram = 0x8040000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -84,7 +89,14 @@ SECTIONS
         KEEP (*(.entry))
     } > reset
 
-    .exceptions :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .exceptions 0x8040020 : AT ( 0x8040020 )
     {
         PROVIDE (__ram_exceptions_start = ABSOLUTE(.));
         . = ALIGN(0x20);
@@ -115,7 +127,14 @@ SECTIONS
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
-    .text :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .text LOADADDR (.exceptions) + SIZEOF (.exceptions) : AT ( LOADADDR (.exceptions) + SIZEOF (.exceptions) )
     {
         /*
          * All code sections are merged into the text output section, along with
@@ -209,7 +228,14 @@ SECTIONS
         . = ALIGN(4);
     } > sram = 0x3a880100 /* NOP instruction (always in big-endian byte ordering) */
 
-    .rodata :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .rodata LOADADDR (.text) + SIZEOF (.text) : AT ( LOADADDR (.text) + SIZEOF (.text) )
     {
         PROVIDE (__ram_rodata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -307,7 +333,41 @@ SECTIONS
      *
      */
 
-    .sram LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .sdram : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    {
+        PROVIDE (_alt_partition_sdram_start = ABSOLUTE(.));
+        *(.sdram .sdram. sdram.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_sdram_end = ABSOLUTE(.));
+    } > sdram
+
+    PROVIDE (_alt_partition_sdram_load_addr = LOADADDR(.sdram));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .epcq256_avl_mem : AT ( LOADADDR (.sdram) + SIZEOF (.sdram) )
+    {
+        PROVIDE (_alt_partition_epcq256_avl_mem_start = ABSOLUTE(.));
+        *(.epcq256_avl_mem .epcq256_avl_mem. epcq256_avl_mem.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_epcq256_avl_mem_end = ABSOLUTE(.));
+    } > epcq256_avl_mem
+
+    PROVIDE (_alt_partition_epcq256_avl_mem_load_addr = LOADADDR(.epcq256_avl_mem));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .sram LOADADDR (.epcq256_avl_mem) + SIZEOF (.epcq256_avl_mem) : AT ( LOADADDR (.epcq256_avl_mem) + SIZEOF (.epcq256_avl_mem) )
     {
         PROVIDE (_alt_partition_sram_start = ABSOLUTE(.));
         *(.sram .sram. sram.*)
@@ -367,7 +427,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x80000;
+__alt_data_end = 0x8080000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +443,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x80000 );
+PROVIDE( __alt_heap_limit    = 0x8080000 );

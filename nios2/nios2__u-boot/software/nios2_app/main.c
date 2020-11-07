@@ -9,7 +9,7 @@
 
 int main()
 {
-  printf("Hello from Nios II!\n");
+  printf("Hello from Nios II using EPCQ flash!\n");
 
   return 0;
 }

@@ -161,7 +161,7 @@ ACDS_VERSION := 18.1
 SIM_OPTIMIZE ?= 0
 
 # The CPU reset address as needed by elf2flash
-RESET_ADDRESS ?= 0x00040000
+RESET_ADDRESS ?= 0x06000000
 
 # The specific Nios II ELF file format to use.
 NIOS2_ELF_FORMAT ?= elf32-littlenios2
@@ -170,27 +170,65 @@ NIOS2_ELF_FORMAT ?= elf32-littlenios2
 # Pre-Initialized Memory Descriptions
 #-------------------------------------
 
-# Memory: sram
-MEM_0 := nios2_de1soc_sram
-$(MEM_0)_NAME := sram
-$(MEM_0)_MEM_INIT_FILE_PARAM_NAME := INIT_FILE
+# Memory: epcq256
+MEM_0 := epcq256
+$(MEM_0)_NAME := epcq256
 HEX_FILES += $(MEM_INIT_DIR)/$(MEM_0).hex
 MEM_INIT_INSTALL_FILES += $(MEM_INIT_INSTALL_DIR)/$(MEM_0).hex
-DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
-HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
-SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
-HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
-$(MEM_0)_START := 0x00040000
-$(MEM_0)_END := 0x0007ffff
-$(MEM_0)_SPAN := 0x00040000
-$(MEM_0)_HIERARCHICAL_PATH := sram
+$(MEM_0)_START := 0x06000000
+$(MEM_0)_END := 0x07ffffff
+$(MEM_0)_SPAN := 0x02000000
+$(MEM_0)_HIERARCHICAL_PATH := epcq256
 $(MEM_0)_WIDTH := 32
-$(MEM_0)_HEX_DATA_WIDTH := 32
+$(MEM_0)_HEX_DATA_WIDTH := 8
 $(MEM_0)_ENDIANNESS := --little-endian-mem
 $(MEM_0)_CREATE_LANES := 0
+$(MEM_0)_CFI_FLAGS := --base=$($(MEM_0)_START) --end=$($(MEM_0)_END) --reset=$(RESET_ADDRESS)
+$(MEM_0)_BOOT_LOADER_FLAG := --boot="$(BOOT_LOADER_CFI)"
+
+.PHONY: epcq256
+epcq256: check_elf_exists $(MEM_INIT_DIR)/$(MEM_0).hex
+
+# Memory: sdram
+MEM_1 := sdram
+$(MEM_1)_NAME := sdram
+DAT_FILES += $(HDL_SIM_DIR)/$(MEM_1).dat
+HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).dat
+SYM_FILES += $(HDL_SIM_DIR)/$(MEM_1).sym
+HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_1).sym
+$(MEM_1)_START := 0x00000000
+$(MEM_1)_END := 0x03ffffff
+$(MEM_1)_SPAN := 0x04000000
+$(MEM_1)_HIERARCHICAL_PATH := sdram
+$(MEM_1)_WIDTH := 16
+$(MEM_1)_HEX_DATA_WIDTH := 16
+$(MEM_1)_ENDIANNESS := --little-endian-mem
+$(MEM_1)_CREATE_LANES := 0
+
+.PHONY: sdram
+sdram: check_elf_exists $(HDL_SIM_DIR)/$(MEM_1).dat $(HDL_SIM_DIR)/$(MEM_1).sym
+
+# Memory: sram
+MEM_2 := nios2_de1soc_sram
+$(MEM_2)_NAME := sram
+$(MEM_2)_MEM_INIT_FILE_PARAM_NAME := INIT_FILE
+HEX_FILES += $(MEM_INIT_DIR)/$(MEM_2).hex
+MEM_INIT_INSTALL_FILES += $(MEM_INIT_INSTALL_DIR)/$(MEM_2).hex
+DAT_FILES += $(HDL_SIM_DIR)/$(MEM_2).dat
+HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_2).dat
+SYM_FILES += $(HDL_SIM_DIR)/$(MEM_2).sym
+HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_2).sym
+$(MEM_2)_START := 0x08040000
+$(MEM_2)_END := 0x0807ffff
+$(MEM_2)_SPAN := 0x00040000
+$(MEM_2)_HIERARCHICAL_PATH := sram
+$(MEM_2)_WIDTH := 32
+$(MEM_2)_HEX_DATA_WIDTH := 32
+$(MEM_2)_ENDIANNESS := --little-endian-mem
+$(MEM_2)_CREATE_LANES := 0
 
 .PHONY: sram
-sram: check_elf_exists $(MEM_INIT_DIR)/$(MEM_0).hex $(HDL_SIM_DIR)/$(MEM_0).dat $(HDL_SIM_DIR)/$(MEM_0).sym
+sram: check_elf_exists $(MEM_INIT_DIR)/$(MEM_2).hex $(HDL_SIM_DIR)/$(MEM_2).dat $(HDL_SIM_DIR)/$(MEM_2).sym
 
 
 #END OF BSP SPECIFIC

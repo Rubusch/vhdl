@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2_de1soc'
  * SOPC Builder design path: ../../nios2_de1soc.sopcinfo
  *
- * Generated: Thu Nov 05 22:52:33 CET 2020
+ * Generated: Sat Nov 07 21:21:12 CET 2020
  */
 
 /*
@@ -65,9 +65,15 @@
  *
  */
 
-#define RESET_REGION_BASE 0x40000
+#define EPCQ256_AVL_MEM_REGION_BASE 0x6000020
+#define EPCQ256_AVL_MEM_REGION_SPAN 33554400
+#define RESET_REGION_BASE 0x6000000
 #define RESET_REGION_SPAN 32
-#define SRAM_REGION_BASE 0x40020
+#define SDRAM_REGION_BASE 0x0
+#define SDRAM_REGION_SPAN 67108864
+#define SRAM_BEFORE_EXCEPTION_REGION_BASE 0x8040000
+#define SRAM_BEFORE_EXCEPTION_REGION_SPAN 32
+#define SRAM_REGION_BASE 0x8040020
 #define SRAM_REGION_SPAN 262112
 
 
@@ -77,7 +83,7 @@
  */
 
 #define ALT_EXCEPTIONS_DEVICE SRAM
-#define ALT_RESET_DEVICE SRAM
+#define ALT_RESET_DEVICE EPCQ256_AVL_MEM
 #define ALT_RODATA_DEVICE SRAM
 #define ALT_RWDATA_DEVICE SRAM
 #define ALT_TEXT_DEVICE SRAM
@@ -96,6 +102,8 @@
  *
  */
 
+#define ALT_LOAD_COPY_EXCEPTIONS
+#define ALT_LOAD_COPY_RODATA
 #define ALT_LOAD_COPY_RWDATA
 
 #endif /* __LINKER_H_ */
