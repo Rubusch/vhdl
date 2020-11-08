@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2_de1soc'
  * SOPC Builder design path: ../../nios2_de1soc.sopcinfo
  *
- * Generated: Sat Nov 07 21:21:12 CET 2020
+ * Generated: Sun Nov 08 11:50:50 CET 2020
  */
 
 /*
@@ -186,7 +186,7 @@
 #define ALT_MODULE_CLASS_epcq256_avl_csr altera_epcq_controller2
 #define EPCQ256_AVL_CSR_BASE 0x8081000
 #define EPCQ256_AVL_CSR_FLASH_TYPE "EPCQ256"
-#define EPCQ256_AVL_CSR_IRQ 1
+#define EPCQ256_AVL_CSR_IRQ 0
 #define EPCQ256_AVL_CSR_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define EPCQ256_AVL_CSR_IS_EPCS 0
 #define EPCQ256_AVL_CSR_NAME "/dev/epcq256_avl_csr"
@@ -236,7 +236,7 @@
 
 #define ALT_MODULE_CLASS_jtag altera_avalon_jtag_uart
 #define JTAG_BASE 0x8081068
-#define JTAG_IRQ 0
+#define JTAG_IRQ 1
 #define JTAG_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_NAME "/dev/jtag"
 #define JTAG_READ_DEPTH 64
@@ -381,7 +381,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1604777700
+#define SYSID_TIMESTAMP 1604830868
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

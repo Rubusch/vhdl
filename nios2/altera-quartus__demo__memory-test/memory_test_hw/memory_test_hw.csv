@@ -1,12 +1,12 @@
-# system info memory_test_hw on 2020.08.30.22:37:39
+# system info memory_test_hw on 2020.11.08.17:28:28
 system_info:
 name,value
-DEVICE,5CSEMA5F31C6
+DEVICE,5CGXFC7C7F23C8
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1598819830
+GENERATION_ID,1604852884
 #
 #
-# Files generated for memory_test_hw on 2020.08.30.22:37:39
+# Files generated for memory_test_hw on 2020.11.08.17:28:28
 files:
 filepath,kind,attributes,module,is_top
 simulation/memory_test_hw.v,VERILOG,,memory_test_hw,true
