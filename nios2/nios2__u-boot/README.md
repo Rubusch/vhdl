@@ -79,6 +79,8 @@ $ elf2flash --input="u-boot" --output="u-boot_epcq256_avl_mem.flash" --boot="u-b
     Nov 8, 2020 12:56:39 PM - (INFO) elf2flash: args = --input=u-boot --output=u-boot_epcq256_avl_mem.flash --boot=u-boot.srec --base=0x6000000 --end=0x8000000 --reset=0x6000000 --verbose
     Nov 8, 2020 12:56:39 PM - (FINE) elf2flash: Starting
     Nov 8, 2020 12:56:39 PM - (FINE) elf2flash: Done
+
+$ nios2-flash-programmer "u-boot_epcq256_avl_mem.flash" --base=0x6000000 --sidp=0x8081060 --debug
 ```
 
 
