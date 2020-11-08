@@ -1,12 +1,12 @@
-# system info nios2_de1soc on 2020.11.08.18:41:27
+# system info nios2_de1soc on 2020.11.08.20:57:58
 system_info:
 name,value
 DEVICE,5CSEMA5F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1604857265
+GENERATION_ID,1604865444
 #
 #
-# Files generated for nios2_de1soc on 2020.11.08.18:41:27
+# Files generated for nios2_de1soc on 2020.11.08.20:57:58
 files:
 filepath,kind,attributes,module,is_top
 simulation/nios2_de1soc.v,VERILOG,,nios2_de1soc,true
